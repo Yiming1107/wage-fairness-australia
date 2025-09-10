@@ -1,18 +1,26 @@
 import json
 from handler import lambda_handler
 
-# 模拟API Gateway事件
+# 模拟API Gateway事件 - 正确格式
 event = {
-    'body': json.dumps({
-        "occupation": "Software Engineer",
+    "httpMethod": "POST",
+    "body": json.dumps({
+        "occupation": "Engineering Managers",
+        "industry": "Mining",
+        "education": "Bachelor Degree",
+        "location": "VIC",
         "currentHourlyRate": 45.50,
-        "location": "Melbourne, VIC",
-        "yearsExperience": 5
+        "yearsExperience": 5,
+        "workIntensity": 75,
+        "earningsType": "hourly"
     })
 }
 
 # 运行测试
-result = lambda_handler(event, None)
-print("Status Code:", result['statusCode'])
-print("Response:")
-print(json.dumps(json.loads(result['body']), indent=2))
+try:
+    result = lambda_handler(event, None)
+    print("Status Code:", result['statusCode'])
+    print("Response:")
+    print(json.dumps(json.loads(result['body']), indent=2))
+except Exception as e:
+    print("Error:", str(e))

@@ -1,0 +1,1237 @@
+anzsco_code,occupation,share_fulltime,avg_fulltime_hours,median_fulltime_earnings,median_fulltime_hourly_earnings
+1111,Chief Executives and Managing Directors,86.0,50.0,,
+1112,General Managers,89.0,47.0,,
+1113,Legislators,69.0,52.0,,
+1211,Aquaculture Farmers,68.0,46.0,,
+1212,Crop Farmers,83.0,51.0,,
+1213,Livestock Farmers,68.0,55.0,,
+1214,Mixed Crop and Livestock Farmers,81.0,55.0,,
+1311,"Advertising, Public Relations and Sales Manager",90.0,44.0,2331.0,62.0
+1321,Corporate Services Managers,86.0,44.0,2958.0,79.0
+1322,Finance Managers,88.0,45.0,3120.0,84.0
+1323,Human Resource Managers,89.0,45.0,2946.0,82.0
+1324,Policy and Planning Managers,90.0,44.0,2584.0,70.0
+1325,Research and Development Managers,83.0,44.0,2448.0,65.0
+1331,Construction Managers,92.0,47.0,3691.0,97.0
+1332,Engineering Managers,91.0,45.0,2961.0,80.0
+1333,"Importers, Exporters and Wholesalers",77.0,46.0,1707.0,45.0
+1334,Manufacturers,83.0,45.0,,
+1335,Production Managers,95.0,47.0,2588.0,64.0
+1336,"Supply, Distribution and Procurement Managers",93.0,46.0,2675.0,71.0
+1341,Child Care Centre Managers,76.0,41.0,1412.0,38.0
+1342,Health and Welfare Services Managers,82.0,43.0,2016.0,53.0
+1343,School Principals,95.0,51.0,,
+1344,Other Education Managers,91.0,44.0,2640.0,70.0
+1351,ICT Managers,94.0,44.0,3534.0,93.0
+1391,Commissioned Officers (Management),91.0,48.0,,
+1392,Senior Non-Commissioned Defence Force Officers,90.0,45.0,,
+1399,Other Specialist Managers,92.0,43.0,2746.0,72.0
+1411,Cafe and Restaurant Managers,77.0,46.0,1441.0,37.0
+1412,Caravan Park and Camping Ground Managers,96.0,51.0,,
+1413,Hotel and Motel Managers,84.0,50.0,,
+1414,Licensed Club Managers,88.0,42.0,,
+1419,Other Accommodation and Hospitality Managers,65.0,48.0,,
+1421,Retail Managers,81.0,45.0,1472.0,36.0
+1491,"Amusement, Fitness and Sports Centre Managers",74.0,43.0,1806.0,48.0
+1492,"Call, Contact Centre and Customer Service Managers",94.0,43.0,1888.0,50.0
+1493,Conference and Event Organisers,78.0,41.0,1538.0,40.0
+1494,Transport Services Managers,85.0,48.0,1771.0,46.0
+1499,"Other Hospitality, Retail and Service Managers",84.0,44.0,2213.0,57.0
+2111,"Actors, Dancers and Other Entertainers",28.0,45.0,,
+2112,Music Professionals,41.0,44.0,,
+2113,Photographers,69.0,44.0,,
+2114,Visual Arts and Crafts Professionals,52.0,45.0,,
+2121,"Artistic Directors, Media Producers and Presenters",81.0,46.0,1866.0,47.0
+2122,"Authors, and Book and Script Editors",60.0,44.0,2500.0,62.0
+2123,"Film, Television, Radio and Stage Directors",84.0,45.0,1862.0,48.0
+2124,Journalists and Other Writers,69.0,42.0,1842.0,49.0
+2211,Accountants,85.0,43.0,1841.0,48.0
+2212,"Auditors, Company Secretaries and Corporate Treasurers",90.0,43.0,2046.0,54.0
+2221,Financial Brokers,88.0,45.0,1635.0,43.0
+2222,Financial Dealers,86.0,47.0,2407.0,63.0
+2223,Financial Investment Advisers and Managers,86.0,45.0,2320.0,61.0
+2231,Human Resource Professionals,83.0,41.0,1870.0,50.0
+2232,ICT Trainers,80.0,42.0,,
+2233,Training and Development Professionals,81.0,42.0,2146.0,57.0
+2241,"Actuaries, Mathematicians and Statisticians",91.0,42.0,2213.0,58.0
+2242,"Archivists, Curators and Records Managers",73.0,41.0,1995.0,54.0
+2243,Economists,91.0,43.0,1954.0,
+2244,Intelligence and Policy Analysts,81.0,41.0,1936.0,52.0
+2245,Land Economists and Valuers,82.0,45.0,2021.0,53.0
+2246,Librarians,69.0,39.0,1780.0,48.0
+2247,Management and Organisation Analysts,83.0,43.0,2308.0,61.0
+2249,Other Information and Organisation Professionals,86.0,41.0,2166.0,57.0
+2251,Advertising and Marketing Professionals,82.0,42.0,1803.0,48.0
+2252,ICT Sales Professionals,93.0,43.0,3201.0,82.0
+2253,Public Relations Professionals,78.0,42.0,1949.0,53.0
+2254,Technical Sales Representatives,93.0,42.0,2612.0,68.0
+2311,Air Transport Professionals,88.0,43.0,2496.0,65.0
+2312,Marine Transport Professionals,88.0,54.0,2218.0,52.0
+2321,Architects and Landscape Architects,81.0,44.0,1688.0,44.0
+2322,Surveyors and Spatial Scientists,93.0,46.0,2301.0,59.0
+2323,"Fashion, Industrial and Jewellery Designers",85.0,43.0,1500.0,40.0
+2324,"Graphic and Web Designers, and Illustrators",77.0,42.0,1500.0,40.0
+2325,Interior Designers,73.0,43.0,2612.0,65.0
+2326,Urban and Regional Planners,86.0,40.0,2036.0,57.0
+2331,Chemical and Materials Engineers,93.0,42.0,,
+2332,Civil Engineering Professionals,90.0,44.0,2264.0,60.0
+2333,Electrical Engineers,92.0,43.0,,
+2334,Electronics Engineers,86.0,41.0,1782.0,44.0
+2335,"Industrial, Mechanical and Production Engineers",92.0,43.0,2151.0,58.0
+2336,Mining Engineers,93.0,50.0,3365.0,86.0
+2339,Other Engineering Professionals,88.0,42.0,2502.0,62.0
+2341,Agricultural and Forestry Scientists,82.0,43.0,1934.0,53.0
+2342,"Chemists, and Food and Wine Scientists",87.0,42.0,1828.0,48.0
+2343,Environmental Scientists,78.0,42.0,1841.0,48.0
+2344,"Geologists, Geophysicists and Hydrogeologists",90.0,51.0,2618.0,66.0
+2345,Life Scientists,79.0,42.0,1948.0,54.0
+2346,Medical Laboratory Scientists,75.0,42.0,2004.0,55.0
+2347,Veterinarians,75.0,45.0,1862.0,43.0
+2349,Other Natural and Physical Science Professionals,84.0,42.0,2052.0,56.0
+2411,Early Childhood (Pre-primary School) Teachers,50.0,41.0,1660.0,44.0
+2412,Primary School Teachers,65.0,45.0,2000.0,56.0
+2413,Middle School Teachers,64.0,45.0,,
+2414,Secondary School Teachers,78.0,45.0,2166.0,58.0
+2415,Special Education Teachers,64.0,43.0,2153.0,60.0
+2421,University Lecturers and Tutors,71.0,45.0,2732.0,73.0
+2422,Vocational Education Teachers,70.0,42.0,1886.0,50.0
+2491,Education Advisers and Reviewers,74.0,42.0,2478.0,68.0
+2492,Private Tutors and Teachers,20.0,43.0,1876.0,52.0
+2493,Teachers of English to Speakers of Other Languages,24.0,42.0,2053.0,59.0
+2511,Nutrition Professionals,44.0,41.0,2090.0,
+2512,Medical Imaging Professionals,66.0,40.0,2297.0,61.0
+2513,Occupational and Environmental Health Professionals,89.0,44.0,2135.0,55.0
+2514,Optometrists and Orthoptists,75.0,40.0,2280.0,60.0
+2515,Pharmacists,65.0,42.0,2071.0,55.0
+2519,Other Health Diagnostic and Promotion Professionals,65.0,41.0,1812.0,48.0
+2521,Chiropractors and Osteopaths,60.0,42.0,,
+2522,Complementary Health Therapists,35.0,43.0,,
+2523,Dental Practitioners,63.0,42.0,3877.0,102.0
+2524,Occupational Therapists,63.0,40.0,1526.0,40.0
+2525,Physiotherapists,66.0,41.0,1710.0,43.0
+2526,Podiatrists,65.0,42.0,,
+2527,Audiologists and Speech Pathologists \ Therapists,62.0,41.0,1971.0,49.0
+2531,General Practitioners and Resident Medical Officers,78.0,45.0,2616.0,63.0
+2532,Anaesthetists,87.0,46.0,,
+2533,Specialist Physicians,84.0,48.0,4657.0,
+2534,Psychiatrists,64.0,44.0,,
+2535,Surgeons,86.0,54.0,,
+2539,Other Medical Practitioners,73.0,46.0,3774.0,84.0
+2541,Midwives,48.0,41.0,2387.0,63.0
+2542,Nurse Educators and Researchers,59.0,41.0,2203.0,58.0
+2543,Nurse Managers,77.0,43.0,2608.0,67.0
+2544,Registered Nurses,55.0,41.0,2156.0,56.0
+2611,ICT Business and Systems Analysts,94.0,41.0,2742.0,71.0
+2612,Multimedia Specialists and Web Developers,92.0,41.0,2252.0,61.0
+2613,Software and Applications Programmers,94.0,41.0,2496.0,64.0
+2621,"Database and Systems Administrators, and ICT Security Specialists",94.0,41.0,2284.0,59.0
+2631,Computer Network Professionals,96.0,41.0,2308.0,62.0
+2632,ICT Support and Test Engineers,96.0,40.0,2202.0,57.0
+2633,Telecommunications Engineering Professionals,94.0,41.0,2577.0,68.0
+2711,Barristers,87.0,48.0,,
+2712,Judicial and Other Legal Professionals,76.0,44.0,2708.0,74.0
+2713,Solicitors,87.0,46.0,1828.0,50.0
+2721,Counsellors,60.0,41.0,1477.0,39.0
+2722,Ministers of Religion,66.0,45.0,1367.0,
+2723,Psychologists and Psychotherapists,54.0,42.0,2054.0,59.0
+2724,Social Professionals,56.0,41.0,1758.0,48.0
+2725,Social Workers,68.0,40.0,1850.0,48.0
+2726,"Welfare, Recreation and Community Arts Workers",67.0,41.0,1926.0,50.0
+3111,Agricultural Technicians,87.0,41.0,1944.0,
+3112,Medical Technicians,62.0,41.0,1322.0,35.0
+3113,Primary Products Inspectors,83.0,41.0,,
+3114,Science Technicians,73.0,43.0,1638.0,43.0
+3121,"Architectural, Building and Surveying Technicians",91.0,46.0,2115.0,50.0
+3122,Civil Engineering Draftspersons and Technicians,90.0,42.0,1738.0,46.0
+3123,"Electrical Engineering Draftspersons, Technicians",92.0,45.0,2580.0,64.0
+3124,"Electronic Engineering Draftspersons, Technicians",87.0,42.0,2736.0,67.0
+3125,"Mechanical Engineering Draftspersons, Technicians",88.0,43.0,1823.0,46.0
+3126,Safety Inspectors,92.0,45.0,3295.0,84.0
+3129,Other Building and Engineering Technicians,96.0,52.0,3024.0,68.0
+3131,ICT Support Technicians,90.0,40.0,1442.0,38.0
+3132,Telecommunications Technical Specialists,93.0,41.0,2334.0,62.0
+3211,Automotive Electricians,94.0,49.0,1888.0,42.0
+3212,Motor Mechanics,90.0,44.0,1405.0,35.0
+3221,"Metal Casting, Forging and Finishing Trades",86.0,45.0,,
+3222,Sheetmetal Trades Workers,93.0,43.0,1286.0,35.0
+3223,Structural Steel and Welding Trades Workers,96.0,46.0,1755.0,41.0
+3231,Aircraft Maintenance Engineers,93.0,42.0,1978.0,47.0
+3232,Metal Fitters and Machinists,95.0,50.0,2243.0,52.0
+3233,Precision Metal Trades Workers,88.0,42.0,,
+3234,Toolmakers and Engineering Patternmakers,87.0,42.0,,
+3241,Panelbeaters,91.0,42.0,1684.0,39.0
+3242,Vehicle Body Builders and Trimmers,91.0,43.0,,38.0
+3243,Vehicle Painters,94.0,42.0,1660.0,40.0
+3311,Bricklayers and Stonemasons,86.0,42.0,1597.0,45.0
+3312,Carpenters and Joiners,92.0,43.0,1787.0,44.0
+3321,Floor Finishers,78.0,43.0,,
+3322,Painting Trades Workers,80.0,42.0,1400.0,35.0
+3331,Glaziers,91.0,42.0,1341.0,35.0
+3332,Plasterers,88.0,43.0,,
+3333,Roof Tilers,86.0,42.0,,
+3334,Wall and Floor Tilers,89.0,42.0,,
+3341,Plumbers,93.0,44.0,2000.0,52.0
+3411,Electricians,93.0,45.0,2204.0,53.0
+3421,Airconditioning and Refrigeration Mechanics,93.0,43.0,2019.0,46.0
+3422,Electrical Distribution Trades Workers,97.0,44.0,2797.0,66.0
+3423,Electronics Trades Workers,82.0,42.0,1525.0,40.0
+3424,Telecommunications Trades Workers,90.0,42.0,1595.0,42.0
+3511,Bakers and Pastrycooks,72.0,43.0,1353.0,36.0
+3512,Butchers and Smallgoods Makers,87.0,45.0,,
+3513,Chefs,78.0,43.0,1330.0,34.0
+3514,Cooks,37.0,42.0,1198.0,31.0
+3611,Animal Attendants and Trainers,56.0,46.0,1280.0,32.0
+3612,Shearers,89.0,43.0,,
+3613,Veterinary Nurses,49.0,40.0,,36.0
+3621,Florists,48.0,45.0,,
+3622,Gardeners,70.0,42.0,,
+3623,Greenkeepers,80.0,40.0,1298.0,34.0
+3624,Nurserypersons,62.0,44.0,,
+3911,Hairdressers,52.0,40.0,1121.0,26.0
+3921,Print Finishers and Screen Printers,74.0,40.0,1298.0,31.0
+3922,Graphic Pre-press Trades Workers,78.0,40.0,1155.0,29.0
+3923,Printers,87.0,41.0,1310.0,35.0
+3931,Canvas and Leather Goods Makers,100.0,45.0,,
+3932,Clothing Trades Workers,68.0,42.0,,
+3933,Upholsterers,68.0,42.0,,
+3941,Cabinetmakers,89.0,43.0,1216.0,31.0
+3942,Wood Machinists and Other Wood Trades Workers,76.0,42.0,,
+3991,Boat Builders and Shipwrights,85.0,43.0,,
+3992,"Chemical, Gas, Petroleum and Power Plant Operators",95.0,51.0,3424.0,83.0
+3993,"Gallery, Library and Museum Technicians",56.0,38.0,1459.0,40.0
+3994,Jewellers,51.0,43.0,,
+3995,Performing Arts Technicians,72.0,45.0,1779.0,46.0
+3996,Signwriters,89.0,43.0,,
+3999,Other Miscellaneous Technicians and Trades Workers,66.0,42.0,1671.0,43.0
+4111,Ambulance Officers and Paramedics,86.0,47.0,2556.0,62.0
+4112,"Dental Hygienists, Technicians and Therapists",66.0,42.0,1802.0,47.0
+4113,Diversional Therapists,60.0,40.0,1130.0,30.0
+4114,Enrolled and Mothercraft Nurses,48.0,41.0,1618.0,41.0
+4115,Indigenous Health Workers,69.0,41.0,1398.0,35.0
+4116,Massage Therapists,33.0,42.0,1472.0,42.0
+4117,Welfare Support Workers,67.0,41.0,1688.0,45.0
+4211,Child Carers,45.0,40.0,1146.0,30.0
+4221,Education Aides,31.0,39.0,1098.0,30.0
+4231,Aged and Disabled Carers,40.0,43.0,1564.0,39.0
+4232,Dental Assistants,45.0,39.0,1139.0,30.0
+4233,Nursing Support and Personal Care Workers,43.0,42.0,1279.0,34.0
+4234,Special Care Workers,37.0,44.0,1784.0,47.0
+4311,Bar Attendants and Baristas,31.0,41.0,1240.0,33.0
+4312,Cafe Workers,23.0,41.0,1148.0,30.0
+4313,Gaming Workers,57.0,40.0,1468.0,39.0
+4314,Hotel Service Managers,67.0,41.0,1394.0,33.0
+4315,Waiters,16.0,41.0,1249.0,31.0
+4319,Other Hospitality Workers,32.0,43.0,1277.0,34.0
+4411,Defence Force Members - Other Ranks,92.0,47.0,,
+4412,Fire and Emergency Workers,94.0,48.0,2280.0,53.0
+4413,Police,94.0,43.0,2422.0,63.0
+4421,Prison Officers,95.0,43.0,1810.0,44.0
+4422,Security Officers and Guards,77.0,45.0,1638.0,39.0
+4511,Beauty Therapists,39.0,41.0,1200.0,33.0
+4512,Driving Instructors,51.0,44.0,,
+4513,Funeral Workers,70.0,43.0,1443.0,38.0
+4514,"Gallery, Museum and Tour Guides",51.0,44.0,,33.0
+4515,Personal Care Consultants,31.0,42.0,,
+4516,Tourism and Travel Advisers,75.0,40.0,1250.0,33.0
+4517,Travel Attendants,64.0,41.0,1350.0,36.0
+4518,Other Personal Service Workers,40.0,43.0,1224.0,33.0
+4521,Fitness Instructors,32.0,43.0,1288.0,34.0
+4522,Outdoor Adventure Guides,77.0,45.0,,
+4523,"Sports Coaches, Instructors and Officials",20.0,44.0,1286.0,34.0
+4524,Sportspersons,35.0,43.0,,
+5111,"Contract, Program and Project Administrators",84.0,42.0,2033.0,54.0
+5121,Office Managers,70.0,41.0,1522.0,40.0
+5122,Practice Managers,63.0,42.0,1626.0,45.0
+5211,Personal Assistants,78.0,41.0,1632.0,44.0
+5212,Secretaries,57.0,40.0,1394.0,37.0
+5311,General Clerks,60.0,40.0,1305.0,35.0
+5321,Keyboard Operators,57.0,40.0,1279.0,34.0
+5411,Call or Contact Centre Workers,78.0,39.0,1352.0,35.0
+5412,Information Officers,68.0,40.0,1293.0,34.0
+5421,Receptionists,43.0,40.0,1175.0,31.0
+5511,Accounting Clerks,67.0,40.0,1392.0,37.0
+5512,Bookkeepers,40.0,41.0,1501.0,40.0
+5513,Payroll Clerks,71.0,41.0,1548.0,41.0
+5521,Bank Workers,81.0,41.0,1384.0,36.0
+5522,Credit and Loans Officers,88.0,42.0,1520.0,38.0
+5523,"Insurance, Money Market and Statistical Clerks",83.0,40.0,1489.0,39.0
+5611,Betting Clerks,50.0,41.0,,
+5612,Couriers and Postal Deliverers,76.0,44.0,1370.0,34.0
+5613,Filing and Registry Clerks,63.0,40.0,1424.0,39.0
+5614,Mail Sorters,51.0,41.0,1250.0,33.0
+5615,Survey Interviewers,63.0,41.0,,
+5616,Switchboard Operators,56.0,40.0,,
+5619,Other Clerical and Office Support Workers,75.0,40.0,1155.0,29.0
+5911,Purchasing and Supply Logistics Clerks,81.0,42.0,1442.0,37.0
+5912,Transport and Despatch Clerks,88.0,43.0,1572.0,38.0
+5991,Conveyancers and Legal Executives,60.0,42.0,1405.0,38.0
+5992,Court and Legal Clerks,65.0,40.0,1384.0,37.0
+5993,Debt Collectors,73.0,40.0,1630.0,42.0
+5994,Human Resource Clerks,81.0,41.0,1472.0,39.0
+5995,Inspectors and Regulatory Officers,89.0,41.0,1764.0,46.0
+5996,"Insurance Investigators, Loss Adjusters and Risk Surveyors",89.0,41.0,1880.0,50.0
+5997,Library Assistants,32.0,38.0,1412.0,39.0
+5999,Other Miscellaneous Clerical and Administrative Workers,72.0,42.0,1468.0,39.0
+6111,"Auctioneers, and Stock and Station Agents",90.0,49.0,1635.0,43.0
+6112,Insurance Agents,81.0,41.0,1314.0,34.0
+6113,Sales Representatives,85.0,42.0,1621.0,43.0
+6121,Real Estate Sales Agents,82.0,44.0,1320.0,34.0
+6211,Sales Assistants (General),25.0,41.0,1112.0,29.0
+6212,ICT Sales Assistants,72.0,42.0,1123.0,30.0
+6213,Motor Vehicle and Vehicle Parts Salespersons,86.0,43.0,1300.0,33.0
+6214,Pharmacy Sales Assistants,31.0,39.0,932.0,24.0
+6215,Retail Supervisors,67.0,42.0,1276.0,34.0
+6216,Service Station Attendants,30.0,41.0,1286.0,33.0
+6217,Street Vendors and Related Salespersons,46.0,44.0,,
+6219,Other Sales Assistants and Salespersons,67.0,43.0,1133.0,29.0
+6311,Checkout Operators and Office Cashiers,18.0,39.0,1108.0,29.0
+6391,Models and Sales Demonstrators,33.0,40.0,,
+6392,Retail and Wool Buyers,95.0,43.0,1331.0,34.0
+6393,Telemarketers,57.0,40.0,1153.0,29.0
+6394,Ticket Salespersons,54.0,41.0,1222.0,32.0
+6395,Visual Merchandisers,56.0,40.0,,
+6399,Other Sales Support Workers,36.0,40.0,,
+7111,"Clay, Concrete, Glass and Stone Processing Machine Operators",91.0,44.0,1479.0,39.0
+7112,Industrial Spraypainters,93.0,44.0,2116.0,44.0
+7113,Paper and Wood Processing Machine Operators,84.0,43.0,1361.0,35.0
+7114,Photographic Developers and Printers,49.0,39.0,1058.0,
+7115,Plastics and Rubber Production Machine Operators,90.0,45.0,,
+7116,Sewing Machinists,67.0,40.0,1164.0,29.0
+7117,Textile and Footwear Production Machine Operators,92.0,43.0,,
+7119,Other Machine Operators,70.0,43.0,1456.0,38.0
+7121,"Crane, Hoist and Lift Operators",90.0,50.0,3031.0,57.0
+7122,"Drillers, Miners and Shot Firers",97.0,64.0,2824.0,65.0
+7123,Engineering Production Workers,95.0,44.0,1400.0,35.0
+7129,Other Stationary Plant Operators,92.0,49.0,1862.0,45.0
+7211,"Agricultural, Forestry and Horticultural Plant Operators",78.0,49.0,1504.0,35.0
+7212,Earthmoving Plant Operators,93.0,50.0,1944.0,42.0
+7213,Forklift Drivers,88.0,42.0,1447.0,36.0
+7219,Other Mobile Plant Operators,76.0,46.0,1627.0,37.0
+7311,Automobile Drivers,63.0,46.0,,40.0
+7312,Bus and Coach Drivers,61.0,42.0,1676.0,38.0
+7313,Train and Tram Drivers,98.0,44.0,2524.0,61.0
+7321,Delivery Drivers,49.0,43.0,1269.0,30.0
+7331,Truck Drivers,89.0,49.0,1780.0,38.0
+7411,Storepersons,70.0,41.0,1237.0,31.0
+8111,Car Detailers,57.0,41.0,1145.0,25.0
+8112,Commercial Cleaners,40.0,42.0,1192.0,30.0
+8113,Domestic Cleaners,19.0,42.0,,
+8114,Housekeepers,25.0,45.0,1252.0,28.0
+8115,Laundry Workers,57.0,41.0,1140.0,28.0
+8116,Other Cleaners,55.0,42.0,1250.0,31.0
+8211,Building and Plumbing Labourers,83.0,44.0,1634.0,38.0
+8212,Concreters,88.0,45.0,1855.0,42.0
+8213,Fencers,78.0,45.0,,30.0
+8214,Insulation and Home Improvement Installers,80.0,43.0,1710.0,44.0
+8215,Paving and Surfacing Labourers,96.0,44.0,1456.0,36.0
+8216,Railway Track Workers,97.0,48.0,2324.0,56.0
+8217,Structural Steel Construction Workers,91.0,49.0,3120.0,70.0
+8219,Other Construction and Mining Labourers,92.0,59.0,1720.0,35.0
+8311,Food and Drink Factory Workers,75.0,42.0,1379.0,32.0
+8312,"Meat Boners and Slicers, and Slaughterers",95.0,40.0,1325.0,31.0
+8313,"Meat, Poultry and Seafood Process Workers",83.0,41.0,1221.0,30.0
+8321,Packers,59.0,40.0,1216.0,30.0
+8322,Product Assemblers,82.0,40.0,1114.0,29.0
+8391,Metal Engineering Process Workers,80.0,42.0,1393.0,34.0
+8392,Plastics and Rubber Factory Workers,78.0,40.0,1811.0,41.0
+8393,Product Quality Controllers,87.0,42.0,1434.0,35.0
+8394,Timber and Wood Process Workers,85.0,41.0,1167.0,29.0
+8399,Other Factory Process Workers,70.0,41.0,1442.0,37.0
+8411,Aquaculture Workers,57.0,46.0,,
+8412,Crop Farm Workers,73.0,42.0,,
+8413,Forestry and Logging Workers,75.0,45.0,,
+8414,Garden and Nursery Labourers,63.0,41.0,,
+8415,Livestock Farm Workers,55.0,47.0,,
+8416,Mixed Crop and Livestock Farm Workers,55.0,46.0,,
+8419,"Other Farm, Forestry and Garden Workers",69.0,43.0,,
+8511,Fast Food Cooks,16.0,44.0,1179.0,31.0
+8512,Food Trades Assistants,40.0,40.0,,
+8513,Kitchenhands,20.0,42.0,1250.0,31.0
+8911,Freight and Furniture Handlers,66.0,43.0,1434.0,33.0
+8912,Shelf Fillers,22.0,39.0,,
+8991,Caretakers,60.0,41.0,1358.0,34.0
+8992,Deck and Fishing Hands,80.0,56.0,,35.0
+8993,Handypersons,54.0,42.0,1307.0,33.0
+8994,Motor Vehicle Parts and Accessories Fitters,85.0,44.0,1294.0,33.0
+8995,Printing Assistants and Table Workers,56.0,41.0,1200.0,30.0
+8996,Recycling and Rubbish Collectors,60.0,43.0,1272.0,32.0
+8997,Vending Machine Attendants,24.0,40.0,1286.0,34.0
+8999,Other Miscellaneous Labourers,56.0,45.0,1480.0,36.0
+111211,Corporate General Managers,86.0,47.0,,
+111212,Defence Force Senior Officers,84.0,50.0,,
+111311,Local Government Legislators,53.0,47.0,,
+111312,Members of Parliament,97.0,59.0,,
+111399,Other Legislators,59.0,35.0,,
+121211,Cotton Growers,92.0,52.0,,
+121212,Flower Growers,66.0,47.0,,
+121213,Fruit and Nut Growers,73.0,48.0,,
+121214,"Grain, Oilseed and Pasture Growers",80.0,54.0,,
+121215,Grape Growers,75.0,46.0,,
+121216,Mixed Crop Farmers,79.0,53.0,,
+121217,Sugar Cane Growers,82.0,59.0,,
+121218,Turf Growers,84.0,46.0,,
+121221,Vegetable Growers,71.0,49.0,,
+121299,Other Crop Farmers,73.0,47.0,,
+121311,Beekeepers,68.0,50.0,,
+121312,Beef Cattle Farmers,71.0,54.0,,
+121313,Dairy Cattle Farmers,82.0,64.0,,
+121314,Deer Farmers,,,,
+121315,Goat Farmers,69.0,52.0,,
+121316,Horse Breeders,79.0,50.0,,
+121317,Mixed Livestock Farmers,79.0,54.0,,
+121318,Pig Farmers,87.0,47.0,,
+121321,Poultry Farmers,81.0,49.0,,
+121322,Sheep Farmers,74.0,53.0,,
+121399,Other Livestock Farmers,69.0,52.0,,
+131112,Sales and Marketing Managers,87.0,44.0,,
+131113,Advertising Managers,85.0,44.0,,
+131114,Public Relations Managers,85.0,44.0,,
+133111,Construction Project Managers,90.0,47.0,,
+133112,Project Builders,82.0,47.0,,
+133311,Importers and Exporters,67.0,44.0,,
+133312,Wholesalers,76.0,46.0,,
+133511,Forest Managers,91.0,44.0,,
+133512,Manufacturing Production Managers,91.0,45.0,,
+133513,Mine Managers,95.0,54.0,,
+133611,Supply and Distribution Managers,92.0,46.0,,
+133612,Procurement Managers,91.0,44.0,,
+134211,Medical Administrators,74.0,44.0,,
+134212,Nursing Clinical Directors,89.0,44.0,,
+134213,Primary Health Organisation Managers,79.0,44.0,,
+134214,Welfare Centre Managers,84.0,41.0,,
+134299,Other Health and Welfare Services Managers,85.0,43.0,,
+134411,Faculty Heads,90.0,45.0,,
+134412,Regional Education Managers,88.0,47.0,,
+134499,Education Managers (not covered elsewhere),79.0,43.0,,
+135111,Chief Information Officers,96.0,47.0,,
+135112,ICT Project Managers,92.0,43.0,,
+135199,Other ICT Managers,94.0,43.0,,
+139111,Commissioned Defence Force Officers,90.0,48.0,,
+139112,Commissioned Fire Officers,95.0,47.0,,
+139113,Commissioned Police Officers,97.0,47.0,,
+139911,Arts Administrators and Managers,66.0,42.0,,
+139912,Environmental Managers,87.0,44.0,,
+139913,Laboratory Managers,86.0,43.0,,
+139914,Quality Assurance Managers,85.0,42.0,,
+139915,Sports Administrators,75.0,43.0,,
+139999,Specialist Managers (not covered elsewhere),90.0,44.0,,
+141911,Bed and Breakfast Operators,25.0,50.0,,
+141912,Retirement Village Managers,80.0,40.0,,
+141999,Accommodation and Hospitality Managers (not covered elsewhere),61.0,50.0,,
+142111,Retail Managers (General),74.0,45.0,,
+142112,Antique Dealers,46.0,46.0,,
+142113,Betting Agency Managers,45.0,48.0,,
+142114,Hair and Beauty Salon Managers,57.0,44.0,,
+142115,Post Office Managers,82.0,45.0,,
+142116,Travel Agency Managers,62.0,42.0,,
+149111,Amusement Centre Managers,65.0,43.0,,
+149112,Fitness Centre Managers,62.0,44.0,,
+149113,Sports Centre Managers,63.0,43.0,,
+149211,Call Centre or Contact Centre Managers,90.0,43.0,,
+149212,Customer Service Managers,87.0,43.0,,
+149411,Fleet Managers,91.0,44.0,,
+149412,Railway Station Managers,94.0,42.0,,
+149413,Transport Company Managers,78.0,50.0,,
+149911,Boarding Kennel and Cattery Operators,65.0,48.0,,
+149912,Cinema and Theatre Managers,46.0,40.0,,
+149913,Facilities Managers,84.0,42.0,,
+149914,Bank Managers and Branch Managers,91.0,43.0,,
+149915,Equipment Hire Managers,82.0,47.0,,
+149999,"Hospitality, Retail and Service Managers (not covered elsewhere)",76.0,46.0,,
+211111,Actors,29.0,43.0,,
+211112,Dancers and Choreographers,41.0,41.0,,
+211113,Entertainers and Variety Artists,33.0,46.0,,
+211199,"Other Actors, Dancers and Entertainers",38.0,46.0,,
+211211,Composers,63.0,42.0,,
+211212,Music Directors,58.0,42.0,,
+211213,Musicians,30.0,44.0,,
+211214,Singers,25.0,43.0,,
+211299,Other Music Professionals,52.0,20.0,,
+211411,Painters (Visual Arts),42.0,45.0,,
+211412,Potters and Ceramic Artists,45.0,43.0,,
+211413,Sculptors,58.0,45.0,,
+211499,Other Visual Arts or Crafts Professionals,47.0,45.0,,
+212111,Artistic Directors,73.0,45.0,,
+212112,Media Producers,79.0,46.0,,
+212113,Radio Presenters,54.0,43.0,,
+212114,Television Presenters,58.0,47.0,,
+212211,Authors,48.0,45.0,,
+212212,Book and Script Editors,49.0,41.0,,
+212311,"Art Directors (Film, Television or Stage)",83.0,46.0,,
+212312,"Directors (Film, Television, Radio or Stage)",71.0,47.0,,
+212313,Cinematographers,59.0,44.0,,
+212314,Film and Video Editors,67.0,44.0,,
+212315,Program Directors (Television or Radio),77.0,42.0,,
+212316,Stage Managers,63.0,40.0,,
+212317,Technical Directors,88.0,41.0,,
+212318,Video Producers,70.0,42.0,,
+212399,"Other Film, Television, Radio and Stage Directors",74.0,47.0,,
+212411,Copywriters,54.0,42.0,,
+212412,Newspaper and Periodical Editors,67.0,43.0,,
+212413,Print Journalists,69.0,43.0,,
+212414,Radio Journalists,75.0,40.0,,
+212415,Technical Writers,69.0,41.0,,
+212416,Television Journalists,86.0,45.0,,
+212499,"Bloggers, Critics, Sports and Other Writers (not covered elsewhere)",60.0,42.0,,
+221111,Accountants (General),78.0,43.0,,
+221112,Management Accountants,87.0,42.0,,
+221113,Taxation Accountants,74.0,44.0,,
+221211,Company Secretaries,72.0,47.0,,
+221212,Corporate Treasurers,93.0,44.0,,
+221213,External Auditors,86.0,43.0,,
+221214,Internal Auditors,85.0,41.0,,
+222111,Commodities Traders,86.0,44.0,,
+222112,Finance Brokers,79.0,46.0,,
+222113,Insurance Brokers,85.0,43.0,,
+222199,Other Financial Brokers,76.0,45.0,,
+222211,Financial Market Dealers,83.0,46.0,,
+222212,Futures Traders,85.0,52.0,,
+222213,Stockbrokers,80.0,52.0,,
+222299,Other Financial Dealers,91.0,45.0,,
+222311,Financial Investment Advisers,84.0,44.0,,
+222312,Financial Investment Managers,81.0,47.0,,
+223111,Human Resource Advisers,78.0,41.0,,
+223112,Recruitment Consultants,83.0,41.0,,
+223113,Workplace Relations Advisers,84.0,42.0,,
+224111,Actuaries,89.0,43.0,,
+224112,Mathematicians,85.0,42.0,,
+224113,Statisticians,72.0,41.0,,
+224211,Archivists,54.0,38.0,,
+224212,Gallery and Museum Curators,67.0,41.0,,
+224213,Health Information Managers,71.0,41.0,,
+224214,Records Managers,79.0,39.0,,
+224411,Intelligence Officers,84.0,41.0,,
+224412,Policy Analysts,78.0,41.0,,
+224511,Land Economists,82.0,45.0,,
+224512,Valuers,84.0,46.0,,
+224711,Management Consultants,79.0,43.0,,
+224712,Organisation and Methods Analysts,84.0,42.0,,
+224911,Electorate Officers,68.0,44.0,,
+224912,Liaison Officers,72.0,40.0,,
+224913,Migration Agents,62.0,41.0,,
+224914,Patents Examiners,80.0,38.0,,
+224999,Information and Organisation Professionals (not covered elsewhere),86.0,41.0,,
+225111,Advertising Specialists,85.0,44.0,,
+225112,Market Research Analysts,74.0,41.0,,
+225113,Marketing Specialists,76.0,42.0,,
+225211,ICT Account Managers,94.0,42.0,,
+225212,ICT Business Development Managers,93.0,43.0,,
+225213,ICT Sales Representatives,90.0,43.0,,
+225411,Sales Representatives (Industrial Products),91.0,43.0,,
+225412,Sales Representatives (Medical and Pharmaceutical Products),87.0,41.0,,
+225499,Other Technical Sales Representatives,87.0,41.0,,
+231111,Aeroplane Pilots,61.0,44.0,,
+231112,Air Traffic Controllers,83.0,38.0,,
+231113,Flying Instructors,66.0,40.0,,
+231114,Helicopter Pilots,86.0,47.0,,
+231199,Other Air Transport Professionals,83.0,43.0,,
+231211,Master Fishers,69.0,57.0,,
+231212,Marine Engineers,92.0,55.0,,
+231213,Ship's Masters,74.0,54.0,,
+231214,Ship's Officers,94.0,61.0,,
+231215,Marine Surveyors,78.0,43.0,,
+231299,Other Marine Transport Professionals,89.0,43.0,,
+232111,Architects,81.0,44.0,,
+232112,Landscape Architects,71.0,43.0,,
+232212,Surveyors,86.0,48.0,,
+232213,Cartographers,70.0,39.0,,
+232214,Other Spatial Scientists,84.0,40.0,,
+232311,Fashion Designers,66.0,43.0,,
+232312,Industrial Designers,79.0,42.0,,
+232313,Jewellery Designers,52.0,41.0,,
+232411,Graphic Designers,63.0,41.0,,
+232412,Illustrators (including Animators),70.0,43.0,,
+232413,Multimedia Designers,74.0,41.0,,
+232414,Web Designers,69.0,41.0,,
+233111,Chemical Engineers,87.0,43.0,,
+233112,Materials Engineers,82.0,41.0,,
+233211,Civil Engineers,89.0,45.0,,
+233212,Geotechnical Engineers,89.0,46.0,,
+233213,Quantity Surveyors,87.0,43.0,,
+233214,Structural Engineers,88.0,43.0,,
+233215,Transport Engineers,90.0,41.0,,
+233511,Industrial Engineers,89.0,42.0,,
+233512,Mechanical Engineers,90.0,43.0,,
+233513,Production and Plant Engineers,91.0,43.0,,
+233611,Mining Engineers (excluding Petroleum),89.0,52.0,,
+233612,Petroleum Engineers,90.0,45.0,,
+233911,Aeronautical Engineers,91.0,42.0,,
+233912,Agricultural Engineers,80.0,43.0,,
+233913,Biomedical Engineers,88.0,41.0,,
+233914,Engineering Technologists,84.0,40.0,,
+233915,Environmental Engineers,82.0,42.0,,
+233916,Naval Architects,88.0,40.0,,
+233999,Engineering Professionals (not covered elsewhere),86.0,42.0,,
+234111,Agricultural Consultants,71.0,44.0,,
+234112,Agricultural Scientists,85.0,43.0,,
+234113,Foresters,82.0,41.0,,
+234211,Chemists,80.0,41.0,,
+234212,Food Technologists,80.0,41.0,,
+234213,Wine Makers,82.0,45.0,,
+234311,Conservation Officers,75.0,40.0,,
+234312,Environmental Consultants,75.0,44.0,,
+234313,Environmental Research Scientists,76.0,42.0,,
+234314,Park Rangers,81.0,41.0,,
+234399,Other Environmental Scientists,71.0,42.0,,
+234411,Geologists,83.0,53.0,,
+234412,Geophysicists,79.0,43.0,,
+234413,Hydrogeologists,81.0,43.0,,
+234511,Biologists,76.0,44.0,,
+234513,Biochemists,75.0,41.0,,
+234514,Biotechnologists,78.0,40.0,,
+234515,Botanists,73.0,41.0,,
+234516,Marine Biologists,74.0,41.0,,
+234517,Microbiologists,78.0,41.0,,
+234518,Zoologists,73.0,43.0,,
+234599,Other Life Scientists,72.0,42.0,,
+234911,Conservators,59.0,41.0,,
+234912,Metallurgists,84.0,50.0,,
+234913,Meteorologists,77.0,39.0,,
+234914,Physicists (including Astronomers),87.0,41.0,,
+234915,Exercise Physiologists,62.0,41.0,,
+234999,Natural and Physical Science Professionals (not covered elsewhere),64.0,41.0,,
+241511,Special Needs Teachers,61.0,43.0,,
+241512,Teachers of the Hearing Impaired,48.0,40.0,,
+241513,Teachers of the Sight Impaired,60.0,33.0,,
+241599,Other Special Education Teachers,58.0,44.0,,
+242111,University Lecturers,75.0,45.0,,
+242112,University Tutors,12.0,41.0,,
+249111,Education Advisers,69.0,42.0,,
+249112,Education Reviewers,64.0,42.0,,
+249211,Art Teachers (Private Tuition),23.0,41.0,,
+249212,Dance Teachers (Private Tuition),17.0,44.0,,
+249213,Drama Teachers (Private Tuition),14.0,46.0,,
+249214,Music Teachers (Private Tuition),13.0,42.0,,
+249299,Other Private Tutors and Teachers,13.0,42.0,,
+251111,Dietitians,49.0,40.0,,
+251112,Nutritionists,37.0,42.0,,
+251211,Medical Diagnostic Radiographers,67.0,40.0,,
+251212,Medical Radiation Therapists,71.0,39.0,,
+251213,Nuclear Medicine Technologists,70.0,40.0,,
+251214,Sonographers,51.0,40.0,,
+251311,Environmental Health Officers,75.0,41.0,,
+251312,Occupational Health and Safety Advisers,83.0,45.0,,
+251411,Optometrists,50.0,40.0,,
+251412,Orthoptists,48.0,39.0,,
+251511,Hospital Pharmacists,70.0,41.0,,
+251512,Industrial Pharmacists,87.0,40.0,,
+251513,Retail Pharmacists,63.0,42.0,,
+251911,Health Promotion Officers,54.0,41.0,,
+251912,Orthotists and Prosthetists,77.0,40.0,,
+251999,Genetic Counsellors (and Other Health Professionals not covered elsewhere),60.0,42.0,,
+252111,Chiropractors,43.0,42.0,,
+252112,Osteopaths,48.0,41.0,,
+252211,Acupuncturists,35.0,40.0,,
+252212,Homoeopaths,19.0,43.0,,
+252213,Naturopaths,30.0,41.0,,
+252214,Chinese Medicine Practitioners,33.0,42.0,,
+252299,"Music, Dance, Drama, Play, Hypnotic, and Related Therapists",28.0,40.0,,
+252311,Dental Specialists (including Orthodontists),59.0,44.0,,
+252312,Dentists,48.0,41.0,,
+252711,Audiologists,63.0,40.0,,
+252712,Speech Pathologists,56.0,40.0,,
+253111,General Practitioners,69.0,45.0,,
+253112,Resident Medical Officers,89.0,46.0,,
+253311,Specialist Physicians (General Medicine),73.0,47.0,,
+253312,Cardiologists,82.0,49.0,,
+253313,Clinical Haematologists,78.0,51.0,,
+253314,Medical Oncologists,79.0,47.0,,
+253315,Endocrinologists,55.0,44.0,,
+253316,Gastroenterologists,78.0,47.0,,
+253317,Intensive Care Specialists,93.0,49.0,,
+253318,Neurologists,73.0,48.0,,
+253321,Paediatricians,75.0,46.0,,
+253322,Renal Medicine Specialists,74.0,45.0,,
+253323,Rheumatologists,60.0,50.0,,
+253324,Thoracic Medicine Specialists,77.0,49.0,,
+253399,Other Specialist Physicians,68.0,46.0,,
+253511,Surgeons (General),85.0,49.0,,
+253512,Cardiothoracic Surgeons,90.0,51.0,,
+253513,Neurosurgeons,86.0,57.0,,
+253514,Orthopaedic Surgeons,88.0,54.0,,
+253515,"Ear, Nose and Throat Specialists",81.0,50.0,,
+253516,Paediatric Surgeons,88.0,45.0,,
+253517,Plastic and Reconstructive Surgeons,81.0,51.0,,
+253518,Urologists,90.0,53.0,,
+253521,Vascular Surgeons,85.0,50.0,,
+253911,Dermatologists,65.0,46.0,,
+253912,Emergency Medicine Specialists,80.0,44.0,,
+253913,Obstetricians and Gynaecologists,84.0,53.0,,
+253914,Eye Specialists,73.0,47.0,,
+253915,Pathologists,67.0,44.0,,
+253917,Diagnostic and Interventional Radiologists,74.0,45.0,,
+253918,Radiation Oncologists,82.0,45.0,,
+253999,Medical Practitioners (not covered elsewhere),71.0,45.0,,
+254211,Nurse Educators,59.0,41.0,,
+254212,Nurse Researchers,54.0,39.0,,
+254411,Nurse Practitioners,64.0,42.0,,
+254412,Registered Nurses (Aged Care),49.0,42.0,,
+254413,Registered Nurses (Child and Family Health),38.0,40.0,,
+254414,Registered Nurses (Community Health),48.0,41.0,,
+254415,Registered Nurses (Critical Care and Emergency),52.0,41.0,,
+254416,Registered Nurses (Developmental Disability),,,,
+254417,Registered Nurses (Disability and Rehabilitation),48.0,41.0,,
+254418,Registered Nurses (Medical),46.0,41.0,,
+254421,Registered Nurses (Medical Practice),39.0,40.0,,
+254422,Registered Nurses (Mental Health),63.0,41.0,,
+254423,Registered Nurses (Perioperative),50.0,41.0,,
+254424,Registered Nurses (Surgical),44.0,41.0,,
+254425,Registered Nurses (Paediatrics),45.0,40.0,,
+254499,Registered Nurses (not covered elsewhere),46.0,42.0,,
+261111,ICT Business Analysts,90.0,41.0,,
+261112,Systems Analysts,91.0,41.0,,
+261211,Game and Multimedia Developers,78.0,42.0,,
+261212,Web Developers,78.0,41.0,,
+261311,Analyst Programmers,88.0,40.0,,
+261312,Developer Programmers,87.0,41.0,,
+261313,Software Engineers,92.0,41.0,,
+261314,Software Testers,90.0,40.0,,
+261399,Other Software and Applications Programmers,95.0,41.0,,
+262111,Database Administrators,82.0,40.0,,
+262112,ICT Security Specialists,92.0,42.0,,
+262113,Systems Administrators,90.0,41.0,,
+263111,Computer Network and Systems Engineers,93.0,41.0,,
+263112,Network Administrators,88.0,42.0,,
+263113,Network Analysts,94.0,41.0,,
+263211,ICT Quality Assurance Engineers,87.0,41.0,,
+263212,ICT Support Engineers,92.0,40.0,,
+263213,ICT Systems Test Engineers,89.0,39.0,,
+263299,Other ICT Support and Test Engineers,89.0,41.0,,
+263311,Telecommunications Engineers,92.0,42.0,,
+263312,Telecommunications Network Engineers,89.0,41.0,,
+271211,Judges,92.0,50.0,,
+271212,Magistrates,85.0,40.0,,
+271213,Tribunal Members,56.0,44.0,,
+271214,Intellectual Property Lawyers,82.0,45.0,,
+271299,Judicial and Other Legal Professionals (not covered elsewhere),75.0,43.0,,
+272111,Careers Counsellors,57.0,41.0,,
+272112,Drug and Alcohol Counsellors,58.0,39.0,,
+272113,Family and Marriage Counsellors,42.0,40.0,,
+272114,Rehabilitation Counsellors,72.0,40.0,,
+272115,Student Counsellors,53.0,41.0,,
+272199,Other Counsellors and Life Coaches,45.0,41.0,,
+272311,Clinical Psychologists,51.0,42.0,,
+272312,Educational Psychologists,62.0,41.0,,
+272313,Organisational Psychologists,69.0,45.0,,
+272314,Psychotherapists,35.0,41.0,,
+272399,Other Psychologists,56.0,40.0,,
+272411,Historians,50.0,42.0,,
+272412,Interpreters,22.0,40.0,,
+272413,Translators,35.0,41.0,,
+272414,Archaeologists,69.0,41.0,,
+272499,Other Social Professionals,56.0,41.0,,
+272611,Community Arts Workers,51.0,39.0,,
+272612,Recreation Officers,57.0,40.0,,
+272613,Welfare Workers,60.0,41.0,,
+311211,Anaesthetic Technicians,65.0,40.0,,
+311212,Cardiac Technicians,59.0,40.0,,
+311213,Medical Laboratory Technicians,62.0,41.0,,
+311214,Operating Theatre Technicians,70.0,41.0,,
+311215,Pharmacy Technicians,52.0,40.0,,
+311216,Pathology Collectors,43.0,42.0,,
+311299,Other Medical Technicians,56.0,40.0,,
+311311,Fisheries Officers,90.0,38.0,,
+311312,Meat Inspectors,87.0,42.0,,
+311313,Quarantine Officers,73.0,41.0,,
+311399,Other Primary Products Inspectors,76.0,38.0,,
+311411,Chemistry Technicians,78.0,41.0,,
+311412,Earth Science Technicians,85.0,54.0,,
+311413,Life Science Technicians,70.0,40.0,,
+311414,School Laboratory Technicians,48.0,39.0,,
+311415,Hydrographers,88.0,42.0,,
+311499,Other Science Technicians,67.0,42.0,,
+312111,Architectural Draftspersons,75.0,43.0,,
+312112,Building Associates,93.0,48.0,,
+312113,Building Inspectors,83.0,43.0,,
+312114,Construction Estimators,87.0,42.0,,
+312115,Plumbing Inspectors,92.0,38.0,,
+312116,Surveying and Spatial Science Technicians,79.0,42.0,,
+312199,"Other Architectural, Building and Surveying Technicians",75.0,41.0,,
+312211,Civil Engineering Draftspersons,86.0,41.0,,
+312212,Civil Engineering Technicians,87.0,43.0,,
+312311,Electrical Engineering Draftspersons,84.0,41.0,,
+312312,Electrical Engineering Technicians,85.0,46.0,,
+312411,Electronic Engineering Draftspersons,70.0,37.0,,
+312412,Electronic Engineering Technicians,85.0,42.0,,
+312511,Mechanical Engineering Draftspersons,88.0,42.0,,
+312512,Mechanical Engineering Technicians,90.0,46.0,,
+312911,Maintenance Planners,94.0,48.0,,
+312912,Metallurgical and Materials Technicians,86.0,50.0,,
+312913,Mine Deputies,95.0,63.0,,
+312999,Building and Engineering Technicians (not covered elsewhere),90.0,45.0,,
+313111,Hardware Technicians,70.0,42.0,,
+313112,ICT Customer Support Officers,83.0,40.0,,
+313113,Web Administrators,72.0,41.0,,
+313199,Other ICT Support Technicians,86.0,41.0,,
+313211,Radiocommunications Technicians,86.0,42.0,,
+313212,Telecommunications Field Engineers,91.0,40.0,,
+313213,Telecommunications Network Planners,93.0,40.0,,
+313214,Telecommunications Technical Officers and Technologists,90.0,40.0,,
+321211,Motor Mechanics (General),85.0,43.0,,
+321212,Diesel Motor Mechanics,93.0,46.0,,
+321213,Motorcycle Mechanics,82.0,42.0,,
+321214,Small Engine Mechanics,78.0,41.0,,
+322111,Blacksmiths,71.0,45.0,,
+322112,Electroplaters,90.0,40.0,,
+322113,Farriers,66.0,45.0,,
+322114,Metal Casting Trades Workers,89.0,37.0,,
+322115,Metal Polishers,82.0,41.0,,
+322311,Metal Fabricators,91.0,47.0,,
+322312,Pressure Welders,88.0,36.0,,
+322313,Welders (First Class),87.0,44.0,,
+323111,Aircraft Maintenance Engineers (Avionics),93.0,42.0,,
+323112,Aircraft Maintenance Engineers (Mechanical),94.0,41.0,,
+323113,Aircraft Maintenance Engineers (Structures),89.0,40.0,,
+323211,Fitters (General),93.0,52.0,,
+323212,Fitter and Turners,92.0,44.0,,
+323213,Fitter-Welders,89.0,44.0,,
+323214,Metal Machinists (First Class),89.0,43.0,,
+323215,"Textile, Clothing and Footwear Mechanics",62.0,41.0,,
+323299,Other Metal Fitters and Machinists,91.0,47.0,,
+323311,Engravers,57.0,37.0,,
+323312,Gunsmiths,75.0,44.0,,
+323313,Locksmiths,76.0,42.0,,
+323314,Precision Instrument Makers and Repairers,82.0,40.0,,
+323315,Saw Doctors,85.0,42.0,,
+323316,Watch and Clock Makers and Repairers,62.0,41.0,,
+323411,Engineering Patternmakers,78.0,39.0,,
+323412,Toolmakers,87.0,42.0,,
+324211,Vehicle Body Builders,89.0,42.0,,
+324212,Vehicle Trimmers,76.0,43.0,,
+331111,Bricklayers,75.0,42.0,,
+331112,Stonemasons,79.0,42.0,,
+331212,Carpenters,84.0,43.0,,
+331213,Joiners,83.0,42.0,,
+333211,Fibrous Plasterers,75.0,42.0,,
+333212,Solid Plasterers,68.0,42.0,,
+334111,Plumbers (General),85.0,43.0,,
+334112,Airconditioning and Mechanical Services Plumbers,93.0,42.0,,
+334113,Drainers,87.0,45.0,,
+334114,Gasfitters,85.0,45.0,,
+334115,Roof Plumbers,84.0,43.0,,
+341111,Electricians (General),86.0,45.0,,
+341112,Electricians (Special Class),92.0,43.0,,
+341113,Lift Mechanics,89.0,43.0,,
+342211,Electrical Linesworkers,93.0,44.0,,
+342212,Technical Cable Jointers,94.0,44.0,,
+342311,Business Machine Mechanics,84.0,39.0,,
+342312,Communications Operators,91.0,46.0,,
+342313,Electronic Equipment Trades Workers,73.0,42.0,,
+342314,Electronic Instrument Trades Workers (General),91.0,46.0,,
+342315,Electronic Instrument Trades Workers (Special Class),88.0,41.0,,
+342411,Cablers (Data and Telecommunications),63.0,41.0,,
+342412,Telecommunications Cable Jointers,80.0,42.0,,
+342413,Telecommunications Linesworkers,72.0,41.0,,
+342414,Telecommunications Technicians,77.0,42.0,,
+351111,Bakers,66.0,43.0,,
+351112,Pastrycooks,56.0,43.0,,
+361111,Dog Handlers and Trainers,51.0,46.0,,
+361112,Horse Trainers,81.0,52.0,,
+361113,Pet Groomers,35.0,42.0,,
+361114,Zookeepers,63.0,40.0,,
+361115,Kennel Hands,24.0,43.0,,
+361199,Other Animal Attendants and Trainers,38.0,43.0,,
+362211,Gardeners (General),45.0,41.0,,
+362212,Arborists,80.0,43.0,,
+362213,Landscape Gardeners,72.0,42.0,,
+392111,Print Finishers,75.0,39.0,,
+392112,Screen Printers,68.0,40.0,,
+392311,Printing Machinists,85.0,41.0,,
+392312,Small Offset Printers,78.0,39.0,,
+393111,Canvas Goods Fabricators,68.0,40.0,,
+393112,Leather Goods Makers,59.0,45.0,,
+393113,Sail Makers,73.0,39.0,,
+393114,Shoemakers,67.0,42.0,,
+393211,Apparel Cutters,58.0,37.0,,
+393212,Clothing Patternmakers,47.0,45.0,,
+393213,Dressmakers and Tailors,42.0,43.0,,
+393299,Other Clothing Trades Workers,59.0,41.0,,
+394211,Furniture Finishers,74.0,42.0,,
+394212,Picture Framers,51.0,42.0,,
+394213,Wood Machinists,88.0,41.0,,
+394214,Wood Turners,62.0,27.0,,
+394299,Other Wood Machinists and Wood Trades Workers,64.0,38.0,,
+399111,Boat Builders and Repairers,84.0,42.0,,
+399112,Shipwrights,84.0,41.0,,
+399211,Chemical Plant Operators,93.0,45.0,,
+399212,Gas and Petroleum Operators,93.0,57.0,,
+399213,Power Generation Plant Operators,94.0,45.0,,
+399311,Gallery and Museum Technicians,51.0,38.0,,
+399312,Library Technicians,41.0,37.0,,
+399511,Broadcast Transmitter Operators,80.0,40.0,,
+399512,"Camera Operators (Film, Television or Video)",55.0,45.0,,
+399513,Light Technicians,55.0,45.0,,
+399514,Make Up Artists,22.0,36.0,,
+399515,Musical Instrument Makers and Repairers,49.0,45.0,,
+399516,Sound Technicians,56.0,43.0,,
+399517,Television Equipment Operators,57.0,31.0,,
+399599,Other Performing Arts Technicians,70.0,47.0,,
+399911,Divers,74.0,48.0,,
+399912,Interior Decorators,41.0,42.0,,
+399913,Optical Dispensers,34.0,39.0,,
+399914,Optical Mechanics,70.0,38.0,,
+399915,Photographer's Assistants,45.0,38.0,,
+399916,Plastics Technicians,90.0,41.0,,
+399917,Wool Classers,64.0,41.0,,
+399918,Fire Protection Equipment Technicians,87.0,43.0,,
+399999,Technicians and Trades Workers (not covered elsewhere),75.0,42.0,,
+411111,Ambulance Officers,83.0,47.0,,
+411112,Intensive Care Ambulance Paramedics,88.0,48.0,,
+411211,Dental Hygienists,29.0,37.0,,
+411212,Dental Prosthetists,69.0,43.0,,
+411213,Dental Technicians,67.0,42.0,,
+411214,Dental Therapists,45.0,40.0,,
+411411,Enrolled Nurses,41.0,41.0,,
+411412,Mothercraft Nurses,30.0,39.0,,
+411711,Community Workers,61.0,40.0,,
+411712,Disabilities Services Officers,67.0,40.0,,
+411713,Family Support Workers,51.0,40.0,,
+411714,Parole and Probation Officers,86.0,39.0,,
+411715,Residential Care Officers,73.0,43.0,,
+411716,Youth Workers,62.0,42.0,,
+421111,Child Care Workers,46.0,39.0,,
+421112,Family Day Care Workers,66.0,46.0,,
+421113,Nannies,22.0,42.0,,
+421114,Out of School Hours Care Workers,10.0,39.0,,
+422111,Aboriginal and Torres Strait Islander Education Workers,45.0,38.0,,
+422112,Integration Aides,23.0,39.0,,
+422115,Preschool Aides,21.0,38.0,,
+422116,Teachers' Aides,22.0,39.0,,
+423311,Hospital orderlies,57.0,42.0,,
+423312,Nursing Support Workers,36.0,42.0,,
+423313,Personal Care Assistants,33.0,42.0,,
+423314,Therapy Aides,28.0,40.0,,
+423411,Child and Youth Residential Care Assistants,57.0,41.0,,
+423412,Hostel Parents,48.0,46.0,,
+423413,Refuge Workers,46.0,37.0,,
+431111,Bar Attendants,23.0,42.0,,
+431112,Baristas,22.0,41.0,,
+431911,Bar Usefuls and Bussers,8.0,45.0,,
+431912,Doorpersons and Luggage Porters,33.0,37.0,,
+431999,Hospitality Workers (not covered elsewhere),24.0,42.0,,
+441211,Emergency Service Workers,88.0,59.0,,
+441212,Fire Fighters,93.0,47.0,,
+441311,Detectives,93.0,44.0,,
+441312,Police Officers,92.0,43.0,,
+442211,"Alarm, Security and Surveillance Monitors",80.0,44.0,,
+442212,Armoured Car Escorts,63.0,39.0,,
+442213,Crowd Controllers,27.0,41.0,,
+442214,Private Investigators,50.0,41.0,,
+442215,Retail Loss Prevention Officers,29.0,40.0,,
+442216,Security Consultants,84.0,42.0,,
+442217,Security Officers,70.0,45.0,,
+442299,Other Security Workers,74.0,41.0,,
+451311,Funeral Directors,77.0,43.0,,
+451399,Funeral Workers (Other),50.0,41.0,,
+451411,Gallery and Museum Guides,20.0,39.0,,
+451412,Tour Guides,41.0,46.0,,
+451511,Natural Remedy Consultants,23.0,44.0,,
+451512,Weight Loss Consultants,22.0,35.0,,
+451513,Herbalists (Western),24.0,41.0,,
+451611,Tourist Information Officers,44.0,39.0,,
+451612,Travel Consultants,53.0,40.0,,
+451711,Flight Attendants,36.0,40.0,,
+451799,Other Travel Attendants,69.0,44.0,,
+451811,Civil Celebrants,19.0,40.0,,
+451812,Hair and Beauty Salon Assistants,11.0,34.0,,
+451814,Body Artists,49.0,42.0,,
+451815,First Aid Trainers,35.0,41.0,,
+451816,Religious Assistants,32.0,40.0,,
+451899,Personal Service Workers (not covered elsewhere),23.0,42.0,,
+452211,Bungy Jump Masters,,,,
+452212,Fishing Guides,57.0,44.0,,
+452213,Hunting Guides,,,,
+452214,Mountain and Glacier Guides,,,,
+452215,Outdoor Adventure Instructors,49.0,45.0,,
+452216,Trekking Guides,25.0,129.0,,
+452217,Whitewater Rafting Guides,,,,
+452299,Other Outdoor Adventure Guides,41.0,42.0,,
+452311,"Scuba, Snorkelling and Dive instructors",52.0,47.0,,
+452312,Gymnastics Coaches and Instructors,11.0,41.0,,
+452313,Horse Riding Coaches and Instructors,39.0,44.0,,
+452314,Snowsport Instructors,16.0,38.0,,
+452315,Swimming Coaches and Instructors,8.0,41.0,,
+452316,Tennis Coaches,20.0,42.0,,
+452317,Other Sports Coaches and Instructors,27.0,45.0,,
+452318,Dog and Horse Racing Officials,70.0,41.0,,
+452321,Sports Development Officers,70.0,39.0,,
+452322,Sports Umpires,2.0,34.0,,
+452323,Other Sports Officials,27.0,37.0,,
+452411,"Footballers (Soccer, Rugby and AFL)",47.0,40.0,,
+452412,Golfers,64.0,43.0,,
+452413,Jockeys,75.0,43.0,,
+452414,Lifeguards,15.0,41.0,,
+452499,Other Sportspersons,43.0,44.0,,
+511111,Contract Administrators,87.0,43.0,,
+511112,Program and Project Administrators,80.0,42.0,,
+512211,Health Practice Managers,58.0,41.0,,
+512299,Other Practice Managers,69.0,42.0,,
+521211,Secretaries (General),39.0,41.0,,
+521212,Legal Secretaries,59.0,39.0,,
+532111,Data Entry Operators,54.0,40.0,,
+532112,Machine Shorthand Reporters,42.0,39.0,,
+532113,Typists,37.0,40.0,,
+541111,Call Centre or Contact Centre Team Leaders,82.0,40.0,,
+541112,Call Centre or Contact Centre Operators,65.0,39.0,,
+542111,Receptionists (General),48.0,40.0,,
+542112,Admissions Clerks,47.0,40.0,,
+542113,Hotel and Motel Receptionists,37.0,40.0,,
+542114,Medical Receptionists,31.0,40.0,,
+551111,Accounts Clerks,63.0,40.0,,
+551112,Cost Clerks,85.0,42.0,,
+552311,Bookmakers,81.0,42.0,,
+552312,Insurance Consultants,78.0,40.0,,
+552313,Money Market Clerks,79.0,40.0,,
+552314,Statistical Clerks,68.0,34.0,,
+561111,Betting Agency Counter Clerks,40.0,40.0,,
+561112,Bookmaker's Clerks,,,,
+561113,Telephone Betting Clerks,65.0,42.0,,
+561199,Other Betting Clerks,17.0,18.0,,
+561211,Couriers,68.0,45.0,,
+561212,Postal Delivery Officers,73.0,43.0,,
+561411,Mail Clerks,59.0,40.0,,
+561412,Postal Sorting Officers,65.0,42.0,,
+561911,Classified Advertising Clerks,59.0,41.0,,
+561912,Meter Readers,57.0,39.0,,
+561913,Parking Inspectors,80.0,40.0,,
+561999,Clerical and Office Support Workers (not covered elsewhere),42.0,40.0,,
+591112,Production Clerks,81.0,41.0,,
+591113,Purchasing Officers,84.0,41.0,,
+591115,Stock Clerks,72.0,42.0,,
+591116,Warehouse Administrators,86.0,43.0,,
+591117,Order Clerks,74.0,40.0,,
+591211,Despatching and Receiving Clerks,86.0,44.0,,
+591212,Import-Export Clerks,86.0,42.0,,
+599111,Conveyancers,69.0,42.0,,
+599112,Legal Executives,53.0,40.0,,
+599211,Clerks of Court,85.0,39.0,,
+599212,Court Bailiffs and Sheriffs,79.0,39.0,,
+599213,Court Orderlies,73.0,38.0,,
+599214,Law Clerks,58.0,40.0,,
+599215,Trust Officers,71.0,39.0,,
+599511,Customs Officers,79.0,41.0,,
+599512,Immigration Officers,79.0,41.0,,
+599513,Motor Vehicle Licence Examiners,69.0,39.0,,
+599514,Noxious Weeds and Pest Inspectors,78.0,40.0,,
+599515,Social Security Assessors,72.0,42.0,,
+599516,Taxation Inspectors,84.0,40.0,,
+599517,Train Examiners,89.0,42.0,,
+599518,Transport Operations Inspectors,90.0,41.0,,
+599521,Water Inspectors,88.0,37.0,,
+599599,Other Inspectors and Regulatory Officers,84.0,41.0,,
+599611,Insurance Investigators,71.0,39.0,,
+599612,Insurance Loss Adjusters,88.0,41.0,,
+599613,Insurance Risk Surveyors,89.0,42.0,,
+599912,"Production Assistants (Film, Television, Radio or Stage)",74.0,46.0,,
+599913,Proof Readers,23.0,35.0,,
+599914,Radio Despatchers,76.0,44.0,,
+599915,Clinical Coders,59.0,40.0,,
+599916,Facilities Administrators,83.0,40.0,,
+599999,Clerical and Administrative Workers (not covered elsewhere),52.0,41.0,,
+611111,Auctioneers,82.0,46.0,,
+611112,Stock and Station Agents,90.0,49.0,,
+611311,Sales Representatives (Building and Plumbing Supplies),89.0,42.0,,
+611312,Sales Representatives (Business Services),82.0,42.0,,
+611313,Sales Representatives (Motor Vehicle Parts and Accessories),88.0,43.0,,
+611314,Sales Representatives (Personal and Household Goods),79.0,42.0,,
+611399,Other Sales Representatives,82.0,42.0,,
+612111,Business Brokers,64.0,42.0,,
+612112,Property Managers,72.0,42.0,,
+612113,Real Estate Agency Principals,78.0,48.0,,
+612114,Real Estate Agents,79.0,46.0,,
+612115,Real Estate Representatives,75.0,45.0,,
+621311,Motor Vehicle and Caravan Salespersons,77.0,45.0,,
+621312,Motor Vehicle Parts Interpreters,82.0,42.0,,
+621711,Cash Van Salespersons,58.0,46.0,,
+621712,Door-to-door Salespersons,45.0,42.0,,
+621713,Street Vendors,28.0,49.0,,
+621911,Materials Recyclers,63.0,44.0,,
+621912,Rental Salespersons,60.0,41.0,,
+621999,Sales Assistants and Salespersons (not covered elsewhere),71.0,44.0,,
+631111,Checkout Operators,12.0,39.0,,
+631112,Cashiers,20.0,42.0,,
+639111,Models,17.0,32.0,,
+639112,Sales Demonstrators,21.0,41.0,,
+639211,Retail Buyers,84.0,43.0,,
+639212,Wool Buyers,73.0,42.0,,
+639411,Ticket Sellers,40.0,41.0,,
+639412,Transport Conductors,90.0,39.0,,
+711111,Clay Products Machine Operators,89.0,44.0,,
+711112,Concrete Products Machine Operators,88.0,46.0,,
+711113,Glass Production Machine Operators,88.0,41.0,,
+711114,Stone Processing Machine Operators,82.0,37.0,,
+711199,"Other Clay, Concrete, Glass and Stone Processing Machine Operators",88.0,40.0,,
+711311,Paper Products Machine Operators,90.0,42.0,,
+711313,Sawmilling Operators,86.0,42.0,,
+711314,Other Wood Processing Machine Operators,85.0,43.0,,
+711511,Plastic Cablemaking Machine Operators,89.0,48.0,,
+711512,Plastic Compounding and Reclamation Machine Operators,88.0,37.0,,
+711513,Plastics Fabricators and Welders,87.0,48.0,,
+711514,Plastics Production Machine Operators (General),89.0,42.0,,
+711515,Reinforced Plastic and Composite Production Workers,84.0,42.0,,
+711516,Rubber Production Machine Operators,92.0,51.0,,
+711599,Other Plastics and Rubber Production Machine Operators,87.0,36.0,,
+711711,Footwear Production Machine Operators,67.0,38.0,,
+711712,Hide and Skin Processing Machine Operators,83.0,35.0,,
+711713,Knitting Machine Operators,70.0,33.0,,
+711714,Textile Dyeing and Finishing Machine Operators,71.0,26.0,,
+711715,Weaving Machine Operators,78.0,37.0,,
+711716,Yarn Carding and Spinning Machine Operators,95.0,58.0,,
+711799,Other Textile and Footwear Production Machine Operators,74.0,38.0,,
+711911,Chemical Production Machine Operators,79.0,44.0,,
+711912,Motion Picture Projectionists,28.0,14.0,,
+711913,Sand Blasters,83.0,42.0,,
+711914,Sterilisation Technicians,58.0,41.0,,
+711999,Machine Operators (not covered elsewhere),73.0,45.0,,
+712211,Drillers,93.0,68.0,,
+712212,Miners,94.0,63.0,,
+712213,Shot Firers,94.0,68.0,,
+712911,Boiler and Engine Operators,94.0,48.0,,
+712912,Bulk Materials Handling Plant Operators,88.0,51.0,,
+712913,Cement Production Plant Operators,92.0,42.0,,
+712914,Concrete Batching Plant Operators,95.0,52.0,,
+712915,Concrete Pump Operators,81.0,47.0,,
+712916,Paper and Pulp Mill Operators,91.0,45.0,,
+712917,Railway Signal Operators,90.0,45.0,,
+712918,Train Controllers,93.0,43.0,,
+712921,Waste Water and Water Plant Operators,93.0,45.0,,
+712922,Weighbridge Operators,76.0,44.0,,
+712999,Stationary Plant Operators (not covered elsewhere),88.0,56.0,,
+721111,Agricultural and Horticultural Mobile Plant Operators,81.0,48.0,,
+721112,Logging Plant Operators,93.0,52.0,,
+721211,Earthmoving Plant Operators (General),90.0,49.0,,
+721212,Backhoe Operators,84.0,43.0,,
+721213,Bulldozer Operators,91.0,60.0,,
+721214,Excavator Operators,86.0,47.0,,
+721215,Grader Operators,92.0,52.0,,
+721216,Loader Operators,85.0,50.0,,
+721911,Aircraft Baggage Handlers and Airline Ground Crews,41.0,41.0,,
+721912,Linemarkers,73.0,44.0,,
+721913,Paving Plant Operators,88.0,45.0,,
+721914,Railway Track Plant Operators,90.0,44.0,,
+721915,Road Roller Operators,85.0,44.0,,
+721916,Streetsweeper Operators,88.0,41.0,,
+721999,Mobile Plant Operators (not covered elsewhere),84.0,50.0,,
+731111,Chauffeurs,34.0,44.0,,
+731112,Taxi Drivers,52.0,48.0,,
+731199,Other Automobile Drivers,39.0,44.0,,
+731211,Bus Drivers,60.0,42.0,,
+731212,Charter and Tour Bus Drivers,36.0,40.0,,
+731213,Passenger Coach Drivers,52.0,42.0,,
+731311,Train Drivers,92.0,44.0,,
+731312,Tram Drivers,88.0,42.0,,
+733111,Truck Drivers (General),84.0,50.0,,
+733112,Aircraft Refuellers,78.0,42.0,,
+733113,Furniture Removalist Drivers,46.0,43.0,,
+733114,Tanker Drivers,89.0,52.0,,
+733115,Tow Truck Drivers,78.0,49.0,,
+811411,Commercial Housekeepers,20.0,44.0,,
+811412,Domestic Housekeepers,24.0,47.0,,
+811511,Laundry Workers (General),44.0,40.0,,
+811512,Drycleaners,38.0,43.0,,
+811513,Ironers and Pressers,22.0,36.0,,
+811611,Carpet Cleaners,37.0,42.0,,
+811612,Window Cleaners,27.0,40.0,,
+811699,Cleaners (not covered elsewhere),61.0,43.0,,
+821111,Builder's Labourers,73.0,44.0,,
+821112,"Drainage, Sewerage and Stormwater Labourers",92.0,43.0,,
+821113,Earthmoving Labourers,78.0,44.0,,
+821114,Plumber's Assistants,65.0,41.0,,
+821411,Building Insulation Installers,69.0,43.0,,
+821412,Home Improvement Installers,73.0,43.0,,
+821711,Construction Riggers,88.0,52.0,,
+821712,Scaffolders,80.0,47.0,,
+821713,Steel Fixers,76.0,44.0,,
+821714,Structural Steel Erectors,85.0,41.0,,
+821911,Crane Chasers,80.0,48.0,,
+821912,Driller's Assistants,92.0,70.0,,
+821913,Laggers,80.0,43.0,,
+821914,Mining Support Workers,87.0,57.0,,
+821915,Surveyor's Assistants,56.0,51.0,,
+831111,Baking Factory Workers,68.0,40.0,,
+831112,Brewery Workers,80.0,42.0,,
+831113,Confectionery Makers,73.0,42.0,,
+831114,Dairy Products Makers,78.0,42.0,,
+831115,Fruit and Vegetable Factory Workers,58.0,41.0,,
+831116,Grain Mill Workers,89.0,42.0,,
+831117,Sugar Mill Workers,95.0,45.0,,
+831118,Winery Cellar Hands,80.0,39.0,,
+831199,Other Food and Drink Factory Workers,73.0,42.0,,
+831211,Meat Boners and Slicers,79.0,40.0,,
+831212,Slaughterers,80.0,40.0,,
+831311,Meat Process Workers,78.0,41.0,,
+831312,Poultry Process Workers,75.0,41.0,,
+831313,Seafood Process Workers,54.0,41.0,,
+832111,Chocolate Packers,51.0,36.0,,
+832112,Container Fillers,61.0,41.0,,
+832113,Fruit and Vegetable Packers,51.0,42.0,,
+832114,Meat Packers,70.0,40.0,,
+832115,Seafood Packers,46.0,39.0,,
+832199,Other Packers,48.0,40.0,,
+839211,Plastics Factory Workers,78.0,41.0,,
+839212,Rubber Factory Workers,77.0,44.0,,
+839311,Product Examiners,80.0,42.0,,
+839312,Product Graders,61.0,41.0,,
+839313,Product Testers,83.0,43.0,,
+839411,Paper and Pulp Mill Workers,76.0,44.0,,
+839412,Sawmill and Timber Yard Workers,81.0,40.0,,
+839413,Wood and Wood Products Factory Workers,76.0,39.0,,
+839911,Cement and Concrete Plant Workers,84.0,42.0,,
+839912,Chemical Plant Workers,81.0,40.0,,
+839913,Clay Processing Factory Workers,82.0,39.0,,
+839914,Fabric and Textile Factory Workers,58.0,40.0,,
+839915,Footwear Factory Workers,78.0,35.0,,
+839916,Glass Processing Workers,85.0,38.0,,
+839917,Hide and Skin Processing Workers,88.0,40.0,,
+839918,Recycling Workers,52.0,41.0,,
+839999,Factory Process Workers (not covered elsewhere),48.0,40.0,,
+841211,Fruit and Nut Farm Workers,65.0,41.0,,
+841212,Fruit and Nut Pickers,51.0,41.0,,
+841213,"Grain, Oilseed and Pasture Farm Workers",74.0,46.0,,
+841214,Vegetable Farm Workers,57.0,42.0,,
+841215,Vegetable Pickers,50.0,40.0,,
+841216,Vineyard Workers,61.0,41.0,,
+841217,Mushroom Pickers,57.0,40.0,,
+841299,Other Crop Farm Workers,65.0,44.0,,
+841311,Forestry Workers,66.0,42.0,,
+841312,Logging Assistants,77.0,41.0,,
+841313,Tree Fallers,81.0,49.0,,
+841411,Garden Labourers,51.0,41.0,,
+841412,Nursery Hands (Horticulture),51.0,40.0,,
+841511,Beef Cattle Farm Workers,71.0,51.0,,
+841512,Dairy Cattle Farm Workers,59.0,47.0,,
+841513,Mixed Livestock Farm Workers,66.0,46.0,,
+841514,Poultry Farm Workers,59.0,41.0,,
+841515,Sheep Farm Workers,61.0,45.0,,
+841516,Stablehands,51.0,43.0,,
+841517,Wool Handlers,53.0,38.0,,
+841599,Other Livestock Farm Workers,76.0,43.0,,
+841911,Hunter-Trappers,70.0,46.0,,
+841913,Pest Controllers,68.0,42.0,,
+841999,"Farm, Forestry and Garden Workers (not covered elsewhere)",61.0,43.0,,
+851211,Pastrycook's Assistants,30.0,39.0,,
+851299,Other Food Trades Assistants,25.0,37.0,,
+891111,Freight Handlers (Rail or Road),59.0,42.0,,
+891112,Truck Driver's Offsiders,46.0,42.0,,
+891113,Waterside Workers,67.0,44.0,,
+899211,Deck Hands,73.0,58.0,,
+899212,Fishing Hands,62.0,54.0,,
+899411,Motor Vehicle Parts and Accessories Fitters (General),84.0,41.0,,
+899412,Autoglaziers,78.0,41.0,,
+899413,Exhaust and Muffler Repairers,82.0,40.0,,
+899414,Radiator Repairers,86.0,37.0,,
+899415,Tyre Fitters,84.0,46.0,,
+899511,Printer's Assistants,66.0,40.0,,
+899512,Printing Table Workers,60.0,39.0,,
+899911,Bicycle Mechanics,55.0,40.0,,
+899912,Car Park Attendants,46.0,41.0,,
+899913,Crossing Supervisors,1.0,26.0,,
+899914,Electrical and Telecommunications Trades Assistants,70.0,43.0,,
+899915,Leaflet and Newspaper Deliverers,6.0,38.0,,
+899916,Mechanic's Assistants,70.0,44.0,,
+899917,Railways Assistants,87.0,42.0,,
+899918,Sign Erectors,68.0,42.0,,
+899921,Ticket Collectors and Ushers,18.0,38.0,,
+899922,Trolley Collectors,19.0,40.0,,
+899923,Road Traffic Controllers,52.0,45.0,,
+899999,Labourers (not covered elsewhere),68.0,45.0,,

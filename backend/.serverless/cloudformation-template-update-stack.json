@@ -97,7 +97,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-          "S3Key": "serverless/wage-fairness-api/dev/1756913492185-2025-09-03T15:31:32.185Z/wage-fairness-api.zip"
+          "S3Key": "serverless/wage-fairness-api/dev/1757530223092-2025-09-10T18:50:23.092Z/wage-fairness-api.zip"
         },
         "Handler": "handler.lambda_handler",
         "Runtime": "python3.9",
@@ -120,7 +120,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-          "S3Key": "serverless/wage-fairness-api/dev/1756913492185-2025-09-03T15:31:32.185Z/wage-fairness-api.zip"
+          "S3Key": "serverless/wage-fairness-api/dev/1757530223092-2025-09-10T18:50:23.092Z/wage-fairness-api.zip"
         },
         "Handler": "gender_gap_handler.calculate_gender_gap",
         "Runtime": "python3.9",
@@ -138,24 +138,24 @@
         "GenderDashgapLogGroup"
       ]
     },
-    "CalculateLambdaVersionBmlmSzDja7VGf13H41JoXXH1uAdAcLGmTuDFfmJc": {
+    "CalculateLambdaVersionzEukyeqBhudhQ4dhRAArtS56tZqQAzZIcjKekvwvWk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CalculateLambdaFunction"
         },
-        "CodeSha256": "V+YZK3pxFDyNVB1QmL4VldS4mFDoGNCgyELx4Rz/GGo="
+        "CodeSha256": "VemBE9ejtyN2cZLIQGXMt7p9Vcj5tvjVmCPJtfyr6Fs="
       }
     },
-    "GenderDashgapLambdaVersiontgPDmEbNo5jPYIXxL7UiVuvPVS5TPByFwf1TbxNJs": {
+    "GenderDashgapLambdaVersionFif0K2rdTC4vCqqnW2ceWaGJHVBhTSG7cdUpeQhhKXo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GenderDashgapLambdaFunction"
         },
-        "CodeSha256": "V+YZK3pxFDyNVB1QmL4VldS4mFDoGNCgyELx4Rz/GGo="
+        "CodeSha256": "VemBE9ejtyN2cZLIQGXMt7p9Vcj5tvjVmCPJtfyr6Fs="
       }
     },
     "ApiGatewayRestApi": {
@@ -406,7 +406,7 @@
         "GenderDashgapLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1756913485526": {
+    "ApiGatewayDeployment1757530217087": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -506,7 +506,7 @@
     "CalculateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CalculateLambdaVersionBmlmSzDja7VGf13H41JoXXH1uAdAcLGmTuDFfmJc"
+        "Ref": "CalculateLambdaVersionzEukyeqBhudhQ4dhRAArtS56tZqQAzZIcjKekvwvWk"
       },
       "Export": {
         "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -515,7 +515,7 @@
     "GenderDashgapLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GenderDashgapLambdaVersiontgPDmEbNo5jPYIXxL7UiVuvPVS5TPByFwf1TbxNJs"
+        "Ref": "GenderDashgapLambdaVersionFif0K2rdTC4vCqqnW2ceWaGJHVBhTSG7cdUpeQhhKXo"
       },
       "Export": {
         "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
