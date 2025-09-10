@@ -9,6 +9,28 @@ from mysql.connector import Error
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+# Industry mapping - hardcoded for performance
+INDUSTRY_MAPPING = {
+    'A': 'Agriculture, forestry and fishing',
+    'B': 'Mining', 
+    'C': 'Manufacturing',
+    'D': 'Electricity, gas, water and waste services',
+    'E': 'Construction',
+    'F': 'Wholesale trade',
+    'G': 'Retail trade',
+    'H': 'Accommodation and food services',
+    'I': 'Transport, postal and warehousing',
+    'J': 'Information media and telecommunications',
+    'K': 'Financial and insurance services',
+    'L': 'Rental, hiring and real estate services',
+    'M': 'Professional, scientific and technical services',
+    'N': 'Administrative and support services',
+    'O': 'Public administration and safety',
+    'P': 'Education and training',
+    'Q': 'Health care and social assistance',
+    'R': 'Arts and recreation services'
+}
+
 # Global data cache
 OCCUPATION_DATA = {}
 EMPLOYEES_DATA = {}
@@ -24,6 +46,26 @@ DB_CONFIG = {
     'password': 'fairwageaustralia',
     'database': 'fairwageaustralia'
 }
+
+def normalize_industry(user_input):
+    """Convert user input to industry code for database queries"""
+    user_input = user_input.strip().upper()
+    
+    # If it's already a single letter code
+    if len(user_input) == 1 and user_input in INDUSTRY_MAPPING:
+        return user_input
+    
+    # If it's a full name, find the corresponding code
+    user_lower = user_input.lower()
+    for code, full_name in INDUSTRY_MAPPING.items():
+        if user_lower == full_name.lower():
+            return code
+        # Partial match for convenience
+        if user_lower in full_name.lower():
+            return code
+    
+    # If no match found, return original (will cause error in database query)
+    return user_input
 
 def get_db_connection():
     """Create MySQL database connection"""
@@ -66,10 +108,8 @@ def load_occupation_data(cursor):
     
     query = """
         SELECT anzsco_code, occupation, 
-               share_fulltime,
-               avg_fulltime_hours,
-               median_fulltime_earnings,
-               median_fulltime_hourly_earnings
+               share_fulltime, avg_fulltime_hours,
+               median_fulltime_earnings, median_fulltime_hourly_earnings
         FROM occup_fulltime_earnings
     """
     
@@ -88,7 +128,7 @@ def load_employees_data(cursor):
     global EMPLOYEES_DATA
     
     query = """
-        SELECT `Survey month`, `State and territory`, `Category`,
+        SELECT `Survey month`, `State and territory`, `industry_code`,
                `Postgraduate Degree`, `Graduate Diploma or Certificate`, `Bachelor Degree`,
                `Advanced Diploma or Diploma`, `Certificate III or IV`, 
                `Other qualification`, `Without qualification`
@@ -111,12 +151,12 @@ def load_employees_data(cursor):
             EMPLOYEES_DATA[year] = {}
         
         state = row['State and territory']
-        industry = row['Category']
+        industry_code = row['industry_code']
         
         for education in education_fields:
             count = row[education]
             if count and count > 0:
-                key = (state, industry, education)
+                key = (state, industry_code, education)
                 EMPLOYEES_DATA[year][key] = float(count)
 
 def load_weekly_earnings_data(cursor):
@@ -124,7 +164,7 @@ def load_weekly_earnings_data(cursor):
     global WEEKLY_EARNINGS_DATA
     
     query = """
-        SELECT `Survey month`, `State and territory`, `Category`,
+        SELECT `Survey month`, `State and territory`, `industry_code`,
                `Postgraduate Degree`, `Postgraduate Degree_RSE`,
                `Graduate Diploma or Certificate`, `Graduate Diploma or Certificate_RSE`,
                `Bachelor Degree`, `Bachelor Degree_RSE`,
@@ -151,14 +191,14 @@ def load_weekly_earnings_data(cursor):
             WEEKLY_EARNINGS_DATA[year] = {}
         
         state = row['State and territory']
-        industry = row['Category']
+        industry_code = row['industry_code']
         
         for education in education_fields:
             value = row[education]
             rse = row[f'{education}_RSE']
             
             if value and value > 0:
-                key = (state, industry, education)
+                key = (state, industry_code, education)
                 WEEKLY_EARNINGS_DATA[year][key] = {
                     'value': float(value),
                     'rse': float(rse) if rse else 50.0
@@ -169,7 +209,7 @@ def load_hourly_earnings_data(cursor):
     global HOURLY_EARNINGS_DATA
     
     query = """
-        SELECT `Survey month`, `State and territory`, `Category`,
+        SELECT `Survey month`, `State and territory`, `industry_code`,
                `Postgraduate Degree`, `Postgraduate Degree_RSE`,
                `Graduate Diploma or Certificate`, `Graduate Diploma or Certificate_RSE`,
                `Bachelor Degree`, `Bachelor Degree_RSE`,
@@ -196,49 +236,34 @@ def load_hourly_earnings_data(cursor):
             HOURLY_EARNINGS_DATA[year] = {}
         
         state = row['State and territory']
-        industry = row['Category']
+        industry_code = row['industry_code']
         
         for education in education_fields:
             value = row[education]
             rse = row[f'{education}_RSE']
             
             if value and value > 0:
-                key = (state, industry, education)
+                key = (state, industry_code, education)
                 HOURLY_EARNINGS_DATA[year][key] = {
                     'value': float(value),
                     'rse': float(rse) if rse else 50.0
                 }
 
-def parse_currency(value):
-    """Parse currency value to float"""
-    if not value or value in ['N/A', 'n/a', '']:
-        return None
-    if isinstance(value, (int, float)):
-        return float(value)
-    if isinstance(value, str):
-        cleaned = value.replace('$', '').replace(',', '').strip()
-        if cleaned and cleaned not in ['N/A', 'n/a']:
-            try:
-                return float(cleaned)
-            except ValueError:
-                return None
-    return None
-
-def get_anchor_education(industry):
-    """Find education level with most employees in latest year for given industry"""
+def get_anchor_education(industry_code):
+    """Find education level with most employees in latest year for given industry code"""
     latest_year = max(EMPLOYEES_DATA.keys())
     year_data = EMPLOYEES_DATA[latest_year]
     
     education_counts = {}
-    for (state, ind, education), count in year_data.items():
-        if state == "Australia" and ind == industry:
+    for (state, ind_code, education), count in year_data.items():
+        if state == "Australia" and ind_code == industry_code:
             education_counts[education] = count
     
     if not education_counts:
-        raise ValueError(f"No employee data found for industry '{industry}'")
+        raise ValueError(f"No employee data found for industry code '{industry_code}'")
     
     anchor_education = max(education_counts.items(), key=lambda x: x[1])[0]
-    logger.info(f"Anchor education for '{industry}': {anchor_education}")
+    logger.info(f"Anchor education for industry '{industry_code}': {anchor_education}")
     return anchor_education
 
 def get_occupation_base_salary(occupation, earnings_type):
@@ -256,26 +281,27 @@ def get_occupation_base_salary(occupation, earnings_type):
                 else:
                     raise ValueError(f"No weekly earnings data for '{occupation}'")
     
-    raise ValueError(f"Occupation '{occupation}' not found")
+    available = [data['occupation'] for data in OCCUPATION_DATA.values()][:10]
+    raise ValueError(f"Occupation '{occupation}' not found. Available: {available}")
 
-def calculate_10_year_factors(industry, user_state, user_education, earnings_type):
-    """Calculate salary factors for 10 years using new logic"""
+def calculate_10_year_factors(industry_code, user_state, user_education, earnings_type):
+    """Calculate salary factors for 10 years using industry codes"""
     
     # Choose data source based on earnings_type
     earnings_data = HOURLY_EARNINGS_DATA if earnings_type == 'hourly' else WEEKLY_EARNINGS_DATA
     
-    # Get anchor education from latest year
-    anchor_education = get_anchor_education(industry)
+    # Get anchor education from latest year using industry code
+    anchor_education = get_anchor_education(industry_code)
     
     # Get latest year for baseline
     latest_year = max(earnings_data.keys())
     
     # Get baseline salary (latest year Australia anchor education)
-    baseline_key = ("Australia", industry, anchor_education)
+    baseline_key = ("Australia", industry_code, anchor_education)
     baseline_data = earnings_data[latest_year].get(baseline_key)
     
     if not baseline_data:
-        raise ValueError(f"No baseline data for {latest_year} Australia {industry} {anchor_education}")
+        raise ValueError(f"No baseline data for {latest_year} Australia industry code '{industry_code}' {anchor_education}")
     
     baseline_salary = baseline_data['value']
     
@@ -283,7 +309,7 @@ def calculate_10_year_factors(industry, user_state, user_education, earnings_typ
     yearly_factors = []
     
     for year in sorted(earnings_data.keys()):
-        user_key = (user_state, industry, user_education)
+        user_key = (user_state, industry_code, user_education)
         user_data = earnings_data[year].get(user_key)
         
         if user_data and user_data['value'] > 0:
@@ -296,11 +322,11 @@ def calculate_10_year_factors(industry, user_state, user_education, earnings_typ
                 'baseline_salary': baseline_salary,
                 'rse': user_data['rse'],
                 'anchor_education': anchor_education,
-                'source': f"{year} {user_state} {user_education} vs {latest_year} Australia {anchor_education} ({earnings_type})"
+                'source': f"{year} {user_state} {user_education} vs {latest_year} Australia {anchor_education} ({earnings_type}) [Industry: {industry_code}]"
             })
         else:
             # Skip years without data as requested
-            logger.info(f"Skipping year {year} - no data for {user_state} {industry} {user_education}")
+            logger.info(f"Skipping year {year} - no data for {user_state} industry code {industry_code} {user_education}")
     
     return yearly_factors
 
@@ -366,7 +392,7 @@ def validate_input(data):
 def calculate_fairness_score(input_data):
     """Main calculation function"""
     occupation = input_data['occupation']
-    industry = input_data['industry']
+    industry_input = input_data['industry']
     education = input_data['education']
     location = input_data['location']
     hourly_rate = float(input_data['currentHourlyRate'])
@@ -374,18 +400,21 @@ def calculate_fairness_score(input_data):
     work_intensity = input_data['workIntensity']
     earnings_type = input_data['earningsType']
     
-    # 注意：数据库中直接使用州代码，不需要映射
-    user_state = location  # 直接使用 VIC, NSW 等
+    # Normalize industry input to industry code
+    industry_code = normalize_industry(industry_input)
+    
+    # Use state code directly
+    user_state = location
     
     # Get base salary from occupation data (matching earnings type)
     base_salary = get_occupation_base_salary(occupation, earnings_type)
     
     # Get experience and intensity factors
-    experience_factor = get_experience_factor(industry, years_exp)
+    experience_factor = get_experience_factor(industry_input, years_exp)
     intensity_factor = calculate_intensity_factor(work_intensity)
     
-    # Calculate 10-year factors with chosen earnings type
-    yearly_factors = calculate_10_year_factors(industry, user_state, education, earnings_type)
+    # Calculate 10-year factors with chosen earnings type using industry code
+    yearly_factors = calculate_10_year_factors(industry_code, user_state, education, earnings_type)
     
     if not yearly_factors:
         raise Exception("No historical data available for calculation")
@@ -438,6 +467,8 @@ def calculate_fairness_score(input_data):
         "calculation": current_data['factors'],
         "dataSource": current_data['source'],
         "anchorEducation": current_data['anchorEducation'],
+        "industryCode": industry_code,
+        "industryName": INDUSTRY_MAPPING.get(industry_code, industry_input),
         "earningsType": earnings_type,
         "generatedAt": datetime.now().strftime('%Y-%m-%d %H:%M'),
         "historicalTrend": {
