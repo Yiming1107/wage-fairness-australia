@@ -241,17 +241,22 @@ def get_anchor_education(industry):
     logger.info(f"Anchor education for '{industry}': {anchor_education}")
     return anchor_education
 
-def get_occupation_base_salary(occupation):
-    """Get base hourly salary for occupation"""
+def get_occupation_base_salary(occupation, earnings_type):
+    """Get base salary for occupation based on earnings type"""
     for code, data in OCCUPATION_DATA.items():
         if data['occupation'].lower() == occupation.lower():
-            if data['hourly_earnings']:
-                return data['hourly_earnings']
-            elif data['weekly_earnings'] and data['full_time_hours'] > 0:
-                return data['weekly_earnings'] / data['full_time_hours']
+            if earnings_type == 'hourly':
+                if data['hourly_earnings']:
+                    return data['hourly_earnings']
+                else:
+                    raise ValueError(f"No hourly earnings data for '{occupation}'")
+            else:  # weekly
+                if data['weekly_earnings']:
+                    return data['weekly_earnings']
+                else:
+                    raise ValueError(f"No weekly earnings data for '{occupation}'")
     
-    available = [data['occupation'] for data in OCCUPATION_DATA.values()][:10]
-    raise ValueError(f"Occupation '{occupation}' not found. Available: {available}")
+    raise ValueError(f"Occupation '{occupation}' not found")
 
 def calculate_10_year_factors(industry, user_state, user_education, earnings_type):
     """Calculate salary factors for 10 years using new logic"""
@@ -369,16 +374,11 @@ def calculate_fairness_score(input_data):
     work_intensity = input_data['workIntensity']
     earnings_type = input_data['earningsType']
     
-    # State mapping
-    location_mapping = {
-        'VIC': 'Victoria', 'NSW': 'New South Wales', 'QLD': 'Queensland',
-        'SA': 'South Australia', 'WA': 'Western Australia', 'TAS': 'Tasmania',
-        'NT': 'Northern Territory', 'ACT': 'Australian Capital Territory'
-    }
-    user_state = location_mapping.get(location, location)
+    # 注意：数据库中直接使用州代码，不需要映射
+    user_state = location  # 直接使用 VIC, NSW 等
     
-    # Get base salary from occupation data
-    base_salary = get_occupation_base_salary(occupation)
+    # Get base salary from occupation data (matching earnings type)
+    base_salary = get_occupation_base_salary(occupation, earnings_type)
     
     # Get experience and intensity factors
     experience_factor = get_experience_factor(industry, years_exp)

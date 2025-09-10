@@ -1,0 +1,19 @@
+industry_code,industry_name
+A,"Agriculture, forestry and fishing"
+B,Mining
+C,Manufacturing
+D,"Electricity, gas, water and waste services"
+E,Construction
+F,Wholesale trade
+G,Retail trade
+H,Accommodation and food services
+I,"Transport, postal and warehousing"
+J,Information media and telecommunications
+K,Financial and insurance services
+L,"Rental, hiring and real estate services"
+M,"Professional, scientific and technical services"
+N,Administrative and support services
+O,Public administration and safety
+P,Education and training
+Q,Health care and social assistance
+R,Arts and recreation services

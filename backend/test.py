@@ -8,11 +8,11 @@ event = {
         "occupation": "Engineering Managers",
         "industry": "Mining",
         "education": "Bachelor Degree",
-        "location": "VIC",
+        "location": "Australia",
         "currentHourlyRate": 45.50,
         "yearsExperience": 5,
         "workIntensity": 75,
-        "earningsType": "hourly"
+        "earningsType": "weekly"
     })
 }
 
