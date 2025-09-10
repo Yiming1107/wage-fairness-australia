@@ -1,0 +1,122 @@
+Series 2: Demographic Analysis Tables (24 tables)
+Age Analysis Group (3 tables)
+
+2_Age_Employee_State_Gender_FullPart - Employee counts by age groups across states, gender, and full-time/part-time status
+2_Age_Hourly_State_Gender_FullPart - Hourly wage analysis by age groups across states, gender, and employment type
+2_Age_Weekly_State_Gender_FullPart - Weekly wage analysis by age groups across states, gender, and employment type
+
+Immigration Arrival Analysis Group (3 tables)
+
+2_Arrival_Employee_State_Gender_FullPart - Employee counts by arrival period across states, gender, and employment type
+2_Arrival_Hourly_State_Gender_FullPart - Hourly wage differentials by arrival period across states, gender, and employment type
+2_Arrival_Weekly_State_Gender_FullPart - Weekly wage differentials by arrival period across states, gender, and employment type
+
+Birthplace Analysis Group (3 tables)
+
+2_BirthPlace_Employee_State_Gender_FullPart - Employee counts by country of birth across states, gender, and employment type
+2_BirthPlace_Hourly_State_Gender_FullPart - Hourly wage differentials by country of birth across states, gender, and employment type
+2_BirthPlace_Weekly_State_Gender_FullPart - Weekly wage differentials by country of birth across states, gender, and employment type
+
+Family Composition Analysis Group (3 tables)
+
+2_Family_Employee_State_Gender_FullPart - Employee counts by family status across states, gender, and employment type
+2_Family_Hourly_State_Gender_FullPart - Hourly wage analysis by family status across states, gender, and employment type
+2_Family_Weekly_State_Gender_FullPart - Weekly wage analysis by family status across states, gender, and employment type
+
+Leave Entitlements Analysis Group (3 tables)
+
+2_Leave_Employee_State_Gender_FullPart - Employee counts by leave entitlements across states, gender, and employment type
+2_Leave_Hourly_State_Gender_FullPart - Hourly wage differentials by leave entitlements across states, gender, and employment type
+2_Leave_Weekly_State_Gender_FullPart - Weekly wage differentials by leave entitlements across states, gender, and employment type
+
+Wage Distribution Analysis Group (2 tables)
+
+2_Percentile_Hourly_State_Gender_FullPart - Percentile distribution of hourly wages by state, gender, and employment type
+2_Percentile_Weekly_State_Gender_FullPart - Percentile distribution of weekly wages by state, gender, and employment type
+
+Regional Analysis Group (3 tables)
+
+2_Region_Employee_State_Gender_FullPart - Employee counts by geographical regions across states, gender, and employment type
+2_Region_Hourly_State_Gender_FullPart - Hourly wage analysis by geographical regions across states, gender, and employment type
+2_Region_Weekly_State_Gender_FullPart - Weekly wage analysis by geographical regions across states, gender, and employment type
+
+Overall Statistics Group (4 tables)
+
+2_Total_Employee_State_Gender_FullPart - Total employee counts by state, gender, and employment type
+2_Total_Hourly_State_Gender_FullPart - Overall hourly wage statistics by state, gender, and employment type
+2_Total_Weekly_State_Gender_FullPart - Overall weekly wage statistics by state, gender, and employment type
+2_employees_percentile_and_quartile_earnings - Comprehensive quartile and percentile earnings analysis for all employees
+
+Series 3: Industry Analysis Tables (8 tables)
+
+3_Industry_Employee_Gender_State_HourlyRange - Employee distribution by industry, gender, state, and hourly wage ranges
+3_Industry_Employee_Gender_State_WeeklyRange - Employee distribution by industry, gender, state, and weekly wage ranges
+3_Industry_FullPart_Gender_State_Employee_Weekly_Hourly - Full-time vs part-time wage comparison by industry, gender, and state
+3_Industry_Mean_Gender_State_Weekly_Hourly - Mean weekly and hourly wages by industry, gender, and state
+3_Industry_Percentile_Gender_State_Weekly_Hourly - Percentile wage distributions by industry, gender, and state
+3_Industry_SkillLevel_Gender_State_Employee_Weekly_Hourly - Wage analysis by industry skill levels, gender, and state
+3_Industry_Total_Gender_State_Employee_Weekly_Hourly - Total industry statistics for employee counts and wages by gender and state
+3_Industry_Union_Gender_State_Employee_Weekly_Hourly - Union vs non-union wage comparison by industry, gender, and state
+
+Series 4b: Occupational Skill Level Analysis Tables (9 tables)
+
+4b_OccupationSkillLevel_Employee_Gender_HourlyRange - Employee distribution by occupation skill level, gender, and hourly wage ranges
+4b_OccupationSkillLevel_FullPartTime_Mean_Gender_Weekly_Hourly - Mean wages for full-time vs part-time by occupation skill level and gender
+4b_OccupationSkillLevel_FullPart_Gender_Employee_Weekly_Hourly - Full-time vs part-time employee wage analysis by occupation skill level and gender
+4b_OccupationSkillLevel_Gender_Employee_WeeklyRange - Employee distribution by occupation skill level, gender, and weekly wage ranges
+4b_OccupationSkillLevel_Percentile_Gender_Weekly_Hourly - Percentile wage distributions by occupation skill level and gender
+4b_OccupationSkillLevel_Total_Gender_Employee_Weekly_Hourly - Total statistics for employees and wages by occupation skill level and gender
+4b_OccupationSkillLevel_Union_Gender_Employee_Weekly_Hourly - Union vs non-union wage comparison by occupation skill level and gender
+
+Series 5: Education Level Analysis Tables (8 tables)
+
+5_Education_Employee_HourlyRange_State_Gender - Employee distribution by education level, hourly wage ranges, state, and gender
+5_Education_Employee_WeeklyRange_State_Gender - Employee distribution by education level, weekly wage ranges, state, and gender
+5_Education_Employee_Weekly_FullPartTime_State_Gender - Full-time vs part-time employee weekly wages by education level, state, and gender
+5_Education_Employee_Weekly_SkillLevel_State_Gender - Cross-analysis of education level and skill level for employee weekly wages by state and gender
+5_Education_Employee_Weekly_Union_State_Gender - Union vs non-union employee weekly wages by education level, state, and gender
+5_Education_Mean_Weekly_FullPartTime_State_Gender - Mean weekly wages for full-time vs part-time by education level, state, and gender
+5_Education_Percentile_Weekly_State_Gender - Percentile distribution of weekly wages by education level, state, and gender
+5_Education_Total_Weekly_State_Gender - Total weekly wage statistics by education level, state, and gender
+
+Series 6: Detailed Education Cross-Analysis Tables (16 tables)
+Employee Count Statistics Group (4 tables)
+
+6_Education_Employees_State_Gender_Industry - Employee counts by education level across industries, states, and gender
+6_Education_Employees_State_Gender_Occupation - Employee counts by education level across occupations, states, and gender
+6_Education_Employees_State_Gender_SkillLevel - Employee counts by education level and skill level across states and gender
+6_Education_Employees_State_Gender_Total - Total employee counts by education level across states and gender
+
+Hourly Wage Analysis Group (4 tables)
+
+6_Education_Hourly_State_Gender_Industry - Hourly wage analysis by education level across industries, states, and gender
+6_Education_Hourly_State_Gender_Occupation - Hourly wage analysis by education level across occupations, states, and gender
+6_Education_Hourly_State_Gender_SkillLevel - Hourly wage analysis by education level and skill level across states and gender
+6_Education_Hourly_State_Gender_Total - Total hourly wage statistics by education level across states and gender
+
+Weekly Wage Analysis Group (4 tables)
+
+6_Education_Weekly_State_Gender_Industry - Weekly wage analysis by education level across industries, states, and gender
+6_Education_Weekly_State_Gender_Occupation - Weekly wage analysis by education level across occupations, states, and gender
+6_Education_Weekly_State_Gender_SkillLevel - Weekly wage analysis by education level and skill level across states and gender
+6_Education_Weekly_State_Gender_Total - Total weekly wage statistics by education level across states and gender
+
+Mapping and Reference Tables (15 tables)
+Code Mapping Tables (6 tables)
+
+mapping_industry - Industry code to industry name lookup table
+mapping_main - Comprehensive statistical indicators summary including occupation, industry, and employment data
+mapping_occupation_1digit - ANZSCO 1-digit occupation code to major group name mapping
+mapping_occupation_2digit - ANZSCO 2-digit occupation code to sub-major group name mapping
+mapping_occupation_4digit - ANZSCO 4-digit occupation code to specific occupation name mapping
+mapping_occupation_industry - Cross-reference table linking occupation codes to industry codes
+
+Detailed Occupation Information Tables (7 tables)
+
+occup_age - Age distribution statistics for each occupation
+occup_desc - Detailed descriptions and explanations for each occupation
+occup_edu - Education level requirements and distributions for each occupation
+occup_fulltime - Full-time work proportions and hours statistics for each occupation
+occup_fulltime_earnings - Earnings statistics specifically for full-time employees by occupation
+occup_state - Geographic distribution of occupations across different states
+occup_tasks - Detailed task descriptions and responsibilities for each occupation

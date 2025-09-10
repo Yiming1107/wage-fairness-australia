@@ -1,0 +1,133 @@
+# FairWage Australia数据库74个表详细用途说明
+
+## 系列2：人口统计分析表（24个表）
+
+### 年龄分析组（3个表）
+1. **2_Age_Employee_State_Gender_FullPart** - 按年龄段统计各州不同性别的全职/兼职员工数量
+2. **2_Age_Hourly_State_Gender_FullPart** - 按年龄段分析各州不同性别的全职/兼职时薪水平
+3. **2_Age_Weekly_State_Gender_FullPart** - 按年龄段分析各州不同性别的全职/兼职周薪水平
+
+### 移民到澳时间分析组（3个表）
+4. **2_Arrival_Employee_State_Gender_FullPart** - 按到澳时间统计各州不同性别的全职/兼职员工数量
+5. **2_Arrival_Hourly_State_Gender_FullPart** - 按到澳时间分析各州不同性别的全职/兼职时薪差异
+6. **2_Arrival_Weekly_State_Gender_FullPart** - 按到澳时间分析各州不同性别的全职/兼职周薪差异
+
+### 出生地分析组（3个表）
+7. **2_BirthPlace_Employee_State_Gender_FullPart** - 按出生地统计各州不同性别的全职/兼职员工数量
+8. **2_BirthPlace_Hourly_State_Gender_FullPart** - 按出生地分析各州不同性别的全职/兼职时薪差异
+9. **2_BirthPlace_Weekly_State_Gender_FullPart** - 按出生地分析各州不同性别的全职/兼职周薪差异
+
+### 家庭构成分析组（3个表）
+10. **2_Family_Employee_State_Gender_FullPart** - 按家庭状况统计各州不同性别的全职/兼职员工数量
+11. **2_Family_Hourly_State_Gender_FullPart** - 按家庭状况分析各州不同性别的全职/兼职时薪水平
+12. **2_Family_Weekly_State_Gender_FullPart** - 按家庭状况分析各州不同性别的全职/兼职周薪水平
+
+### 假期权益分析组（3个表）
+13. **2_Leave_Employee_State_Gender_FullPart** - 按假期权益统计各州不同性别的全职/兼职员工数量
+14. **2_Leave_Hourly_State_Gender_FullPart** - 按假期权益分析各州不同性别的全职/兼职时薪差异
+15. **2_Leave_Weekly_State_Gender_FullPart** - 按假期权益分析各州不同性别的全职/兼职周薪差异
+
+### 薪资分布分析组（2个表）
+16. **2_Percentile_Hourly_State_Gender_FullPart** - 各州不同性别全职/兼职时薪的百分位分布
+17. **2_Percentile_Weekly_State_Gender_FullPart** - 各州不同性别全职/兼职周薪的百分位分布
+
+### 地区分析组（3个表）
+18. **2_Region_Employee_State_Gender_FullPart** - 按地理区域统计各州不同性别的全职/兼职员工数量
+19. **2_Region_Hourly_State_Gender_FullPart** - 按地理区域分析各州不同性别的全职/兼职时薪水平
+20. **2_Region_Weekly_State_Gender_FullPart** - 按地理区域分析各州不同性别的全职/兼职周薪水平
+
+### 总体统计组（4个表）
+21. **2_Total_Employee_State_Gender_FullPart** - 各州不同性别全职/兼职员工总数统计
+22. **2_Total_Hourly_State_Gender_FullPart** - 各州不同性别全职/兼职时薪总体统计
+23. **2_Total_Weekly_State_Gender_FullPart** - 各州不同性别全职/兼职周薪总体统计
+24. **2_employees_percentile_and_quartile_earnings** - 员工薪资的四分位数和百分位数总体分析
+
+## 系列3：行业分析表（8个表）
+
+25. **3_Industry_Employee_Gender_State_HourlyRange** - 按行业、性别、州和时薪区间的员工分布统计
+26. **3_Industry_Employee_Gender_State_WeeklyRange** - 按行业、性别、州和周薪区间的员工分布统计
+27. **3_Industry_FullPart_Gender_State_Employee_Weekly_Hourly** - 行业内全职/兼职员工的性别和地区薪资对比
+28. **3_Industry_Mean_Gender_State_Weekly_Hourly** - 各行业按性别和州的平均周薪和时薪
+29. **3_Industry_Percentile_Gender_State_Weekly_Hourly** - 各行业按性别和州的薪资百分位分布
+30. **3_Industry_SkillLevel_Gender_State_Employee_Weekly_Hourly** - 行业内不同技能水平的性别地区薪资分析
+31. **3_Industry_Total_Gender_State_Employee_Weekly_Hourly** - 各行业总体的性别地区员工数量和薪资统计
+32. **3_Industry_Union_Gender_State_Employee_Weekly_Hourly** - 行业内工会成员vs非工会成员的性别地区薪资对比
+
+## 系列4b：职业技能分析表（9个表）
+
+33. **4b_OccupationSkillLevel_Employee_Gender_HourlyRange** - 按职业技能水平和性别的时薪区间员工分布
+34. **4b_OccupationSkillLevel_FullPartTime_Mean_Gender_Weekly_Hourly** - 职业技能水平的全职/兼职平均薪资性别对比
+35. **4b_OccupationSkillLevel_FullPart_Gender_Employee_Weekly_Hourly** - 职业技能水平的全职/兼职员工薪资性别分析
+36. **4b_OccupationSkillLevel_Gender_Employee_WeeklyRange** - 按职业技能水平和性别的周薪区间员工分布
+37. **4b_OccupationSkillLevel_Percentile_Gender_Weekly_Hourly** - 职业技能水平的薪资百分位性别分布
+38. **4b_OccupationSkillLevel_Total_Gender_Employee_Weekly_Hourly** - 职业技能水平总体的性别员工数量和薪资
+39. **4b_OccupationSkillLevel_Union_Gender_Employee_Weekly_Hourly** - 职业技能水平工会成员vs非工会成员薪资性别对比
+
+## 系列5：教育水平分析表（8个表）
+
+40. **5_Education_Employee_HourlyRange_State_Gender** - 按教育水平、时薪区间、州和性别的员工分布
+41. **5_Education_Employee_WeeklyRange_State_Gender** - 按教育水平、周薪区间、州和性别的员工分布
+42. **5_Education_Employee_Weekly_FullPartTime_State_Gender** - 教育水平的全职/兼职员工周薪州际性别对比
+43. **5_Education_Employee_Weekly_SkillLevel_State_Gender** - 教育水平与技能水平交叉的员工周薪州际性别分析
+44. **5_Education_Employee_Weekly_Union_State_Gender** - 教育水平工会vs非工会员工周薪州际性别对比
+45. **5_Education_Mean_Weekly_FullPartTime_State_Gender** - 教育水平全职/兼职平均周薪的州际性别分析
+46. **5_Education_Percentile_Weekly_State_Gender** - 教育水平周薪百分位分布的州际性别统计
+47. **5_Education_Total_Weekly_State_Gender** - 教育水平总体周薪的州际性别统计
+
+## 系列6：教育详细交叉分析表（16个表）
+
+### 员工数量统计组（4个表）
+48. **6_Education_Employees_State_Gender_Industry** - 教育水平在各行业的员工数量州际性别分布
+49. **6_Education_Employees_State_Gender_Occupation** - 教育水平在各职业的员工数量州际性别分布
+50. **6_Education_Employees_State_Gender_SkillLevel** - 教育水平与技能等级的员工数量州际性别分布
+51. **6_Education_Employees_State_Gender_Total** - 教育水平员工总数的州际性别统计
+
+### 时薪分析组（4个表）
+52. **6_Education_Hourly_State_Gender_Industry** - 教育水平在各行业的时薪州际性别分析
+53. **6_Education_Hourly_State_Gender_Occupation** - 教育水平在各职业的时薪州际性别分析
+54. **6_Education_Hourly_State_Gender_SkillLevel** - 教育水平与技能等级的时薪州际性别分析
+55. **6_Education_Hourly_State_Gender_Total** - 教育水平时薪总体的州际性别统计
+
+### 周薪分析组（4个表）
+56. **6_Education_Weekly_State_Gender_Industry** - 教育水平在各行业的周薪州际性别分析
+57. **6_Education_Weekly_State_Gender_Occupation** - 教育水平在各职业的周薪州际性别分析
+58. **6_Education_Weekly_State_Gender_SkillLevel** - 教育水平与技能等级的周薪州际性别分析
+59. **6_Education_Weekly_State_Gender_Total** - 教育水平周薪总体的州际性别统计
+
+## 映射和参考表（15个表）
+
+### 编码映射表（5个表）
+60. **mapping_industry** - 行业代码与行业名称对照表
+61. **mapping_main** - 主要统计指标汇总表，包含职业、行业、就业等综合数据
+62. **mapping_occupation_1digit** - ANZSCO 1位数职业代码与主要职业组名称对照
+63. **mapping_occupation_2digit** - ANZSCO 2位数职业代码与子职业组名称对照
+64. **mapping_occupation_4digit** - ANZSCO 4位数职业代码与具体职业名称对照
+65. **mapping_occupation_industry** - 职业代码与行业代码的关联映射表
+
+### 职业详细信息表（7个表）
+66. **occup_age** - 各职业的年龄分布统计
+67. **occup_desc** - 各职业的详细描述说明
+68. **occup_edu** - 各职业的教育水平要求和分布
+69. **occup_fulltime** - 各职业的全职工作比例和工时统计
+70. **occup_fulltime_earnings** - 各职业全职员工的薪资统计
+71. **occup_state** - 各职业在不同州的分布情况
+72. **occup_tasks** - 各职业的主要工作任务描述
+
+### 综合关联表（2个表）
+73. **industry_occup** - 行业与职业的详细关联表
+74. **overview** - 整体概览数据，包含就业、薪资、年龄等综合指标
+
+## 表的应用场景总结
+
+这74个表可以支持以下分析需求：
+
+1. **薪资公平性研究** - 通过性别、年龄、教育、移民背景等维度识别薪资差距
+2. **劳动力市场分析** - 了解不同行业、职业、地区的就业和薪资状况
+3. **职业规划指导** - 为求职者提供基于教育背景的职业选择和薪资预期
+4. **政策制定支持** - 为政府制定劳动政策、教育政策提供数据依据
+5. **企业薪酬基准** - 为企业制定薪资标准提供市场参考数据
+6. **移民就业研究** - 分析移民群体的就业适应情况和薪资水平
+7. **工会影响评估** - 评估工会对不同行业、职业薪资的影响
+8. **教育投资回报分析** - 评估不同教育水平对收入的影响
+
+所有表都包含RSE（相对标准误差）字段，确保数据的统计可靠性。

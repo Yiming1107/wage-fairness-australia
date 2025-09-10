@@ -1,0 +1,1980 @@
+数据库: fairwageaustralia
+==================================================
+
+表名: 2_Age_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Age_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Age_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Arrival_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Arrival_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Arrival_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_BirthPlace_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_BirthPlace_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_BirthPlace_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Family_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Family_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Family_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Leave_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Leave_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Leave_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Percentile_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Percentile_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Region_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Region_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Region_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Total_Employee_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Total_Hourly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_Total_Weekly_State_Gender_FullPart
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            double          YES               None            
+Full_time_RSE        double          YES               None            
+Part_time            double          YES               None            
+Part_time_RSE        double          YES               None            
+With paid leave entitlements double          YES               None            
+With paid leave entitlements_RSE double          YES               None            
+Without paid leave entitlements double          YES               None            
+Without paid leave entitlements_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 2_employees_percentile_and_quartile_earnings
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         text            YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Full_time            text            YES               None            
+Full_time_RSE        text            YES               None            
+Part_time            text            YES               None            
+Part_time_RSE        text            YES               None            
+With paid leave entitlements text            YES               None            
+With paid leave entitlements_RSE text            YES               None            
+Without paid leave entitlements text            YES               None            
+Without paid leave entitlements_RSE text            YES               None            
+Total                text            YES               None            
+Total_RSE            text            YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 3_Industry_Employee_Gender_State_HourlyRange
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings bigint          YES               None            
+Persons Weekly Earnings_RSE bigint          YES               None            
+Persons Hourly Earnings bigint          YES               None            
+Persons Hourly Earnings_RSE bigint          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees 000_RSE double          YES               None            
+Males Weekly Earnings bigint          YES               None            
+Males Weekly Earnings_RSE bigint          YES               None            
+Males Hourly Earnings bigint          YES               None            
+Males Hourly Earnings_RSE bigint          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees 000_RSE double          YES               None            
+Females Weekly Earnings bigint          YES               None            
+Females Weekly Earnings_RSE bigint          YES               None            
+Females Hourly Earnings bigint          YES               None            
+Females Hourly Earnings_RSE bigint          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_Employee_Gender_State_WeeklyRange
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings bigint          YES               None            
+Persons Weekly Earnings_RSE bigint          YES               None            
+Persons Hourly Earnings bigint          YES               None            
+Persons Hourly Earnings_RSE bigint          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees 000_RSE double          YES               None            
+Males Weekly Earnings bigint          YES               None            
+Males Weekly Earnings_RSE bigint          YES               None            
+Males Hourly Earnings bigint          YES               None            
+Males Hourly Earnings_RSE bigint          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees 000_RSE double          YES               None            
+Females Weekly Earnings bigint          YES               None            
+Females Weekly Earnings_RSE bigint          YES               None            
+Females Hourly Earnings bigint          YES               None            
+Females Hourly Earnings_RSE bigint          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_FullPart_Gender_State_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Hourly Earnings double          YES               None            
+Persons Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees 000_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees 000_RSE double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_Mean_Gender_State_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Hourly Earnings double          YES               None            
+Persons Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 bigint          YES               None            
+Persons Employees 000_RSE bigint          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  bigint          YES               None            
+Males Employees 000_RSE bigint          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 bigint          YES               None            
+Females Employees_RSE bigint          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_Percentile_Gender_State_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Hourly Earnings double          YES               None            
+Persons Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 bigint          YES               None            
+Persons Employees 000_RSE bigint          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  bigint          YES               None            
+Males Employees 000_RSE bigint          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 bigint          YES               None            
+Females Employees_RSE bigint          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_SkillLevel_Gender_State_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Hourly Earnings double          YES               None            
+Persons Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees 000_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees 000_RSE double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_Total_Gender_State_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Hourly Earnings double          YES               None            
+Persons Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees 000_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees 000_RSE double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 3_Industry_Union_Gender_State_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Industry             text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Hourly Earnings double          YES               None            
+Persons Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees 000_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees 000_RSE double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         double          YES               None            
+ParentCategory       text            YES               None            
+Industry_Code        text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_Employee_Gender_HourlyRange
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings $ bigint          YES               None            
+RSE                  bigint          YES               None            
+Persons Median Hourly Earnings $ bigint          YES               None            
+RSE.1                bigint          YES               None            
+Persons Employees 000 double          YES               None            
+RSE.2                double          YES               None            
+Males Median Weekly Earnings $ bigint          YES               None            
+RSE.3                bigint          YES               None            
+Males Median Hourly Earnings $ bigint          YES               None            
+RSE.4                bigint          YES               None            
+Males Employees 000  double          YES               None            
+RSE.5                double          YES               None            
+Females Median Weekly Earnings $ bigint          YES               None            
+RSE.6                bigint          YES               None            
+Females Median Hourly Earnings $ bigint          YES               None            
+RSE.7                bigint          YES               None            
+Females Employees 000 double          YES               None            
+RSE.8                double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_FullPartTime_Mean_Gender_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings double          YES               None            
+Persons Median Weekly Earnings_RSE double          YES               None            
+Persons Median Hourly Earnings double          YES               None            
+Persons Median Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 bigint          YES               None            
+Persons Employees_RSE bigint          YES               None            
+Males Median Weekly Earnings double          YES               None            
+Males Median Weekly Earnings_RSE double          YES               None            
+Males Median Hourly Earnings double          YES               None            
+Males Median Hourly Earnings_RSE double          YES               None            
+Males Employees 000  bigint          YES               None            
+Males Employees_RSE  bigint          YES               None            
+Females Median Weekly Earnings double          YES               None            
+Females Median Weekly Earnings_RSE double          YES               None            
+Females Median Hourly Earnings double          YES               None            
+Females Median Hourly Earnings_RSE double          YES               None            
+Females Employees 000 bigint          YES               None            
+Females Employees_RSE bigint          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_FullPart_Gender_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings double          YES               None            
+Persons Median Weekly Earnings_RSE double          YES               None            
+Persons Median Hourly Earnings double          YES               None            
+Persons Median Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Median Weekly Earnings double          YES               None            
+Males Median Weekly Earnings_RSE double          YES               None            
+Males Median Hourly Earnings double          YES               None            
+Males Median Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Median Weekly Earnings double          YES               None            
+Females Median Weekly Earnings_RSE double          YES               None            
+Females Median Hourly Earnings double          YES               None            
+Females Median Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_Gender_Employee_WeeklyRange
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings bigint          YES               None            
+Persons Median Weekly Earnings_RSE bigint          YES               None            
+Persons Median Hourly Earnings bigint          YES               None            
+Persons Median Hourly Earnings_RSE bigint          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Median Weekly Earnings bigint          YES               None            
+Males Median Weekly Earnings_RSE bigint          YES               None            
+Males Median Hourly Earnings bigint          YES               None            
+Males Median Hourly Earnings_RSE bigint          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Median Weekly Earnings bigint          YES               None            
+Females Median Weekly Earnings_RSE bigint          YES               None            
+Females Median Hourly Earnings bigint          YES               None            
+Females Median Hourly Earnings_RSE bigint          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_Percentile_Gender_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings double          YES               None            
+Persons Median Weekly Earnings_RSE double          YES               None            
+Persons Median Hourly Earnings double          YES               None            
+Persons Median Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 bigint          YES               None            
+Persons Employees_RSE bigint          YES               None            
+Males Median Weekly Earnings double          YES               None            
+Males Median Weekly Earnings_RSE double          YES               None            
+Males Median Hourly Earnings double          YES               None            
+Males Median Hourly Earnings_RSE double          YES               None            
+Males Employees 000  bigint          YES               None            
+Males Employees_RSE  bigint          YES               None            
+Females Median Weekly Earnings double          YES               None            
+Females Median Weekly Earnings_RSE double          YES               None            
+Females Median Hourly Earnings double          YES               None            
+Females Median Hourly Earnings_RSE double          YES               None            
+Females Employees 000 bigint          YES               None            
+Females Employees_RSE bigint          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_Total_Gender_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings $ double          YES               None            
+RSE                  double          YES               None            
+Persons Median Hourly Earnings $ double          YES               None            
+RSE.1                double          YES               None            
+Persons Employees 000 double          YES               None            
+RSE.2                double          YES               None            
+Males Median Weekly Earnings $ double          YES               None            
+RSE.3                double          YES               None            
+Males Median Hourly Earnings $ double          YES               None            
+RSE.4                double          YES               None            
+Males Employees 000  double          YES               None            
+RSE.5                double          YES               None            
+Females Median Weekly Earnings $ double          YES               None            
+RSE.6                double          YES               None            
+Females Median Hourly Earnings $ double          YES               None            
+RSE.7                double          YES               None            
+Females Employees 000 double          YES               None            
+RSE.8                double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 4b_OccupationSkillLevel_Union_Gender_Employee_Weekly_Hourly
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Leave entitlements   text            YES               None            
+Occupation or Skill level text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Median Weekly Earnings double          YES               None            
+Persons Median Weekly Earnings_RSE double          YES               None            
+Persons Median Hourly Earnings double          YES               None            
+Persons Median Hourly Earnings_RSE double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Median Weekly Earnings double          YES               None            
+Males Median Weekly Earnings_RSE double          YES               None            
+Males Median Hourly Earnings double          YES               None            
+Males Median Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Median Weekly Earnings double          YES               None            
+Females Median Weekly Earnings_RSE double          YES               None            
+Females Median Hourly Earnings double          YES               None            
+Females Median Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Employee_HourlyRange_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings bigint          YES               None            
+Persons Weekly Earnings_RSE bigint          YES               None            
+Persons Weekly Earnings.1 bigint          YES               None            
+Persons Weekly Earnings_RSE.1 bigint          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Weekly Earnings bigint          YES               None            
+Males Weekly Earnings_RSE bigint          YES               None            
+Males Hourly Earnings bigint          YES               None            
+Males Hourly Earnings_RSE bigint          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Weekly Earnings bigint          YES               None            
+Females Weekly Earnings_RSE bigint          YES               None            
+Females Hourly Earnings bigint          YES               None            
+Females Hourly Earnings_RSE bigint          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Employee_WeeklyRange_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings bigint          YES               None            
+Persons Weekly Earnings_RSE bigint          YES               None            
+Persons Weekly Earnings.1 bigint          YES               None            
+Persons Weekly Earnings_RSE.1 bigint          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Weekly Earnings bigint          YES               None            
+Males Weekly Earnings_RSE bigint          YES               None            
+Males Hourly Earnings bigint          YES               None            
+Males Hourly Earnings_RSE bigint          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Weekly Earnings bigint          YES               None            
+Females Weekly Earnings_RSE bigint          YES               None            
+Females Hourly Earnings bigint          YES               None            
+Females Hourly Earnings_RSE bigint          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Employee_Weekly_FullPartTime_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Weekly Earnings.1 double          YES               None            
+Persons Weekly Earnings_RSE.1 double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Employee_Weekly_SkillLevel_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Weekly Earnings.1 double          YES               None            
+Persons Weekly Earnings_RSE.1 double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Employee_Weekly_Union_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Weekly Earnings.1 double          YES               None            
+Persons Weekly Earnings_RSE.1 double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Mean_Weekly_FullPartTime_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Weekly Earnings.1 bigint          YES               None            
+Persons Weekly Earnings_RSE.1 bigint          YES               None            
+Persons Employees 000 bigint          YES               None            
+Persons Employees_RSE bigint          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings bigint          YES               None            
+Males Hourly Earnings_RSE bigint          YES               None            
+Males Employees 000  bigint          YES               None            
+Males Employees_RSE  bigint          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings bigint          YES               None            
+Females Hourly Earnings_RSE bigint          YES               None            
+Females Employees 000 bigint          YES               None            
+Females Employees_RSE bigint          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Percentile_Weekly_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Weekly Earnings.1 double          YES               None            
+Persons Weekly Earnings_RSE.1 double          YES               None            
+Persons Employees 000 bigint          YES               None            
+Persons Employees_RSE bigint          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  bigint          YES               None            
+Males Employees_RSE  bigint          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 bigint          YES               None            
+Females Employees_RSE bigint          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 5_Education_Total_Weekly_State_Gender
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Level of highest non-school qualification text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Persons Weekly Earnings double          YES               None            
+Persons Weekly Earnings_RSE double          YES               None            
+Persons Weekly Earnings.1 double          YES               None            
+Persons Weekly Earnings_RSE.1 double          YES               None            
+Persons Employees 000 double          YES               None            
+Persons Employees_RSE double          YES               None            
+Males Weekly Earnings double          YES               None            
+Males Weekly Earnings_RSE double          YES               None            
+Males Hourly Earnings double          YES               None            
+Males Hourly Earnings_RSE double          YES               None            
+Males Employees 000  double          YES               None            
+Males Employees_RSE  double          YES               None            
+Females Weekly Earnings double          YES               None            
+Females Weekly Earnings_RSE double          YES               None            
+Females Hourly Earnings double          YES               None            
+Females Hourly Earnings_RSE double          YES               None            
+Females Employees 000 double          YES               None            
+Females Employees_RSE double          YES               None            
+Sub_Category         text            YES               None            
+ParentCategory       text            YES               None            
+
+==================================================
+
+表名: 6_Education_Employees_State_Gender_Industry
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+industry_code        text            YES               None            
+
+==================================================
+
+表名: 6_Education_Employees_State_Gender_Occupation
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+anzsco_occupation_1digit bigint          YES               None            
+
+==================================================
+
+表名: 6_Education_Employees_State_Gender_SkillLevel
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+
+==================================================
+
+表名: 6_Education_Employees_State_Gender_Total
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+
+==================================================
+
+表名: 6_Education_Hourly_State_Gender_Industry
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+industry_code        text            YES               None            
+
+==================================================
+
+表名: 6_Education_Hourly_State_Gender_Occupation
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+anzsco_occupation_1digit bigint          YES               None            
+
+==================================================
+
+表名: 6_Education_Hourly_State_Gender_SkillLevel
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+
+==================================================
+
+表名: 6_Education_Hourly_State_Gender_Total
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+
+==================================================
+
+表名: 6_Education_Weekly_State_Gender_Industry
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+industry_code        text            YES               None            
+
+==================================================
+
+表名: 6_Education_Weekly_State_Gender_Occupation
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+anzsco_occupation_1digit bigint          YES               None            
+
+==================================================
+
+表名: 6_Education_Weekly_State_Gender_SkillLevel
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+
+==================================================
+
+表名: 6_Education_Weekly_State_Gender_Total
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+Survey month         bigint          YES               None            
+Parameter            text            YES               None            
+State and territory  text            YES               None            
+Leave entitlements   text            YES               None            
+Sex                  text            YES               None            
+Classification       text            YES               None            
+Category             text            YES               None            
+Postgraduate Degree  double          YES               None            
+Postgraduate Degree_RSE double          YES               None            
+Graduate Diploma or Certificate double          YES               None            
+Graduate Diploma or Certificate_RSE double          YES               None            
+Bachelor Degree      double          YES               None            
+Bachelor Degree_RSE  double          YES               None            
+Total Bachelor Degree or Higher double          YES               None            
+Total Bachelor Degree or Higher_RSE double          YES               None            
+Advanced Diploma or Diploma double          YES               None            
+Advanced Diploma or Diploma_RSE double          YES               None            
+Certificate III or IV double          YES               None            
+Certificate III or IV_RSE double          YES               None            
+Other qualification  double          YES               None            
+Other qualification_RSE double          YES               None            
+Total With qualification double          YES               None            
+Total With qualification_RSE double          YES               None            
+Without qualification double          YES               None            
+Without qualification_RSE double          YES               None            
+Total                double          YES               None            
+Total_RSE            double          YES               None            
+
+==================================================
+
+表名: industry_occup
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+industry             text            YES               None            
+industry_code        text            YES               None            
+
+==================================================
+
+表名: mapping_industry
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+industry_code        char(1)         NO       PRI      None            
+industry_name        varchar(100)    NO                None            
+
+==================================================
+
+表名: mapping_main
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_occupation_1digit bigint          YES               None            
+major_group          text            YES               None            
+anzsco_occupation_2digit bigint          YES               None            
+sub_major_group      text            YES               None            
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+industry_code        text            YES               None            
+industry             text            YES               None            
+employed             bigint          YES               None            
+part_time_share      double          YES               None            
+female_share         double          YES               None            
+median_weekly_earnings double          YES               None            
+median_age           bigint          YES               None            
+annual_employment_growth double          YES               None            
+share_full_time_workers bigint          YES               None            
+avg_full_time_hours  bigint          YES               None            
+median_full_time_weekly_earnings double          YES               None            
+median_full_time_hourly_earnings double          YES               None            
+nsw_share            double          YES               None            
+vic_share            double          YES               None            
+qld_share            double          YES               None            
+sa_share             double          YES               None            
+wa_share             double          YES               None            
+tas_share            double          YES               None            
+nt_share             double          YES               None            
+act_share            double          YES               None            
+age_15_19            double          YES               None            
+age_20_24            double          YES               None            
+age_25_34            double          YES               None            
+age_35_44            double          YES               None            
+age_45_54            double          YES               None            
+age_55_59            double          YES               None            
+age_60_64            double          YES               None            
+age_65plus           double          YES               None            
+postgraduate_or_graduate_certificate double          YES               None            
+bachelor_degree      double          YES               None            
+advanced_diploma_or_diploma double          YES               None            
+certificate_iii_iv   double          YES               None            
+year12_completed     double          YES               None            
+year11_completed     double          YES               None            
+year10_or_below      double          YES               None            
+
+==================================================
+
+表名: mapping_occupation_1digit
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_occupation_1digit int             NO       PRI      None            
+major_group          varchar(100)    NO                None            
+
+==================================================
+
+表名: mapping_occupation_2digit
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_occupation_2digit int             NO       PRI      None            
+sub_major_group      varchar(150)    NO                None            
+anzsco_occupation_1digit int             NO       MUL      None            
+
+==================================================
+
+表名: mapping_occupation_4digit
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_occupation_1digit int             NO                None            
+major_group          varchar(100)    NO                None            
+anzsco_occupation_2digit int             NO                None            
+sub_major_group      varchar(150)    NO                None            
+anzsco_code          int             NO       PRI      None            
+occupation           varchar(150)    NO                None            
+
+==================================================
+
+表名: mapping_occupation_industry
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          int             NO       PRI      None            
+industry_code        char(1)         NO       PRI      None            
+
+==================================================
+
+表名: occup_age
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+age                  text            YES               None            
+percentage           double          YES               None            
+
+==================================================
+
+表名: occup_desc
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+description_         text            YES               None            
+
+==================================================
+
+表名: occup_edu
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+education            text            YES               None            
+percentage           double          YES               None            
+
+==================================================
+
+表名: occup_fulltime
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+share_fulltime       double          YES               None            
+avg_fulltime_hours   double          YES               None            
+median_fulltime_earnings double          YES               None            
+median_fulltime_hourly_earnings double          YES               None            
+
+==================================================
+
+表名: occup_fulltime_earnings
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+share_fulltime       double          YES               None            
+avg_fulltime_hours   double          YES               None            
+median_fulltime_earnings double          YES               None            
+median_fulltime_hourly_earnings double          YES               None            
+
+==================================================
+
+表名: occup_state
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+state                text            YES               None            
+percentage           double          YES               None            
+
+==================================================
+
+表名: occup_tasks
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+tasks                text            YES               None            
+
+==================================================
+
+表名: overview
+------------------------------
+字段名                  类型              空值       键        默认值             额外信息
+--------------------------------------------------------------------------------
+anzsco_code          bigint          YES               None            
+occupation           text            YES               None            
+employed             text            YES               None            
+part_time_share      double          YES               None            
+female_share         double          YES               None            
+median_weekly_earnings double          YES               None            
+median_age           double          YES               None            
+annual_employment_growth double          YES               None            
+
+==================================================
+
