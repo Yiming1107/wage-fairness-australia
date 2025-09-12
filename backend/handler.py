@@ -2,8 +2,7 @@ import json
 import logging
 import math
 from datetime import datetime
-import mysql.connector
-from mysql.connector import Error
+import pymysql.cursors
 
 # Setup logging
 logger = logging.getLogger()
@@ -44,7 +43,9 @@ DB_CONFIG = {
     'port': 3306,
     'user': 'admin',
     'password': 'fairwageaustralia',
-    'database': 'fairwageaustralia'
+    'database': 'fairwageaustralia',
+    'charset': 'utf8mb4',
+    'cursorclass': pymysql.cursors.DictCursor
 }
 
 def normalize_industry(user_input):
@@ -68,11 +69,11 @@ def normalize_industry(user_input):
     return user_input
 
 def get_db_connection():
-    """Create MySQL database connection"""
+    """Create MySQL database connection using PyMySQL"""
     try:
-        conn = mysql.connector.connect(**DB_CONFIG)
+        conn = pymysql.connect(**DB_CONFIG)
         return conn
-    except Error as e:
+    except Exception as e:
         logger.error(f"Database connection error: {str(e)}")
         raise Exception(f"Failed to connect to database: {str(e)}")
 
@@ -85,14 +86,12 @@ def load_all_data():
     
     try:
         conn = get_db_connection()
-        cursor = conn.cursor(dictionary=True)
         
-        load_occupation_data(cursor)
-        load_employees_data(cursor)
-        load_weekly_earnings_data(cursor)
-        load_hourly_earnings_data(cursor)
+        load_occupation_data(conn)
+        load_employees_data(conn)
+        load_weekly_earnings_data(conn)
+        load_hourly_earnings_data(conn)
         
-        cursor.close()
         conn.close()
         
         DATA_LOADED = True
@@ -102,7 +101,7 @@ def load_all_data():
         logger.error(f"Error loading data: {str(e)}")
         raise
 
-def load_occupation_data(cursor):
+def load_occupation_data(connection):
     """Load occupation salary data"""
     global OCCUPATION_DATA
     
@@ -113,17 +112,18 @@ def load_occupation_data(cursor):
         FROM occup_fulltime_earnings
     """
     
-    cursor.execute(query)
-    for row in cursor.fetchall():
-        code = str(row['anzsco_code'])
-        OCCUPATION_DATA[code] = {
-            'occupation': row['occupation'],
-            'full_time_hours': float(row['avg_fulltime_hours'] or 0),
-            'weekly_earnings': float(row['median_fulltime_earnings']) if row['median_fulltime_earnings'] else None,
-            'hourly_earnings': float(row['median_fulltime_hourly_earnings']) if row['median_fulltime_hourly_earnings'] else None
-        }
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        for row in cursor.fetchall():
+            code = str(row['anzsco_code'])
+            OCCUPATION_DATA[code] = {
+                'occupation': row['occupation'],
+                'full_time_hours': float(row['avg_fulltime_hours'] or 0),
+                'weekly_earnings': float(row['median_fulltime_earnings']) if row['median_fulltime_earnings'] else None,
+                'hourly_earnings': float(row['median_fulltime_hourly_earnings']) if row['median_fulltime_hourly_earnings'] else None
+            }
 
-def load_employees_data(cursor):
+def load_employees_data(connection):
     """Load employee count data"""
     global EMPLOYEES_DATA
     
@@ -138,28 +138,29 @@ def load_employees_data(cursor):
         AND `Leave entitlements` = 'Total employees'
     """
     
-    cursor.execute(query)
-    education_fields = [
-        'Postgraduate Degree', 'Graduate Diploma or Certificate', 'Bachelor Degree',
-        'Advanced Diploma or Diploma', 'Certificate III or IV', 
-        'Other qualification', 'Without qualification'
-    ]
-    
-    for row in cursor.fetchall():
-        year = str(row['Survey month'])
-        if year not in EMPLOYEES_DATA:
-            EMPLOYEES_DATA[year] = {}
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        education_fields = [
+            'Postgraduate Degree', 'Graduate Diploma or Certificate', 'Bachelor Degree',
+            'Advanced Diploma or Diploma', 'Certificate III or IV', 
+            'Other qualification', 'Without qualification'
+        ]
         
-        state = row['State and territory']
-        industry_code = row['industry_code']
-        
-        for education in education_fields:
-            count = row[education]
-            if count and count > 0:
-                key = (state, industry_code, education)
-                EMPLOYEES_DATA[year][key] = float(count)
+        for row in cursor.fetchall():
+            year = str(row['Survey month'])
+            if year not in EMPLOYEES_DATA:
+                EMPLOYEES_DATA[year] = {}
+            
+            state = row['State and territory']
+            industry_code = row['industry_code']
+            
+            for education in education_fields:
+                count = row[education]
+                if count and count > 0:
+                    key = (state, industry_code, education)
+                    EMPLOYEES_DATA[year][key] = float(count)
 
-def load_weekly_earnings_data(cursor):
+def load_weekly_earnings_data(connection):
     """Load weekly earnings data"""
     global WEEKLY_EARNINGS_DATA
     
@@ -178,33 +179,34 @@ def load_weekly_earnings_data(cursor):
         AND `Leave entitlements` = 'Total employees'
     """
     
-    cursor.execute(query)
-    education_fields = [
-        'Postgraduate Degree', 'Graduate Diploma or Certificate', 'Bachelor Degree',
-        'Advanced Diploma or Diploma', 'Certificate III or IV', 
-        'Other qualification', 'Without qualification'
-    ]
-    
-    for row in cursor.fetchall():
-        year = str(row['Survey month'])
-        if year not in WEEKLY_EARNINGS_DATA:
-            WEEKLY_EARNINGS_DATA[year] = {}
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        education_fields = [
+            'Postgraduate Degree', 'Graduate Diploma or Certificate', 'Bachelor Degree',
+            'Advanced Diploma or Diploma', 'Certificate III or IV', 
+            'Other qualification', 'Without qualification'
+        ]
         
-        state = row['State and territory']
-        industry_code = row['industry_code']
-        
-        for education in education_fields:
-            value = row[education]
-            rse = row[f'{education}_RSE']
+        for row in cursor.fetchall():
+            year = str(row['Survey month'])
+            if year not in WEEKLY_EARNINGS_DATA:
+                WEEKLY_EARNINGS_DATA[year] = {}
             
-            if value and value > 0:
-                key = (state, industry_code, education)
-                WEEKLY_EARNINGS_DATA[year][key] = {
-                    'value': float(value),
-                    'rse': float(rse) if rse else 50.0
-                }
+            state = row['State and territory']
+            industry_code = row['industry_code']
+            
+            for education in education_fields:
+                value = row[education]
+                rse = row[f'{education}_RSE']
+                
+                if value and value > 0:
+                    key = (state, industry_code, education)
+                    WEEKLY_EARNINGS_DATA[year][key] = {
+                        'value': float(value),
+                        'rse': float(rse) if rse else 50.0
+                    }
 
-def load_hourly_earnings_data(cursor):
+def load_hourly_earnings_data(connection):
     """Load hourly earnings data"""
     global HOURLY_EARNINGS_DATA
     
@@ -223,31 +225,32 @@ def load_hourly_earnings_data(cursor):
         AND `Leave entitlements` = 'Total employees'
     """
     
-    cursor.execute(query)
-    education_fields = [
-        'Postgraduate Degree', 'Graduate Diploma or Certificate', 'Bachelor Degree',
-        'Advanced Diploma or Diploma', 'Certificate III or IV', 
-        'Other qualification', 'Without qualification'
-    ]
-    
-    for row in cursor.fetchall():
-        year = str(row['Survey month'])
-        if year not in HOURLY_EARNINGS_DATA:
-            HOURLY_EARNINGS_DATA[year] = {}
+    with connection.cursor() as cursor:
+        cursor.execute(query)
+        education_fields = [
+            'Postgraduate Degree', 'Graduate Diploma or Certificate', 'Bachelor Degree',
+            'Advanced Diploma or Diploma', 'Certificate III or IV', 
+            'Other qualification', 'Without qualification'
+        ]
         
-        state = row['State and territory']
-        industry_code = row['industry_code']
-        
-        for education in education_fields:
-            value = row[education]
-            rse = row[f'{education}_RSE']
+        for row in cursor.fetchall():
+            year = str(row['Survey month'])
+            if year not in HOURLY_EARNINGS_DATA:
+                HOURLY_EARNINGS_DATA[year] = {}
             
-            if value and value > 0:
-                key = (state, industry_code, education)
-                HOURLY_EARNINGS_DATA[year][key] = {
-                    'value': float(value),
-                    'rse': float(rse) if rse else 50.0
-                }
+            state = row['State and territory']
+            industry_code = row['industry_code']
+            
+            for education in education_fields:
+                value = row[education]
+                rse = row[f'{education}_RSE']
+                
+                if value and value > 0:
+                    key = (state, industry_code, education)
+                    HOURLY_EARNINGS_DATA[year][key] = {
+                        'value': float(value),
+                        'rse': float(rse) if rse else 50.0
+                    }
 
 def get_anchor_education(industry_code):
     """Find education level with most employees in latest year for given industry code"""
@@ -362,11 +365,15 @@ def get_verdict(fairness_ratio):
 
 def validate_input(data):
     """Validate input data"""
-    required_fields = ['occupation', 'industry', 'education', 'location', 'currentHourlyRate', 'yearsExperience', 'workIntensity', 'earningsType']
+    required_fields = ['occupation', 'industry', 'education', 'location', 'currentHourlyRate', 'yearsExperience', 'workIntensity']
     
     for field in required_fields:
         if field not in data:
             return {'valid': False, 'message': f'Missing required field: {field}'}
+    
+    # Set default earningsType if not provided
+    if 'earningsType' not in data:
+        data['earningsType'] = 'hourly'
     
     if not isinstance(data['currentHourlyRate'], (int, float)) or data['currentHourlyRate'] <= 0:
         return {'valid': False, 'message': 'currentHourlyRate must be a positive number'}

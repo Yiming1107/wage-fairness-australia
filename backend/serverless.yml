@@ -4,6 +4,11 @@ provider:
   runtime: python3.9
   region: ap-southeast-2
 
+package:
+  exclude:
+    - test.py
+    - test2.py
+
 functions:
   calculate:
     handler: handler.lambda_handler
@@ -12,7 +17,7 @@ functions:
           path: fairness/calculate
           method: post
           cors: true
-  
+ 
   gender-gap:
     handler: gender_gap_handler.calculate_gender_gap
     events:
