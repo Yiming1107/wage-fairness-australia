@@ -5,10 +5,9 @@ from gender_gap_handler import calculate_gender_gap
 event = {
     "httpMethod": "POST",
     "body": json.dumps({
-        "state": "NSW",
-        "industry": "K"
-        ""
-    })
+  "state": "NSW",
+  "industry": "Financial and insurance services"
+})
 }
 
 # 运行测试

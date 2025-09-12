@@ -3,11 +3,16 @@ import logging
 import math
 from datetime import datetime
 import pymysql.cursors
+import re
 
 # Setup logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
-
+def normalize_for_comparison(text):
+    """标准化文本用于比较：去除空格、符号，转小写"""
+    if not text:
+        return ""
+    return re.sub(r'[^\w]', '', str(text).lower())
 # Industry mapping - hardcoded for performance
 INDUSTRY_MAPPING = {
     'A': 'Agriculture, forestry and fishing',
@@ -56,13 +61,12 @@ def normalize_industry(user_input):
     if len(user_input) == 1 and user_input in INDUSTRY_MAPPING:
         return user_input
     
-    # If it's a full name, find the corresponding code
-    user_lower = user_input.lower()
+    # Normalize user input for comparison
+    normalized_input = normalize_for_comparison(user_input)
+    
+    # Exact match with normalized comparison
     for code, full_name in INDUSTRY_MAPPING.items():
-        if user_lower == full_name.lower():
-            return code
-        # Partial match for convenience
-        if user_lower in full_name.lower():
+        if normalized_input == normalize_for_comparison(full_name):
             return code
     
     # If no match found, return original (will cause error in database query)
@@ -271,8 +275,11 @@ def get_anchor_education(industry_code):
 
 def get_occupation_base_salary(occupation, earnings_type):
     """Get base salary for occupation based on earnings type"""
+    # Normalize user input for comparison
+    normalized_input = normalize_for_comparison(occupation)
+    
     for code, data in OCCUPATION_DATA.items():
-        if data['occupation'].lower() == occupation.lower():
+        if normalized_input == normalize_for_comparison(data['occupation']):
             if earnings_type == 'hourly':
                 if data['hourly_earnings']:
                     return data['hourly_earnings']
