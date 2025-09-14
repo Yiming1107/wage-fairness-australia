@@ -1,0 +1,146 @@
+PS C:\Users\ROG\Documents\5120\Final\wage-fairness-australia> & C:/Python312/python.exe "c:/Users/ROG/Documents/5120/Final/wage-fairness-australia/backend/test gender.py"
+Status Code: 200
+Response:
+{
+  "success": true,
+  "data": {
+    "state": "NSW",
+    "industry_name": "Financial and insurance services",
+    "matched_from_input": "Financial and insurance services",
+    "historical_earnings": {
+      "yearly_data": [
+        {
+          "year": "2014",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 1741.3854999999999,
+          "male_weekly_earnings_rse": 6.800000000000001,
+          "female_weekly_earnings": 1151.6105,
+          "female_weekly_earnings_rse": 6.35,
+          "weekly_pay_gap_percentage": 33.87
+        },
+        {
+          "year": "2015",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 1731.0675,
+          "male_weekly_earnings_rse": 6.199999999999999,
+          "female_weekly_earnings": 1261.817,
+          "female_weekly_earnings_rse": 9.3,
+          "weekly_pay_gap_percentage": 27.11
+        },
+        {
+          "year": "2016",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 1711.7723333333336,
+          "male_weekly_earnings_rse": 9.066666666666668,
+          "female_weekly_earnings": 1251.0483333333332,
+          "female_weekly_earnings_rse": 13.833333333333336,
+          "weekly_pay_gap_percentage": 26.92
+        },
+        {
+          "year": "2017",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 1960.742,
+          "male_weekly_earnings_rse": 7.6,
+          "female_weekly_earnings": 1489.6789999999999,
+          "female_weekly_earnings_rse": 24.099999999999998,
+          "weekly_pay_gap_percentage": 24.02
+        },
+        {
+          "year": "2018",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 2022.99,
+          "male_weekly_earnings_rse": 7.0,
+          "female_weekly_earnings": 1411.5676666666666,
+          "female_weekly_earnings_rse": 21.566666666666666,
+          "weekly_pay_gap_percentage": 30.22
+        },
+        {
+          "year": "2019",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 1975.5349999999999,
+          "male_weekly_earnings_rse": 26.96666666666667,
+          "female_weekly_earnings": 1757.6275,
+          "female_weekly_earnings_rse": 7.300000000000001,
+          "weekly_pay_gap_percentage": 11.03
+        },
+        {
+          "year": "2020",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 2024.9143333333334,
+          "male_weekly_earnings_rse": 23.333333333333332,
+          "female_weekly_earnings": 1510.17,
+          "female_weekly_earnings_rse": 5.8,
+          "weekly_pay_gap_percentage": 25.42
+        },
+        {
+          "year": "2021",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 2299.0220000000004,
+          "male_weekly_earnings_rse": 24.166666666666668,
+          "female_weekly_earnings": 1562.3425000000002,
+          "female_weekly_earnings_rse": 3.4,
+          "weekly_pay_gap_percentage": 32.04
+        },
+        {
+          "year": "2022",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 2221.7135,
+          "male_weekly_earnings_rse": 7.5,
+          "female_weekly_earnings": 1921.063,
+          "female_weekly_earnings_rse": 25.233333333333334,
+          "weekly_pay_gap_percentage": 13.53
+        },
+        {
+          "year": "2023",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 2454.6115,
+          "male_weekly_earnings_rse": 5.75,
+          "female_weekly_earnings": 2000.0,
+          "female_weekly_earnings_rse": 8.15,
+          "weekly_pay_gap_percentage": 18.52
+        },
+        {
+          "year": "2024",
+          "state": "NSW",
+          "industry": "Financial and insurance services",
+          "male_weekly_earnings": 1836.3163333333334,
+          "male_weekly_earnings_rse": 17.833333333333336,
+          "female_weekly_earnings": 1732.034,
+          "female_weekly_earnings_rse": 6.699999999999999,
+          "weekly_pay_gap_percentage": 5.68
+        }
+      ],
+      "latest_year_data": {
+        "year": "2024",
+        "state": "NSW",
+        "industry": "Financial and insurance services",
+        "male_weekly_earnings": 1836.3163333333334,
+        "male_weekly_earnings_rse": 17.833333333333336,
+        "female_weekly_earnings": 1732.034,
+        "female_weekly_earnings_rse": 6.699999999999999,
+        "weekly_pay_gap_percentage": 5.68
+      }
+    },
+    "industry_statistics": {
+      "average_midpoint": 22.2,
+      "median_midpoint": 22.2,
+      "total_women_percentage": 53.0,
+      "women_by_quartile": {
+        "upper_quartile": 36.0,
+        "upper_middle_quartile": 48.0,
+        "lower_middle_quartile": 60.0,
+        "lower_quartile": 67.0
+      }
+    }
+  }
+}
