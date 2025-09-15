@@ -1,4 +1,5 @@
 service: wage-fairness-api
+
 provider:
   name: aws
   runtime: python3.9
@@ -23,5 +24,13 @@ functions:
     events:
       - http:
           path: gender-gap/calculate
+          method: post
+          cors: true
+
+  suburb-score:
+    handler: suburb_scoring_handler.score_suburb
+    events:
+      - http:
+          path: suburb/score
           method: post
           cors: true
