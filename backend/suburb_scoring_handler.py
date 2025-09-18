@@ -18,6 +18,61 @@ DB_CONFIG = {
     'cursorclass': pymysql.cursors.DictCursor
 }
 
+# 行业映射 - 标准化输入到正确名称
+INDUSTRY_MAPPING = {
+    'currentlyunknown': 'Currently Unknown',
+    'mining': 'Mining',
+    'informationmediaandtelecommunications': 'Information Media and Telecommunications',
+    'publicadministrationandsafety': 'Public Administration and Safety',
+    'electricitygaswaterandwasteservices': 'Electricity, Gas, Water and Waste Services',
+    'financialandinsuranceservices': 'Financial and Insurance Services',
+    'agricultureforestryandfishing': 'Agriculture, Forestry and Fishing',
+    'artsandrecreationservices': 'Arts and Recreation Services',
+    'rentalhiringandrealestateservices': 'Rental, Hiring and Real Estate Services',
+    'transportpostalandwarehousing': 'Transport, Postal and Warehousing',
+    'wholesaletrade': 'Wholesale Trade',
+    'educationandtraining': 'Education and Training',
+    'otherservices': 'Other Services',
+    'administrativeandsupportservices': 'Administrative and Support Services',
+    'manufacturing': 'Manufacturing',
+    'professionalscientificandtechnicalservices': 'Professional, Scientific and Technical Services',
+    'retailtrade': 'Retail Trade',
+    'accommodationandfoodservices': 'Accommodation and Food Services',
+    'healthcareandsocialassistance': 'Health Care and Social Assistance',
+    'construction': 'Construction'
+}
+
+def normalize_string(text):
+    """
+    标准化字符串：移除空格、符号，转换为小写
+    """
+    if not text:
+        return ""
+    return ''.join(c.lower() for c in text if c.isalnum())
+
+def find_suburb_match(input_suburb, cursor):
+    """
+    在数据库中查找匹配的郊区名称
+    """
+    # 先尝试精确匹配
+    cursor.execute("SELECT SAL_NAME21 FROM epic3_mapping_suburb_postcode WHERE SAL_NAME21 = %s", (input_suburb,))
+    result = cursor.fetchone()
+    if result:
+        return result['SAL_NAME21']
+    
+    # 获取所有郊区名称进行标准化匹配
+    cursor.execute("SELECT DISTINCT SAL_NAME21 FROM epic3_mapping_suburb_postcode WHERE SAL_NAME21 IS NOT NULL")
+    all_suburbs = cursor.fetchall()
+    
+    normalized_input = normalize_string(input_suburb)
+    
+    for suburb in all_suburbs:
+        suburb_name = suburb['SAL_NAME21']
+        if normalize_string(suburb_name) == normalized_input:
+            return suburb_name
+    
+    return None
+
 # 基于实际数据分析的行业密度系数
 INDUSTRY_DENSITY_COEFFICIENTS = {
     'Currently Unknown': 104.7,                             # 大幅提高
@@ -41,9 +96,10 @@ INDUSTRY_DENSITY_COEFFICIENTS = {
     'Health Care and Social Assistance': 2.9,               # 微调
     'Construction': 2.6                                      # 微调
 }
+
 def score_suburb(event, context):
     """
-    基于数据驱动的密度调整suburb评分API（在原有基础上新增犯罪安全评分）
+    基于数据驱动的密度调整suburb评分API（支持简单标准化匹配）
     """
     if event.get('httpMethod') == 'OPTIONS':
         return {
@@ -60,15 +116,27 @@ def score_suburb(event, context):
     try:
         # 解析请求
         body = json.loads(event['body'])
-        suburb_name = body.get('sub')
-        industry_name = body.get('industry')
+        input_suburb = body.get('sub', '').strip()
+        input_industry = body.get('industry', '').strip()
         input_population = body.get('population')  # 可选的人口输入
         
-        if not suburb_name or not industry_name:
+        if not input_suburb or not input_industry:
             return error_response(400, 'MISSING_PARAMS', 'sub和industry参数必需')
         
         connection = pymysql.connect(**DB_CONFIG)
         cursor = connection.cursor()
+        
+        # 查找匹配的郊区和行业
+        suburb_name = find_suburb_match(input_suburb, cursor)
+        industry_name = INDUSTRY_MAPPING.get(normalize_string(input_industry))
+        
+        if not suburb_name:
+            return error_response(404, 'SUBURB_NOT_FOUND', f'未找到地区: {input_suburb}')
+        
+        if not industry_name:
+            available_industries = list(INDUSTRY_MAPPING.values())
+            return error_response(404, 'INDUSTRY_NOT_FOUND', f'未找到行业: {input_industry}. 可用行业包括: {", ".join(available_industries[:5])}...')
+        
         
         # 1. 获取SAL_CODE21
         cursor.execute("SELECT SAL_CODE21 FROM epic3_mapping_suburb_postcode WHERE SAL_NAME21 = %s", (suburb_name,))
@@ -134,7 +202,7 @@ def score_suburb(event, context):
             pop_result = cursor.fetchone()
             population = int(pop_result['population']) if pop_result and pop_result['population'] else 0
         
-        # 获取2025年犯罪数据（新增）
+        # 获取2025年犯罪数据
         cursor.execute("""
             SELECT SUM(CAST(`Incidents Recorded` AS UNSIGNED)) as total_crimes
             FROM epic3_crime 
@@ -160,7 +228,7 @@ def score_suburb(event, context):
             cost_score = 100 - ((house_price - 300000) / (2000000 - 300000)) * 90
             cost_calculation = f"House price ${house_price:,.0f}: 100 - (({house_price:,.0f} - 300k) / 1.7M) × 90 = {cost_score:.1f} points"
         
-        # 2. 交通便利评分 - 原有逻辑
+        # 2. 交通便利评分
         if transport_stops == 0:
             transport_score = 0
             transport_calculation = "No transport stops = 0 points"
@@ -172,7 +240,7 @@ def score_suburb(event, context):
             else:
                 transport_calculation = f"Transport density: {transport_density:.4f} stops/km² × 8 = {transport_score:.1f} points"
         
-        # 3. 儿童保障评分 - 原有逻辑
+        # 3. 儿童保障评分
         school_density = school_count / area_sqkm
         childcare_density = childcare_count / area_sqkm
         child_score = min(100, school_density * 58 + childcare_density * 18)
@@ -185,7 +253,7 @@ def score_suburb(event, context):
         else:
             child_calculation = f"Child care score: {school_density:.4f} schools/km² × 58 + {childcare_density:.4f} childcare/km² × 18 = {school_points:.1f} + {childcare_points:.1f} = {child_score:.1f} points"
         
-        # 4. 行业就业评分 - 原有逻辑
+        # 4. 行业就业评分
         industry_coefficient = INDUSTRY_DENSITY_COEFFICIENTS.get(industry_name, 10.0)
         
         if industry_employment == 0:
@@ -224,11 +292,11 @@ def score_suburb(event, context):
                 safety_score = 100 - (crime_rate / 200) * 95
                 safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people: 100 - ({crime_rate:.2f} / 200) × 95 = {safety_score:.1f} points"
         
-        # 6. 综合评分 (调整为5项平均，包含新增的安全评分)
+        # 6. 综合评分
         overall_score = (cost_score + transport_score + child_score + industry_score + safety_score) / 5
         overall_calculation = f"({cost_score:.1f} + {transport_score:.1f} + {child_score:.1f} + {industry_score:.1f} + {safety_score:.1f}) ÷ 5 = {overall_score:.1f} points"
         
-        # 构建返回结果（保持原有格式，只新增安全相关字段）
+        # 构建返回结果
         result = {
             'suburb': suburb_name,
             'industry': industry_name,
@@ -241,7 +309,7 @@ def score_suburb(event, context):
                 'transport': round(transport_score, 1),
                 'child_care': round(child_score, 1),
                 'industry': round(industry_score, 1),
-                'safety': round(safety_score, 1),  # 新增
+                'safety': round(safety_score, 1),
                 'overall': round(overall_score, 1)
             },
             'raw_data': {
@@ -250,8 +318,8 @@ def score_suburb(event, context):
                 'schools': school_count,
                 'childcare_services': childcare_count,
                 'industry_employment': industry_employment,
-                'population': population,  # 新增
-                'total_crimes_2025': total_crimes,  # 新增
+                'population': population,
+                'total_crimes_2025': total_crimes,
                 'area_sqkm': area_sqkm
             },
             'density_data': {
@@ -259,14 +327,14 @@ def score_suburb(event, context):
                 'school_density': round(school_count / area_sqkm, 4) if area_sqkm > 0 else 0,
                 'childcare_density': round(childcare_count / area_sqkm, 4) if area_sqkm > 0 else 0,
                 'industry_density': round(industry_employment / area_sqkm, 4) if area_sqkm > 0 else 0,
-                'crime_rate_per_1000': round(crime_rate, 2)  # 新增
+                'crime_rate_per_1000': round(crime_rate, 2)
             },
             'calculation': {
                 'cost_of_living': cost_calculation,
                 'transport': transport_calculation,
                 'child_care': child_calculation,
                 'industry': industry_calculation,
-                'safety': safety_calculation,  # 新增
+                'safety': safety_calculation,
                 'overall': overall_calculation
             },
             'coefficients_used': {
