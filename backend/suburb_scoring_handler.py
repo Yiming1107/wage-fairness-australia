@@ -154,70 +154,70 @@ def score_suburb(event, context):
         # 1. 生活成本评分 (房价，线性函数)
         if house_price == 0:
             cost_score = 50
-            cost_calculation = "无房价数据，默认50分"
+            cost_calculation = "No house price data, default 50 points"
         elif house_price <= 300000:
             cost_score = 100
-            cost_calculation = f"房价{house_price:,.0f} <= 300,000，满分100分"
+            cost_calculation = f"House price ${house_price:,.0f} <= $300,000, full score 100 points"
         elif house_price >= 2000000:
             cost_score = 10
-            cost_calculation = f"房价{house_price:,.0f} >= 2,000,000，最低10分"
+            cost_calculation = f"House price ${house_price:,.0f} >= $2,000,000, minimum 10 points"
         else:
             # 30万到200万之间，从100分线性下降到10分
             cost_score = 100 - ((house_price - 300000) / (2000000 - 300000)) * 90
-            cost_calculation = f"房价{house_price:,.0f}，线性计算 = {cost_score:.1f}分"
+            cost_calculation = f"Linear: 100 - (({house_price:,.0f} - 300,000) / (2,000,000 - 300,000)) × 90 = {cost_score:.1f} points"
         
         # 2. 交通便利评分 - 原有逻辑
         if transport_stops == 0:
             transport_score = 0
-            transport_calculation = "无交通站点 = 0分"
+            transport_calculation = "No transport stops = 0 points"
         else:
             transport_density = transport_stops / area_sqkm
             transport_score = min(100, transport_density * 8)
-            transport_calculation = f"min(100, {transport_density:.4f}站点/km² × 8) = min(100, {transport_density * 8:.1f}) = {transport_score:.1f}分"
+            transport_calculation = f"min(100, {transport_density:.4f} stops/km² × 8) = min(100, {transport_density * 8:.1f}) = {transport_score:.1f} points"
         
         # 3. 儿童保障评分 - 原有逻辑
         school_density = school_count / area_sqkm
         childcare_density = childcare_count / area_sqkm
         child_score = min(100, school_density * 58 + childcare_density * 18)
-        child_calculation = f"min(100, {school_density:.4f}所/km² × 58 + {childcare_density:.4f}个/km² × 18) = min(100, {school_density * 58:.1f} + {childcare_density * 18:.1f}) = {child_score:.1f}分"
+        child_calculation = f"min(100, {school_density:.4f} schools/km² × 58 + {childcare_density:.4f} childcare/km² × 18) = min(100, {school_density * 58:.1f} + {childcare_density * 18:.1f}) = {child_score:.1f} points"
         
         # 4. 行业就业评分 - 原有逻辑
         industry_coefficient = INDUSTRY_DENSITY_COEFFICIENTS.get(industry_name, 10.0)
         
         if industry_employment == 0:
             industry_score = 0
-            industry_calculation = f"该地区{industry_name}行业无就业数据 = 0分"
+            industry_calculation = f"No employment data for {industry_name} industry = 0 points"
         else:
             industry_density = industry_employment / area_sqkm
             industry_score = min(100, industry_density * industry_coefficient)
-            industry_calculation = f"min(100, {industry_density:.3f}人/km² × {industry_coefficient}) = min(100, {industry_density * industry_coefficient:.1f}) = {industry_score:.1f}分"
+            industry_calculation = f"min(100, {industry_density:.3f} employees/km² × {industry_coefficient}) = min(100, {industry_density * industry_coefficient:.1f}) = {industry_score:.1f} points"
         
         # 5. 犯罪安全评分（线性函数）
         if population < 50:
             safety_score = 60
             crime_rate = 0
-            safety_calculation = f"人口{population}过少，犯罪率不可靠，默认60分"
+            safety_calculation = f"Population {population} too small for reliable crime rate, default 60 points"
         elif population == 0:
             safety_score = 50
             crime_rate = 0
-            safety_calculation = "无人口数据，默认50分"
+            safety_calculation = "No population data, default 50 points"
         else:
             crime_rate = (total_crimes / population) * 1000
             
             if crime_rate <= 0:
                 safety_score = 100
-                safety_calculation = f"无犯罪记录，满分100分"
+                safety_calculation = "No crime records, full score 100 points"
             elif crime_rate >= 200:
                 safety_score = 5
-                safety_calculation = f"犯罪率{crime_rate:.2f}/1000人 >= 200，最低5分"
+                safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people >= 200, minimum 5 points"
             else:
                 # 0到200犯罪率之间，从100分线性下降到5分
                 safety_score = 100 - (crime_rate / 200) * 95
-                safety_calculation = f"犯罪率{crime_rate:.2f}/1000人，线性计算 = {safety_score:.1f}分"
+                safety_calculation = f"Linear: 100 - ({crime_rate:.2f} / 200) × 95 = {safety_score:.1f} points"
         
         # 6. 综合评分 (调整为5项平均，包含新增的安全评分)
         overall_score = (cost_score + transport_score + child_score + industry_score + safety_score) / 5
-        overall_calculation = f"({cost_score:.1f} + {transport_score:.1f} + {child_score:.1f} + {industry_score:.1f} + {safety_score:.1f}) ÷ 5 = {overall_score:.1f}分"
+        overall_calculation = f"({cost_score:.1f} + {transport_score:.1f} + {child_score:.1f} + {industry_score:.1f} + {safety_score:.1f}) ÷ 5 = {overall_score:.1f} points"
         
         # 构建返回结果（保持原有格式，只新增安全相关字段）
         result = {
