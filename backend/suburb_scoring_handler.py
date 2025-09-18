@@ -20,33 +20,27 @@ DB_CONFIG = {
 
 # 基于实际数据分析的行业密度系数
 INDUSTRY_DENSITY_COEFFICIENTS = {
-    # 高系数行业 (中位就业人数低，需要更高系数)
-    'Mining': 20.0,                                         # 中位6人
-    'Agriculture, Forestry and Fishing': 20.0,              # 中位44人
-    'Electricity, Gas, Water and Waste Services': 20.0,     # 中位14人
-    'Information Media and Telecommunications': 20.0,        # 中位10人
-    'Public Administration and Safety': 20.0,               # 中位30人
-    'Arts and Recreation Services': 20.0,                   # 中位40人
-    'Financial and Insurance Services': 20.0,               # 中位38人
-    'Transport, Postal and Warehousing': 20.0,              # 中位62人
-    'Wholesale Trade': 20.0,                                # 中位58人
-    'Rental, Hiring and Real Estate Services': 20.0,        # 中位52人
-    'Education and Training': 20.0,                         # 中位52人
-    'Currently Unknown': 20.0,                              # 中位6人
-    
-    # 中等系数行业
-    'Other Services': 14.4,                                 # 中位104人
-    'Administrative and Support Services': 10.3,            # 中位146人
-    'Professional, Scientific and Technical Services': 8.0, # 中位188人
-    
-    # 低系数行业 (中位就业人数高，系数较低)
-    'Manufacturing': 4.7,                                   # 中位316人
-    'Construction': 3.9,                                    # 中位388人
-    'Retail Trade': 3.7,                                    # 中位402人
-    'Health Care and Social Assistance': 3.6,               # 中位418人
-    'Accommodation and Food Services': 3.3                  # 中位460人
+    'Currently Unknown': 104.7,                             # 大幅提高
+    'Mining': 83.4,                                         # 大幅提高
+    'Information Media and Telecommunications': 65.9,        # 大幅提高
+    'Public Administration and Safety': 59.0,               # 大幅提高
+    'Electricity, Gas, Water and Waste Services': 56.1,     # 大幅提高
+    'Financial and Insurance Services': 26.0,               # 适度提高
+    'Agriculture, Forestry and Fishing': 25.1,              # 适度提高
+    'Arts and Recreation Services': 23.1,                   # 适度提高
+    'Rental, Hiring and Real Estate Services': 17.9,        # 适度降低
+    'Transport, Postal and Warehousing': 15.3,              # 适度降低
+    'Wholesale Trade': 11.6,                                # 明显降低
+    'Education and Training': 11.2,                         # 明显降低
+    'Other Services': 8.3,                                  # 明显降低
+    'Administrative and Support Services': 6.3,             # 明显降低
+    'Manufacturing': 6.0,                                   # 适度提高
+    'Professional, Scientific and Technical Services': 5.0, # 明显降低
+    'Retail Trade': 3.5,                                    # 微调
+    'Accommodation and Food Services': 2.9,                 # 微调
+    'Health Care and Social Assistance': 2.9,               # 微调
+    'Construction': 2.6                                      # 微调
 }
-
 def score_suburb(event, context):
     """
     基于数据驱动的密度调整suburb评分API（在原有基础上新增犯罪安全评分）
@@ -154,17 +148,17 @@ def score_suburb(event, context):
         # 1. 生活成本评分 (房价，线性函数)
         if house_price == 0:
             cost_score = 50
-            cost_calculation = "No house price data, default 50 points"
+            cost_calculation = "No house price data = 50 points"
         elif house_price <= 300000:
             cost_score = 100
-            cost_calculation = f"House price ${house_price:,.0f} <= $300,000, full score 100 points"
+            cost_calculation = f"House price ${house_price:,.0f} ≤ $300k = 100 points"
         elif house_price >= 2000000:
             cost_score = 10
-            cost_calculation = f"House price ${house_price:,.0f} >= $2,000,000, minimum 10 points"
+            cost_calculation = f"House price ${house_price:,.0f} ≥ $2M = 10 points"
         else:
             # 30万到200万之间，从100分线性下降到10分
             cost_score = 100 - ((house_price - 300000) / (2000000 - 300000)) * 90
-            cost_calculation = f"Linear: 100 - (({house_price:,.0f} - 300,000) / (2,000,000 - 300,000)) × 90 = {cost_score:.1f} points"
+            cost_calculation = f"House price ${house_price:,.0f}: 100 - (({house_price:,.0f} - 300k) / 1.7M) × 90 = {cost_score:.1f} points"
         
         # 2. 交通便利评分 - 原有逻辑
         if transport_stops == 0:
@@ -173,13 +167,23 @@ def score_suburb(event, context):
         else:
             transport_density = transport_stops / area_sqkm
             transport_score = min(100, transport_density * 8)
-            transport_calculation = f"min(100, {transport_density:.4f} stops/km² × 8) = min(100, {transport_density * 8:.1f}) = {transport_score:.1f} points"
+            if transport_score >= 100:
+                transport_calculation = f"Transport density: {transport_density:.4f} stops/km² × 8 = {transport_density * 8:.1f}, capped at 100 points"
+            else:
+                transport_calculation = f"Transport density: {transport_density:.4f} stops/km² × 8 = {transport_score:.1f} points"
         
         # 3. 儿童保障评分 - 原有逻辑
         school_density = school_count / area_sqkm
         childcare_density = childcare_count / area_sqkm
         child_score = min(100, school_density * 58 + childcare_density * 18)
-        child_calculation = f"min(100, {school_density:.4f} schools/km² × 58 + {childcare_density:.4f} childcare/km² × 18) = min(100, {school_density * 58:.1f} + {childcare_density * 18:.1f}) = {child_score:.1f} points"
+        school_points = school_density * 58
+        childcare_points = childcare_density * 18
+        total_points = school_points + childcare_points
+        
+        if child_score >= 100:
+            child_calculation = f"Child care score: {school_density:.4f} schools/km² × 58 + {childcare_density:.4f} childcare/km² × 18 = {school_points:.1f} + {childcare_points:.1f} = {total_points:.1f}, capped at 100 points"
+        else:
+            child_calculation = f"Child care score: {school_density:.4f} schools/km² × 58 + {childcare_density:.4f} childcare/km² × 18 = {school_points:.1f} + {childcare_points:.1f} = {child_score:.1f} points"
         
         # 4. 行业就业评分 - 原有逻辑
         industry_coefficient = INDUSTRY_DENSITY_COEFFICIENTS.get(industry_name, 10.0)
@@ -189,31 +193,36 @@ def score_suburb(event, context):
             industry_calculation = f"No employment data for {industry_name} industry = 0 points"
         else:
             industry_density = industry_employment / area_sqkm
-            industry_score = min(100, industry_density * industry_coefficient)
-            industry_calculation = f"min(100, {industry_density:.3f} employees/km² × {industry_coefficient}) = min(100, {industry_density * industry_coefficient:.1f}) = {industry_score:.1f} points"
+            raw_score = industry_density * industry_coefficient
+            industry_score = min(100, raw_score)
+            
+            if industry_score >= 100:
+                industry_calculation = f"Industry score: {industry_density:.3f} employees/km² × {industry_coefficient} = {raw_score:.1f}, capped at 100 points"
+            else:
+                industry_calculation = f"Industry score: {industry_density:.3f} employees/km² × {industry_coefficient} = {industry_score:.1f} points"
         
         # 5. 犯罪安全评分（线性函数）
         if population < 50:
             safety_score = 60
             crime_rate = 0
-            safety_calculation = f"Population {population} too small for reliable crime rate, default 60 points"
+            safety_calculation = f"Population {population} too small for reliable crime rate = 60 points"
         elif population == 0:
             safety_score = 50
             crime_rate = 0
-            safety_calculation = "No population data, default 50 points"
+            safety_calculation = "No population data = 50 points"
         else:
             crime_rate = (total_crimes / population) * 1000
             
             if crime_rate <= 0:
                 safety_score = 100
-                safety_calculation = "No crime records, full score 100 points"
+                safety_calculation = "Crime rate 0.00/1000 people = 100 points"
             elif crime_rate >= 200:
                 safety_score = 5
-                safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people >= 200, minimum 5 points"
+                safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people ≥ 200 = 5 points"
             else:
                 # 0到200犯罪率之间，从100分线性下降到5分
                 safety_score = 100 - (crime_rate / 200) * 95
-                safety_calculation = f"Linear: 100 - ({crime_rate:.2f} / 200) × 95 = {safety_score:.1f} points"
+                safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people: 100 - ({crime_rate:.2f} / 200) × 95 = {safety_score:.1f} points"
         
         # 6. 综合评分 (调整为5项平均，包含新增的安全评分)
         overall_score = (cost_score + transport_score + child_score + industry_score + safety_score) / 5
