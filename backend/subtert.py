@@ -5,9 +5,9 @@ from suburb_scoring_handler import score_suburb
 event = {
     "httpMethod": "POST",
     "body": json.dumps({
-        "sub": "ABBOTSFORD",
-        "industry": "Mining"
-    })
+  "sub": "GLEN WAVERLEY", 
+  "industry": "Retail Trade"
+})
 }
 
 # 运行测试

@@ -1,0 +1,2739 @@
+anzsco_code,occupation,industry,industry_code
+1111,Chief Executives and Managing Directors,"Professional, Scientific and Technical Services",M
+1111,Chief Executives and Managing Directors,Public Administration and Safety,O
+1111,Chief Executives and Managing Directors,Health Care and Social Assistance,Q
+1112,General Managers,"Professional, Scientific and Technical Services",M
+1112,General Managers,Manufacturing,C
+1112,General Managers,Construction,E
+1113,Legislators,Public Administration and Safety,O
+1211,Aquaculture Farmers,"Agriculture, Forestry and Fishing",A
+1212,Crop Farmers,"Agriculture, Forestry and Fishing",A
+1213,Livestock Farmers,"Agriculture, Forestry and Fishing",A
+1214,Mixed Crop and Livestock Farmers,"Agriculture, Forestry and Fishing",A
+1311,"Advertising, Public Relations and Sales Manager","Professional, Scientific and Technical Services",M
+1311,"Advertising, Public Relations and Sales Manager",Wholesale Trade,F
+1311,"Advertising, Public Relations and Sales Manager",Retail Trade,G
+1321,Corporate Services Managers,Public Administration and Safety,O
+1321,Corporate Services Managers,"Professional, Scientific and Technical Services",M
+1321,Corporate Services Managers,Health Care and Social Assistance,Q
+1322,Finance Managers,Financial and Insurance Services,K
+1322,Finance Managers,"Professional, Scientific and Technical Services",M
+1322,Finance Managers,Public Administration and Safety,O
+1323,Human Resource Managers,Public Administration and Safety,O
+1323,Human Resource Managers,"Professional, Scientific and Technical Services",M
+1323,Human Resource Managers,Health Care and Social Assistance,Q
+1324,Policy and Planning Managers,Public Administration and Safety,O
+1324,Policy and Planning Managers,Financial and Insurance Services,K
+1324,Policy and Planning Managers,Health Care and Social Assistance,Q
+1325,Research and Development Managers,"Professional, Scientific and Technical Services",M
+1325,Research and Development Managers,Manufacturing,C
+1325,Research and Development Managers,Public Administration and Safety,O
+1331,Construction Managers,Construction,E
+1331,Construction Managers,"Professional, Scientific and Technical Services",M
+1332,Engineering Managers,"Professional, Scientific and Technical Services",M
+1332,Engineering Managers,Manufacturing,C
+1332,Engineering Managers,"Electricity, Gas, Water and Waste Services",D
+1333,"Importers, Exporters and Wholesalers",Wholesale Trade,F
+1333,"Importers, Exporters and Wholesalers",Retail Trade,G
+1333,"Importers, Exporters and Wholesalers","Transport, Postal and Warehousing",I
+1334,Manufacturers,Manufacturing,C
+1334,Manufacturers,Construction,E
+1334,Manufacturers,Retail Trade,G
+1335,Production Managers,Manufacturing,C
+1335,Production Managers,Mining,B
+1335,Production Managers,Construction,E
+1336,"Supply, Distribution and Procurement Managers","Transport, Postal and Warehousing",I
+1336,"Supply, Distribution and Procurement Managers",Wholesale Trade,F
+1336,"Supply, Distribution and Procurement Managers",Manufacturing,C
+1341,Child Care Centre Managers,Health Care and Social Assistance,Q
+1341,Child Care Centre Managers,Education and Training,P
+1342,Health and Welfare Services Managers,Health Care and Social Assistance,Q
+1342,Health and Welfare Services Managers,Public Administration and Safety,O
+1343,School Principals,Education and Training,P
+1344,Other Education Managers,Education and Training,P
+1344,Other Education Managers,Public Administration and Safety,O
+1351,ICT Managers,"Professional, Scientific and Technical Services",M
+1351,ICT Managers,Public Administration and Safety,O
+1351,ICT Managers,Financial and Insurance Services,K
+1391,Commissioned Officers (Management),Public Administration and Safety,O
+1392,Senior Non-Commissioned Defence Force Officers,Public Administration and Safety,O
+1399,Other Specialist Managers,Public Administration and Safety,O
+1399,Other Specialist Managers,Manufacturing,C
+1399,Other Specialist Managers,"Professional, Scientific and Technical Services",M
+1411,Cafe and Restaurant Managers,Accommodation and Food Services,H
+1412,Caravan Park and Camping Ground Managers,Accommodation and Food Services,H
+1412,Caravan Park and Camping Ground Managers,Arts and Recreation Services,R
+1413,Hotel and Motel Managers,Accommodation and Food Services,H
+1414,Licensed Club Managers,Accommodation and Food Services,H
+1414,Licensed Club Managers,Arts and Recreation Services,R
+1419,Other Accommodation and Hospitality Managers,Accommodation and Food Services,H
+1419,Other Accommodation and Hospitality Managers,Health Care and Social Assistance,Q
+1419,Other Accommodation and Hospitality Managers,"Rental, Hiring and Real Estate Services",L
+1421,Retail Managers,Retail Trade,G
+1421,Retail Managers,Accommodation and Food Services,H
+1421,Retail Managers,Wholesale Trade,F
+1491,"Amusement, Fitness and Sports Centre Managers",Arts and Recreation Services,R
+1491,"Amusement, Fitness and Sports Centre Managers",Education and Training,P
+1491,"Amusement, Fitness and Sports Centre Managers",Accommodation and Food Services,H
+1492,"Call, Contact Centre and Customer Service Managers","Professional, Scientific and Technical Services",M
+1492,"Call, Contact Centre and Customer Service Managers",Health Care and Social Assistance,Q
+1492,"Call, Contact Centre and Customer Service Managers",Public Administration and Safety,O
+1493,Conference and Event Organisers,Administrative and Support Services,N
+1493,Conference and Event Organisers,Arts and Recreation Services,R
+1493,Conference and Event Organisers,Accommodation and Food Services,H
+1494,Transport Services Managers,"Transport, Postal and Warehousing",I
+1494,Transport Services Managers,"Rental, Hiring and Real Estate Services",L
+1494,Transport Services Managers,Construction,E
+1499,"Other Hospitality, Retail and Service Managers",Financial and Insurance Services,K
+1499,"Other Hospitality, Retail and Service Managers","Rental, Hiring and Real Estate Services",L
+1499,"Other Hospitality, Retail and Service Managers",Administrative and Support Services,N
+2111,"Actors, Dancers and Other Entertainers",Arts and Recreation Services,R
+2111,"Actors, Dancers and Other Entertainers",Information Media and Telecommunications,J
+2111,"Actors, Dancers and Other Entertainers",Education and Training,P
+2112,Music Professionals,Arts and Recreation Services,R
+2112,Music Professionals,Education and Training,P
+2113,Photographers,"Professional, Scientific and Technical Services",M
+2113,Photographers,Arts and Recreation Services,R
+2113,Photographers,"Rental, Hiring and Real Estate Services",L
+2114,Visual Arts and Crafts Professionals,Arts and Recreation Services,R
+2114,Visual Arts and Crafts Professionals,Manufacturing,C
+2114,Visual Arts and Crafts Professionals,Retail Trade,G
+2121,"Artistic Directors, Media Producers and Presenters",Information Media and Telecommunications,J
+2121,"Artistic Directors, Media Producers and Presenters",Arts and Recreation Services,R
+2121,"Artistic Directors, Media Producers and Presenters","Professional, Scientific and Technical Services",M
+2122,"Authors, and Book and Script Editors",Arts and Recreation Services,R
+2122,"Authors, and Book and Script Editors",Information Media and Telecommunications,J
+2122,"Authors, and Book and Script Editors","Professional, Scientific and Technical Services",M
+2123,"Film, Television, Radio and Stage Directors",Information Media and Telecommunications,J
+2123,"Film, Television, Radio and Stage Directors","Professional, Scientific and Technical Services",M
+2123,"Film, Television, Radio and Stage Directors",Arts and Recreation Services,R
+2124,Journalists and Other Writers,Information Media and Telecommunications,J
+2124,Journalists and Other Writers,"Professional, Scientific and Technical Services",M
+2124,Journalists and Other Writers,Arts and Recreation Services,R
+2211,Accountants,"Professional, Scientific and Technical Services",M
+2211,Accountants,Financial and Insurance Services,K
+2211,Accountants,Public Administration and Safety,O
+2212,"Auditors, Company Secretaries and Corporate Treasurers","Professional, Scientific and Technical Services",M
+2212,"Auditors, Company Secretaries and Corporate Treasurers",Financial and Insurance Services,K
+2212,"Auditors, Company Secretaries and Corporate Treasurers",Public Administration and Safety,O
+2221,Financial Brokers,Financial and Insurance Services,K
+2222,Financial Dealers,Financial and Insurance Services,K
+2222,Financial Dealers,"Professional, Scientific and Technical Services",M
+2223,Financial Investment Advisers and Managers,Financial and Insurance Services,K
+2223,Financial Investment Advisers and Managers,"Professional, Scientific and Technical Services",M
+2231,Human Resource Professionals,Administrative and Support Services,N
+2231,Human Resource Professionals,Public Administration and Safety,O
+2231,Human Resource Professionals,Health Care and Social Assistance,Q
+2232,ICT Trainers,"Professional, Scientific and Technical Services",M
+2232,ICT Trainers,Education and Training,P
+2232,ICT Trainers,Public Administration and Safety,O
+2233,Training and Development Professionals,Education and Training,P
+2233,Training and Development Professionals,Public Administration and Safety,O
+2233,Training and Development Professionals,"Professional, Scientific and Technical Services",M
+2241,"Actuaries, Mathematicians and Statisticians",Financial and Insurance Services,K
+2241,"Actuaries, Mathematicians and Statisticians","Professional, Scientific and Technical Services",M
+2241,"Actuaries, Mathematicians and Statisticians",Public Administration and Safety,O
+2242,"Archivists, Curators and Records Managers",Public Administration and Safety,O
+2242,"Archivists, Curators and Records Managers",Health Care and Social Assistance,Q
+2242,"Archivists, Curators and Records Managers",Arts and Recreation Services,R
+2243,Economists,Public Administration and Safety,O
+2243,Economists,"Professional, Scientific and Technical Services",M
+2243,Economists,Education and Training,P
+2244,Intelligence and Policy Analysts,Public Administration and Safety,O
+2244,Intelligence and Policy Analysts,Health Care and Social Assistance,Q
+2245,Land Economists and Valuers,"Rental, Hiring and Real Estate Services",L
+2245,Land Economists and Valuers,Construction,E
+2245,Land Economists and Valuers,"Professional, Scientific and Technical Services",M
+2246,Librarians,Information Media and Telecommunications,J
+2246,Librarians,Education and Training,P
+2246,Librarians,Arts and Recreation Services,R
+2247,Management and Organisation Analysts,"Professional, Scientific and Technical Services",M
+2247,Management and Organisation Analysts,Financial and Insurance Services,K
+2247,Management and Organisation Analysts,Public Administration and Safety,O
+2249,Other Information and Organisation Professionals,Public Administration and Safety,O
+2249,Other Information and Organisation Professionals,"Professional, Scientific and Technical Services",M
+2249,Other Information and Organisation Professionals,Financial and Insurance Services,K
+2251,Advertising and Marketing Professionals,"Professional, Scientific and Technical Services",M
+2251,Advertising and Marketing Professionals,Retail Trade,G
+2251,Advertising and Marketing Professionals,Financial and Insurance Services,K
+2252,ICT Sales Professionals,"Professional, Scientific and Technical Services",M
+2252,ICT Sales Professionals,Wholesale Trade,F
+2252,ICT Sales Professionals,Retail Trade,G
+2253,Public Relations Professionals,Public Administration and Safety,O
+2253,Public Relations Professionals,"Professional, Scientific and Technical Services",M
+2253,Public Relations Professionals,Health Care and Social Assistance,Q
+2254,Technical Sales Representatives,Wholesale Trade,F
+2254,Technical Sales Representatives,Manufacturing,C
+2254,Technical Sales Representatives,Retail Trade,G
+2311,Air Transport Professionals,"Transport, Postal and Warehousing",I
+2311,Air Transport Professionals,Public Administration and Safety,O
+2312,Marine Transport Professionals,"Transport, Postal and Warehousing",I
+2312,Marine Transport Professionals,"Professional, Scientific and Technical Services",M
+2312,Marine Transport Professionals,Public Administration and Safety,O
+2321,Architects and Landscape Architects,"Professional, Scientific and Technical Services",M
+2321,Architects and Landscape Architects,Construction,E
+2322,Surveyors and Spatial Scientists,"Professional, Scientific and Technical Services",M
+2322,Surveyors and Spatial Scientists,Construction,E
+2322,Surveyors and Spatial Scientists,Public Administration and Safety,O
+2323,"Fashion, Industrial and Jewellery Designers",Manufacturing,C
+2323,"Fashion, Industrial and Jewellery Designers",Retail Trade,G
+2323,"Fashion, Industrial and Jewellery Designers","Professional, Scientific and Technical Services",M
+2324,"Graphic and Web Designers, and Illustrators","Professional, Scientific and Technical Services",M
+2324,"Graphic and Web Designers, and Illustrators",Manufacturing,C
+2324,"Graphic and Web Designers, and Illustrators",Information Media and Telecommunications,J
+2325,Interior Designers,"Professional, Scientific and Technical Services",M
+2325,Interior Designers,Construction,E
+2325,Interior Designers,Manufacturing,C
+2326,Urban and Regional Planners,Public Administration and Safety,O
+2326,Urban and Regional Planners,"Professional, Scientific and Technical Services",M
+2326,Urban and Regional Planners,"Transport, Postal and Warehousing",I
+2331,Chemical and Materials Engineers,Manufacturing,C
+2331,Chemical and Materials Engineers,Mining,B
+2331,Chemical and Materials Engineers,"Professional, Scientific and Technical Services",M
+2332,Civil Engineering Professionals,"Professional, Scientific and Technical Services",M
+2332,Civil Engineering Professionals,Construction,E
+2332,Civil Engineering Professionals,Public Administration and Safety,O
+2333,Electrical Engineers,"Professional, Scientific and Technical Services",M
+2333,Electrical Engineers,"Electricity, Gas, Water and Waste Services",D
+2333,Electrical Engineers,Construction,E
+2334,Electronics Engineers,Manufacturing,C
+2334,Electronics Engineers,"Professional, Scientific and Technical Services",M
+2334,Electronics Engineers,"Electricity, Gas, Water and Waste Services",D
+2335,"Industrial, Mechanical and Production Engineers",Manufacturing,C
+2335,"Industrial, Mechanical and Production Engineers","Professional, Scientific and Technical Services",M
+2335,"Industrial, Mechanical and Production Engineers",Mining,B
+2336,Mining Engineers,Mining,B
+2336,Mining Engineers,"Professional, Scientific and Technical Services",M
+2336,Mining Engineers,"Electricity, Gas, Water and Waste Services",D
+2339,Other Engineering Professionals,"Professional, Scientific and Technical Services",M
+2339,Other Engineering Professionals,Manufacturing,C
+2339,Other Engineering Professionals,Health Care and Social Assistance,Q
+2341,Agricultural and Forestry Scientists,"Agriculture, Forestry and Fishing",A
+2341,Agricultural and Forestry Scientists,"Professional, Scientific and Technical Services",M
+2341,Agricultural and Forestry Scientists,Public Administration and Safety,O
+2342,"Chemists, and Food and Wine Scientists",Manufacturing,C
+2342,"Chemists, and Food and Wine Scientists","Professional, Scientific and Technical Services",M
+2342,"Chemists, and Food and Wine Scientists",Public Administration and Safety,O
+2343,Environmental Scientists,"Professional, Scientific and Technical Services",M
+2343,Environmental Scientists,Public Administration and Safety,O
+2343,Environmental Scientists,Arts and Recreation Services,R
+2344,"Geologists, Geophysicists and Hydrogeologists",Mining,B
+2344,"Geologists, Geophysicists and Hydrogeologists","Professional, Scientific and Technical Services",M
+2344,"Geologists, Geophysicists and Hydrogeologists",Public Administration and Safety,O
+2345,Life Scientists,"Professional, Scientific and Technical Services",M
+2345,Life Scientists,Public Administration and Safety,O
+2345,Life Scientists,Education and Training,P
+2346,Medical Laboratory Scientists,Health Care and Social Assistance,Q
+2346,Medical Laboratory Scientists,"Professional, Scientific and Technical Services",M
+2346,Medical Laboratory Scientists,Education and Training,P
+2347,Veterinarians,"Professional, Scientific and Technical Services",M
+2349,Other Natural and Physical Science Professionals,Health Care and Social Assistance,Q
+2349,Other Natural and Physical Science Professionals,Public Administration and Safety,O
+2349,Other Natural and Physical Science Professionals,"Professional, Scientific and Technical Services",M
+2411,Early Childhood (Pre-primary School) Teachers,Education and Training,P
+2411,Early Childhood (Pre-primary School) Teachers,Health Care and Social Assistance,Q
+2412,Primary School Teachers,Education and Training,P
+2413,Middle School Teachers,Education and Training,P
+2414,Secondary School Teachers,Education and Training,P
+2415,Special Education Teachers,Education and Training,P
+2421,University Lecturers and Tutors,Education and Training,P
+2422,Vocational Education Teachers,Education and Training,P
+2491,Education Advisers and Reviewers,Education and Training,P
+2491,Education Advisers and Reviewers,Public Administration and Safety,O
+2491,Education Advisers and Reviewers,"Professional, Scientific and Technical Services",M
+2492,Private Tutors and Teachers,Education and Training,P
+2493,Teachers of English to Speakers of Other Languages,Education and Training,P
+2511,Nutrition Professionals,Health Care and Social Assistance,Q
+2511,Nutrition Professionals,Manufacturing,C
+2511,Nutrition Professionals,Education and Training,P
+2512,Medical Imaging Professionals,Health Care and Social Assistance,Q
+2513,Occupational and Environmental Health Professionals,Public Administration and Safety,O
+2513,Occupational and Environmental Health Professionals,Construction,E
+2513,Occupational and Environmental Health Professionals,"Professional, Scientific and Technical Services",M
+2514,Optometrists and Orthoptists,Health Care and Social Assistance,Q
+2515,Pharmacists,Retail Trade,G
+2515,Pharmacists,Health Care and Social Assistance,Q
+2519,Other Health Diagnostic and Promotion Professionals,Health Care and Social Assistance,Q
+2519,Other Health Diagnostic and Promotion Professionals,Public Administration and Safety,O
+2519,Other Health Diagnostic and Promotion Professionals,Education and Training,P
+2521,Chiropractors and Osteopaths,Health Care and Social Assistance,Q
+2522,Complementary Health Therapists,Health Care and Social Assistance,Q
+2522,Complementary Health Therapists,Retail Trade,G
+2523,Dental Practitioners,Health Care and Social Assistance,Q
+2524,Occupational Therapists,Health Care and Social Assistance,Q
+2525,Physiotherapists,Health Care and Social Assistance,Q
+2526,Podiatrists,Health Care and Social Assistance,Q
+2527,Audiologists and Speech Pathologists \ Therapists,Health Care and Social Assistance,Q
+2531,General Practitioners and Resident Medical Officers,Health Care and Social Assistance,Q
+2532,Anaesthetists,Health Care and Social Assistance,Q
+2533,Specialist Physicians,Health Care and Social Assistance,Q
+2534,Psychiatrists,Health Care and Social Assistance,Q
+2534,Psychiatrists,Public Administration and Safety,O
+2535,Surgeons,Health Care and Social Assistance,Q
+2539,Other Medical Practitioners,Health Care and Social Assistance,Q
+2541,Midwives,Health Care and Social Assistance,Q
+2542,Nurse Educators and Researchers,Health Care and Social Assistance,Q
+2542,Nurse Educators and Researchers,Education and Training,P
+2542,Nurse Educators and Researchers,"Professional, Scientific and Technical Services",M
+2543,Nurse Managers,Health Care and Social Assistance,Q
+2544,Registered Nurses,Health Care and Social Assistance,Q
+2611,ICT Business and Systems Analysts,"Professional, Scientific and Technical Services",M
+2611,ICT Business and Systems Analysts,Public Administration and Safety,O
+2611,ICT Business and Systems Analysts,Financial and Insurance Services,K
+2612,Multimedia Specialists and Web Developers,"Professional, Scientific and Technical Services",M
+2612,Multimedia Specialists and Web Developers,Information Media and Telecommunications,J
+2613,Software and Applications Programmers,"Professional, Scientific and Technical Services",M
+2613,Software and Applications Programmers,Financial and Insurance Services,K
+2621,"Database and Systems Administrators, and ICT Security Specialists","Professional, Scientific and Technical Services",M
+2621,"Database and Systems Administrators, and ICT Security Specialists",Public Administration and Safety,O
+2621,"Database and Systems Administrators, and ICT Security Specialists",Financial and Insurance Services,K
+2631,Computer Network Professionals,"Professional, Scientific and Technical Services",M
+2631,Computer Network Professionals,Financial and Insurance Services,K
+2631,Computer Network Professionals,Public Administration and Safety,O
+2632,ICT Support and Test Engineers,"Professional, Scientific and Technical Services",M
+2632,ICT Support and Test Engineers,Financial and Insurance Services,K
+2632,ICT Support and Test Engineers,Public Administration and Safety,O
+2633,Telecommunications Engineering Professionals,Information Media and Telecommunications,J
+2633,Telecommunications Engineering Professionals,"Professional, Scientific and Technical Services",M
+2633,Telecommunications Engineering Professionals,Wholesale Trade,F
+2711,Barristers,"Professional, Scientific and Technical Services",M
+2711,Barristers,Public Administration and Safety,O
+2712,Judicial and Other Legal Professionals,Public Administration and Safety,O
+2712,Judicial and Other Legal Professionals,"Professional, Scientific and Technical Services",M
+2712,Judicial and Other Legal Professionals,Financial and Insurance Services,K
+2713,Solicitors,"Professional, Scientific and Technical Services",M
+2713,Solicitors,Public Administration and Safety,O
+2721,Counsellors,Health Care and Social Assistance,Q
+2721,Counsellors,Education and Training,P
+2722,Ministers of Religion,Other Services,S
+2722,Ministers of Religion,Education and Training,P
+2722,Ministers of Religion,Health Care and Social Assistance,Q
+2723,Psychologists and Psychotherapists,Health Care and Social Assistance,Q
+2723,Psychologists and Psychotherapists,Education and Training,P
+2723,Psychologists and Psychotherapists,Public Administration and Safety,O
+2724,Social Professionals,"Professional, Scientific and Technical Services",M
+2724,Social Professionals,Education and Training,P
+2724,Social Professionals,Health Care and Social Assistance,Q
+2725,Social Workers,Health Care and Social Assistance,Q
+2725,Social Workers,Public Administration and Safety,O
+2726,"Welfare, Recreation and Community Arts Workers",Health Care and Social Assistance,Q
+2726,"Welfare, Recreation and Community Arts Workers",Public Administration and Safety,O
+3111,Agricultural Technicians,"Agriculture, Forestry and Fishing",A
+3111,Agricultural Technicians,Public Administration and Safety,O
+3111,Agricultural Technicians,Manufacturing,C
+3112,Medical Technicians,Health Care and Social Assistance,Q
+3112,Medical Technicians,Retail Trade,G
+3113,Primary Products Inspectors,Public Administration and Safety,O
+3114,Science Technicians,Education and Training,P
+3114,Science Technicians,"Professional, Scientific and Technical Services",M
+3114,Science Technicians,Mining,B
+3121,"Architectural, Building and Surveying Technicians",Construction,E
+3121,"Architectural, Building and Surveying Technicians","Professional, Scientific and Technical Services",M
+3122,Civil Engineering Draftspersons and Technicians,"Professional, Scientific and Technical Services",M
+3122,Civil Engineering Draftspersons and Technicians,Construction,E
+3122,Civil Engineering Draftspersons and Technicians,Public Administration and Safety,O
+3123,"Electrical Engineering Draftspersons, Technicians",Construction,E
+3123,"Electrical Engineering Draftspersons, Technicians","Electricity, Gas, Water and Waste Services",D
+3123,"Electrical Engineering Draftspersons, Technicians",Other Services,S
+3124,"Electronic Engineering Draftspersons, Technicians",Public Administration and Safety,O
+3124,"Electronic Engineering Draftspersons, Technicians",Manufacturing,C
+3124,"Electronic Engineering Draftspersons, Technicians",Information Media and Telecommunications,J
+3125,"Mechanical Engineering Draftspersons, Technicians",Manufacturing,C
+3125,"Mechanical Engineering Draftspersons, Technicians","Professional, Scientific and Technical Services",M
+3125,"Mechanical Engineering Draftspersons, Technicians",Other Services,S
+3126,Safety Inspectors,Public Administration and Safety,O
+3126,Safety Inspectors,Mining,B
+3126,Safety Inspectors,"Professional, Scientific and Technical Services",M
+3129,Other Building and Engineering Technicians,Mining,B
+3129,Other Building and Engineering Technicians,Manufacturing,C
+3129,Other Building and Engineering Technicians,"Professional, Scientific and Technical Services",M
+3131,ICT Support Technicians,"Professional, Scientific and Technical Services",M
+3131,ICT Support Technicians,Public Administration and Safety,O
+3131,ICT Support Technicians,Education and Training,P
+3132,Telecommunications Technical Specialists,Information Media and Telecommunications,J
+3132,Telecommunications Technical Specialists,Construction,E
+3132,Telecommunications Technical Specialists,"Electricity, Gas, Water and Waste Services",D
+3211,Automotive Electricians,Other Services,S
+3211,Automotive Electricians,Mining,B
+3211,Automotive Electricians,Wholesale Trade,F
+3212,Motor Mechanics,Other Services,S
+3212,Motor Mechanics,Retail Trade,G
+3221,"Metal Casting, Forging and Finishing Trades","Agriculture, Forestry and Fishing",A
+3221,"Metal Casting, Forging and Finishing Trades",Manufacturing,C
+3221,"Metal Casting, Forging and Finishing Trades",Other Services,S
+3222,Sheetmetal Trades Workers,Manufacturing,C
+3222,Sheetmetal Trades Workers,Construction,E
+3223,Structural Steel and Welding Trades Workers,Manufacturing,C
+3223,Structural Steel and Welding Trades Workers,Construction,E
+3223,Structural Steel and Welding Trades Workers,Mining,B
+3231,Aircraft Maintenance Engineers,"Transport, Postal and Warehousing",I
+3231,Aircraft Maintenance Engineers,Manufacturing,C
+3231,Aircraft Maintenance Engineers,Public Administration and Safety,O
+3232,Metal Fitters and Machinists,Manufacturing,C
+3232,Metal Fitters and Machinists,Mining,B
+3232,Metal Fitters and Machinists,Other Services,S
+3233,Precision Metal Trades Workers,Other Services,S
+3233,Precision Metal Trades Workers,Public Administration and Safety,O
+3233,Precision Metal Trades Workers,Retail Trade,G
+3234,Toolmakers and Engineering Patternmakers,Manufacturing,C
+3234,Toolmakers and Engineering Patternmakers,Other Services,S
+3234,Toolmakers and Engineering Patternmakers,Wholesale Trade,F
+3241,Panelbeaters,Other Services,S
+3242,Vehicle Body Builders and Trimmers,Manufacturing,C
+3242,Vehicle Body Builders and Trimmers,Other Services,S
+3242,Vehicle Body Builders and Trimmers,Retail Trade,G
+3243,Vehicle Painters,Other Services,S
+3243,Vehicle Painters,Manufacturing,C
+3243,Vehicle Painters,Construction,E
+3311,Bricklayers and Stonemasons,Construction,E
+3311,Bricklayers and Stonemasons,Manufacturing,C
+3312,Carpenters and Joiners,Construction,E
+3312,Carpenters and Joiners,Manufacturing,C
+3321,Floor Finishers,Construction,E
+3321,Floor Finishers,Retail Trade,G
+3322,Painting Trades Workers,Construction,E
+3331,Glaziers,Construction,E
+3331,Glaziers,Manufacturing,C
+3332,Plasterers,Construction,E
+3333,Roof Tilers,Construction,E
+3334,Wall and Floor Tilers,Construction,E
+3341,Plumbers,Construction,E
+3411,Electricians,Construction,E
+3411,Electricians,Mining,B
+3411,Electricians,"Electricity, Gas, Water and Waste Services",D
+3421,Airconditioning and Refrigeration Mechanics,Construction,E
+3421,Airconditioning and Refrigeration Mechanics,Other Services,S
+3421,Airconditioning and Refrigeration Mechanics,Manufacturing,C
+3422,Electrical Distribution Trades Workers,"Electricity, Gas, Water and Waste Services",D
+3422,Electrical Distribution Trades Workers,Construction,E
+3423,Electronics Trades Workers,Construction,E
+3423,Electronics Trades Workers,Other Services,S
+3423,Electronics Trades Workers,"Professional, Scientific and Technical Services",M
+3424,Telecommunications Trades Workers,Information Media and Telecommunications,J
+3424,Telecommunications Trades Workers,Construction,E
+3424,Telecommunications Trades Workers,Other Services,S
+3511,Bakers and Pastrycooks,Manufacturing,C
+3511,Bakers and Pastrycooks,Retail Trade,G
+3511,Bakers and Pastrycooks,Accommodation and Food Services,H
+3512,Butchers and Smallgoods Makers,Retail Trade,G
+3512,Butchers and Smallgoods Makers,Manufacturing,C
+3513,Chefs,Accommodation and Food Services,H
+3513,Chefs,Health Care and Social Assistance,Q
+3514,Cooks,Accommodation and Food Services,H
+3514,Cooks,Health Care and Social Assistance,Q
+3611,Animal Attendants and Trainers,Other Services,S
+3611,Animal Attendants and Trainers,Arts and Recreation Services,R
+3611,Animal Attendants and Trainers,Education and Training,P
+3612,Shearers,"Agriculture, Forestry and Fishing",A
+3613,Veterinary Nurses,"Professional, Scientific and Technical Services",M
+3621,Florists,Retail Trade,G
+3621,Florists,"Agriculture, Forestry and Fishing",A
+3622,Gardeners,Construction,E
+3622,Gardeners,Administrative and Support Services,N
+3622,Gardeners,Arts and Recreation Services,R
+3623,Greenkeepers,Arts and Recreation Services,R
+3623,Greenkeepers,Education and Training,P
+3623,Greenkeepers,Administrative and Support Services,N
+3624,Nurserypersons,"Agriculture, Forestry and Fishing",A
+3624,Nurserypersons,Wholesale Trade,F
+3624,Nurserypersons,Retail Trade,G
+3911,Hairdressers,Other Services,S
+3921,Print Finishers and Screen Printers,Manufacturing,C
+3921,Print Finishers and Screen Printers,"Professional, Scientific and Technical Services",M
+3921,Print Finishers and Screen Printers,Wholesale Trade,F
+3922,Graphic Pre-press Trades Workers,Information Media and Telecommunications,J
+3922,Graphic Pre-press Trades Workers,Manufacturing,C
+3923,Printers,Manufacturing,C
+3931,Canvas and Leather Goods Makers,Other Services,S
+3931,Canvas and Leather Goods Makers,Manufacturing,C
+3932,Clothing Trades Workers,Manufacturing,C
+3932,Clothing Trades Workers,Other Services,S
+3932,Clothing Trades Workers,Retail Trade,G
+3933,Upholsterers,Manufacturing,C
+3933,Upholsterers,Other Services,S
+3941,Cabinetmakers,Manufacturing,C
+3941,Cabinetmakers,Construction,E
+3942,Wood Machinists and Other Wood Trades Workers,Manufacturing,C
+3942,Wood Machinists and Other Wood Trades Workers,Retail Trade,G
+3942,Wood Machinists and Other Wood Trades Workers,Wholesale Trade,F
+3991,Boat Builders and Shipwrights,Manufacturing,C
+3991,Boat Builders and Shipwrights,Public Administration and Safety,O
+3992,"Chemical, Gas, Petroleum and Power Plant Operators","Electricity, Gas, Water and Waste Services",D
+3992,"Chemical, Gas, Petroleum and Power Plant Operators",Mining,B
+3992,"Chemical, Gas, Petroleum and Power Plant Operators",Manufacturing,C
+3993,"Gallery, Library and Museum Technicians",Information Media and Telecommunications,J
+3993,"Gallery, Library and Museum Technicians",Education and Training,P
+3993,"Gallery, Library and Museum Technicians",Arts and Recreation Services,R
+3994,Jewellers,Retail Trade,G
+3994,Jewellers,Manufacturing,C
+3994,Jewellers,Other Services,S
+3995,Performing Arts Technicians,Information Media and Telecommunications,J
+3995,Performing Arts Technicians,"Professional, Scientific and Technical Services",M
+3995,Performing Arts Technicians,Arts and Recreation Services,R
+3996,Signwriters,"Professional, Scientific and Technical Services",M
+3996,Signwriters,Manufacturing,C
+3999,Other Miscellaneous Technicians and Trades Workers,Health Care and Social Assistance,Q
+3999,Other Miscellaneous Technicians and Trades Workers,Manufacturing,C
+3999,Other Miscellaneous Technicians and Trades Workers,"Professional, Scientific and Technical Services",M
+4111,Ambulance Officers and Paramedics,Health Care and Social Assistance,Q
+4112,"Dental Hygienists, Technicians and Therapists",Health Care and Social Assistance,Q
+4112,"Dental Hygienists, Technicians and Therapists",Manufacturing,C
+4113,Diversional Therapists,Health Care and Social Assistance,Q
+4114,Enrolled and Mothercraft Nurses,Health Care and Social Assistance,Q
+4115,Indigenous Health Workers,Health Care and Social Assistance,Q
+4115,Indigenous Health Workers,Public Administration and Safety,O
+4116,Massage Therapists,Health Care and Social Assistance,Q
+4116,Massage Therapists,Other Services,S
+4117,Welfare Support Workers,Health Care and Social Assistance,Q
+4117,Welfare Support Workers,Public Administration and Safety,O
+4211,Child Carers,Health Care and Social Assistance,Q
+4211,Child Carers,Education and Training,P
+4221,Education Aides,Education and Training,P
+4231,Aged and Disabled Carers,Health Care and Social Assistance,Q
+4232,Dental Assistants,Health Care and Social Assistance,Q
+4233,Nursing Support and Personal Care Workers,Health Care and Social Assistance,Q
+4234,Special Care Workers,Education and Training,P
+4234,Special Care Workers,Health Care and Social Assistance,Q
+4311,Bar Attendants and Baristas,Accommodation and Food Services,H
+4311,Bar Attendants and Baristas,Arts and Recreation Services,R
+4312,Cafe Workers,Accommodation and Food Services,H
+4313,Gaming Workers,Arts and Recreation Services,R
+4313,Gaming Workers,Accommodation and Food Services,H
+4314,Hotel Service Managers,Accommodation and Food Services,H
+4314,Hotel Service Managers,Administrative and Support Services,N
+4315,Waiters,Accommodation and Food Services,H
+4319,Other Hospitality Workers,Arts and Recreation Services,R
+4319,Other Hospitality Workers,Accommodation and Food Services,H
+4319,Other Hospitality Workers,"Transport, Postal and Warehousing",I
+4411,Defence Force Members - Other Ranks,Public Administration and Safety,O
+4412,Fire and Emergency Workers,Public Administration and Safety,O
+4412,Fire and Emergency Workers,Mining,B
+4413,Police,Public Administration and Safety,O
+4421,Prison Officers,Public Administration and Safety,O
+4422,Security Officers and Guards,Public Administration and Safety,O
+4422,Security Officers and Guards,"Transport, Postal and Warehousing",I
+4511,Beauty Therapists,Other Services,S
+4512,Driving Instructors,Education and Training,P
+4512,Driving Instructors,"Transport, Postal and Warehousing",I
+4513,Funeral Workers,Other Services,S
+4514,"Gallery, Museum and Tour Guides",Administrative and Support Services,N
+4514,"Gallery, Museum and Tour Guides",Arts and Recreation Services,R
+4514,"Gallery, Museum and Tour Guides","Transport, Postal and Warehousing",I
+4515,Personal Care Consultants,Health Care and Social Assistance,Q
+4515,Personal Care Consultants,Other Services,S
+4516,Tourism and Travel Advisers,Administrative and Support Services,N
+4516,Tourism and Travel Advisers,"Transport, Postal and Warehousing",I
+4517,Travel Attendants,"Transport, Postal and Warehousing",I
+4518,Other Personal Service Workers,Other Services,S
+4518,Other Personal Service Workers,Health Care and Social Assistance,Q
+4518,Other Personal Service Workers,Education and Training,P
+4521,Fitness Instructors,Other Services,S
+4521,Fitness Instructors,Arts and Recreation Services,R
+4521,Fitness Instructors,Education and Training,P
+4522,Outdoor Adventure Guides,Education and Training,P
+4522,Outdoor Adventure Guides,Arts and Recreation Services,R
+4522,Outdoor Adventure Guides,"Transport, Postal and Warehousing",I
+4523,"Sports Coaches, Instructors and Officials",Education and Training,P
+4523,"Sports Coaches, Instructors and Officials",Arts and Recreation Services,R
+4524,Sportspersons,Arts and Recreation Services,R
+4524,Sportspersons,Education and Training,P
+5111,"Contract, Program and Project Administrators",Public Administration and Safety,O
+5111,"Contract, Program and Project Administrators","Professional, Scientific and Technical Services",M
+5111,"Contract, Program and Project Administrators",Construction,E
+5121,Office Managers,"Professional, Scientific and Technical Services",M
+5121,Office Managers,Construction,E
+5121,Office Managers,Health Care and Social Assistance,Q
+5122,Practice Managers,Health Care and Social Assistance,Q
+5122,Practice Managers,"Professional, Scientific and Technical Services",M
+5211,Personal Assistants,Public Administration and Safety,O
+5211,Personal Assistants,Health Care and Social Assistance,Q
+5211,Personal Assistants,"Professional, Scientific and Technical Services",M
+5212,Secretaries,"Professional, Scientific and Technical Services",M
+5212,Secretaries,Construction,E
+5212,Secretaries,Public Administration and Safety,O
+5311,General Clerks,Public Administration and Safety,O
+5311,General Clerks,Health Care and Social Assistance,Q
+5311,General Clerks,Education and Training,P
+5321,Keyboard Operators,Public Administration and Safety,O
+5321,Keyboard Operators,Health Care and Social Assistance,Q
+5321,Keyboard Operators,"Professional, Scientific and Technical Services",M
+5411,Call or Contact Centre Workers,Administrative and Support Services,N
+5411,Call or Contact Centre Workers,Financial and Insurance Services,K
+5411,Call or Contact Centre Workers,Public Administration and Safety,O
+5412,Information Officers,Public Administration and Safety,O
+5412,Information Officers,Retail Trade,G
+5412,Information Officers,Financial and Insurance Services,K
+5421,Receptionists,Health Care and Social Assistance,Q
+5421,Receptionists,Accommodation and Food Services,H
+5421,Receptionists,"Professional, Scientific and Technical Services",M
+5511,Accounting Clerks,Construction,E
+5511,Accounting Clerks,Public Administration and Safety,O
+5511,Accounting Clerks,"Professional, Scientific and Technical Services",M
+5512,Bookkeepers,"Professional, Scientific and Technical Services",M
+5512,Bookkeepers,Construction,E
+5512,Bookkeepers,Education and Training,P
+5513,Payroll Clerks,Public Administration and Safety,O
+5513,Payroll Clerks,Health Care and Social Assistance,Q
+5513,Payroll Clerks,Construction,E
+5521,Bank Workers,Financial and Insurance Services,K
+5522,Credit and Loans Officers,Financial and Insurance Services,K
+5523,"Insurance, Money Market and Statistical Clerks",Financial and Insurance Services,K
+5523,"Insurance, Money Market and Statistical Clerks",Public Administration and Safety,O
+5611,Betting Clerks,Arts and Recreation Services,R
+5611,Betting Clerks,Health Care and Social Assistance,Q
+5611,Betting Clerks,Accommodation and Food Services,H
+5612,Couriers and Postal Deliverers,"Transport, Postal and Warehousing",I
+5612,Couriers and Postal Deliverers,Health Care and Social Assistance,Q
+5613,Filing and Registry Clerks,Public Administration and Safety,O
+5613,Filing and Registry Clerks,Health Care and Social Assistance,Q
+5613,Filing and Registry Clerks,"Professional, Scientific and Technical Services",M
+5614,Mail Sorters,"Transport, Postal and Warehousing",I
+5615,Survey Interviewers,"Professional, Scientific and Technical Services",M
+5615,Survey Interviewers,Administrative and Support Services,N
+5615,Survey Interviewers,Financial and Insurance Services,K
+5616,Switchboard Operators,Health Care and Social Assistance,Q
+5616,Switchboard Operators,Public Administration and Safety,O
+5616,Switchboard Operators,Administrative and Support Services,N
+5619,Other Clerical and Office Support Workers,Administrative and Support Services,N
+5619,Other Clerical and Office Support Workers,Other Services,S
+5619,Other Clerical and Office Support Workers,"Professional, Scientific and Technical Services",M
+5911,Purchasing and Supply Logistics Clerks,Retail Trade,G
+5911,Purchasing and Supply Logistics Clerks,Wholesale Trade,F
+5911,Purchasing and Supply Logistics Clerks,Manufacturing,C
+5912,Transport and Despatch Clerks,"Transport, Postal and Warehousing",I
+5912,Transport and Despatch Clerks,Manufacturing,C
+5912,Transport and Despatch Clerks,Wholesale Trade,F
+5991,Conveyancers and Legal Executives,"Professional, Scientific and Technical Services",M
+5992,Court and Legal Clerks,"Professional, Scientific and Technical Services",M
+5992,Court and Legal Clerks,Public Administration and Safety,O
+5993,Debt Collectors,Administrative and Support Services,N
+5993,Debt Collectors,Public Administration and Safety,O
+5993,Debt Collectors,Financial and Insurance Services,K
+5994,Human Resource Clerks,Health Care and Social Assistance,Q
+5994,Human Resource Clerks,Public Administration and Safety,O
+5994,Human Resource Clerks,Administrative and Support Services,N
+5995,Inspectors and Regulatory Officers,Public Administration and Safety,O
+5995,Inspectors and Regulatory Officers,"Professional, Scientific and Technical Services",M
+5996,"Insurance Investigators, Loss Adjusters and Risk Surveyors",Financial and Insurance Services,K
+5996,"Insurance Investigators, Loss Adjusters and Risk Surveyors",Public Administration and Safety,O
+5997,Library Assistants,Information Media and Telecommunications,J
+5997,Library Assistants,Education and Training,P
+5999,Other Miscellaneous Clerical and Administrative Workers,Education and Training,P
+5999,Other Miscellaneous Clerical and Administrative Workers,Health Care and Social Assistance,Q
+5999,Other Miscellaneous Clerical and Administrative Workers,Public Administration and Safety,O
+6111,"Auctioneers, and Stock and Station Agents",Wholesale Trade,F
+6111,"Auctioneers, and Stock and Station Agents",Retail Trade,G
+6111,"Auctioneers, and Stock and Station Agents","Agriculture, Forestry and Fishing",A
+6112,Insurance Agents,Financial and Insurance Services,K
+6113,Sales Representatives,Wholesale Trade,F
+6113,Sales Representatives,Retail Trade,G
+6113,Sales Representatives,Manufacturing,C
+6121,Real Estate Sales Agents,"Rental, Hiring and Real Estate Services",L
+6211,Sales Assistants (General),Retail Trade,G
+6211,Sales Assistants (General),Accommodation and Food Services,H
+6212,ICT Sales Assistants,"Professional, Scientific and Technical Services",M
+6212,ICT Sales Assistants,Retail Trade,G
+6212,ICT Sales Assistants,Information Media and Telecommunications,J
+6213,Motor Vehicle and Vehicle Parts Salespersons,Retail Trade,G
+6213,Motor Vehicle and Vehicle Parts Salespersons,Wholesale Trade,F
+6213,Motor Vehicle and Vehicle Parts Salespersons,Other Services,S
+6214,Pharmacy Sales Assistants,Retail Trade,G
+6215,Retail Supervisors,Retail Trade,G
+6215,Retail Supervisors,Accommodation and Food Services,H
+6216,Service Station Attendants,Retail Trade,G
+6217,Street Vendors and Related Salespersons,Retail Trade,G
+6217,Street Vendors and Related Salespersons,Other Services,S
+6217,Street Vendors and Related Salespersons,Manufacturing,C
+6219,Other Sales Assistants and Salespersons,Wholesale Trade,F
+6219,Other Sales Assistants and Salespersons,"Rental, Hiring and Real Estate Services",L
+6219,Other Sales Assistants and Salespersons,Retail Trade,G
+6311,Checkout Operators and Office Cashiers,Retail Trade,G
+6311,Checkout Operators and Office Cashiers,Accommodation and Food Services,H
+6391,Models and Sales Demonstrators,Retail Trade,G
+6391,Models and Sales Demonstrators,"Professional, Scientific and Technical Services",M
+6391,Models and Sales Demonstrators,Wholesale Trade,F
+6392,Retail and Wool Buyers,Retail Trade,G
+6392,Retail and Wool Buyers,Wholesale Trade,F
+6393,Telemarketers,Administrative and Support Services,N
+6393,Telemarketers,Retail Trade,G
+6393,Telemarketers,Wholesale Trade,F
+6394,Ticket Salespersons,"Transport, Postal and Warehousing",I
+6394,Ticket Salespersons,Information Media and Telecommunications,J
+6394,Ticket Salespersons,Administrative and Support Services,N
+6395,Visual Merchandisers,Retail Trade,G
+6395,Visual Merchandisers,"Professional, Scientific and Technical Services",M
+6395,Visual Merchandisers,Manufacturing,C
+6399,Other Sales Support Workers,Retail Trade,G
+6399,Other Sales Support Workers,Wholesale Trade,F
+7111,"Clay, Concrete, Glass and Stone Processing Machine Operators",Manufacturing,C
+7111,"Clay, Concrete, Glass and Stone Processing Machine Operators",Construction,E
+7112,Industrial Spraypainters,Construction,E
+7112,Industrial Spraypainters,Manufacturing,C
+7112,Industrial Spraypainters,"Professional, Scientific and Technical Services",M
+7113,Paper and Wood Processing Machine Operators,Manufacturing,C
+7113,Paper and Wood Processing Machine Operators,"Agriculture, Forestry and Fishing",A
+7113,Paper and Wood Processing Machine Operators,Construction,E
+7114,Photographic Developers and Printers,Health Care and Social Assistance,Q
+7114,Photographic Developers and Printers,Administrative and Support Services,N
+7114,Photographic Developers and Printers,"Professional, Scientific and Technical Services",M
+7115,Plastics and Rubber Production Machine Operators,Manufacturing,C
+7115,Plastics and Rubber Production Machine Operators,Other Services,S
+7115,Plastics and Rubber Production Machine Operators,Construction,E
+7116,Sewing Machinists,Manufacturing,C
+7116,Sewing Machinists,Other Services,S
+7117,Textile and Footwear Production Machine Operators,Manufacturing,C
+7117,Textile and Footwear Production Machine Operators,Retail Trade,G
+7119,Other Machine Operators,Health Care and Social Assistance,Q
+7119,Other Machine Operators,Manufacturing,C
+7119,Other Machine Operators,Arts and Recreation Services,R
+7121,"Crane, Hoist and Lift Operators",Construction,E
+7121,"Crane, Hoist and Lift Operators","Transport, Postal and Warehousing",I
+7121,"Crane, Hoist and Lift Operators",Manufacturing,C
+7122,"Drillers, Miners and Shot Firers",Mining,B
+7123,Engineering Production Workers,Manufacturing,C
+7123,Engineering Production Workers,Construction,E
+7123,Engineering Production Workers,Other Services,S
+7129,Other Stationary Plant Operators,"Electricity, Gas, Water and Waste Services",D
+7129,Other Stationary Plant Operators,"Transport, Postal and Warehousing",I
+7129,Other Stationary Plant Operators,Mining,B
+7211,"Agricultural, Forestry and Horticultural Plant Operators","Agriculture, Forestry and Fishing",A
+7212,Earthmoving Plant Operators,Construction,E
+7212,Earthmoving Plant Operators,Mining,B
+7212,Earthmoving Plant Operators,Public Administration and Safety,O
+7213,Forklift Drivers,"Transport, Postal and Warehousing",I
+7213,Forklift Drivers,Manufacturing,C
+7213,Forklift Drivers,Wholesale Trade,F
+7219,Other Mobile Plant Operators,"Transport, Postal and Warehousing",I
+7219,Other Mobile Plant Operators,Construction,E
+7219,Other Mobile Plant Operators,Public Administration and Safety,O
+7311,Automobile Drivers,"Transport, Postal and Warehousing",I
+7312,Bus and Coach Drivers,"Transport, Postal and Warehousing",I
+7313,Train and Tram Drivers,"Transport, Postal and Warehousing",I
+7321,Delivery Drivers,"Transport, Postal and Warehousing",I
+7321,Delivery Drivers,Retail Trade,G
+7321,Delivery Drivers,Accommodation and Food Services,H
+7331,Truck Drivers,"Transport, Postal and Warehousing",I
+7331,Truck Drivers,Construction,E
+7331,Truck Drivers,Mining,B
+7411,Storepersons,"Transport, Postal and Warehousing",I
+7411,Storepersons,Retail Trade,G
+7411,Storepersons,Wholesale Trade,F
+8111,Car Detailers,Other Services,S
+8111,Car Detailers,Retail Trade,G
+8111,Car Detailers,"Rental, Hiring and Real Estate Services",L
+8112,Commercial Cleaners,Administrative and Support Services,N
+8112,Commercial Cleaners,Health Care and Social Assistance,Q
+8112,Commercial Cleaners,Accommodation and Food Services,H
+8113,Domestic Cleaners,Administrative and Support Services,N
+8113,Domestic Cleaners,Health Care and Social Assistance,Q
+8114,Housekeepers,Accommodation and Food Services,H
+8114,Housekeepers,Administrative and Support Services,N
+8114,Housekeepers,Health Care and Social Assistance,Q
+8115,Laundry Workers,Other Services,S
+8115,Laundry Workers,Health Care and Social Assistance,Q
+8116,Other Cleaners,Administrative and Support Services,N
+8116,Other Cleaners,Other Services,S
+8116,Other Cleaners,Manufacturing,C
+8211,Building and Plumbing Labourers,Construction,E
+8212,Concreters,Construction,E
+8213,Fencers,Construction,E
+8213,Fencers,"Agriculture, Forestry and Fishing",A
+8214,Insulation and Home Improvement Installers,Construction,E
+8215,Paving and Surfacing Labourers,Construction,E
+8215,Paving and Surfacing Labourers,Public Administration and Safety,O
+8216,Railway Track Workers,"Transport, Postal and Warehousing",I
+8216,Railway Track Workers,Construction,E
+8216,Railway Track Workers,Manufacturing,C
+8217,Structural Steel Construction Workers,Construction,E
+8217,Structural Steel Construction Workers,Mining,B
+8217,Structural Steel Construction Workers,Manufacturing,C
+8219,Other Construction and Mining Labourers,Mining,B
+8219,Other Construction and Mining Labourers,Construction,E
+8219,Other Construction and Mining Labourers,"Professional, Scientific and Technical Services",M
+8311,Food and Drink Factory Workers,Manufacturing,C
+8311,Food and Drink Factory Workers,Accommodation and Food Services,H
+8312,"Meat Boners and Slicers, and Slaughterers",Manufacturing,C
+8313,"Meat, Poultry and Seafood Process Workers",Manufacturing,C
+8313,"Meat, Poultry and Seafood Process Workers","Agriculture, Forestry and Fishing",A
+8321,Packers,Manufacturing,C
+8321,Packers,Retail Trade,G
+8321,Packers,Wholesale Trade,F
+8322,Product Assemblers,Manufacturing,C
+8322,Product Assemblers,Construction,E
+8322,Product Assemblers,Wholesale Trade,F
+8391,Metal Engineering Process Workers,Manufacturing,C
+8392,Plastics and Rubber Factory Workers,Manufacturing,C
+8392,Plastics and Rubber Factory Workers,Other Services,S
+8392,Plastics and Rubber Factory Workers,Retail Trade,G
+8393,Product Quality Controllers,Manufacturing,C
+8393,Product Quality Controllers,"Professional, Scientific and Technical Services",M
+8393,Product Quality Controllers,Wholesale Trade,F
+8394,Timber and Wood Process Workers,Manufacturing,C
+8394,Timber and Wood Process Workers,Construction,E
+8394,Timber and Wood Process Workers,Retail Trade,G
+8399,Other Factory Process Workers,Manufacturing,C
+8399,Other Factory Process Workers,"Electricity, Gas, Water and Waste Services",D
+8399,Other Factory Process Workers,Wholesale Trade,F
+8411,Aquaculture Workers,"Agriculture, Forestry and Fishing",A
+8412,Crop Farm Workers,"Agriculture, Forestry and Fishing",A
+8413,Forestry and Logging Workers,"Agriculture, Forestry and Fishing",A
+8413,Forestry and Logging Workers,Administrative and Support Services,N
+8413,Forestry and Logging Workers,Public Administration and Safety,O
+8414,Garden and Nursery Labourers,Administrative and Support Services,N
+8414,Garden and Nursery Labourers,Construction,E
+8414,Garden and Nursery Labourers,"Agriculture, Forestry and Fishing",A
+8415,Livestock Farm Workers,"Agriculture, Forestry and Fishing",A
+8415,Livestock Farm Workers,Arts and Recreation Services,R
+8416,Mixed Crop and Livestock Farm Workers,"Agriculture, Forestry and Fishing",A
+8419,"Other Farm, Forestry and Garden Workers",Administrative and Support Services,N
+8419,"Other Farm, Forestry and Garden Workers","Agriculture, Forestry and Fishing",A
+8419,"Other Farm, Forestry and Garden Workers",Public Administration and Safety,O
+8511,Fast Food Cooks,Accommodation and Food Services,H
+8512,Food Trades Assistants,Retail Trade,G
+8512,Food Trades Assistants,Manufacturing,C
+8512,Food Trades Assistants,Accommodation and Food Services,H
+8513,Kitchenhands,Accommodation and Food Services,H
+8513,Kitchenhands,Health Care and Social Assistance,Q
+8911,Freight and Furniture Handlers,"Transport, Postal and Warehousing",I
+8911,Freight and Furniture Handlers,Retail Trade,G
+8911,Freight and Furniture Handlers,Manufacturing,C
+8912,Shelf Fillers,Retail Trade,G
+8991,Caretakers,Education and Training,P
+8991,Caretakers,Construction,E
+8991,Caretakers,Accommodation and Food Services,H
+8992,Deck and Fishing Hands,"Agriculture, Forestry and Fishing",A
+8992,Deck and Fishing Hands,"Transport, Postal and Warehousing",I
+8992,Deck and Fishing Hands,Public Administration and Safety,O
+8993,Handypersons,Construction,E
+8993,Handypersons,Health Care and Social Assistance,Q
+8993,Handypersons,Administrative and Support Services,N
+8994,Motor Vehicle Parts and Accessories Fitters,Other Services,S
+8994,Motor Vehicle Parts and Accessories Fitters,Retail Trade,G
+8994,Motor Vehicle Parts and Accessories Fitters,Manufacturing,C
+8995,Printing Assistants and Table Workers,Manufacturing,C
+8995,Printing Assistants and Table Workers,Wholesale Trade,F
+8995,Printing Assistants and Table Workers,Health Care and Social Assistance,Q
+8996,Recycling and Rubbish Collectors,"Electricity, Gas, Water and Waste Services",D
+8996,Recycling and Rubbish Collectors,Public Administration and Safety,O
+8996,Recycling and Rubbish Collectors,Wholesale Trade,F
+8997,Vending Machine Attendants,Accommodation and Food Services,H
+8997,Vending Machine Attendants,Arts and Recreation Services,R
+8999,Other Miscellaneous Labourers,Public Administration and Safety,O
+8999,Other Miscellaneous Labourers,Construction,E
+8999,Other Miscellaneous Labourers,"Transport, Postal and Warehousing",I
+111211,Corporate General Managers,Health Care and Social Assistance,Q
+111211,Corporate General Managers,"Professional, Scientific and Technical Services",M
+111211,Corporate General Managers,Manufacturing,C
+111212,Defence Force Senior Officers,Public Administration and Safety,O
+111311,Local Government Legislators,Public Administration and Safety,O
+111311,Local Government Legislators,Health Care and Social Assistance,Q
+111312,Members of Parliament,Public Administration and Safety,O
+111399,Other Legislators,Public Administration and Safety,O
+111399,Other Legislators,Other Services,S
+111399,Other Legislators,Health Care and Social Assistance,Q
+121211,Cotton Growers,"Agriculture, Forestry and Fishing",A
+121212,Flower Growers,"Agriculture, Forestry and Fishing",A
+121213,Fruit and Nut Growers,"Agriculture, Forestry and Fishing",A
+121214,"Grain, Oilseed and Pasture Growers","Agriculture, Forestry and Fishing",A
+121215,Grape Growers,"Agriculture, Forestry and Fishing",A
+121215,Grape Growers,Manufacturing,C
+121216,Mixed Crop Farmers,"Agriculture, Forestry and Fishing",A
+121217,Sugar Cane Growers,"Agriculture, Forestry and Fishing",A
+121218,Turf Growers,"Agriculture, Forestry and Fishing",A
+121221,Vegetable Growers,"Agriculture, Forestry and Fishing",A
+121299,Other Crop Farmers,"Agriculture, Forestry and Fishing",A
+121299,Other Crop Farmers,Wholesale Trade,F
+121311,Beekeepers,"Agriculture, Forestry and Fishing",A
+121312,Beef Cattle Farmers,"Agriculture, Forestry and Fishing",A
+121313,Dairy Cattle Farmers,"Agriculture, Forestry and Fishing",A
+121315,Goat Farmers,"Agriculture, Forestry and Fishing",A
+121316,Horse Breeders,"Agriculture, Forestry and Fishing",A
+121316,Horse Breeders,Arts and Recreation Services,R
+121317,Mixed Livestock Farmers,"Agriculture, Forestry and Fishing",A
+121318,Pig Farmers,"Agriculture, Forestry and Fishing",A
+121318,Pig Farmers,Manufacturing,C
+121321,Poultry Farmers,"Agriculture, Forestry and Fishing",A
+121321,Poultry Farmers,Manufacturing,C
+121322,Sheep Farmers,"Agriculture, Forestry and Fishing",A
+121399,Other Livestock Farmers,"Agriculture, Forestry and Fishing",A
+121399,Other Livestock Farmers,Other Services,S
+131112,Sales and Marketing Managers,"Professional, Scientific and Technical Services",M
+131112,Sales and Marketing Managers,Wholesale Trade,F
+131112,Sales and Marketing Managers,Retail Trade,G
+131113,Advertising Managers,"Professional, Scientific and Technical Services",M
+131113,Advertising Managers,Information Media and Telecommunications,J
+131114,Public Relations Managers,Public Administration and Safety,O
+131114,Public Relations Managers,"Professional, Scientific and Technical Services",M
+131114,Public Relations Managers,Financial and Insurance Services,K
+133111,Construction Project Managers,Construction,E
+133111,Construction Project Managers,"Professional, Scientific and Technical Services",M
+133111,Construction Project Managers,Public Administration and Safety,O
+133112,Project Builders,Construction,E
+133311,Importers and Exporters,Wholesale Trade,F
+133311,Importers and Exporters,"Transport, Postal and Warehousing",I
+133311,Importers and Exporters,Retail Trade,G
+133312,Wholesalers,Wholesale Trade,F
+133312,Wholesalers,Retail Trade,G
+133511,Forest Managers,"Agriculture, Forestry and Fishing",A
+133511,Forest Managers,Public Administration and Safety,O
+133511,Forest Managers,Manufacturing,C
+133512,Manufacturing Production Managers,Manufacturing,C
+133512,Manufacturing Production Managers,Construction,E
+133513,Mine Managers,Mining,B
+133513,Mine Managers,"Professional, Scientific and Technical Services",M
+133513,Mine Managers,Manufacturing,C
+133611,Supply and Distribution Managers,"Transport, Postal and Warehousing",I
+133611,Supply and Distribution Managers,Manufacturing,C
+133611,Supply and Distribution Managers,Wholesale Trade,F
+133612,Procurement Managers,Manufacturing,C
+133612,Procurement Managers,Public Administration and Safety,O
+133612,Procurement Managers,Wholesale Trade,F
+134211,Medical Administrators,Health Care and Social Assistance,Q
+134212,Nursing Clinical Directors,Health Care and Social Assistance,Q
+134213,Primary Health Organisation Managers,Health Care and Social Assistance,Q
+134213,Primary Health Organisation Managers,Public Administration and Safety,O
+134214,Welfare Centre Managers,Health Care and Social Assistance,Q
+134214,Welfare Centre Managers,Public Administration and Safety,O
+134299,Other Health and Welfare Services Managers,Health Care and Social Assistance,Q
+134299,Other Health and Welfare Services Managers,Public Administration and Safety,O
+134411,Faculty Heads,Education and Training,P
+134412,Regional Education Managers,Education and Training,P
+134412,Regional Education Managers,Public Administration and Safety,O
+134499,Education Managers (not covered elsewhere),Education and Training,P
+135111,Chief Information Officers,"Professional, Scientific and Technical Services",M
+135111,Chief Information Officers,Financial and Insurance Services,K
+135111,Chief Information Officers,Information Media and Telecommunications,J
+135112,ICT Project Managers,"Professional, Scientific and Technical Services",M
+135112,ICT Project Managers,Public Administration and Safety,O
+135112,ICT Project Managers,Financial and Insurance Services,K
+135199,Other ICT Managers,"Professional, Scientific and Technical Services",M
+135199,Other ICT Managers,Financial and Insurance Services,K
+135199,Other ICT Managers,Information Media and Telecommunications,J
+139111,Commissioned Defence Force Officers,Public Administration and Safety,O
+139112,Commissioned Fire Officers,Public Administration and Safety,O
+139113,Commissioned Police Officers,Public Administration and Safety,O
+139911,Arts Administrators and Managers,Arts and Recreation Services,R
+139911,Arts Administrators and Managers,Public Administration and Safety,O
+139911,Arts Administrators and Managers,Education and Training,P
+139912,Environmental Managers,Public Administration and Safety,O
+139912,Environmental Managers,"Professional, Scientific and Technical Services",M
+139912,Environmental Managers,Construction,E
+139913,Laboratory Managers,"Professional, Scientific and Technical Services",M
+139913,Laboratory Managers,Education and Training,P
+139913,Laboratory Managers,Health Care and Social Assistance,Q
+139914,Quality Assurance Managers,Manufacturing,C
+139914,Quality Assurance Managers,Health Care and Social Assistance,Q
+139914,Quality Assurance Managers,Financial and Insurance Services,K
+139915,Sports Administrators,Arts and Recreation Services,R
+139915,Sports Administrators,Education and Training,P
+139915,Sports Administrators,Public Administration and Safety,O
+139999,Specialist Managers (not covered elsewhere),Public Administration and Safety,O
+139999,Specialist Managers (not covered elsewhere),Financial and Insurance Services,K
+139999,Specialist Managers (not covered elsewhere),"Electricity, Gas, Water and Waste Services",D
+141911,Bed and Breakfast Operators,Accommodation and Food Services,H
+141911,Bed and Breakfast Operators,Administrative and Support Services,N
+141912,Retirement Village Managers,Health Care and Social Assistance,Q
+141912,Retirement Village Managers,"Rental, Hiring and Real Estate Services",L
+141999,Accommodation and Hospitality Managers (not covered elsewhere),Accommodation and Food Services,H
+141999,Accommodation and Hospitality Managers (not covered elsewhere),Education and Training,P
+141999,Accommodation and Hospitality Managers (not covered elsewhere),Health Care and Social Assistance,Q
+142111,Retail Managers (General),Retail Trade,G
+142111,Retail Managers (General),Accommodation and Food Services,H
+142112,Antique Dealers,Retail Trade,G
+142113,Betting Agency Managers,Arts and Recreation Services,R
+142113,Betting Agency Managers,Accommodation and Food Services,H
+142114,Hair and Beauty Salon Managers,Other Services,S
+142115,Post Office Managers,"Transport, Postal and Warehousing",I
+142116,Travel Agency Managers,Administrative and Support Services,N
+142116,Travel Agency Managers,"Transport, Postal and Warehousing",I
+149111,Amusement Centre Managers,Arts and Recreation Services,R
+149111,Amusement Centre Managers,Accommodation and Food Services,H
+149112,Fitness Centre Managers,Arts and Recreation Services,R
+149112,Fitness Centre Managers,Other Services,S
+149113,Sports Centre Managers,Arts and Recreation Services,R
+149113,Sports Centre Managers,Education and Training,P
+149113,Sports Centre Managers,Public Administration and Safety,O
+149211,Call Centre or Contact Centre Managers,Construction,E
+149211,Call Centre or Contact Centre Managers,Financial and Insurance Services,K
+149211,Call Centre or Contact Centre Managers,Administrative and Support Services,N
+149212,Customer Service Managers,Retail Trade,G
+149212,Customer Service Managers,Financial and Insurance Services,K
+149212,Customer Service Managers,"Professional, Scientific and Technical Services",M
+149411,Fleet Managers,"Transport, Postal and Warehousing",I
+149411,Fleet Managers,Public Administration and Safety,O
+149411,Fleet Managers,"Rental, Hiring and Real Estate Services",L
+149412,Railway Station Managers,"Transport, Postal and Warehousing",I
+149413,Transport Company Managers,"Transport, Postal and Warehousing",I
+149413,Transport Company Managers,"Rental, Hiring and Real Estate Services",L
+149911,Boarding Kennel and Cattery Operators,Other Services,S
+149911,Boarding Kennel and Cattery Operators,"Agriculture, Forestry and Fishing",A
+149912,Cinema and Theatre Managers,Information Media and Telecommunications,J
+149912,Cinema and Theatre Managers,Arts and Recreation Services,R
+149913,Facilities Managers,"Rental, Hiring and Real Estate Services",L
+149913,Facilities Managers,Health Care and Social Assistance,Q
+149913,Facilities Managers,Construction,E
+149914,Bank Managers and Branch Managers,Financial and Insurance Services,K
+149915,Equipment Hire Managers,"Rental, Hiring and Real Estate Services",L
+149915,Equipment Hire Managers,Construction,E
+149999,"Hospitality, Retail and Service Managers (not covered elsewhere)","Professional, Scientific and Technical Services",M
+149999,"Hospitality, Retail and Service Managers (not covered elsewhere)",Construction,E
+149999,"Hospitality, Retail and Service Managers (not covered elsewhere)",Administrative and Support Services,N
+211111,Actors,Arts and Recreation Services,R
+211111,Actors,Information Media and Telecommunications,J
+211111,Actors,Education and Training,P
+211112,Dancers and Choreographers,Arts and Recreation Services,R
+211112,Dancers and Choreographers,Education and Training,P
+211112,Dancers and Choreographers,Accommodation and Food Services,H
+211113,Entertainers and Variety Artists,Arts and Recreation Services,R
+211113,Entertainers and Variety Artists,Accommodation and Food Services,H
+211199,"Other Actors, Dancers and Entertainers",Arts and Recreation Services,R
+211199,"Other Actors, Dancers and Entertainers",Information Media and Telecommunications,J
+211199,"Other Actors, Dancers and Entertainers",Education and Training,P
+211211,Composers,Arts and Recreation Services,R
+211211,Composers,Information Media and Telecommunications,J
+211211,Composers,Education and Training,P
+211212,Music Directors,Education and Training,P
+211212,Music Directors,Arts and Recreation Services,R
+211212,Music Directors,Other Services,S
+211213,Musicians,Arts and Recreation Services,R
+211213,Musicians,Education and Training,P
+211213,Musicians,Public Administration and Safety,O
+211214,Singers,Arts and Recreation Services,R
+211214,Singers,Other Services,S
+211299,Other Music Professionals,Education and Training,P
+211299,Other Music Professionals,Arts and Recreation Services,R
+211299,Other Music Professionals,Other Services,S
+211411,Painters (Visual Arts),Arts and Recreation Services,R
+211412,Potters and Ceramic Artists,Manufacturing,C
+211412,Potters and Ceramic Artists,Arts and Recreation Services,R
+211412,Potters and Ceramic Artists,Education and Training,P
+211413,Sculptors,Arts and Recreation Services,R
+211413,Sculptors,Manufacturing,C
+211499,Other Visual Arts or Crafts Professionals,Arts and Recreation Services,R
+211499,Other Visual Arts or Crafts Professionals,Manufacturing,C
+211499,Other Visual Arts or Crafts Professionals,Information Media and Telecommunications,J
+212111,Artistic Directors,Arts and Recreation Services,R
+212111,Artistic Directors,Education and Training,P
+212112,Media Producers,Information Media and Telecommunications,J
+212112,Media Producers,"Professional, Scientific and Technical Services",M
+212112,Media Producers,Arts and Recreation Services,R
+212113,Radio Presenters,Information Media and Telecommunications,J
+212113,Radio Presenters,Arts and Recreation Services,R
+212114,Television Presenters,Information Media and Telecommunications,J
+212114,Television Presenters,Arts and Recreation Services,R
+212211,Authors,Arts and Recreation Services,R
+212211,Authors,Information Media and Telecommunications,J
+212211,Authors,"Professional, Scientific and Technical Services",M
+212212,Book and Script Editors,Information Media and Telecommunications,J
+212212,Book and Script Editors,Education and Training,P
+212212,Book and Script Editors,Arts and Recreation Services,R
+212311,"Art Directors (Film, Television or Stage)",Information Media and Telecommunications,J
+212311,"Art Directors (Film, Television or Stage)",Arts and Recreation Services,R
+212311,"Art Directors (Film, Television or Stage)","Professional, Scientific and Technical Services",M
+212312,"Directors (Film, Television, Radio or Stage)",Information Media and Telecommunications,J
+212312,"Directors (Film, Television, Radio or Stage)",Arts and Recreation Services,R
+212312,"Directors (Film, Television, Radio or Stage)","Professional, Scientific and Technical Services",M
+212313,Cinematographers,Information Media and Telecommunications,J
+212313,Cinematographers,"Professional, Scientific and Technical Services",M
+212314,Film and Video Editors,Information Media and Telecommunications,J
+212314,Film and Video Editors,"Professional, Scientific and Technical Services",M
+212315,Program Directors (Television or Radio),Information Media and Telecommunications,J
+212316,Stage Managers,Arts and Recreation Services,R
+212316,Stage Managers,Information Media and Telecommunications,J
+212316,Stage Managers,Education and Training,P
+212317,Technical Directors,Information Media and Telecommunications,J
+212318,Video Producers,Information Media and Telecommunications,J
+212318,Video Producers,Arts and Recreation Services,R
+212318,Video Producers,"Professional, Scientific and Technical Services",M
+212399,"Other Film, Television, Radio and Stage Directors",Information Media and Telecommunications,J
+212399,"Other Film, Television, Radio and Stage Directors",Arts and Recreation Services,R
+212411,Copywriters,"Professional, Scientific and Technical Services",M
+212411,Copywriters,Arts and Recreation Services,R
+212411,Copywriters,Retail Trade,G
+212412,Newspaper and Periodical Editors,Information Media and Telecommunications,J
+212412,Newspaper and Periodical Editors,"Professional, Scientific and Technical Services",M
+212412,Newspaper and Periodical Editors,Public Administration and Safety,O
+212413,Print Journalists,Information Media and Telecommunications,J
+212413,Print Journalists,Arts and Recreation Services,R
+212414,Radio Journalists,Information Media and Telecommunications,J
+212415,Technical Writers,"Professional, Scientific and Technical Services",M
+212415,Technical Writers,Education and Training,P
+212415,Technical Writers,Public Administration and Safety,O
+212416,Television Journalists,Information Media and Telecommunications,J
+212499,"Bloggers, Critics, Sports and Other Writers (not covered elsewhere)",Information Media and Telecommunications,J
+212499,"Bloggers, Critics, Sports and Other Writers (not covered elsewhere)",Arts and Recreation Services,R
+212499,"Bloggers, Critics, Sports and Other Writers (not covered elsewhere)","Professional, Scientific and Technical Services",M
+221111,Accountants (General),"Professional, Scientific and Technical Services",M
+221111,Accountants (General),Financial and Insurance Services,K
+221112,Management Accountants,Public Administration and Safety,O
+221112,Management Accountants,"Professional, Scientific and Technical Services",M
+221112,Management Accountants,Financial and Insurance Services,K
+221113,Taxation Accountants,"Professional, Scientific and Technical Services",M
+221211,Company Secretaries,Financial and Insurance Services,K
+221211,Company Secretaries,"Professional, Scientific and Technical Services",M
+221211,Company Secretaries,Mining,B
+221212,Corporate Treasurers,Financial and Insurance Services,K
+221212,Corporate Treasurers,"Professional, Scientific and Technical Services",M
+221213,External Auditors,"Professional, Scientific and Technical Services",M
+221213,External Auditors,Public Administration and Safety,O
+221213,External Auditors,Financial and Insurance Services,K
+221214,Internal Auditors,Financial and Insurance Services,K
+221214,Internal Auditors,"Professional, Scientific and Technical Services",M
+221214,Internal Auditors,Public Administration and Safety,O
+222111,Commodities Traders,Wholesale Trade,F
+222111,Commodities Traders,"Professional, Scientific and Technical Services",M
+222111,Commodities Traders,"Agriculture, Forestry and Fishing",A
+222112,Finance Brokers,Financial and Insurance Services,K
+222113,Insurance Brokers,Financial and Insurance Services,K
+222199,Other Financial Brokers,"Rental, Hiring and Real Estate Services",L
+222199,Other Financial Brokers,Financial and Insurance Services,K
+222211,Financial Market Dealers,Financial and Insurance Services,K
+222212,Futures Traders,Financial and Insurance Services,K
+222212,Futures Traders,"Professional, Scientific and Technical Services",M
+222213,Stockbrokers,Financial and Insurance Services,K
+222299,Other Financial Dealers,Financial and Insurance Services,K
+222311,Financial Investment Advisers,Financial and Insurance Services,K
+222311,Financial Investment Advisers,"Professional, Scientific and Technical Services",M
+222312,Financial Investment Managers,Financial and Insurance Services,K
+222312,Financial Investment Managers,"Rental, Hiring and Real Estate Services",L
+222312,Financial Investment Managers,Public Administration and Safety,O
+223111,Human Resource Advisers,Public Administration and Safety,O
+223111,Human Resource Advisers,Health Care and Social Assistance,Q
+223111,Human Resource Advisers,"Professional, Scientific and Technical Services",M
+223112,Recruitment Consultants,Administrative and Support Services,N
+223112,Recruitment Consultants,"Professional, Scientific and Technical Services",M
+223112,Recruitment Consultants,Health Care and Social Assistance,Q
+223113,Workplace Relations Advisers,Other Services,S
+223113,Workplace Relations Advisers,Public Administration and Safety,O
+223113,Workplace Relations Advisers,"Professional, Scientific and Technical Services",M
+224111,Actuaries,Financial and Insurance Services,K
+224111,Actuaries,"Professional, Scientific and Technical Services",M
+224112,Mathematicians,Financial and Insurance Services,K
+224112,Mathematicians,Education and Training,P
+224112,Mathematicians,"Professional, Scientific and Technical Services",M
+224113,Statisticians,"Professional, Scientific and Technical Services",M
+224113,Statisticians,Education and Training,P
+224113,Statisticians,Public Administration and Safety,O
+224211,Archivists,Education and Training,P
+224211,Archivists,Information Media and Telecommunications,J
+224211,Archivists,Public Administration and Safety,O
+224212,Gallery and Museum Curators,Arts and Recreation Services,R
+224212,Gallery and Museum Curators,Public Administration and Safety,O
+224212,Gallery and Museum Curators,Education and Training,P
+224213,Health Information Managers,Health Care and Social Assistance,Q
+224213,Health Information Managers,"Professional, Scientific and Technical Services",M
+224213,Health Information Managers,Public Administration and Safety,O
+224214,Records Managers,Public Administration and Safety,O
+224214,Records Managers,"Professional, Scientific and Technical Services",M
+224214,Records Managers,Health Care and Social Assistance,Q
+224411,Intelligence Officers,Public Administration and Safety,O
+224411,Intelligence Officers,"Professional, Scientific and Technical Services",M
+224412,Policy Analysts,Public Administration and Safety,O
+224412,Policy Analysts,Health Care and Social Assistance,Q
+224412,Policy Analysts,"Professional, Scientific and Technical Services",M
+224511,Land Economists,"Rental, Hiring and Real Estate Services",L
+224511,Land Economists,Construction,E
+224511,Land Economists,Public Administration and Safety,O
+224512,Valuers,"Rental, Hiring and Real Estate Services",L
+224512,Valuers,Public Administration and Safety,O
+224512,Valuers,"Professional, Scientific and Technical Services",M
+224711,Management Consultants,"Professional, Scientific and Technical Services",M
+224711,Management Consultants,Financial and Insurance Services,K
+224711,Management Consultants,Public Administration and Safety,O
+224712,Organisation and Methods Analysts,Financial and Insurance Services,K
+224712,Organisation and Methods Analysts,"Professional, Scientific and Technical Services",M
+224712,Organisation and Methods Analysts,Public Administration and Safety,O
+224911,Electorate Officers,Public Administration and Safety,O
+224912,Liaison Officers,Public Administration and Safety,O
+224912,Liaison Officers,Health Care and Social Assistance,Q
+224912,Liaison Officers,Education and Training,P
+224913,Migration Agents,"Professional, Scientific and Technical Services",M
+224913,Migration Agents,Other Services,S
+224914,Patents Examiners,Public Administration and Safety,O
+224914,Patents Examiners,"Professional, Scientific and Technical Services",M
+224999,Information and Organisation Professionals (not covered elsewhere),Public Administration and Safety,O
+224999,Information and Organisation Professionals (not covered elsewhere),"Professional, Scientific and Technical Services",M
+224999,Information and Organisation Professionals (not covered elsewhere),Financial and Insurance Services,K
+225111,Advertising Specialists,"Professional, Scientific and Technical Services",M
+225111,Advertising Specialists,Information Media and Telecommunications,J
+225112,Market Research Analysts,"Professional, Scientific and Technical Services",M
+225112,Market Research Analysts,Financial and Insurance Services,K
+225112,Market Research Analysts,Retail Trade,G
+225113,Marketing Specialists,"Professional, Scientific and Technical Services",M
+225113,Marketing Specialists,Financial and Insurance Services,K
+225113,Marketing Specialists,Retail Trade,G
+225211,ICT Account Managers,"Professional, Scientific and Technical Services",M
+225211,ICT Account Managers,Information Media and Telecommunications,J
+225211,ICT Account Managers,Wholesale Trade,F
+225212,ICT Business Development Managers,"Professional, Scientific and Technical Services",M
+225212,ICT Business Development Managers,Information Media and Telecommunications,J
+225212,ICT Business Development Managers,Wholesale Trade,F
+225213,ICT Sales Representatives,"Professional, Scientific and Technical Services",M
+225213,ICT Sales Representatives,Information Media and Telecommunications,J
+225213,ICT Sales Representatives,Retail Trade,G
+225411,Sales Representatives (Industrial Products),Wholesale Trade,F
+225411,Sales Representatives (Industrial Products),Manufacturing,C
+225411,Sales Representatives (Industrial Products),Retail Trade,G
+225412,Sales Representatives (Medical and Pharmaceutical Products),Wholesale Trade,F
+225412,Sales Representatives (Medical and Pharmaceutical Products),Health Care and Social Assistance,Q
+225412,Sales Representatives (Medical and Pharmaceutical Products),Manufacturing,C
+225499,Other Technical Sales Representatives,Wholesale Trade,F
+225499,Other Technical Sales Representatives,Education and Training,P
+225499,Other Technical Sales Representatives,Retail Trade,G
+231111,Aeroplane Pilots,"Transport, Postal and Warehousing",I
+231111,Aeroplane Pilots,Public Administration and Safety,O
+231112,Air Traffic Controllers,"Transport, Postal and Warehousing",I
+231112,Air Traffic Controllers,Public Administration and Safety,O
+231113,Flying Instructors,Education and Training,P
+231113,Flying Instructors,"Transport, Postal and Warehousing",I
+231113,Flying Instructors,Public Administration and Safety,O
+231114,Helicopter Pilots,"Transport, Postal and Warehousing",I
+231114,Helicopter Pilots,Public Administration and Safety,O
+231114,Helicopter Pilots,"Agriculture, Forestry and Fishing",A
+231199,Other Air Transport Professionals,"Transport, Postal and Warehousing",I
+231199,Other Air Transport Professionals,Public Administration and Safety,O
+231211,Master Fishers,"Agriculture, Forestry and Fishing",A
+231211,Master Fishers,"Transport, Postal and Warehousing",I
+231212,Marine Engineers,"Transport, Postal and Warehousing",I
+231212,Marine Engineers,Public Administration and Safety,O
+231212,Marine Engineers,Manufacturing,C
+231213,Ship's Masters,"Transport, Postal and Warehousing",I
+231214,Ship's Officers,"Transport, Postal and Warehousing",I
+231214,Ship's Officers,Public Administration and Safety,O
+231215,Marine Surveyors,"Professional, Scientific and Technical Services",M
+231215,Marine Surveyors,"Transport, Postal and Warehousing",I
+231215,Marine Surveyors,Public Administration and Safety,O
+231299,Other Marine Transport Professionals,"Transport, Postal and Warehousing",I
+231299,Other Marine Transport Professionals,Public Administration and Safety,O
+232111,Architects,"Professional, Scientific and Technical Services",M
+232111,Architects,Construction,E
+232112,Landscape Architects,"Professional, Scientific and Technical Services",M
+232112,Landscape Architects,Construction,E
+232112,Landscape Architects,Public Administration and Safety,O
+232212,Surveyors,"Professional, Scientific and Technical Services",M
+232212,Surveyors,Construction,E
+232212,Surveyors,Mining,B
+232213,Cartographers,Public Administration and Safety,O
+232213,Cartographers,"Professional, Scientific and Technical Services",M
+232213,Cartographers,Mining,B
+232214,Other Spatial Scientists,Public Administration and Safety,O
+232214,Other Spatial Scientists,"Professional, Scientific and Technical Services",M
+232214,Other Spatial Scientists,"Electricity, Gas, Water and Waste Services",D
+232311,Fashion Designers,Retail Trade,G
+232311,Fashion Designers,"Professional, Scientific and Technical Services",M
+232311,Fashion Designers,Manufacturing,C
+232312,Industrial Designers,"Professional, Scientific and Technical Services",M
+232312,Industrial Designers,Manufacturing,C
+232312,Industrial Designers,Retail Trade,G
+232313,Jewellery Designers,"Professional, Scientific and Technical Services",M
+232313,Jewellery Designers,Retail Trade,G
+232313,Jewellery Designers,Manufacturing,C
+232411,Graphic Designers,"Professional, Scientific and Technical Services",M
+232411,Graphic Designers,Manufacturing,C
+232411,Graphic Designers,Information Media and Telecommunications,J
+232412,Illustrators (including Animators),Information Media and Telecommunications,J
+232412,Illustrators (including Animators),Arts and Recreation Services,R
+232412,Illustrators (including Animators),"Professional, Scientific and Technical Services",M
+232413,Multimedia Designers,"Professional, Scientific and Technical Services",M
+232413,Multimedia Designers,Education and Training,P
+232413,Multimedia Designers,Information Media and Telecommunications,J
+232414,Web Designers,"Professional, Scientific and Technical Services",M
+232414,Web Designers,Retail Trade,G
+232414,Web Designers,Education and Training,P
+233111,Chemical Engineers,Manufacturing,C
+233111,Chemical Engineers,"Professional, Scientific and Technical Services",M
+233111,Chemical Engineers,Mining,B
+233112,Materials Engineers,"Professional, Scientific and Technical Services",M
+233112,Materials Engineers,Manufacturing,C
+233112,Materials Engineers,Mining,B
+233211,Civil Engineers,Construction,E
+233211,Civil Engineers,"Professional, Scientific and Technical Services",M
+233211,Civil Engineers,Public Administration and Safety,O
+233212,Geotechnical Engineers,"Professional, Scientific and Technical Services",M
+233212,Geotechnical Engineers,Mining,B
+233213,Quantity Surveyors,"Professional, Scientific and Technical Services",M
+233213,Quantity Surveyors,Construction,E
+233214,Structural Engineers,"Professional, Scientific and Technical Services",M
+233214,Structural Engineers,Construction,E
+233215,Transport Engineers,"Professional, Scientific and Technical Services",M
+233215,Transport Engineers,Public Administration and Safety,O
+233215,Transport Engineers,"Transport, Postal and Warehousing",I
+233511,Industrial Engineers,Manufacturing,C
+233511,Industrial Engineers,"Professional, Scientific and Technical Services",M
+233511,Industrial Engineers,Construction,E
+233512,Mechanical Engineers,"Professional, Scientific and Technical Services",M
+233512,Mechanical Engineers,Manufacturing,C
+233512,Mechanical Engineers,Mining,B
+233513,Production and Plant Engineers,Manufacturing,C
+233513,Production and Plant Engineers,"Professional, Scientific and Technical Services",M
+233513,Production and Plant Engineers,Mining,B
+233611,Mining Engineers (excluding Petroleum),Mining,B
+233611,Mining Engineers (excluding Petroleum),"Professional, Scientific and Technical Services",M
+233612,Petroleum Engineers,Mining,B
+233612,Petroleum Engineers,"Professional, Scientific and Technical Services",M
+233612,Petroleum Engineers,Construction,E
+233911,Aeronautical Engineers,Public Administration and Safety,O
+233911,Aeronautical Engineers,Manufacturing,C
+233911,Aeronautical Engineers,"Professional, Scientific and Technical Services",M
+233912,Agricultural Engineers,"Agriculture, Forestry and Fishing",A
+233912,Agricultural Engineers,Manufacturing,C
+233912,Agricultural Engineers,"Professional, Scientific and Technical Services",M
+233913,Biomedical Engineers,Health Care and Social Assistance,Q
+233913,Biomedical Engineers,Wholesale Trade,F
+233913,Biomedical Engineers,Manufacturing,C
+233914,Engineering Technologists,Manufacturing,C
+233914,Engineering Technologists,"Professional, Scientific and Technical Services",M
+233914,Engineering Technologists,Construction,E
+233915,Environmental Engineers,"Professional, Scientific and Technical Services",M
+233915,Environmental Engineers,"Electricity, Gas, Water and Waste Services",D
+233915,Environmental Engineers,Public Administration and Safety,O
+233916,Naval Architects,"Professional, Scientific and Technical Services",M
+233916,Naval Architects,Manufacturing,C
+233916,Naval Architects,Public Administration and Safety,O
+233999,Engineering Professionals (not covered elsewhere),"Professional, Scientific and Technical Services",M
+233999,Engineering Professionals (not covered elsewhere),Manufacturing,C
+233999,Engineering Professionals (not covered elsewhere),Public Administration and Safety,O
+234111,Agricultural Consultants,"Agriculture, Forestry and Fishing",A
+234111,Agricultural Consultants,Public Administration and Safety,O
+234111,Agricultural Consultants,"Professional, Scientific and Technical Services",M
+234112,Agricultural Scientists,"Agriculture, Forestry and Fishing",A
+234112,Agricultural Scientists,"Professional, Scientific and Technical Services",M
+234112,Agricultural Scientists,Wholesale Trade,F
+234113,Foresters,"Agriculture, Forestry and Fishing",A
+234113,Foresters,Public Administration and Safety,O
+234113,Foresters,"Professional, Scientific and Technical Services",M
+234211,Chemists,Manufacturing,C
+234211,Chemists,"Professional, Scientific and Technical Services",M
+234211,Chemists,Education and Training,P
+234212,Food Technologists,Manufacturing,C
+234212,Food Technologists,"Professional, Scientific and Technical Services",M
+234212,Food Technologists,Wholesale Trade,F
+234213,Wine Makers,Manufacturing,C
+234311,Conservation Officers,Public Administration and Safety,O
+234311,Conservation Officers,"Professional, Scientific and Technical Services",M
+234312,Environmental Consultants,"Professional, Scientific and Technical Services",M
+234312,Environmental Consultants,Mining,B
+234312,Environmental Consultants,Public Administration and Safety,O
+234313,Environmental Research Scientists,"Professional, Scientific and Technical Services",M
+234313,Environmental Research Scientists,Public Administration and Safety,O
+234313,Environmental Research Scientists,"Electricity, Gas, Water and Waste Services",D
+234314,Park Rangers,Arts and Recreation Services,R
+234314,Park Rangers,Public Administration and Safety,O
+234314,Park Rangers,"Agriculture, Forestry and Fishing",A
+234399,Other Environmental Scientists,Public Administration and Safety,O
+234399,Other Environmental Scientists,"Professional, Scientific and Technical Services",M
+234399,Other Environmental Scientists,"Electricity, Gas, Water and Waste Services",D
+234411,Geologists,Mining,B
+234411,Geologists,"Professional, Scientific and Technical Services",M
+234412,Geophysicists,Mining,B
+234412,Geophysicists,"Professional, Scientific and Technical Services",M
+234412,Geophysicists,Public Administration and Safety,O
+234413,Hydrogeologists,"Professional, Scientific and Technical Services",M
+234413,Hydrogeologists,Public Administration and Safety,O
+234413,Hydrogeologists,Mining,B
+234511,Biologists,Education and Training,P
+234511,Biologists,"Professional, Scientific and Technical Services",M
+234511,Biologists,Public Administration and Safety,O
+234513,Biochemists,Education and Training,P
+234513,Biochemists,Health Care and Social Assistance,Q
+234513,Biochemists,"Professional, Scientific and Technical Services",M
+234514,Biotechnologists,"Professional, Scientific and Technical Services",M
+234514,Biotechnologists,Education and Training,P
+234514,Biotechnologists,Health Care and Social Assistance,Q
+234515,Botanists,"Professional, Scientific and Technical Services",M
+234515,Botanists,Public Administration and Safety,O
+234515,Botanists,Education and Training,P
+234516,Marine Biologists,"Professional, Scientific and Technical Services",M
+234516,Marine Biologists,Public Administration and Safety,O
+234516,Marine Biologists,Education and Training,P
+234517,Microbiologists,"Professional, Scientific and Technical Services",M
+234517,Microbiologists,Manufacturing,C
+234517,Microbiologists,Health Care and Social Assistance,Q
+234518,Zoologists,"Professional, Scientific and Technical Services",M
+234518,Zoologists,Public Administration and Safety,O
+234518,Zoologists,Education and Training,P
+234599,Other Life Scientists,Health Care and Social Assistance,Q
+234599,Other Life Scientists,"Professional, Scientific and Technical Services",M
+234599,Other Life Scientists,Education and Training,P
+234911,Conservators,Arts and Recreation Services,R
+234911,Conservators,Information Media and Telecommunications,J
+234911,Conservators,Public Administration and Safety,O
+234912,Metallurgists,Mining,B
+234912,Metallurgists,"Professional, Scientific and Technical Services",M
+234912,Metallurgists,Manufacturing,C
+234913,Meteorologists,"Professional, Scientific and Technical Services",M
+234913,Meteorologists,Education and Training,P
+234913,Meteorologists,Public Administration and Safety,O
+234914,Physicists (including Astronomers),Health Care and Social Assistance,Q
+234914,Physicists (including Astronomers),Education and Training,P
+234914,Physicists (including Astronomers),Public Administration and Safety,O
+234915,Exercise Physiologists,Health Care and Social Assistance,Q
+234915,Exercise Physiologists,Arts and Recreation Services,R
+234999,Natural and Physical Science Professionals (not covered elsewhere),Health Care and Social Assistance,Q
+234999,Natural and Physical Science Professionals (not covered elsewhere),Public Administration and Safety,O
+234999,Natural and Physical Science Professionals (not covered elsewhere),"Professional, Scientific and Technical Services",M
+241511,Special Needs Teachers,Education and Training,P
+241512,Teachers of the Hearing Impaired,Education and Training,P
+241512,Teachers of the Hearing Impaired,Health Care and Social Assistance,Q
+241513,Teachers of the Sight Impaired,Education and Training,P
+241599,Other Special Education Teachers,Education and Training,P
+242111,University Lecturers,Education and Training,P
+242112,University Tutors,Education and Training,P
+249111,Education Advisers,Education and Training,P
+249111,Education Advisers,Public Administration and Safety,O
+249111,Education Advisers,Health Care and Social Assistance,Q
+249112,Education Reviewers,Education and Training,P
+249112,Education Reviewers,Public Administration and Safety,O
+249112,Education Reviewers,"Professional, Scientific and Technical Services",M
+249211,Art Teachers (Private Tuition),Education and Training,P
+249211,Art Teachers (Private Tuition),Arts and Recreation Services,R
+249211,Art Teachers (Private Tuition),Health Care and Social Assistance,Q
+249212,Dance Teachers (Private Tuition),Education and Training,P
+249213,Drama Teachers (Private Tuition),Education and Training,P
+249213,Drama Teachers (Private Tuition),Arts and Recreation Services,R
+249214,Music Teachers (Private Tuition),Education and Training,P
+249299,Other Private Tutors and Teachers,Education and Training,P
+251111,Dietitians,Health Care and Social Assistance,Q
+251112,Nutritionists,Health Care and Social Assistance,Q
+251112,Nutritionists,Other Services,S
+251112,Nutritionists,Education and Training,P
+251211,Medical Diagnostic Radiographers,Health Care and Social Assistance,Q
+251212,Medical Radiation Therapists,Health Care and Social Assistance,Q
+251213,Nuclear Medicine Technologists,Health Care and Social Assistance,Q
+251214,Sonographers,Health Care and Social Assistance,Q
+251311,Environmental Health Officers,Public Administration and Safety,O
+251311,Environmental Health Officers,Health Care and Social Assistance,Q
+251311,Environmental Health Officers,Manufacturing,C
+251312,Occupational Health and Safety Advisers,Public Administration and Safety,O
+251312,Occupational Health and Safety Advisers,Construction,E
+251312,Occupational Health and Safety Advisers,Health Care and Social Assistance,Q
+251411,Optometrists,Health Care and Social Assistance,Q
+251412,Orthoptists,Health Care and Social Assistance,Q
+251511,Hospital Pharmacists,Health Care and Social Assistance,Q
+251511,Hospital Pharmacists,Retail Trade,G
+251512,Industrial Pharmacists,Manufacturing,C
+251512,Industrial Pharmacists,"Professional, Scientific and Technical Services",M
+251512,Industrial Pharmacists,Wholesale Trade,F
+251513,Retail Pharmacists,Retail Trade,G
+251513,Retail Pharmacists,Health Care and Social Assistance,Q
+251911,Health Promotion Officers,Health Care and Social Assistance,Q
+251911,Health Promotion Officers,Education and Training,P
+251911,Health Promotion Officers,Public Administration and Safety,O
+251912,Orthotists and Prosthetists,Health Care and Social Assistance,Q
+251912,Orthotists and Prosthetists,Manufacturing,C
+251999,Genetic Counsellors (and Other Health Professionals not covered elsewhere),Health Care and Social Assistance,Q
+251999,Genetic Counsellors (and Other Health Professionals not covered elsewhere),Public Administration and Safety,O
+252111,Chiropractors,Health Care and Social Assistance,Q
+252112,Osteopaths,Health Care and Social Assistance,Q
+252211,Acupuncturists,Health Care and Social Assistance,Q
+252212,Homoeopaths,Health Care and Social Assistance,Q
+252213,Naturopaths,Health Care and Social Assistance,Q
+252213,Naturopaths,Retail Trade,G
+252214,Chinese Medicine Practitioners,Health Care and Social Assistance,Q
+252299,"Music, Dance, Drama, Play, Hypnotic, and Related Therapists",Health Care and Social Assistance,Q
+252299,"Music, Dance, Drama, Play, Hypnotic, and Related Therapists",Education and Training,P
+252311,Dental Specialists (including Orthodontists),Health Care and Social Assistance,Q
+252312,Dentists,Health Care and Social Assistance,Q
+252711,Audiologists,Health Care and Social Assistance,Q
+252711,Audiologists,Manufacturing,C
+252712,Speech Pathologists,Health Care and Social Assistance,Q
+252712,Speech Pathologists,Education and Training,P
+253111,General Practitioners,Health Care and Social Assistance,Q
+253112,Resident Medical Officers,Health Care and Social Assistance,Q
+253311,Specialist Physicians (General Medicine),Health Care and Social Assistance,Q
+253312,Cardiologists,Health Care and Social Assistance,Q
+253313,Clinical Haematologists,Health Care and Social Assistance,Q
+253314,Medical Oncologists,Health Care and Social Assistance,Q
+253315,Endocrinologists,Health Care and Social Assistance,Q
+253316,Gastroenterologists,Health Care and Social Assistance,Q
+253317,Intensive Care Specialists,Health Care and Social Assistance,Q
+253318,Neurologists,Health Care and Social Assistance,Q
+253321,Paediatricians,Health Care and Social Assistance,Q
+253322,Renal Medicine Specialists,Health Care and Social Assistance,Q
+253323,Rheumatologists,Health Care and Social Assistance,Q
+253324,Thoracic Medicine Specialists,Health Care and Social Assistance,Q
+253399,Other Specialist Physicians,Health Care and Social Assistance,Q
+253511,Surgeons (General),Health Care and Social Assistance,Q
+253512,Cardiothoracic Surgeons,Health Care and Social Assistance,Q
+253513,Neurosurgeons,Health Care and Social Assistance,Q
+253514,Orthopaedic Surgeons,Health Care and Social Assistance,Q
+253515,"Ear, Nose and Throat Specialists",Health Care and Social Assistance,Q
+253516,Paediatric Surgeons,Health Care and Social Assistance,Q
+253517,Plastic and Reconstructive Surgeons,Health Care and Social Assistance,Q
+253518,Urologists,Health Care and Social Assistance,Q
+253521,Vascular Surgeons,Health Care and Social Assistance,Q
+253911,Dermatologists,Health Care and Social Assistance,Q
+253912,Emergency Medicine Specialists,Health Care and Social Assistance,Q
+253913,Obstetricians and Gynaecologists,Health Care and Social Assistance,Q
+253914,Eye Specialists,Health Care and Social Assistance,Q
+253915,Pathologists,Health Care and Social Assistance,Q
+253917,Diagnostic and Interventional Radiologists,Health Care and Social Assistance,Q
+253918,Radiation Oncologists,Health Care and Social Assistance,Q
+253999,Medical Practitioners (not covered elsewhere),Health Care and Social Assistance,Q
+254211,Nurse Educators,Health Care and Social Assistance,Q
+254211,Nurse Educators,Education and Training,P
+254212,Nurse Researchers,Health Care and Social Assistance,Q
+254212,Nurse Researchers,"Professional, Scientific and Technical Services",M
+254212,Nurse Researchers,Education and Training,P
+254411,Nurse Practitioners,Health Care and Social Assistance,Q
+254412,Registered Nurses (Aged Care),Health Care and Social Assistance,Q
+254413,Registered Nurses (Child and Family Health),Health Care and Social Assistance,Q
+254413,Registered Nurses (Child and Family Health),Public Administration and Safety,O
+254414,Registered Nurses (Community Health),Health Care and Social Assistance,Q
+254414,Registered Nurses (Community Health),Education and Training,P
+254415,Registered Nurses (Critical Care and Emergency),Health Care and Social Assistance,Q
+254417,Registered Nurses (Disability and Rehabilitation),Health Care and Social Assistance,Q
+254418,Registered Nurses (Medical),Health Care and Social Assistance,Q
+254421,Registered Nurses (Medical Practice),Health Care and Social Assistance,Q
+254422,Registered Nurses (Mental Health),Health Care and Social Assistance,Q
+254423,Registered Nurses (Perioperative),Health Care and Social Assistance,Q
+254424,Registered Nurses (Surgical),Health Care and Social Assistance,Q
+254425,Registered Nurses (Paediatrics),Health Care and Social Assistance,Q
+254499,Registered Nurses (not covered elsewhere),Health Care and Social Assistance,Q
+261111,ICT Business Analysts,"Professional, Scientific and Technical Services",M
+261111,ICT Business Analysts,Financial and Insurance Services,K
+261111,ICT Business Analysts,Public Administration and Safety,O
+261112,Systems Analysts,"Professional, Scientific and Technical Services",M
+261112,Systems Analysts,Financial and Insurance Services,K
+261112,Systems Analysts,Public Administration and Safety,O
+261211,Game and Multimedia Developers,"Professional, Scientific and Technical Services",M
+261211,Game and Multimedia Developers,Information Media and Telecommunications,J
+261211,Game and Multimedia Developers,Arts and Recreation Services,R
+261212,Web Developers,"Professional, Scientific and Technical Services",M
+261212,Web Developers,Information Media and Telecommunications,J
+261212,Web Developers,Financial and Insurance Services,K
+261311,Analyst Programmers,"Professional, Scientific and Technical Services",M
+261311,Analyst Programmers,Financial and Insurance Services,K
+261311,Analyst Programmers,Public Administration and Safety,O
+261312,Developer Programmers,"Professional, Scientific and Technical Services",M
+261312,Developer Programmers,Financial and Insurance Services,K
+261312,Developer Programmers,Public Administration and Safety,O
+261313,Software Engineers,"Professional, Scientific and Technical Services",M
+261313,Software Engineers,Financial and Insurance Services,K
+261313,Software Engineers,Information Media and Telecommunications,J
+261314,Software Testers,"Professional, Scientific and Technical Services",M
+261314,Software Testers,Financial and Insurance Services,K
+261314,Software Testers,Public Administration and Safety,O
+261399,Other Software and Applications Programmers,"Professional, Scientific and Technical Services",M
+261399,Other Software and Applications Programmers,Financial and Insurance Services,K
+261399,Other Software and Applications Programmers,Information Media and Telecommunications,J
+262111,Database Administrators,"Professional, Scientific and Technical Services",M
+262111,Database Administrators,Public Administration and Safety,O
+262111,Database Administrators,Financial and Insurance Services,K
+262112,ICT Security Specialists,"Professional, Scientific and Technical Services",M
+262112,ICT Security Specialists,Public Administration and Safety,O
+262112,ICT Security Specialists,Financial and Insurance Services,K
+262113,Systems Administrators,"Professional, Scientific and Technical Services",M
+262113,Systems Administrators,Public Administration and Safety,O
+262113,Systems Administrators,Education and Training,P
+263111,Computer Network and Systems Engineers,"Professional, Scientific and Technical Services",M
+263111,Computer Network and Systems Engineers,Financial and Insurance Services,K
+263111,Computer Network and Systems Engineers,Information Media and Telecommunications,J
+263112,Network Administrators,"Professional, Scientific and Technical Services",M
+263112,Network Administrators,Education and Training,P
+263112,Network Administrators,Information Media and Telecommunications,J
+263113,Network Analysts,"Professional, Scientific and Technical Services",M
+263113,Network Analysts,Information Media and Telecommunications,J
+263113,Network Analysts,Financial and Insurance Services,K
+263211,ICT Quality Assurance Engineers,"Professional, Scientific and Technical Services",M
+263211,ICT Quality Assurance Engineers,Financial and Insurance Services,K
+263211,ICT Quality Assurance Engineers,Public Administration and Safety,O
+263212,ICT Support Engineers,"Professional, Scientific and Technical Services",M
+263212,ICT Support Engineers,Financial and Insurance Services,K
+263212,ICT Support Engineers,Information Media and Telecommunications,J
+263213,ICT Systems Test Engineers,"Professional, Scientific and Technical Services",M
+263213,ICT Systems Test Engineers,Financial and Insurance Services,K
+263213,ICT Systems Test Engineers,Public Administration and Safety,O
+263299,Other ICT Support and Test Engineers,"Professional, Scientific and Technical Services",M
+263299,Other ICT Support and Test Engineers,Financial and Insurance Services,K
+263299,Other ICT Support and Test Engineers,Information Media and Telecommunications,J
+263311,Telecommunications Engineers,Information Media and Telecommunications,J
+263311,Telecommunications Engineers,"Professional, Scientific and Technical Services",M
+263311,Telecommunications Engineers,Public Administration and Safety,O
+263312,Telecommunications Network Engineers,Information Media and Telecommunications,J
+263312,Telecommunications Network Engineers,"Professional, Scientific and Technical Services",M
+263312,Telecommunications Network Engineers,Wholesale Trade,F
+271211,Judges,Public Administration and Safety,O
+271212,Magistrates,Public Administration and Safety,O
+271213,Tribunal Members,Public Administration and Safety,O
+271214,Intellectual Property Lawyers,"Professional, Scientific and Technical Services",M
+271299,Judicial and Other Legal Professionals (not covered elsewhere),Public Administration and Safety,O
+271299,Judicial and Other Legal Professionals (not covered elsewhere),"Professional, Scientific and Technical Services",M
+271299,Judicial and Other Legal Professionals (not covered elsewhere),Financial and Insurance Services,K
+272111,Careers Counsellors,Education and Training,P
+272111,Careers Counsellors,Administrative and Support Services,N
+272111,Careers Counsellors,Health Care and Social Assistance,Q
+272112,Drug and Alcohol Counsellors,Health Care and Social Assistance,Q
+272112,Drug and Alcohol Counsellors,Other Services,S
+272113,Family and Marriage Counsellors,Health Care and Social Assistance,Q
+272114,Rehabilitation Counsellors,Health Care and Social Assistance,Q
+272114,Rehabilitation Counsellors,Financial and Insurance Services,K
+272114,Rehabilitation Counsellors,Public Administration and Safety,O
+272115,Student Counsellors,Education and Training,P
+272115,Student Counsellors,Health Care and Social Assistance,Q
+272199,Other Counsellors and Life Coaches,Education and Training,P
+272199,Other Counsellors and Life Coaches,Health Care and Social Assistance,Q
+272199,Other Counsellors and Life Coaches,Other Services,S
+272311,Clinical Psychologists,Health Care and Social Assistance,Q
+272311,Clinical Psychologists,Public Administration and Safety,O
+272312,Educational Psychologists,Education and Training,P
+272312,Educational Psychologists,Health Care and Social Assistance,Q
+272313,Organisational Psychologists,Health Care and Social Assistance,Q
+272313,Organisational Psychologists,"Professional, Scientific and Technical Services",M
+272313,Organisational Psychologists,Public Administration and Safety,O
+272314,Psychotherapists,Health Care and Social Assistance,Q
+272314,Psychotherapists,Education and Training,P
+272399,Other Psychologists,Health Care and Social Assistance,Q
+272399,Other Psychologists,Education and Training,P
+272399,Other Psychologists,Public Administration and Safety,O
+272411,Historians,"Professional, Scientific and Technical Services",M
+272411,Historians,Education and Training,P
+272411,Historians,Arts and Recreation Services,R
+272412,Interpreters,"Professional, Scientific and Technical Services",M
+272412,Interpreters,Health Care and Social Assistance,Q
+272412,Interpreters,Public Administration and Safety,O
+272413,Translators,"Professional, Scientific and Technical Services",M
+272413,Translators,Health Care and Social Assistance,Q
+272413,Translators,Public Administration and Safety,O
+272414,Archaeologists,"Professional, Scientific and Technical Services",M
+272414,Archaeologists,Public Administration and Safety,O
+272499,Other Social Professionals,"Professional, Scientific and Technical Services",M
+272499,Other Social Professionals,Education and Training,P
+272499,Other Social Professionals,Public Administration and Safety,O
+272611,Community Arts Workers,Public Administration and Safety,O
+272611,Community Arts Workers,Arts and Recreation Services,R
+272611,Community Arts Workers,Health Care and Social Assistance,Q
+272612,Recreation Officers,Public Administration and Safety,O
+272612,Recreation Officers,Health Care and Social Assistance,Q
+272612,Recreation Officers,Arts and Recreation Services,R
+272613,Welfare Workers,Health Care and Social Assistance,Q
+272613,Welfare Workers,Public Administration and Safety,O
+311211,Anaesthetic Technicians,Health Care and Social Assistance,Q
+311212,Cardiac Technicians,Health Care and Social Assistance,Q
+311212,Cardiac Technicians,Wholesale Trade,F
+311213,Medical Laboratory Technicians,Health Care and Social Assistance,Q
+311214,Operating Theatre Technicians,Health Care and Social Assistance,Q
+311215,Pharmacy Technicians,Retail Trade,G
+311215,Pharmacy Technicians,Health Care and Social Assistance,Q
+311216,Pathology Collectors,Health Care and Social Assistance,Q
+311299,Other Medical Technicians,Health Care and Social Assistance,Q
+311299,Other Medical Technicians,Manufacturing,C
+311311,Fisheries Officers,Public Administration and Safety,O
+311312,Meat Inspectors,Manufacturing,C
+311312,Meat Inspectors,Administrative and Support Services,N
+311312,Meat Inspectors,Public Administration and Safety,O
+311313,Quarantine Officers,Public Administration and Safety,O
+311313,Quarantine Officers,"Agriculture, Forestry and Fishing",A
+311399,Other Primary Products Inspectors,Public Administration and Safety,O
+311399,Other Primary Products Inspectors,"Agriculture, Forestry and Fishing",A
+311399,Other Primary Products Inspectors,Manufacturing,C
+311411,Chemistry Technicians,Manufacturing,C
+311411,Chemistry Technicians,"Professional, Scientific and Technical Services",M
+311411,Chemistry Technicians,Education and Training,P
+311412,Earth Science Technicians,"Professional, Scientific and Technical Services",M
+311412,Earth Science Technicians,Mining,B
+311412,Earth Science Technicians,Construction,E
+311413,Life Science Technicians,"Professional, Scientific and Technical Services",M
+311413,Life Science Technicians,Education and Training,P
+311413,Life Science Technicians,Health Care and Social Assistance,Q
+311414,School Laboratory Technicians,Education and Training,P
+311415,Hydrographers,"Electricity, Gas, Water and Waste Services",D
+311415,Hydrographers,Public Administration and Safety,O
+311415,Hydrographers,"Professional, Scientific and Technical Services",M
+311499,Other Science Technicians,"Professional, Scientific and Technical Services",M
+311499,Other Science Technicians,Public Administration and Safety,O
+311499,Other Science Technicians,Manufacturing,C
+312111,Architectural Draftspersons,"Professional, Scientific and Technical Services",M
+312111,Architectural Draftspersons,Construction,E
+312112,Building Associates,Construction,E
+312113,Building Inspectors,"Professional, Scientific and Technical Services",M
+312113,Building Inspectors,Public Administration and Safety,O
+312113,Building Inspectors,Construction,E
+312114,Construction Estimators,Construction,E
+312114,Construction Estimators,Manufacturing,C
+312115,Plumbing Inspectors,Public Administration and Safety,O
+312115,Plumbing Inspectors,Construction,E
+312115,Plumbing Inspectors,"Electricity, Gas, Water and Waste Services",D
+312116,Surveying and Spatial Science Technicians,"Professional, Scientific and Technical Services",M
+312116,Surveying and Spatial Science Technicians,Public Administration and Safety,O
+312116,Surveying and Spatial Science Technicians,Construction,E
+312199,"Other Architectural, Building and Surveying Technicians","Professional, Scientific and Technical Services",M
+312199,"Other Architectural, Building and Surveying Technicians",Construction,E
+312199,"Other Architectural, Building and Surveying Technicians",Manufacturing,C
+312211,Civil Engineering Draftspersons,"Professional, Scientific and Technical Services",M
+312211,Civil Engineering Draftspersons,Construction,E
+312211,Civil Engineering Draftspersons,Public Administration and Safety,O
+312212,Civil Engineering Technicians,"Professional, Scientific and Technical Services",M
+312212,Civil Engineering Technicians,Public Administration and Safety,O
+312212,Civil Engineering Technicians,Construction,E
+312311,Electrical Engineering Draftspersons,"Professional, Scientific and Technical Services",M
+312311,Electrical Engineering Draftspersons,"Electricity, Gas, Water and Waste Services",D
+312311,Electrical Engineering Draftspersons,Construction,E
+312312,Electrical Engineering Technicians,Construction,E
+312312,Electrical Engineering Technicians,"Electricity, Gas, Water and Waste Services",D
+312312,Electrical Engineering Technicians,Manufacturing,C
+312411,Electronic Engineering Draftspersons,Manufacturing,C
+312411,Electronic Engineering Draftspersons,"Professional, Scientific and Technical Services",M
+312411,Electronic Engineering Draftspersons,Public Administration and Safety,O
+312412,Electronic Engineering Technicians,Public Administration and Safety,O
+312412,Electronic Engineering Technicians,Manufacturing,C
+312412,Electronic Engineering Technicians,Information Media and Telecommunications,J
+312511,Mechanical Engineering Draftspersons,"Professional, Scientific and Technical Services",M
+312511,Mechanical Engineering Draftspersons,Manufacturing,C
+312511,Mechanical Engineering Draftspersons,Construction,E
+312512,Mechanical Engineering Technicians,Manufacturing,C
+312512,Mechanical Engineering Technicians,Other Services,S
+312512,Mechanical Engineering Technicians,"Professional, Scientific and Technical Services",M
+312911,Maintenance Planners,Mining,B
+312911,Maintenance Planners,Manufacturing,C
+312911,Maintenance Planners,Construction,E
+312912,Metallurgical and Materials Technicians,"Professional, Scientific and Technical Services",M
+312912,Metallurgical and Materials Technicians,Mining,B
+312912,Metallurgical and Materials Technicians,Manufacturing,C
+312913,Mine Deputies,Mining,B
+312913,Mine Deputies,Manufacturing,C
+312999,Building and Engineering Technicians (not covered elsewhere),Manufacturing,C
+312999,Building and Engineering Technicians (not covered elsewhere),Mining,B
+312999,Building and Engineering Technicians (not covered elsewhere),Health Care and Social Assistance,Q
+313111,Hardware Technicians,"Professional, Scientific and Technical Services",M
+313111,Hardware Technicians,Other Services,S
+313111,Hardware Technicians,Retail Trade,G
+313112,ICT Customer Support Officers,"Professional, Scientific and Technical Services",M
+313112,ICT Customer Support Officers,Education and Training,P
+313112,ICT Customer Support Officers,Public Administration and Safety,O
+313113,Web Administrators,Retail Trade,G
+313113,Web Administrators,"Professional, Scientific and Technical Services",M
+313113,Web Administrators,Public Administration and Safety,O
+313199,Other ICT Support Technicians,Public Administration and Safety,O
+313199,Other ICT Support Technicians,"Professional, Scientific and Technical Services",M
+313199,Other ICT Support Technicians,Information Media and Telecommunications,J
+313211,Radiocommunications Technicians,Information Media and Telecommunications,J
+313211,Radiocommunications Technicians,Public Administration and Safety,O
+313211,Radiocommunications Technicians,"Professional, Scientific and Technical Services",M
+313212,Telecommunications Field Engineers,Information Media and Telecommunications,J
+313212,Telecommunications Field Engineers,Construction,E
+313213,Telecommunications Network Planners,Information Media and Telecommunications,J
+313213,Telecommunications Network Planners,Construction,E
+313213,Telecommunications Network Planners,"Professional, Scientific and Technical Services",M
+313214,Telecommunications Technical Officers and Technologists,Information Media and Telecommunications,J
+313214,Telecommunications Technical Officers and Technologists,Public Administration and Safety,O
+313214,Telecommunications Technical Officers and Technologists,"Professional, Scientific and Technical Services",M
+321211,Motor Mechanics (General),Other Services,S
+321211,Motor Mechanics (General),Retail Trade,G
+321212,Diesel Motor Mechanics,Other Services,S
+321212,Diesel Motor Mechanics,"Transport, Postal and Warehousing",I
+321212,Diesel Motor Mechanics,Wholesale Trade,F
+321213,Motorcycle Mechanics,Other Services,S
+321213,Motorcycle Mechanics,Retail Trade,G
+321214,Small Engine Mechanics,Other Services,S
+321214,Small Engine Mechanics,Retail Trade,G
+321214,Small Engine Mechanics,Manufacturing,C
+322111,Blacksmiths,Manufacturing,C
+322112,Electroplaters,Manufacturing,C
+322113,Farriers,"Agriculture, Forestry and Fishing",A
+322113,Farriers,Arts and Recreation Services,R
+322114,Metal Casting Trades Workers,Manufacturing,C
+322114,Metal Casting Trades Workers,Mining,B
+322115,Metal Polishers,Manufacturing,C
+322115,Metal Polishers,Other Services,S
+322311,Metal Fabricators,Manufacturing,C
+322311,Metal Fabricators,Construction,E
+322311,Metal Fabricators,Mining,B
+322312,Pressure Welders,Manufacturing,C
+322312,Pressure Welders,Construction,E
+322312,Pressure Welders,"Electricity, Gas, Water and Waste Services",D
+322313,Welders (First Class),Manufacturing,C
+322313,Welders (First Class),Construction,E
+323111,Aircraft Maintenance Engineers (Avionics),Public Administration and Safety,O
+323111,Aircraft Maintenance Engineers (Avionics),Manufacturing,C
+323111,Aircraft Maintenance Engineers (Avionics),"Transport, Postal and Warehousing",I
+323112,Aircraft Maintenance Engineers (Mechanical),Public Administration and Safety,O
+323112,Aircraft Maintenance Engineers (Mechanical),Manufacturing,C
+323112,Aircraft Maintenance Engineers (Mechanical),"Transport, Postal and Warehousing",I
+323113,Aircraft Maintenance Engineers (Structures),Manufacturing,C
+323113,Aircraft Maintenance Engineers (Structures),"Transport, Postal and Warehousing",I
+323113,Aircraft Maintenance Engineers (Structures),Public Administration and Safety,O
+323211,Fitters (General),Mining,B
+323211,Fitters (General),Manufacturing,C
+323211,Fitters (General),Other Services,S
+323212,Fitter and Turners,Manufacturing,C
+323212,Fitter and Turners,Other Services,S
+323212,Fitter and Turners,Mining,B
+323213,Fitter-Welders,Manufacturing,C
+323213,Fitter-Welders,Construction,E
+323213,Fitter-Welders,Other Services,S
+323214,Metal Machinists (First Class),Manufacturing,C
+323214,Metal Machinists (First Class),Other Services,S
+323214,Metal Machinists (First Class),"Professional, Scientific and Technical Services",M
+323215,"Textile, Clothing and Footwear Mechanics",Other Services,S
+323215,"Textile, Clothing and Footwear Mechanics",Manufacturing,C
+323215,"Textile, Clothing and Footwear Mechanics",Retail Trade,G
+323299,Other Metal Fitters and Machinists,Other Services,S
+323299,Other Metal Fitters and Machinists,"Agriculture, Forestry and Fishing",A
+323299,Other Metal Fitters and Machinists,Wholesale Trade,F
+323311,Engravers,Manufacturing,C
+323311,Engravers,Retail Trade,G
+323311,Engravers,Other Services,S
+323312,Gunsmiths,Public Administration and Safety,O
+323312,Gunsmiths,Manufacturing,C
+323312,Gunsmiths,Construction,E
+323313,Locksmiths,Other Services,S
+323313,Locksmiths,Public Administration and Safety,O
+323314,Precision Instrument Makers and Repairers,Other Services,S
+323314,Precision Instrument Makers and Repairers,Wholesale Trade,F
+323314,Precision Instrument Makers and Repairers,Health Care and Social Assistance,Q
+323315,Saw Doctors,Manufacturing,C
+323315,Saw Doctors,Other Services,S
+323315,Saw Doctors,"Agriculture, Forestry and Fishing",A
+323316,Watch and Clock Makers and Repairers,Other Services,S
+323316,Watch and Clock Makers and Repairers,Retail Trade,G
+323316,Watch and Clock Makers and Repairers,Manufacturing,C
+323411,Engineering Patternmakers,Manufacturing,C
+323412,Toolmakers,Manufacturing,C
+323412,Toolmakers,Other Services,S
+323412,Toolmakers,Wholesale Trade,F
+324211,Vehicle Body Builders,Manufacturing,C
+324211,Vehicle Body Builders,Other Services,S
+324211,Vehicle Body Builders,"Transport, Postal and Warehousing",I
+324212,Vehicle Trimmers,Other Services,S
+324212,Vehicle Trimmers,Manufacturing,C
+331111,Bricklayers,Construction,E
+331112,Stonemasons,Manufacturing,C
+331112,Stonemasons,Construction,E
+331212,Carpenters,Construction,E
+331213,Joiners,Construction,E
+331213,Joiners,Manufacturing,C
+333211,Fibrous Plasterers,Construction,E
+333212,Solid Plasterers,Construction,E
+334111,Plumbers (General),Construction,E
+334112,Airconditioning and Mechanical Services Plumbers,Construction,E
+334113,Drainers,Construction,E
+334114,Gasfitters,Construction,E
+334114,Gasfitters,"Electricity, Gas, Water and Waste Services",D
+334115,Roof Plumbers,Construction,E
+341111,Electricians (General),Construction,E
+341111,Electricians (General),Manufacturing,C
+341111,Electricians (General),Mining,B
+341112,Electricians (Special Class),Construction,E
+341112,Electricians (Special Class),Manufacturing,C
+341112,Electricians (Special Class),Mining,B
+341113,Lift Mechanics,Construction,E
+341113,Lift Mechanics,Other Services,S
+341113,Lift Mechanics,Manufacturing,C
+342211,Electrical Linesworkers,"Electricity, Gas, Water and Waste Services",D
+342211,Electrical Linesworkers,Construction,E
+342212,Technical Cable Jointers,"Electricity, Gas, Water and Waste Services",D
+342212,Technical Cable Jointers,Construction,E
+342311,Business Machine Mechanics,Wholesale Trade,F
+342311,Business Machine Mechanics,Other Services,S
+342311,Business Machine Mechanics,Manufacturing,C
+342312,Communications Operators,Public Administration and Safety,O
+342313,Electronic Equipment Trades Workers,Construction,E
+342313,Electronic Equipment Trades Workers,Other Services,S
+342313,Electronic Equipment Trades Workers,"Professional, Scientific and Technical Services",M
+342314,Electronic Instrument Trades Workers (General),Public Administration and Safety,O
+342314,Electronic Instrument Trades Workers (General),Manufacturing,C
+342314,Electronic Instrument Trades Workers (General),Mining,B
+342315,Electronic Instrument Trades Workers (Special Class),"Transport, Postal and Warehousing",I
+342315,Electronic Instrument Trades Workers (Special Class),Manufacturing,C
+342315,Electronic Instrument Trades Workers (Special Class),Wholesale Trade,F
+342411,Cablers (Data and Telecommunications),Construction,E
+342411,Cablers (Data and Telecommunications),Information Media and Telecommunications,J
+342412,Telecommunications Cable Jointers,Information Media and Telecommunications,J
+342412,Telecommunications Cable Jointers,Construction,E
+342413,Telecommunications Linesworkers,Information Media and Telecommunications,J
+342413,Telecommunications Linesworkers,Construction,E
+342414,Telecommunications Technicians,Information Media and Telecommunications,J
+342414,Telecommunications Technicians,Construction,E
+342414,Telecommunications Technicians,Other Services,S
+351111,Bakers,Manufacturing,C
+351111,Bakers,Retail Trade,G
+351111,Bakers,Accommodation and Food Services,H
+351112,Pastrycooks,Manufacturing,C
+351112,Pastrycooks,Accommodation and Food Services,H
+351112,Pastrycooks,Retail Trade,G
+361111,Dog Handlers and Trainers,Other Services,S
+361111,Dog Handlers and Trainers,Public Administration and Safety,O
+361111,Dog Handlers and Trainers,Arts and Recreation Services,R
+361112,Horse Trainers,Arts and Recreation Services,R
+361112,Horse Trainers,Education and Training,P
+361112,Horse Trainers,"Agriculture, Forestry and Fishing",A
+361113,Pet Groomers,Other Services,S
+361113,Pet Groomers,Retail Trade,G
+361114,Zookeepers,Arts and Recreation Services,R
+361115,Kennel Hands,Other Services,S
+361115,Kennel Hands,"Professional, Scientific and Technical Services",M
+361115,Kennel Hands,Arts and Recreation Services,R
+361199,Other Animal Attendants and Trainers,Other Services,S
+361199,Other Animal Attendants and Trainers,"Agriculture, Forestry and Fishing",A
+361199,Other Animal Attendants and Trainers,"Professional, Scientific and Technical Services",M
+362211,Gardeners (General),Administrative and Support Services,N
+362211,Gardeners (General),Public Administration and Safety,O
+362211,Gardeners (General),Construction,E
+362212,Arborists,Administrative and Support Services,N
+362212,Arborists,"Agriculture, Forestry and Fishing",A
+362212,Arborists,Public Administration and Safety,O
+362213,Landscape Gardeners,Construction,E
+362213,Landscape Gardeners,Administrative and Support Services,N
+392111,Print Finishers,Manufacturing,C
+392111,Print Finishers,Information Media and Telecommunications,J
+392112,Screen Printers,Manufacturing,C
+392311,Printing Machinists,Manufacturing,C
+392311,Printing Machinists,Information Media and Telecommunications,J
+392312,Small Offset Printers,Manufacturing,C
+392312,Small Offset Printers,Education and Training,P
+393111,Canvas Goods Fabricators,Manufacturing,C
+393111,Canvas Goods Fabricators,Other Services,S
+393112,Leather Goods Makers,Manufacturing,C
+393112,Leather Goods Makers,Other Services,S
+393112,Leather Goods Makers,Retail Trade,G
+393113,Sail Makers,Manufacturing,C
+393114,Shoemakers,Other Services,S
+393114,Shoemakers,Manufacturing,C
+393114,Shoemakers,Retail Trade,G
+393211,Apparel Cutters,Manufacturing,C
+393211,Apparel Cutters,Retail Trade,G
+393211,Apparel Cutters,Arts and Recreation Services,R
+393212,Clothing Patternmakers,Manufacturing,C
+393212,Clothing Patternmakers,Retail Trade,G
+393212,Clothing Patternmakers,"Professional, Scientific and Technical Services",M
+393213,Dressmakers and Tailors,Manufacturing,C
+393213,Dressmakers and Tailors,Other Services,S
+393213,Dressmakers and Tailors,Retail Trade,G
+393299,Other Clothing Trades Workers,Manufacturing,C
+393299,Other Clothing Trades Workers,Retail Trade,G
+394211,Furniture Finishers,Manufacturing,C
+394211,Furniture Finishers,Construction,E
+394211,Furniture Finishers,Other Services,S
+394212,Picture Framers,Retail Trade,G
+394212,Picture Framers,Manufacturing,C
+394212,Picture Framers,Arts and Recreation Services,R
+394213,Wood Machinists,Manufacturing,C
+394213,Wood Machinists,Construction,E
+394213,Wood Machinists,Wholesale Trade,F
+394214,Wood Turners,Manufacturing,C
+394214,Wood Turners,Wholesale Trade,F
+394214,Wood Turners,"Agriculture, Forestry and Fishing",A
+394299,Other Wood Machinists and Wood Trades Workers,Manufacturing,C
+394299,Other Wood Machinists and Wood Trades Workers,Retail Trade,G
+394299,Other Wood Machinists and Wood Trades Workers,Arts and Recreation Services,R
+399111,Boat Builders and Repairers,Manufacturing,C
+399112,Shipwrights,Manufacturing,C
+399112,Shipwrights,"Transport, Postal and Warehousing",I
+399211,Chemical Plant Operators,Manufacturing,C
+399211,Chemical Plant Operators,Mining,B
+399212,Gas and Petroleum Operators,Mining,B
+399212,Gas and Petroleum Operators,Manufacturing,C
+399212,Gas and Petroleum Operators,Retail Trade,G
+399213,Power Generation Plant Operators,"Electricity, Gas, Water and Waste Services",D
+399213,Power Generation Plant Operators,Manufacturing,C
+399311,Gallery and Museum Technicians,Arts and Recreation Services,R
+399311,Gallery and Museum Technicians,Manufacturing,C
+399311,Gallery and Museum Technicians,Public Administration and Safety,O
+399312,Library Technicians,Education and Training,P
+399312,Library Technicians,Public Administration and Safety,O
+399312,Library Technicians,Information Media and Telecommunications,J
+399511,Broadcast Transmitter Operators,Information Media and Telecommunications,J
+399511,Broadcast Transmitter Operators,Arts and Recreation Services,R
+399512,"Camera Operators (Film, Television or Video)",Information Media and Telecommunications,J
+399512,"Camera Operators (Film, Television or Video)","Professional, Scientific and Technical Services",M
+399512,"Camera Operators (Film, Television or Video)",Arts and Recreation Services,R
+399513,Light Technicians,Arts and Recreation Services,R
+399513,Light Technicians,Information Media and Telecommunications,J
+399513,Light Technicians,Public Administration and Safety,O
+399514,Make Up Artists,Other Services,S
+399514,Make Up Artists,Retail Trade,G
+399514,Make Up Artists,Information Media and Telecommunications,J
+399515,Musical Instrument Makers and Repairers,Other Services,S
+399515,Musical Instrument Makers and Repairers,Manufacturing,C
+399515,Musical Instrument Makers and Repairers,Retail Trade,G
+399516,Sound Technicians,Information Media and Telecommunications,J
+399516,Sound Technicians,Arts and Recreation Services,R
+399516,Sound Technicians,Administrative and Support Services,N
+399517,Television Equipment Operators,Information Media and Telecommunications,J
+399517,Television Equipment Operators,Arts and Recreation Services,R
+399517,Television Equipment Operators,"Professional, Scientific and Technical Services",M
+399599,Other Performing Arts Technicians,Information Media and Telecommunications,J
+399599,Other Performing Arts Technicians,Arts and Recreation Services,R
+399599,Other Performing Arts Technicians,Education and Training,P
+399911,Divers,"Agriculture, Forestry and Fishing",A
+399911,Divers,"Transport, Postal and Warehousing",I
+399911,Divers,Public Administration and Safety,O
+399912,Interior Decorators,"Professional, Scientific and Technical Services",M
+399912,Interior Decorators,Construction,E
+399912,Interior Decorators,"Rental, Hiring and Real Estate Services",L
+399913,Optical Dispensers,Health Care and Social Assistance,Q
+399914,Optical Mechanics,Health Care and Social Assistance,Q
+399914,Optical Mechanics,Manufacturing,C
+399914,Optical Mechanics,Wholesale Trade,F
+399915,Photographer's Assistants,"Professional, Scientific and Technical Services",M
+399915,Photographer's Assistants,Information Media and Telecommunications,J
+399915,Photographer's Assistants,Other Services,S
+399916,Plastics Technicians,Manufacturing,C
+399916,Plastics Technicians,Construction,E
+399916,Plastics Technicians,Other Services,S
+399917,Wool Classers,"Agriculture, Forestry and Fishing",A
+399917,Wool Classers,Wholesale Trade,F
+399918,Fire Protection Equipment Technicians,Public Administration and Safety,O
+399918,Fire Protection Equipment Technicians,Construction,E
+399918,Fire Protection Equipment Technicians,Other Services,S
+399999,Technicians and Trades Workers (not covered elsewhere),Manufacturing,C
+399999,Technicians and Trades Workers (not covered elsewhere),"Electricity, Gas, Water and Waste Services",D
+399999,Technicians and Trades Workers (not covered elsewhere),"Professional, Scientific and Technical Services",M
+411111,Ambulance Officers,Health Care and Social Assistance,Q
+411112,Intensive Care Ambulance Paramedics,Health Care and Social Assistance,Q
+411211,Dental Hygienists,Health Care and Social Assistance,Q
+411212,Dental Prosthetists,Health Care and Social Assistance,Q
+411212,Dental Prosthetists,Manufacturing,C
+411213,Dental Technicians,Manufacturing,C
+411213,Dental Technicians,Health Care and Social Assistance,Q
+411214,Dental Therapists,Health Care and Social Assistance,Q
+411411,Enrolled Nurses,Health Care and Social Assistance,Q
+411412,Mothercraft Nurses,Health Care and Social Assistance,Q
+411412,Mothercraft Nurses,Public Administration and Safety,O
+411412,Mothercraft Nurses,Education and Training,P
+411711,Community Workers,Health Care and Social Assistance,Q
+411711,Community Workers,Public Administration and Safety,O
+411711,Community Workers,Other Services,S
+411712,Disabilities Services Officers,Health Care and Social Assistance,Q
+411712,Disabilities Services Officers,Administrative and Support Services,N
+411713,Family Support Workers,Health Care and Social Assistance,Q
+411713,Family Support Workers,Public Administration and Safety,O
+411713,Family Support Workers,Other Services,S
+411714,Parole and Probation Officers,Public Administration and Safety,O
+411715,Residential Care Officers,Health Care and Social Assistance,Q
+411715,Residential Care Officers,Public Administration and Safety,O
+411716,Youth Workers,Health Care and Social Assistance,Q
+411716,Youth Workers,Public Administration and Safety,O
+411716,Youth Workers,Education and Training,P
+421111,Child Care Workers,Health Care and Social Assistance,Q
+421111,Child Care Workers,Education and Training,P
+421112,Family Day Care Workers,Health Care and Social Assistance,Q
+421113,Nannies,Other Services,S
+421113,Nannies,Health Care and Social Assistance,Q
+421113,Nannies,Education and Training,P
+421114,Out of School Hours Care Workers,Health Care and Social Assistance,Q
+421114,Out of School Hours Care Workers,Education and Training,P
+422111,Aboriginal and Torres Strait Islander Education Workers,Education and Training,P
+422112,Integration Aides,Education and Training,P
+422115,Preschool Aides,Education and Training,P
+422115,Preschool Aides,Health Care and Social Assistance,Q
+422116,Teachers' Aides,Education and Training,P
+423311,Hospital orderlies,Health Care and Social Assistance,Q
+423312,Nursing Support Workers,Health Care and Social Assistance,Q
+423313,Personal Care Assistants,Health Care and Social Assistance,Q
+423314,Therapy Aides,Health Care and Social Assistance,Q
+423411,Child and Youth Residential Care Assistants,Health Care and Social Assistance,Q
+423411,Child and Youth Residential Care Assistants,Public Administration and Safety,O
+423412,Hostel Parents,Education and Training,P
+423413,Refuge Workers,Health Care and Social Assistance,Q
+423413,Refuge Workers,Other Services,S
+423413,Refuge Workers,Public Administration and Safety,O
+431111,Bar Attendants,Accommodation and Food Services,H
+431112,Baristas,Accommodation and Food Services,H
+431112,Baristas,Retail Trade,G
+431911,Bar Usefuls and Bussers,Accommodation and Food Services,H
+431911,Bar Usefuls and Bussers,Arts and Recreation Services,R
+431912,Doorpersons and Luggage Porters,Accommodation and Food Services,H
+431912,Doorpersons and Luggage Porters,Arts and Recreation Services,R
+431912,Doorpersons and Luggage Porters,Manufacturing,C
+431999,Hospitality Workers (not covered elsewhere),Arts and Recreation Services,R
+431999,Hospitality Workers (not covered elsewhere),Accommodation and Food Services,H
+441211,Emergency Service Workers,Mining,B
+441211,Emergency Service Workers,Public Administration and Safety,O
+441211,Emergency Service Workers,Health Care and Social Assistance,Q
+441212,Fire Fighters,Public Administration and Safety,O
+441311,Detectives,Public Administration and Safety,O
+441312,Police Officers,Public Administration and Safety,O
+442211,"Alarm, Security and Surveillance Monitors",Public Administration and Safety,O
+442212,Armoured Car Escorts,Public Administration and Safety,O
+442213,Crowd Controllers,Public Administration and Safety,O
+442213,Crowd Controllers,Accommodation and Food Services,H
+442213,Crowd Controllers,Arts and Recreation Services,R
+442214,Private Investigators,Public Administration and Safety,O
+442214,Private Investigators,Financial and Insurance Services,K
+442214,Private Investigators,"Professional, Scientific and Technical Services",M
+442215,Retail Loss Prevention Officers,Retail Trade,G
+442215,Retail Loss Prevention Officers,Public Administration and Safety,O
+442216,Security Consultants,Public Administration and Safety,O
+442216,Security Consultants,"Professional, Scientific and Technical Services",M
+442216,Security Consultants,Financial and Insurance Services,K
+442217,Security Officers,Public Administration and Safety,O
+442217,Security Officers,Health Care and Social Assistance,Q
+442299,Other Security Workers,Public Administration and Safety,O
+442299,Other Security Workers,Accommodation and Food Services,H
+442299,Other Security Workers,Arts and Recreation Services,R
+451311,Funeral Directors,Other Services,S
+451399,Funeral Workers (Other),Other Services,S
+451411,Gallery and Museum Guides,Arts and Recreation Services,R
+451411,Gallery and Museum Guides,Public Administration and Safety,O
+451412,Tour Guides,Administrative and Support Services,N
+451412,Tour Guides,Arts and Recreation Services,R
+451412,Tour Guides,"Transport, Postal and Warehousing",I
+451511,Natural Remedy Consultants,Health Care and Social Assistance,Q
+451511,Natural Remedy Consultants,Other Services,S
+451512,Weight Loss Consultants,Accommodation and Food Services,H
+451512,Weight Loss Consultants,Other Services,S
+451513,Herbalists (Western),Health Care and Social Assistance,Q
+451513,Herbalists (Western),Retail Trade,G
+451611,Tourist Information Officers,Public Administration and Safety,O
+451611,Tourist Information Officers,Administrative and Support Services,N
+451611,Tourist Information Officers,Arts and Recreation Services,R
+451612,Travel Consultants,Administrative and Support Services,N
+451612,Travel Consultants,"Transport, Postal and Warehousing",I
+451711,Flight Attendants,"Transport, Postal and Warehousing",I
+451799,Other Travel Attendants,"Transport, Postal and Warehousing",I
+451799,Other Travel Attendants,Public Administration and Safety,O
+451799,Other Travel Attendants,Accommodation and Food Services,H
+451811,Civil Celebrants,Other Services,S
+451812,Hair and Beauty Salon Assistants,Other Services,S
+451814,Body Artists,Other Services,S
+451815,First Aid Trainers,Education and Training,P
+451815,First Aid Trainers,Health Care and Social Assistance,Q
+451816,Religious Assistants,Other Services,S
+451816,Religious Assistants,Health Care and Social Assistance,Q
+451816,Religious Assistants,Education and Training,P
+451899,Personal Service Workers (not covered elsewhere),Other Services,S
+451899,Personal Service Workers (not covered elsewhere),Health Care and Social Assistance,Q
+451899,Personal Service Workers (not covered elsewhere),Education and Training,P
+452212,Fishing Guides,"Transport, Postal and Warehousing",I
+452212,Fishing Guides,"Agriculture, Forestry and Fishing",A
+452212,Fishing Guides,Administrative and Support Services,N
+452215,Outdoor Adventure Instructors,Education and Training,P
+452215,Outdoor Adventure Instructors,Arts and Recreation Services,R
+452216,Trekking Guides,Administrative and Support Services,N
+452216,Trekking Guides,Arts and Recreation Services,R
+452216,Trekking Guides,"Transport, Postal and Warehousing",I
+452299,Other Outdoor Adventure Guides,Arts and Recreation Services,R
+452299,Other Outdoor Adventure Guides,Administrative and Support Services,N
+452299,Other Outdoor Adventure Guides,Education and Training,P
+452311,"Scuba, Snorkelling and Dive instructors","Transport, Postal and Warehousing",I
+452311,"Scuba, Snorkelling and Dive instructors",Education and Training,P
+452311,"Scuba, Snorkelling and Dive instructors",Arts and Recreation Services,R
+452312,Gymnastics Coaches and Instructors,Arts and Recreation Services,R
+452312,Gymnastics Coaches and Instructors,Education and Training,P
+452313,Horse Riding Coaches and Instructors,Education and Training,P
+452313,Horse Riding Coaches and Instructors,Arts and Recreation Services,R
+452314,Snowsport Instructors,Education and Training,P
+452314,Snowsport Instructors,Arts and Recreation Services,R
+452314,Snowsport Instructors,"Transport, Postal and Warehousing",I
+452315,Swimming Coaches and Instructors,Education and Training,P
+452315,Swimming Coaches and Instructors,Arts and Recreation Services,R
+452315,Swimming Coaches and Instructors,Public Administration and Safety,O
+452316,Tennis Coaches,Education and Training,P
+452316,Tennis Coaches,Arts and Recreation Services,R
+452317,Other Sports Coaches and Instructors,Education and Training,P
+452317,Other Sports Coaches and Instructors,Arts and Recreation Services,R
+452318,Dog and Horse Racing Officials,Arts and Recreation Services,R
+452321,Sports Development Officers,Arts and Recreation Services,R
+452321,Sports Development Officers,Education and Training,P
+452321,Sports Development Officers,Public Administration and Safety,O
+452322,Sports Umpires,Arts and Recreation Services,R
+452323,Other Sports Officials,Arts and Recreation Services,R
+452323,Other Sports Officials,Accommodation and Food Services,H
+452323,Other Sports Officials,Education and Training,P
+452411,"Footballers (Soccer, Rugby and AFL)",Arts and Recreation Services,R
+452412,Golfers,Arts and Recreation Services,R
+452412,Golfers,Education and Training,P
+452412,Golfers,Accommodation and Food Services,H
+452413,Jockeys,Arts and Recreation Services,R
+452414,Lifeguards,Arts and Recreation Services,R
+452414,Lifeguards,Public Administration and Safety,O
+452414,Lifeguards,Education and Training,P
+452499,Other Sportspersons,Arts and Recreation Services,R
+452499,Other Sportspersons,Education and Training,P
+511111,Contract Administrators,Construction,E
+511111,Contract Administrators,Public Administration and Safety,O
+511111,Contract Administrators,"Professional, Scientific and Technical Services",M
+511112,Program and Project Administrators,Public Administration and Safety,O
+511112,Program and Project Administrators,Health Care and Social Assistance,Q
+511112,Program and Project Administrators,"Professional, Scientific and Technical Services",M
+512211,Health Practice Managers,Health Care and Social Assistance,Q
+512299,Other Practice Managers,"Professional, Scientific and Technical Services",M
+512299,Other Practice Managers,Health Care and Social Assistance,Q
+512299,Other Practice Managers,Financial and Insurance Services,K
+521211,Secretaries (General),Construction,E
+521211,Secretaries (General),"Professional, Scientific and Technical Services",M
+521211,Secretaries (General),Other Services,S
+521212,Legal Secretaries,"Professional, Scientific and Technical Services",M
+532111,Data Entry Operators,Health Care and Social Assistance,Q
+532111,Data Entry Operators,Public Administration and Safety,O
+532111,Data Entry Operators,"Professional, Scientific and Technical Services",M
+532112,Machine Shorthand Reporters,Administrative and Support Services,N
+532112,Machine Shorthand Reporters,Public Administration and Safety,O
+532112,Machine Shorthand Reporters,Information Media and Telecommunications,J
+532113,Typists,Health Care and Social Assistance,Q
+532113,Typists,Administrative and Support Services,N
+532113,Typists,"Professional, Scientific and Technical Services",M
+541111,Call Centre or Contact Centre Team Leaders,Financial and Insurance Services,K
+541111,Call Centre or Contact Centre Team Leaders,Public Administration and Safety,O
+541111,Call Centre or Contact Centre Team Leaders,Administrative and Support Services,N
+541112,Call Centre or Contact Centre Operators,Public Administration and Safety,O
+541112,Call Centre or Contact Centre Operators,Administrative and Support Services,N
+541112,Call Centre or Contact Centre Operators,Financial and Insurance Services,K
+542111,Receptionists (General),Health Care and Social Assistance,Q
+542111,Receptionists (General),"Professional, Scientific and Technical Services",M
+542111,Receptionists (General),Education and Training,P
+542112,Admissions Clerks,Health Care and Social Assistance,Q
+542113,Hotel and Motel Receptionists,Accommodation and Food Services,H
+542114,Medical Receptionists,Health Care and Social Assistance,Q
+551111,Accounts Clerks,Construction,E
+551111,Accounts Clerks,Health Care and Social Assistance,Q
+551111,Accounts Clerks,Manufacturing,C
+551112,Cost Clerks,Construction,E
+551112,Cost Clerks,Manufacturing,C
+551112,Cost Clerks,Other Services,S
+552311,Bookmakers,Arts and Recreation Services,R
+552312,Insurance Consultants,Financial and Insurance Services,K
+552313,Money Market Clerks,Financial and Insurance Services,K
+552314,Statistical Clerks,"Professional, Scientific and Technical Services",M
+552314,Statistical Clerks,Public Administration and Safety,O
+552314,Statistical Clerks,Financial and Insurance Services,K
+561111,Betting Agency Counter Clerks,Arts and Recreation Services,R
+561111,Betting Agency Counter Clerks,Accommodation and Food Services,H
+561113,Telephone Betting Clerks,Arts and Recreation Services,R
+561199,Other Betting Clerks,Accommodation and Food Services,H
+561199,Other Betting Clerks,Arts and Recreation Services,R
+561211,Couriers,"Transport, Postal and Warehousing",I
+561211,Couriers,Health Care and Social Assistance,Q
+561212,Postal Delivery Officers,"Transport, Postal and Warehousing",I
+561411,Mail Clerks,"Transport, Postal and Warehousing",I
+561411,Mail Clerks,Public Administration and Safety,O
+561411,Mail Clerks,"Professional, Scientific and Technical Services",M
+561412,Postal Sorting Officers,"Transport, Postal and Warehousing",I
+561911,Classified Advertising Clerks,Information Media and Telecommunications,J
+561911,Classified Advertising Clerks,"Professional, Scientific and Technical Services",M
+561911,Classified Advertising Clerks,Public Administration and Safety,O
+561912,Meter Readers,Administrative and Support Services,N
+561912,Meter Readers,"Electricity, Gas, Water and Waste Services",D
+561912,Meter Readers,Construction,E
+561913,Parking Inspectors,Public Administration and Safety,O
+561913,Parking Inspectors,Other Services,S
+561999,Clerical and Office Support Workers (not covered elsewhere),"Professional, Scientific and Technical Services",M
+561999,Clerical and Office Support Workers (not covered elsewhere),Public Administration and Safety,O
+561999,Clerical and Office Support Workers (not covered elsewhere),Retail Trade,G
+591112,Production Clerks,Manufacturing,C
+591112,Production Clerks,"Transport, Postal and Warehousing",I
+591112,Production Clerks,Public Administration and Safety,O
+591113,Purchasing Officers,Manufacturing,C
+591113,Purchasing Officers,Public Administration and Safety,O
+591113,Purchasing Officers,Wholesale Trade,F
+591115,Stock Clerks,Retail Trade,G
+591115,Stock Clerks,Manufacturing,C
+591115,Stock Clerks,Wholesale Trade,F
+591116,Warehouse Administrators,Wholesale Trade,F
+591116,Warehouse Administrators,"Transport, Postal and Warehousing",I
+591116,Warehouse Administrators,Retail Trade,G
+591117,Order Clerks,Wholesale Trade,F
+591117,Order Clerks,Retail Trade,G
+591117,Order Clerks,Manufacturing,C
+591211,Despatching and Receiving Clerks,"Transport, Postal and Warehousing",I
+591211,Despatching and Receiving Clerks,Manufacturing,C
+591211,Despatching and Receiving Clerks,Retail Trade,G
+591212,Import-Export Clerks,"Transport, Postal and Warehousing",I
+591212,Import-Export Clerks,Wholesale Trade,F
+591212,Import-Export Clerks,Manufacturing,C
+599111,Conveyancers,"Professional, Scientific and Technical Services",M
+599111,Conveyancers,"Rental, Hiring and Real Estate Services",L
+599112,Legal Executives,"Professional, Scientific and Technical Services",M
+599112,Legal Executives,Public Administration and Safety,O
+599211,Clerks of Court,Public Administration and Safety,O
+599212,Court Bailiffs and Sheriffs,Public Administration and Safety,O
+599212,Court Bailiffs and Sheriffs,"Professional, Scientific and Technical Services",M
+599213,Court Orderlies,Public Administration and Safety,O
+599213,Court Orderlies,Administrative and Support Services,N
+599214,Law Clerks,"Professional, Scientific and Technical Services",M
+599214,Law Clerks,Public Administration and Safety,O
+599215,Trust Officers,Financial and Insurance Services,K
+599215,Trust Officers,"Rental, Hiring and Real Estate Services",L
+599215,Trust Officers,"Professional, Scientific and Technical Services",M
+599511,Customs Officers,Public Administration and Safety,O
+599511,Customs Officers,"Transport, Postal and Warehousing",I
+599512,Immigration Officers,Public Administration and Safety,O
+599513,Motor Vehicle Licence Examiners,Public Administration and Safety,O
+599513,Motor Vehicle Licence Examiners,"Transport, Postal and Warehousing",I
+599513,Motor Vehicle Licence Examiners,Retail Trade,G
+599514,Noxious Weeds and Pest Inspectors,Public Administration and Safety,O
+599514,Noxious Weeds and Pest Inspectors,Administrative and Support Services,N
+599514,Noxious Weeds and Pest Inspectors,"Agriculture, Forestry and Fishing",A
+599515,Social Security Assessors,Public Administration and Safety,O
+599516,Taxation Inspectors,Public Administration and Safety,O
+599516,Taxation Inspectors,"Professional, Scientific and Technical Services",M
+599517,Train Examiners,"Transport, Postal and Warehousing",I
+599517,Train Examiners,Mining,B
+599517,Train Examiners,Manufacturing,C
+599518,Transport Operations Inspectors,"Transport, Postal and Warehousing",I
+599518,Transport Operations Inspectors,Public Administration and Safety,O
+599521,Water Inspectors,"Electricity, Gas, Water and Waste Services",D
+599521,Water Inspectors,Public Administration and Safety,O
+599599,Other Inspectors and Regulatory Officers,Public Administration and Safety,O
+599599,Other Inspectors and Regulatory Officers,Financial and Insurance Services,K
+599611,Insurance Investigators,Financial and Insurance Services,K
+599611,Insurance Investigators,Public Administration and Safety,O
+599612,Insurance Loss Adjusters,Financial and Insurance Services,K
+599613,Insurance Risk Surveyors,Financial and Insurance Services,K
+599912,"Production Assistants (Film, Television, Radio or Stage)",Information Media and Telecommunications,J
+599912,"Production Assistants (Film, Television, Radio or Stage)",Arts and Recreation Services,R
+599913,Proof Readers,"Professional, Scientific and Technical Services",M
+599913,Proof Readers,Information Media and Telecommunications,J
+599913,Proof Readers,Education and Training,P
+599914,Radio Despatchers,Health Care and Social Assistance,Q
+599914,Radio Despatchers,Public Administration and Safety,O
+599914,Radio Despatchers,Information Media and Telecommunications,J
+599915,Clinical Coders,Health Care and Social Assistance,Q
+599916,Facilities Administrators,Public Administration and Safety,O
+599916,Facilities Administrators,Education and Training,P
+599916,Facilities Administrators,Health Care and Social Assistance,Q
+599999,Clerical and Administrative Workers (not covered elsewhere),Education and Training,P
+599999,Clerical and Administrative Workers (not covered elsewhere),"Professional, Scientific and Technical Services",M
+599999,Clerical and Administrative Workers (not covered elsewhere),Public Administration and Safety,O
+611111,Auctioneers,Wholesale Trade,F
+611111,Auctioneers,"Rental, Hiring and Real Estate Services",L
+611111,Auctioneers,Retail Trade,G
+611112,Stock and Station Agents,Wholesale Trade,F
+611112,Stock and Station Agents,"Agriculture, Forestry and Fishing",A
+611112,Stock and Station Agents,Retail Trade,G
+611311,Sales Representatives (Building and Plumbing Supplies),Manufacturing,C
+611311,Sales Representatives (Building and Plumbing Supplies),Wholesale Trade,F
+611311,Sales Representatives (Building and Plumbing Supplies),Construction,E
+611312,Sales Representatives (Business Services),"Professional, Scientific and Technical Services",M
+611312,Sales Representatives (Business Services),Information Media and Telecommunications,J
+611312,Sales Representatives (Business Services),"Transport, Postal and Warehousing",I
+611313,Sales Representatives (Motor Vehicle Parts and Accessories),Retail Trade,G
+611313,Sales Representatives (Motor Vehicle Parts and Accessories),Wholesale Trade,F
+611313,Sales Representatives (Motor Vehicle Parts and Accessories),Manufacturing,C
+611314,Sales Representatives (Personal and Household Goods),Retail Trade,G
+611314,Sales Representatives (Personal and Household Goods),Wholesale Trade,F
+611314,Sales Representatives (Personal and Household Goods),Manufacturing,C
+611399,Other Sales Representatives,Construction,E
+611399,Other Sales Representatives,Wholesale Trade,F
+611399,Other Sales Representatives,Retail Trade,G
+612111,Business Brokers,"Rental, Hiring and Real Estate Services",L
+612111,Business Brokers,Wholesale Trade,F
+612111,Business Brokers,"Professional, Scientific and Technical Services",M
+612112,Property Managers,"Rental, Hiring and Real Estate Services",L
+612113,Real Estate Agency Principals,"Rental, Hiring and Real Estate Services",L
+612114,Real Estate Agents,"Rental, Hiring and Real Estate Services",L
+612115,Real Estate Representatives,"Rental, Hiring and Real Estate Services",L
+612115,Real Estate Representatives,Construction,E
+621311,Motor Vehicle and Caravan Salespersons,Retail Trade,G
+621311,Motor Vehicle and Caravan Salespersons,Wholesale Trade,F
+621312,Motor Vehicle Parts Interpreters,Retail Trade,G
+621312,Motor Vehicle Parts Interpreters,Wholesale Trade,F
+621312,Motor Vehicle Parts Interpreters,Other Services,S
+621711,Cash Van Salespersons,Accommodation and Food Services,H
+621711,Cash Van Salespersons,Wholesale Trade,F
+621711,Cash Van Salespersons,Retail Trade,G
+621712,Door-to-door Salespersons,Retail Trade,G
+621712,Door-to-door Salespersons,Health Care and Social Assistance,Q
+621712,Door-to-door Salespersons,Other Services,S
+621713,Street Vendors,Retail Trade,G
+621713,Street Vendors,Accommodation and Food Services,H
+621713,Street Vendors,Manufacturing,C
+621911,Materials Recyclers,Wholesale Trade,F
+621911,Materials Recyclers,"Electricity, Gas, Water and Waste Services",D
+621912,Rental Salespersons,"Rental, Hiring and Real Estate Services",L
+621999,Sales Assistants and Salespersons (not covered elsewhere),Retail Trade,G
+621999,Sales Assistants and Salespersons (not covered elsewhere),Wholesale Trade,F
+621999,Sales Assistants and Salespersons (not covered elsewhere),"Agriculture, Forestry and Fishing",A
+631111,Checkout Operators,Retail Trade,G
+631111,Checkout Operators,Accommodation and Food Services,H
+631112,Cashiers,Accommodation and Food Services,H
+631112,Cashiers,Retail Trade,G
+631112,Cashiers,Arts and Recreation Services,R
+639111,Models,Arts and Recreation Services,R
+639111,Models,Administrative and Support Services,N
+639111,Models,"Professional, Scientific and Technical Services",M
+639112,Sales Demonstrators,Retail Trade,G
+639112,Sales Demonstrators,Wholesale Trade,F
+639112,Sales Demonstrators,Manufacturing,C
+639211,Retail Buyers,Retail Trade,G
+639211,Retail Buyers,Wholesale Trade,F
+639212,Wool Buyers,Wholesale Trade,F
+639212,Wool Buyers,"Agriculture, Forestry and Fishing",A
+639411,Ticket Sellers,"Transport, Postal and Warehousing",I
+639411,Ticket Sellers,Information Media and Telecommunications,J
+639411,Ticket Sellers,Accommodation and Food Services,H
+639412,Transport Conductors,"Transport, Postal and Warehousing",I
+711111,Clay Products Machine Operators,Manufacturing,C
+711111,Clay Products Machine Operators,Construction,E
+711112,Concrete Products Machine Operators,Construction,E
+711112,Concrete Products Machine Operators,Manufacturing,C
+711113,Glass Production Machine Operators,Manufacturing,C
+711113,Glass Production Machine Operators,Construction,E
+711114,Stone Processing Machine Operators,Manufacturing,C
+711114,Stone Processing Machine Operators,Construction,E
+711114,Stone Processing Machine Operators,Mining,B
+711199,"Other Clay, Concrete, Glass and Stone Processing Machine Operators",Manufacturing,C
+711199,"Other Clay, Concrete, Glass and Stone Processing Machine Operators",Construction,E
+711311,Paper Products Machine Operators,Manufacturing,C
+711313,Sawmilling Operators,Manufacturing,C
+711313,Sawmilling Operators,"Agriculture, Forestry and Fishing",A
+711314,Other Wood Processing Machine Operators,Manufacturing,C
+711314,Other Wood Processing Machine Operators,Wholesale Trade,F
+711314,Other Wood Processing Machine Operators,Construction,E
+711511,Plastic Cablemaking Machine Operators,Manufacturing,C
+711511,Plastic Cablemaking Machine Operators,Construction,E
+711511,Plastic Cablemaking Machine Operators,"Electricity, Gas, Water and Waste Services",D
+711512,Plastic Compounding and Reclamation Machine Operators,Manufacturing,C
+711512,Plastic Compounding and Reclamation Machine Operators,Wholesale Trade,F
+711512,Plastic Compounding and Reclamation Machine Operators,"Electricity, Gas, Water and Waste Services",D
+711513,Plastics Fabricators and Welders,Manufacturing,C
+711513,Plastics Fabricators and Welders,Construction,E
+711513,Plastics Fabricators and Welders,Mining,B
+711514,Plastics Production Machine Operators (General),Manufacturing,C
+711515,Reinforced Plastic and Composite Production Workers,Manufacturing,C
+711515,Reinforced Plastic and Composite Production Workers,Construction,E
+711516,Rubber Production Machine Operators,Manufacturing,C
+711516,Rubber Production Machine Operators,Mining,B
+711516,Rubber Production Machine Operators,Wholesale Trade,F
+711599,Other Plastics and Rubber Production Machine Operators,Manufacturing,C
+711599,Other Plastics and Rubber Production Machine Operators,Construction,E
+711711,Footwear Production Machine Operators,Manufacturing,C
+711712,Hide and Skin Processing Machine Operators,Manufacturing,C
+711712,Hide and Skin Processing Machine Operators,Other Services,S
+711713,Knitting Machine Operators,Manufacturing,C
+711714,Textile Dyeing and Finishing Machine Operators,Manufacturing,C
+711715,Weaving Machine Operators,Manufacturing,C
+711716,Yarn Carding and Spinning Machine Operators,"Agriculture, Forestry and Fishing",A
+711716,Yarn Carding and Spinning Machine Operators,Manufacturing,C
+711799,Other Textile and Footwear Production Machine Operators,Manufacturing,C
+711799,Other Textile and Footwear Production Machine Operators,"Agriculture, Forestry and Fishing",A
+711911,Chemical Production Machine Operators,Manufacturing,C
+711911,Chemical Production Machine Operators,Wholesale Trade,F
+711911,Chemical Production Machine Operators,Retail Trade,G
+711912,Motion Picture Projectionists,Information Media and Telecommunications,J
+711912,Motion Picture Projectionists,Arts and Recreation Services,R
+711913,Sand Blasters,Construction,E
+711913,Sand Blasters,Manufacturing,C
+711914,Sterilisation Technicians,Health Care and Social Assistance,Q
+711999,Machine Operators (not covered elsewhere),"Electricity, Gas, Water and Waste Services",D
+711999,Machine Operators (not covered elsewhere),Construction,E
+711999,Machine Operators (not covered elsewhere),Manufacturing,C
+712211,Drillers,Mining,B
+712211,Drillers,Construction,E
+712212,Miners,Mining,B
+712213,Shot Firers,Mining,B
+712213,Shot Firers,Manufacturing,C
+712911,Boiler and Engine Operators,Manufacturing,C
+712911,Boiler and Engine Operators,Mining,B
+712911,Boiler and Engine Operators,"Agriculture, Forestry and Fishing",A
+712912,Bulk Materials Handling Plant Operators,"Transport, Postal and Warehousing",I
+712912,Bulk Materials Handling Plant Operators,Mining,B
+712912,Bulk Materials Handling Plant Operators,Wholesale Trade,F
+712913,Cement Production Plant Operators,Manufacturing,C
+712913,Cement Production Plant Operators,Construction,E
+712914,Concrete Batching Plant Operators,Manufacturing,C
+712914,Concrete Batching Plant Operators,Construction,E
+712915,Concrete Pump Operators,Construction,E
+712916,Paper and Pulp Mill Operators,Manufacturing,C
+712917,Railway Signal Operators,"Transport, Postal and Warehousing",I
+712917,Railway Signal Operators,Construction,E
+712917,Railway Signal Operators,Manufacturing,C
+712918,Train Controllers,"Transport, Postal and Warehousing",I
+712918,Train Controllers,Mining,B
+712921,Waste Water and Water Plant Operators,"Electricity, Gas, Water and Waste Services",D
+712921,Waste Water and Water Plant Operators,Public Administration and Safety,O
+712921,Waste Water and Water Plant Operators,Mining,B
+712922,Weighbridge Operators,"Electricity, Gas, Water and Waste Services",D
+712922,Weighbridge Operators,Manufacturing,C
+712922,Weighbridge Operators,Mining,B
+712999,Stationary Plant Operators (not covered elsewhere),Mining,B
+712999,Stationary Plant Operators (not covered elsewhere),Manufacturing,C
+712999,Stationary Plant Operators (not covered elsewhere),Construction,E
+721111,Agricultural and Horticultural Mobile Plant Operators,"Agriculture, Forestry and Fishing",A
+721111,Agricultural and Horticultural Mobile Plant Operators,Public Administration and Safety,O
+721112,Logging Plant Operators,"Agriculture, Forestry and Fishing",A
+721112,Logging Plant Operators,Manufacturing,C
+721211,Earthmoving Plant Operators (General),Construction,E
+721211,Earthmoving Plant Operators (General),Public Administration and Safety,O
+721212,Backhoe Operators,Construction,E
+721212,Backhoe Operators,Public Administration and Safety,O
+721212,Backhoe Operators,"Electricity, Gas, Water and Waste Services",D
+721213,Bulldozer Operators,Mining,B
+721213,Bulldozer Operators,Construction,E
+721213,Bulldozer Operators,"Agriculture, Forestry and Fishing",A
+721214,Excavator Operators,Construction,E
+721215,Grader Operators,Construction,E
+721215,Grader Operators,Public Administration and Safety,O
+721215,Grader Operators,Mining,B
+721216,Loader Operators,Construction,E
+721216,Loader Operators,Mining,B
+721216,Loader Operators,Manufacturing,C
+721911,Aircraft Baggage Handlers and Airline Ground Crews,"Transport, Postal and Warehousing",I
+721912,Linemarkers,Construction,E
+721912,Linemarkers,Public Administration and Safety,O
+721913,Paving Plant Operators,Construction,E
+721913,Paving Plant Operators,Public Administration and Safety,O
+721914,Railway Track Plant Operators,Construction,E
+721914,Railway Track Plant Operators,"Transport, Postal and Warehousing",I
+721914,Railway Track Plant Operators,Manufacturing,C
+721915,Road Roller Operators,Construction,E
+721915,Road Roller Operators,Public Administration and Safety,O
+721916,Streetsweeper Operators,Public Administration and Safety,O
+721916,Streetsweeper Operators,Administrative and Support Services,N
+721916,Streetsweeper Operators,Construction,E
+721999,Mobile Plant Operators (not covered elsewhere),Construction,E
+721999,Mobile Plant Operators (not covered elsewhere),"Transport, Postal and Warehousing",I
+721999,Mobile Plant Operators (not covered elsewhere),Public Administration and Safety,O
+731111,Chauffeurs,"Transport, Postal and Warehousing",I
+731111,Chauffeurs,Public Administration and Safety,O
+731112,Taxi Drivers,"Transport, Postal and Warehousing",I
+731199,Other Automobile Drivers,"Transport, Postal and Warehousing",I
+731211,Bus Drivers,"Transport, Postal and Warehousing",I
+731212,Charter and Tour Bus Drivers,"Transport, Postal and Warehousing",I
+731212,Charter and Tour Bus Drivers,Administrative and Support Services,N
+731213,Passenger Coach Drivers,"Transport, Postal and Warehousing",I
+731311,Train Drivers,"Transport, Postal and Warehousing",I
+731311,Train Drivers,Mining,B
+731312,Tram Drivers,"Transport, Postal and Warehousing",I
+733111,Truck Drivers (General),"Transport, Postal and Warehousing",I
+733111,Truck Drivers (General),Construction,E
+733111,Truck Drivers (General),"Electricity, Gas, Water and Waste Services",D
+733112,Aircraft Refuellers,"Transport, Postal and Warehousing",I
+733112,Aircraft Refuellers,Wholesale Trade,F
+733112,Aircraft Refuellers,Public Administration and Safety,O
+733113,Furniture Removalist Drivers,"Transport, Postal and Warehousing",I
+733114,Tanker Drivers,"Transport, Postal and Warehousing",I
+733114,Tanker Drivers,Construction,E
+733114,Tanker Drivers,"Electricity, Gas, Water and Waste Services",D
+733115,Tow Truck Drivers,"Transport, Postal and Warehousing",I
+733115,Tow Truck Drivers,"Electricity, Gas, Water and Waste Services",D
+733115,Tow Truck Drivers,Public Administration and Safety,O
+811411,Commercial Housekeepers,Accommodation and Food Services,H
+811411,Commercial Housekeepers,Administrative and Support Services,N
+811411,Commercial Housekeepers,Health Care and Social Assistance,Q
+811412,Domestic Housekeepers,Administrative and Support Services,N
+811412,Domestic Housekeepers,Health Care and Social Assistance,Q
+811412,Domestic Housekeepers,Accommodation and Food Services,H
+811511,Laundry Workers (General),Other Services,S
+811511,Laundry Workers (General),Health Care and Social Assistance,Q
+811512,Drycleaners,Other Services,S
+811513,Ironers and Pressers,Other Services,S
+811513,Ironers and Pressers,Manufacturing,C
+811513,Ironers and Pressers,Administrative and Support Services,N
+811611,Carpet Cleaners,Other Services,S
+811611,Carpet Cleaners,Administrative and Support Services,N
+811612,Window Cleaners,Administrative and Support Services,N
+811699,Cleaners (not covered elsewhere),Administrative and Support Services,N
+811699,Cleaners (not covered elsewhere),Public Administration and Safety,O
+811699,Cleaners (not covered elsewhere),"Electricity, Gas, Water and Waste Services",D
+821111,Builder's Labourers,Construction,E
+821112,"Drainage, Sewerage and Stormwater Labourers","Electricity, Gas, Water and Waste Services",D
+821112,"Drainage, Sewerage and Stormwater Labourers",Public Administration and Safety,O
+821112,"Drainage, Sewerage and Stormwater Labourers",Construction,E
+821113,Earthmoving Labourers,Construction,E
+821113,Earthmoving Labourers,Other Services,S
+821114,Plumber's Assistants,Construction,E
+821411,Building Insulation Installers,Construction,E
+821412,Home Improvement Installers,Construction,E
+821412,Home Improvement Installers,Manufacturing,C
+821711,Construction Riggers,Construction,E
+821711,Construction Riggers,Mining,B
+821712,Scaffolders,Construction,E
+821712,Scaffolders,Mining,B
+821713,Steel Fixers,Construction,E
+821714,Structural Steel Erectors,Construction,E
+821714,Structural Steel Erectors,Manufacturing,C
+821714,Structural Steel Erectors,"Transport, Postal and Warehousing",I
+821911,Crane Chasers,Construction,E
+821912,Driller's Assistants,Mining,B
+821912,Driller's Assistants,Construction,E
+821913,Laggers,Construction,E
+821913,Laggers,Manufacturing,C
+821914,Mining Support Workers,Mining,B
+821914,Mining Support Workers,"Professional, Scientific and Technical Services",M
+821914,Mining Support Workers,Manufacturing,C
+821915,Surveyor's Assistants,"Professional, Scientific and Technical Services",M
+821915,Surveyor's Assistants,Mining,B
+821915,Surveyor's Assistants,Construction,E
+831111,Baking Factory Workers,Manufacturing,C
+831111,Baking Factory Workers,Retail Trade,G
+831112,Brewery Workers,Manufacturing,C
+831112,Brewery Workers,Accommodation and Food Services,H
+831113,Confectionery Makers,Manufacturing,C
+831113,Confectionery Makers,Retail Trade,G
+831114,Dairy Products Makers,Manufacturing,C
+831114,Dairy Products Makers,"Agriculture, Forestry and Fishing",A
+831115,Fruit and Vegetable Factory Workers,Manufacturing,C
+831115,Fruit and Vegetable Factory Workers,"Agriculture, Forestry and Fishing",A
+831115,Fruit and Vegetable Factory Workers,Accommodation and Food Services,H
+831116,Grain Mill Workers,Manufacturing,C
+831116,Grain Mill Workers,"Agriculture, Forestry and Fishing",A
+831117,Sugar Mill Workers,Manufacturing,C
+831118,Winery Cellar Hands,Manufacturing,C
+831199,Other Food and Drink Factory Workers,Manufacturing,C
+831199,Other Food and Drink Factory Workers,Accommodation and Food Services,H
+831199,Other Food and Drink Factory Workers,Wholesale Trade,F
+831211,Meat Boners and Slicers,Manufacturing,C
+831212,Slaughterers,Manufacturing,C
+831311,Meat Process Workers,Manufacturing,C
+831312,Poultry Process Workers,Manufacturing,C
+831312,Poultry Process Workers,"Agriculture, Forestry and Fishing",A
+831313,Seafood Process Workers,Manufacturing,C
+831313,Seafood Process Workers,"Agriculture, Forestry and Fishing",A
+831313,Seafood Process Workers,Wholesale Trade,F
+832111,Chocolate Packers,Manufacturing,C
+832111,Chocolate Packers,Retail Trade,G
+832111,Chocolate Packers,Administrative and Support Services,N
+832112,Container Fillers,Manufacturing,C
+832112,Container Fillers,Administrative and Support Services,N
+832113,Fruit and Vegetable Packers,"Agriculture, Forestry and Fishing",A
+832113,Fruit and Vegetable Packers,Administrative and Support Services,N
+832113,Fruit and Vegetable Packers,Retail Trade,G
+832114,Meat Packers,Manufacturing,C
+832114,Meat Packers,Retail Trade,G
+832115,Seafood Packers,Manufacturing,C
+832115,Seafood Packers,Wholesale Trade,F
+832115,Seafood Packers,"Agriculture, Forestry and Fishing",A
+832199,Other Packers,Manufacturing,C
+832199,Other Packers,Retail Trade,G
+832199,Other Packers,Administrative and Support Services,N
+839211,Plastics Factory Workers,Manufacturing,C
+839212,Rubber Factory Workers,Manufacturing,C
+839212,Rubber Factory Workers,Wholesale Trade,F
+839311,Product Examiners,Manufacturing,C
+839311,Product Examiners,Retail Trade,G
+839311,Product Examiners,Wholesale Trade,F
+839312,Product Graders,"Agriculture, Forestry and Fishing",A
+839312,Product Graders,Manufacturing,C
+839312,Product Graders,Wholesale Trade,F
+839313,Product Testers,Manufacturing,C
+839313,Product Testers,"Professional, Scientific and Technical Services",M
+839313,Product Testers,Construction,E
+839411,Paper and Pulp Mill Workers,Manufacturing,C
+839412,Sawmill and Timber Yard Workers,Manufacturing,C
+839412,Sawmill and Timber Yard Workers,Wholesale Trade,F
+839413,Wood and Wood Products Factory Workers,Manufacturing,C
+839413,Wood and Wood Products Factory Workers,Construction,E
+839413,Wood and Wood Products Factory Workers,"Rental, Hiring and Real Estate Services",L
+839911,Cement and Concrete Plant Workers,Manufacturing,C
+839911,Cement and Concrete Plant Workers,Construction,E
+839912,Chemical Plant Workers,Manufacturing,C
+839912,Chemical Plant Workers,Wholesale Trade,F
+839913,Clay Processing Factory Workers,Manufacturing,C
+839913,Clay Processing Factory Workers,Construction,E
+839914,Fabric and Textile Factory Workers,Manufacturing,C
+839914,Fabric and Textile Factory Workers,Retail Trade,G
+839914,Fabric and Textile Factory Workers,Other Services,S
+839915,Footwear Factory Workers,Manufacturing,C
+839916,Glass Processing Workers,Manufacturing,C
+839916,Glass Processing Workers,Construction,E
+839917,Hide and Skin Processing Workers,Manufacturing,C
+839917,Hide and Skin Processing Workers,Wholesale Trade,F
+839918,Recycling Workers,"Electricity, Gas, Water and Waste Services",D
+839918,Recycling Workers,Wholesale Trade,F
+839918,Recycling Workers,Health Care and Social Assistance,Q
+839999,Factory Process Workers (not covered elsewhere),Manufacturing,C
+839999,Factory Process Workers (not covered elsewhere),Health Care and Social Assistance,Q
+839999,Factory Process Workers (not covered elsewhere),Administrative and Support Services,N
+841211,Fruit and Nut Farm Workers,"Agriculture, Forestry and Fishing",A
+841212,Fruit and Nut Pickers,"Agriculture, Forestry and Fishing",A
+841212,Fruit and Nut Pickers,Administrative and Support Services,N
+841213,"Grain, Oilseed and Pasture Farm Workers","Agriculture, Forestry and Fishing",A
+841214,Vegetable Farm Workers,"Agriculture, Forestry and Fishing",A
+841215,Vegetable Pickers,"Agriculture, Forestry and Fishing",A
+841215,Vegetable Pickers,Wholesale Trade,F
+841215,Vegetable Pickers,Administrative and Support Services,N
+841216,Vineyard Workers,"Agriculture, Forestry and Fishing",A
+841216,Vineyard Workers,Manufacturing,C
+841217,Mushroom Pickers,"Agriculture, Forestry and Fishing",A
+841299,Other Crop Farm Workers,"Agriculture, Forestry and Fishing",A
+841311,Forestry Workers,"Agriculture, Forestry and Fishing",A
+841311,Forestry Workers,Administrative and Support Services,N
+841311,Forestry Workers,Public Administration and Safety,O
+841312,Logging Assistants,"Agriculture, Forestry and Fishing",A
+841312,Logging Assistants,Manufacturing,C
+841312,Logging Assistants,Administrative and Support Services,N
+841313,Tree Fallers,"Agriculture, Forestry and Fishing",A
+841313,Tree Fallers,Administrative and Support Services,N
+841313,Tree Fallers,Manufacturing,C
+841411,Garden Labourers,Administrative and Support Services,N
+841411,Garden Labourers,Construction,E
+841411,Garden Labourers,Public Administration and Safety,O
+841412,Nursery Hands (Horticulture),"Agriculture, Forestry and Fishing",A
+841412,Nursery Hands (Horticulture),Wholesale Trade,F
+841412,Nursery Hands (Horticulture),Retail Trade,G
+841511,Beef Cattle Farm Workers,"Agriculture, Forestry and Fishing",A
+841512,Dairy Cattle Farm Workers,"Agriculture, Forestry and Fishing",A
+841513,Mixed Livestock Farm Workers,"Agriculture, Forestry and Fishing",A
+841514,Poultry Farm Workers,"Agriculture, Forestry and Fishing",A
+841514,Poultry Farm Workers,Manufacturing,C
+841515,Sheep Farm Workers,"Agriculture, Forestry and Fishing",A
+841516,Stablehands,Arts and Recreation Services,R
+841516,Stablehands,"Agriculture, Forestry and Fishing",A
+841516,Stablehands,Education and Training,P
+841517,Wool Handlers,"Agriculture, Forestry and Fishing",A
+841599,Other Livestock Farm Workers,"Agriculture, Forestry and Fishing",A
+841599,Other Livestock Farm Workers,Manufacturing,C
+841911,Hunter-Trappers,"Agriculture, Forestry and Fishing",A
+841911,Hunter-Trappers,Manufacturing,C
+841911,Hunter-Trappers,Administrative and Support Services,N
+841913,Pest Controllers,Administrative and Support Services,N
+841999,"Farm, Forestry and Garden Workers (not covered elsewhere)","Agriculture, Forestry and Fishing",A
+841999,"Farm, Forestry and Garden Workers (not covered elsewhere)",Construction,E
+841999,"Farm, Forestry and Garden Workers (not covered elsewhere)",Public Administration and Safety,O
+851211,Pastrycook's Assistants,Retail Trade,G
+851211,Pastrycook's Assistants,Manufacturing,C
+851299,Other Food Trades Assistants,Accommodation and Food Services,H
+851299,Other Food Trades Assistants,Retail Trade,G
+851299,Other Food Trades Assistants,Health Care and Social Assistance,Q
+891111,Freight Handlers (Rail or Road),"Transport, Postal and Warehousing",I
+891111,Freight Handlers (Rail or Road),Retail Trade,G
+891111,Freight Handlers (Rail or Road),Manufacturing,C
+891112,Truck Driver's Offsiders,"Transport, Postal and Warehousing",I
+891112,Truck Driver's Offsiders,Manufacturing,C
+891112,Truck Driver's Offsiders,Retail Trade,G
+891113,Waterside Workers,"Transport, Postal and Warehousing",I
+899211,Deck Hands,"Transport, Postal and Warehousing",I
+899212,Fishing Hands,"Agriculture, Forestry and Fishing",A
+899411,Motor Vehicle Parts and Accessories Fitters (General),Retail Trade,G
+899411,Motor Vehicle Parts and Accessories Fitters (General),Other Services,S
+899411,Motor Vehicle Parts and Accessories Fitters (General),Manufacturing,C
+899412,Autoglaziers,Other Services,S
+899412,Autoglaziers,Construction,E
+899413,Exhaust and Muffler Repairers,Other Services,S
+899413,Exhaust and Muffler Repairers,Manufacturing,C
+899413,Exhaust and Muffler Repairers,Administrative and Support Services,N
+899414,Radiator Repairers,Other Services,S
+899414,Radiator Repairers,Retail Trade,G
+899414,Radiator Repairers,Manufacturing,C
+899415,Tyre Fitters,Other Services,S
+899415,Tyre Fitters,Retail Trade,G
+899415,Tyre Fitters,Manufacturing,C
+899511,Printer's Assistants,Manufacturing,C
+899511,Printer's Assistants,Information Media and Telecommunications,J
+899512,Printing Table Workers,Manufacturing,C
+899512,Printing Table Workers,Information Media and Telecommunications,J
+899911,Bicycle Mechanics,Retail Trade,G
+899911,Bicycle Mechanics,Other Services,S
+899912,Car Park Attendants,Other Services,S
+899912,Car Park Attendants,"Rental, Hiring and Real Estate Services",L
+899912,Car Park Attendants,Public Administration and Safety,O
+899913,Crossing Supervisors,Public Administration and Safety,O
+899913,Crossing Supervisors,"Transport, Postal and Warehousing",I
+899913,Crossing Supervisors,Education and Training,P
+899914,Electrical and Telecommunications Trades Assistants,Construction,E
+899914,Electrical and Telecommunications Trades Assistants,"Electricity, Gas, Water and Waste Services",D
+899914,Electrical and Telecommunications Trades Assistants,Manufacturing,C
+899915,Leaflet and Newspaper Deliverers,"Transport, Postal and Warehousing",I
+899915,Leaflet and Newspaper Deliverers,"Professional, Scientific and Technical Services",M
+899915,Leaflet and Newspaper Deliverers,Manufacturing,C
+899916,Mechanic's Assistants,Other Services,S
+899916,Mechanic's Assistants,Retail Trade,G
+899916,Mechanic's Assistants,Manufacturing,C
+899917,Railways Assistants,"Transport, Postal and Warehousing",I
+899918,Sign Erectors,Construction,E
+899918,Sign Erectors,"Professional, Scientific and Technical Services",M
+899918,Sign Erectors,Manufacturing,C
+899921,Ticket Collectors and Ushers,Arts and Recreation Services,R
+899921,Ticket Collectors and Ushers,Information Media and Telecommunications,J
+899921,Ticket Collectors and Ushers,Public Administration and Safety,O
+899922,Trolley Collectors,Retail Trade,G
+899922,Trolley Collectors,Administrative and Support Services,N
+899923,Road Traffic Controllers,Public Administration and Safety,O
+899923,Road Traffic Controllers,Construction,E
+899923,Road Traffic Controllers,"Professional, Scientific and Technical Services",M
+899999,Labourers (not covered elsewhere),Construction,E
+899999,Labourers (not covered elsewhere),Manufacturing,C
+899999,Labourers (not covered elsewhere),Administrative and Support Services,N

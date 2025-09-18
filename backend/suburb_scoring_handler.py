@@ -18,33 +18,38 @@ DB_CONFIG = {
     'cursorclass': pymysql.cursors.DictCursor
 }
 
-# 行业就业基准数据（基于数据分析）
-INDUSTRY_BENCHMARKS = {
-    'Mining': 13,
-    'Manufacturing': 515,
-    'Construction': 572,
-    'Retail Trade': 564,
-    'Health Care and Social Assistance': 525,
-    'Education and Training': 400,
-    'Professional, Scientific and Technical Services': 300,
-    'Agriculture, Forestry and Fishing': 50,
-    'Accommodation and Food Services': 200,
-    'Transport, Postal and Warehousing': 250,
-    'Financial and Insurance Services': 150,
-    'Information Media and Telecommunications': 100,
-    'Electricity, Gas, Water and Waste Services': 80,
-    'Wholesale Trade': 180,
-    'Rental, Hiring and Real Estate Services': 120,
-    'Administrative and Support Services': 200,
-    'Public Administration and Safety': 180,
-    'Arts and Recreation Services': 100,
-    'Other Services': 150,
-    'Currently Unknown': 50
+# 基于实际数据分析的行业密度系数
+INDUSTRY_DENSITY_COEFFICIENTS = {
+    # 高系数行业 (中位就业人数低，需要更高系数)
+    'Mining': 20.0,                                         # 中位6人
+    'Agriculture, Forestry and Fishing': 20.0,              # 中位44人
+    'Electricity, Gas, Water and Waste Services': 20.0,     # 中位14人
+    'Information Media and Telecommunications': 20.0,        # 中位10人
+    'Public Administration and Safety': 20.0,               # 中位30人
+    'Arts and Recreation Services': 20.0,                   # 中位40人
+    'Financial and Insurance Services': 20.0,               # 中位38人
+    'Transport, Postal and Warehousing': 20.0,              # 中位62人
+    'Wholesale Trade': 20.0,                                # 中位58人
+    'Rental, Hiring and Real Estate Services': 20.0,        # 中位52人
+    'Education and Training': 20.0,                         # 中位52人
+    'Currently Unknown': 20.0,                              # 中位6人
+    
+    # 中等系数行业
+    'Other Services': 14.4,                                 # 中位104人
+    'Administrative and Support Services': 10.3,            # 中位146人
+    'Professional, Scientific and Technical Services': 8.0, # 中位188人
+    
+    # 低系数行业 (中位就业人数高，系数较低)
+    'Manufacturing': 4.7,                                   # 中位316人
+    'Construction': 3.9,                                    # 中位388人
+    'Retail Trade': 3.7,                                    # 中位402人
+    'Health Care and Social Assistance': 3.6,               # 中位418人
+    'Accommodation and Food Services': 3.3                  # 中位460人
 }
 
 def score_suburb(event, context):
     """
-    改进的suburb评分API - 包含透明的计算过程
+    基于数据驱动的密度调整suburb评分API
     """
     if event.get('httpMethod') == 'OPTIONS':
         return {
@@ -78,27 +83,32 @@ def score_suburb(event, context):
         
         sal_code = mapping['SAL_CODE21']
         
-        # 2. 获取房价
+        # 2. 获取地区面积
+        cursor.execute("SELECT AREASQKM21 FROM epic3_Victoria_suburb_2021 WHERE SAL_CODE21 = %s", (sal_code,))
+        area_data = cursor.fetchone()
+        area_sqkm = float(area_data['AREASQKM21']) if area_data and area_data['AREASQKM21'] else 50.0
+        
+        # 3. 获取房价
         cursor.execute("SELECT `2024` as price FROM epic3_house_prices WHERE SAL_CODE21 = %s", (sal_code,))
         house_data = cursor.fetchone()
         house_price = float(house_data['price']) if house_data and house_data['price'] else 0
         
-        # 3. 获取交通站点
+        # 4. 获取交通站点数量
         cursor.execute("SELECT COUNT(*) as count FROM epic3_transport_stops WHERE SAL_CODE21 = %s", (sal_code,))
         transport_data = cursor.fetchone()
         transport_stops = int(transport_data['count']) if transport_data else 0
         
-        # 4. 获取学校
+        # 5. 获取学校数量
         cursor.execute("SELECT COUNT(*) as count FROM epic3_schools WHERE SAL_CODE21 = %s", (sal_code,))
         school_data = cursor.fetchone()
         school_count = int(school_data['count']) if school_data else 0
         
-        # 5. 获取儿童服务
+        # 6. 获取儿童服务数量
         cursor.execute("SELECT COUNT(*) as count FROM epic3_early_childhood_services WHERE SAL_CODE21 = %s", (sal_code,))
         childcare_data = cursor.fetchone()
         childcare_count = int(childcare_data['count']) if childcare_data else 0
         
-        # 6. 获取行业就业 (需要SA2映射)
+        # 7. 获取行业就业数据
         cursor.execute("SELECT SA2_CODE21 FROM epic3_mapping_sa2_sal WHERE SAL_CODE21 = %s LIMIT 1", (sal_code,))
         sa2_mapping = cursor.fetchone()
         industry_employment = 0
@@ -113,7 +123,6 @@ def score_suburb(event, context):
             industry_data = cursor.fetchone()
             
             if industry_data:
-                # 估算就业人数
                 industry_employment = (
                     int(industry_data['1_4 Employees'] or 0) * 2 +
                     int(industry_data['5_19 Employees'] or 0) * 10 +
@@ -123,11 +132,11 @@ def score_suburb(event, context):
         
         connection.close()
         
-        # === 新的评分算法 ===
+        # === 基于数据的密度评分算法 ===
         
-        # 1. 生活成本评分 (房价越低越好)
+        # 1. 生活成本评分 (房价，不受面积影响)
         if house_price == 0:
-            cost_score = 50  # 无数据默认中等
+            cost_score = 50
             cost_calculation = "无房价数据，默认50分"
         elif house_price < 500000:
             cost_score = 100
@@ -145,38 +154,43 @@ def score_suburb(event, context):
             cost_score = 20
             cost_calculation = f"房价{house_price:,.0f} > 2,000,000 = 20分"
         
-        # 2. 交通便利评分 (对数函数避免线性增长过快)
+        # 2. 交通便利评分 (简单线性，直接反映便利程度)
         if transport_stops == 0:
             transport_score = 0
             transport_calculation = "无交通站点 = 0分"
         else:
-            transport_score = min(100, 30 * math.log(transport_stops + 1))
-            transport_calculation = f"min(100, 30 × ln({transport_stops} + 1)) = min(100, 30 × {math.log(transport_stops + 1):.2f}) = {transport_score:.1f}分"
+            transport_density = transport_stops / area_sqkm
+            transport_score = min(100, transport_density * 8)
+            transport_calculation = f"min(100, {transport_density:.4f}站点/km² × 8) = min(100, {transport_density * 8:.1f}) = {transport_score:.1f}分"
         
-        # 3. 儿童保障评分 (学校权重更高)
-        child_score = min(100, school_count * 25 + childcare_count * 8)
-        child_calculation = f"min(100, {school_count}所学校 × 25 + {childcare_count}个托儿所 × 8) = min(100, {school_count * 25 + childcare_count * 8}) = {child_score}分"
+        # 3. 儿童保障评分 (基于数据调整的密度系数)
+        school_density = school_count / area_sqkm
+        childcare_density = childcare_count / area_sqkm
+        child_score = min(100, school_density * 58 + childcare_density * 18)
+        child_calculation = f"min(100, {school_density:.4f}所/km² × 58 + {childcare_density:.4f}个/km² × 18) = min(100, {school_density * 58:.1f} + {childcare_density * 18:.1f}) = {child_score:.1f}分"
         
-        # 4. 行业就业评分 (基于行业基准)
-        industry_benchmark = INDUSTRY_BENCHMARKS.get(industry_name, 100)
+        # 4. 行业就业评分 (纯密度，基于数据的行业系数)
+        industry_coefficient = INDUSTRY_DENSITY_COEFFICIENTS.get(industry_name, 10.0)
+        
         if industry_employment == 0:
             industry_score = 0
             industry_calculation = f"该地区{industry_name}行业无就业数据 = 0分"
         else:
-            # 计算相对于基准的百分比，再转换为评分
-            relative_ratio = industry_employment / industry_benchmark
-            industry_score = min(100, relative_ratio * 50)
-            industry_calculation = f"({industry_employment}人 ÷ 行业基准{industry_benchmark}人) × 50 = {relative_ratio:.2f} × 50 = {industry_score:.1f}分"
+            industry_density = industry_employment / area_sqkm
+            industry_score = min(100, industry_density * industry_coefficient)
+            industry_calculation = f"min(100, {industry_density:.3f}人/km² × {industry_coefficient}) = min(100, {industry_density * industry_coefficient:.1f}) = {industry_score:.1f}分"
         
         # 5. 综合评分 (等权重平均)
         overall_score = (cost_score + transport_score + child_score + industry_score) / 4
-        overall_calculation = f"({cost_score} + {transport_score:.1f} + {child_score} + {industry_score:.1f}) ÷ 4 = {overall_score:.1f}分"
+        overall_calculation = f"({cost_score:.1f} + {transport_score:.1f} + {child_score:.1f} + {industry_score:.1f}) ÷ 4 = {overall_score:.1f}分"
         
         # 构建返回结果
         result = {
             'suburb': suburb_name,
             'industry': industry_name,
             'sal_code': sal_code,
+            'area_sqkm': area_sqkm,
+            'algorithm_version': '2.2_simple_linear_transport',
             'scores': {
                 'cost_of_living': round(cost_score, 1),
                 'transport': round(transport_score, 1),
@@ -189,7 +203,14 @@ def score_suburb(event, context):
                 'transport_stops': transport_stops,
                 'schools': school_count,
                 'childcare_services': childcare_count,
-                'industry_employment': industry_employment
+                'industry_employment': industry_employment,
+                'area_sqkm': area_sqkm
+            },
+            'density_data': {
+                'transport_density': round(transport_stops / area_sqkm, 4) if area_sqkm > 0 else 0,
+                'school_density': round(school_count / area_sqkm, 4) if area_sqkm > 0 else 0,
+                'childcare_density': round(childcare_count / area_sqkm, 4) if area_sqkm > 0 else 0,
+                'industry_density': round(industry_employment / area_sqkm, 4) if area_sqkm > 0 else 0
             },
             'calculation': {
                 'cost_of_living': cost_calculation,
@@ -197,6 +218,12 @@ def score_suburb(event, context):
                 'child_care': child_calculation,
                 'industry': industry_calculation,
                 'overall': overall_calculation
+            },
+            'coefficients_used': {
+                'transport': 100,
+                'school': 58,
+                'childcare': 18,
+                'industry': industry_coefficient
             }
         }
         
