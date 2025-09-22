@@ -2,20 +2,27 @@ import json
 import logging
 import pymysql.cursors
 import math
+import os
+import time
+import re
 
 # 设置日志记录
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-# 数据库配置
+# 数据库配置 - 使用环境变量（向后兼容）
 DB_CONFIG = {
-    'host': 'fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com',
-    'user': 'admin',
-    'password': 'fairwageaustralia',
-    'port': 3306,
-    'database': 'fairwageaustralia',
+    'host': os.environ.get('DB_HOST', 'fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com'),
+    'user': os.environ.get('DB_USER', 'admin'),
+    'password': os.environ.get('DB_PASSWORD', 'fairwageaustralia'),  # 建议设置环境变量
+    'port': int(os.environ.get('DB_PORT', 3306)),
+    'database': os.environ.get('DB_NAME', 'fairwageaustralia'),
     'charset': 'utf8mb4',
-    'cursorclass': pymysql.cursors.DictCursor
+    'cursorclass': pymysql.cursors.DictCursor,
+    'connect_timeout': 10,
+    'read_timeout': 10,
+    'write_timeout': 10,
+    'autocommit': True
 }
 
 # 行业映射 - 标准化输入到正确名称
@@ -49,6 +56,35 @@ def normalize_string(text):
     if not text:
         return ""
     return ''.join(c.lower() for c in text if c.isalnum())
+
+def log_api_usage(suburb, industry, execution_time, status="SUCCESS"):
+    """记录API使用情况"""
+    logger.info(f"API_USAGE: suburb={suburb}, industry={industry}, time={execution_time:.2f}s, status={status}")
+
+def log_security_event(event_type, details):
+    """记录安全事件"""
+    logger.warning(f"SECURITY_EVENT: {event_type} - {details}")
+
+def enhanced_validate_input(suburb, industry):
+    """增强的输入验证"""
+    # 检查长度
+    if len(suburb) > 100:
+        raise ValueError("Suburb name too long")
+    if len(industry) > 100:
+        raise ValueError("Industry name too long")
+    
+    # 检查特殊字符 - 允许字母、数字、空格、连字符、撇号、点号
+    if not re.match(r'^[a-zA-Z0-9\s\-\'\.()\/&,:;+_]+$', suburb):
+        log_security_event("INVALID_SUBURB_CHARS", f"suburb: {suburb}")
+        raise ValueError("Suburb contains invalid characters")
+    
+    # 检查可疑输入模式
+    suspicious_patterns = ['script', 'select', 'union', 'drop', 'insert', 'update', 'delete', '<', '>', 'javascript']
+    input_lower = (suburb + industry).lower()
+    for pattern in suspicious_patterns:
+        if pattern in input_lower:
+            log_security_event("SUSPICIOUS_INPUT", f"Pattern '{pattern}' found in: {suburb}, {industry}")
+            break
 
 def find_suburb_match(input_suburb, cursor):
     """
@@ -101,6 +137,8 @@ def score_suburb(event, context):
     """
     基于数据驱动的密度调整suburb评分API（支持简单标准化匹配）
     """
+    start_time = time.time()
+    
     if event.get('httpMethod') == 'OPTIONS':
         return {
             'statusCode': 200,
@@ -113,6 +151,9 @@ def score_suburb(event, context):
         }
     
     connection = None
+    suburb_name = "unknown"
+    industry_name = "unknown"
+    
     try:
         # 解析请求
         body = json.loads(event['body'])
@@ -121,7 +162,17 @@ def score_suburb(event, context):
         input_population = body.get('population')  # 可选的人口输入
         
         if not input_suburb or not input_industry:
+            execution_time = time.time() - start_time
+            log_api_usage("missing", "missing", execution_time, "ERROR_MISSING_PARAMS")
             return error_response(400, 'MISSING_PARAMS', 'sub和industry参数必需')
+        
+        # 增强输入验证
+        try:
+            enhanced_validate_input(input_suburb, input_industry)
+        except ValueError as ve:
+            execution_time = time.time() - start_time
+            log_api_usage(input_suburb, input_industry, execution_time, "ERROR_VALIDATION")
+            return error_response(400, 'INVALID_INPUT', str(ve))
         
         connection = pymysql.connect(**DB_CONFIG)
         cursor = connection.cursor()
@@ -131,10 +182,14 @@ def score_suburb(event, context):
         industry_name = INDUSTRY_MAPPING.get(normalize_string(input_industry))
         
         if not suburb_name:
+            execution_time = time.time() - start_time
+            log_api_usage(input_suburb, input_industry, execution_time, "ERROR_SUBURB_NOT_FOUND")
             return error_response(404, 'SUBURB_NOT_FOUND', f'未找到地区: {input_suburb}')
         
         if not industry_name:
             available_industries = list(INDUSTRY_MAPPING.values())
+            execution_time = time.time() - start_time
+            log_api_usage(suburb_name, input_industry, execution_time, "ERROR_INDUSTRY_NOT_FOUND")
             return error_response(404, 'INDUSTRY_NOT_FOUND', f'未找到行业: {input_industry}. 可用行业包括: {", ".join(available_industries[:5])}...')
         
         
@@ -143,6 +198,8 @@ def score_suburb(event, context):
         mapping = cursor.fetchone()
         
         if not mapping:
+            execution_time = time.time() - start_time
+            log_api_usage(suburb_name, industry_name, execution_time, "ERROR_SAL_CODE")
             return error_response(404, 'SUBURB_NOT_FOUND', f'未找到地区: {suburb_name}')
         
         sal_code = mapping['SAL_CODE21']
@@ -345,9 +402,15 @@ def score_suburb(event, context):
             }
         }
         
+        # 记录成功的API使用
+        execution_time = time.time() - start_time
+        log_api_usage(suburb_name, industry_name, execution_time, "SUCCESS")
+        
         return success_response(result)
         
     except Exception as e:
+        execution_time = time.time() - start_time
+        log_api_usage(suburb_name, industry_name, execution_time, f"ERROR_{type(e).__name__}")
         logger.error(f"评分计算错误: {str(e)}")
         return error_response(500, 'CALCULATION_ERROR', str(e))
     finally:

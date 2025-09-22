@@ -18,3 +18,5 @@ try:
     print(json.dumps(json.loads(result['body']), indent=2))
 except Exception as e:
     print("Error:", str(e))
+
+    
