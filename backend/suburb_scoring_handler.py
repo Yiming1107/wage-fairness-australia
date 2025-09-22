@@ -6,15 +6,15 @@ import os
 import time
 import re
 
-# 设置日志记录
+# 日志配置 | Logging configuration
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-# 数据库配置 - 使用环境变量（向后兼容）
+# 数据库配置，支持环境变量覆盖 | Database configuration with environment variable override
 DB_CONFIG = {
     'host': os.environ.get('DB_HOST', 'fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com'),
     'user': os.environ.get('DB_USER', 'admin'),
-    'password': os.environ.get('DB_PASSWORD', 'fairwageaustralia'),  # 建议设置环境变量
+    'password': os.environ.get('DB_PASSWORD', 'fairwageaustralia'),
     'port': int(os.environ.get('DB_PORT', 3306)),
     'database': os.environ.get('DB_NAME', 'fairwageaustralia'),
     'charset': 'utf8mb4',
@@ -25,7 +25,7 @@ DB_CONFIG = {
     'autocommit': True
 }
 
-# 行业映射 - 标准化输入到正确名称
+# 行业标准化映射表 | Industry standardization mapping
 INDUSTRY_MAPPING = {
     'currentlyunknown': 'Currently Unknown',
     'mining': 'Mining',
@@ -50,58 +50,51 @@ INDUSTRY_MAPPING = {
 }
 
 def normalize_string(text):
-    """
-    标准化字符串：移除空格、符号，转换为小写
-    """
+    """字符串标准化：仅保留字母数字 | String normalization: letters and numbers only"""
     if not text:
         return ""
     return ''.join(c.lower() for c in text if c.isalnum())
 
 def log_api_usage(suburb, industry, execution_time, status="SUCCESS"):
-    """记录API使用情况"""
+    """记录API调用信息 | Log API usage information"""
     logger.info(f"API_USAGE: suburb={suburb}, industry={industry}, time={execution_time:.2f}s, status={status}")
 
 def log_security_event(event_type, details):
-    """记录安全事件"""
+    """记录安全相关事件 | Log security events"""
     logger.warning(f"SECURITY_EVENT: {event_type} - {details}")
 
 def enhanced_validate_input(suburb, industry):
-    """增强的输入验证"""
-    # 检查长度
-    if len(suburb) > 100:
+    """输入验证：长度检查和字符过滤 | Input validation: length check and character filtering"""
+    if len(suburb) > 150:
         raise ValueError("Suburb name too long")
-    if len(industry) > 100:
+    if len(industry) > 150:
         raise ValueError("Industry name too long")
     
-    # 检查特殊字符 - 允许字母、数字、空格、连字符、撇号、点号
-    if not re.match(r'^[a-zA-Z0-9\s\-\'\.()\/&,:;+_]+$', suburb):
+    # 允许澳洲地名常见字符：字母、数字、标点符号 | Allow common Australian place name characters
+    if not re.match(r'^[a-zA-Z0-9\s\-\'\.\/&,_]+$', suburb):
         log_security_event("INVALID_SUBURB_CHARS", f"suburb: {suburb}")
         raise ValueError("Suburb contains invalid characters")
     
-    # 检查可疑输入模式
-    suspicious_patterns = ['script', 'select', 'union', 'drop', 'insert', 'update', 'delete', '<', '>', 'javascript']
+    # 检测可疑的恶意输入模式 | Detect suspicious malicious input patterns
+    suspicious_patterns = ['<script', 'javascript:', 'eval(', 'exec(', 'onclick=', 'onload=', 'onerror=', 'data:text', 'vbscript:', 'expression(']
     input_lower = (suburb + industry).lower()
     for pattern in suspicious_patterns:
         if pattern in input_lower:
             log_security_event("SUSPICIOUS_INPUT", f"Pattern '{pattern}' found in: {suburb}, {industry}")
-            break
+            raise ValueError("Suspicious input detected")
 
 def find_suburb_match(input_suburb, cursor):
-    """
-    在数据库中查找匹配的郊区名称
-    """
-    # 先尝试精确匹配
+    """查找匹配的郊区：先精确匹配，再标准化匹配 | Find matching suburb: exact match first, then normalized match"""
     cursor.execute("SELECT SAL_NAME21 FROM epic3_mapping_suburb_postcode WHERE SAL_NAME21 = %s", (input_suburb,))
     result = cursor.fetchone()
     if result:
         return result['SAL_NAME21']
     
-    # 获取所有郊区名称进行标准化匹配
+    # 获取所有郊区进行模糊匹配 | Get all suburbs for fuzzy matching
     cursor.execute("SELECT DISTINCT SAL_NAME21 FROM epic3_mapping_suburb_postcode WHERE SAL_NAME21 IS NOT NULL")
     all_suburbs = cursor.fetchall()
     
     normalized_input = normalize_string(input_suburb)
-    
     for suburb in all_suburbs:
         suburb_name = suburb['SAL_NAME21']
         if normalize_string(suburb_name) == normalized_input:
@@ -109,36 +102,35 @@ def find_suburb_match(input_suburb, cursor):
     
     return None
 
-# 基于实际数据分析的行业密度系数
+# 基于数据分析的行业密度调整系数 | Industry density adjustment coefficients based on data analysis
 INDUSTRY_DENSITY_COEFFICIENTS = {
-    'Currently Unknown': 104.7,                             # 大幅提高
-    'Mining': 83.4,                                         # 大幅提高
-    'Information Media and Telecommunications': 65.9,        # 大幅提高
-    'Public Administration and Safety': 59.0,               # 大幅提高
-    'Electricity, Gas, Water and Waste Services': 56.1,     # 大幅提高
-    'Financial and Insurance Services': 26.0,               # 适度提高
-    'Agriculture, Forestry and Fishing': 25.1,              # 适度提高
-    'Arts and Recreation Services': 23.1,                   # 适度提高
-    'Rental, Hiring and Real Estate Services': 17.9,        # 适度降低
-    'Transport, Postal and Warehousing': 15.3,              # 适度降低
-    'Wholesale Trade': 11.6,                                # 明显降低
-    'Education and Training': 11.2,                         # 明显降低
-    'Other Services': 8.3,                                  # 明显降低
-    'Administrative and Support Services': 6.3,             # 明显降低
-    'Manufacturing': 6.0,                                   # 适度提高
-    'Professional, Scientific and Technical Services': 5.0, # 明显降低
-    'Retail Trade': 3.5,                                    # 微调
-    'Accommodation and Food Services': 2.9,                 # 微调
-    'Health Care and Social Assistance': 2.9,               # 微调
-    'Construction': 2.6                                      # 微调
+    'Currently Unknown': 104.7,
+    'Mining': 83.4,
+    'Information Media and Telecommunications': 65.9,
+    'Public Administration and Safety': 59.0,
+    'Electricity, Gas, Water and Waste Services': 56.1,
+    'Financial and Insurance Services': 26.0,
+    'Agriculture, Forestry and Fishing': 25.1,
+    'Arts and Recreation Services': 23.1,
+    'Rental, Hiring and Real Estate Services': 17.9,
+    'Transport, Postal and Warehousing': 15.3,
+    'Wholesale Trade': 11.6,
+    'Education and Training': 11.2,
+    'Other Services': 8.3,
+    'Administrative and Support Services': 6.3,
+    'Manufacturing': 6.0,
+    'Professional, Scientific and Technical Services': 5.0,
+    'Retail Trade': 3.5,
+    'Accommodation and Food Services': 2.9,
+    'Health Care and Social Assistance': 2.9,
+    'Construction': 2.6
 }
 
 def score_suburb(event, context):
-    """
-    基于数据驱动的密度调整suburb评分API（支持简单标准化匹配）
-    """
+    """主要API函数：计算郊区各项评分 | Main API function: calculate suburb scores"""
     start_time = time.time()
     
+    # 处理CORS预检请求 | Handle CORS preflight requests
     if event.get('httpMethod') == 'OPTIONS':
         return {
             'statusCode': 200,
@@ -155,18 +147,19 @@ def score_suburb(event, context):
     industry_name = "unknown"
     
     try:
-        # 解析请求
+        # 解析JSON请求体 | Parse JSON request body
         body = json.loads(event['body'])
         input_suburb = body.get('sub', '').strip()
         input_industry = body.get('industry', '').strip()
-        input_population = body.get('population')  # 可选的人口输入
+        input_population = body.get('population')
         
+        # 验证必需参数 | Validate required parameters
         if not input_suburb or not input_industry:
             execution_time = time.time() - start_time
             log_api_usage("missing", "missing", execution_time, "ERROR_MISSING_PARAMS")
-            return error_response(400, 'MISSING_PARAMS', 'sub和industry参数必需')
+            return error_response(400, 'MISSING_PARAMS', 'Both sub and industry parameters are required')
         
-        # 增强输入验证
+        # 输入安全验证 | Input security validation
         try:
             enhanced_validate_input(input_suburb, input_industry)
         except ValueError as ve:
@@ -174,62 +167,58 @@ def score_suburb(event, context):
             log_api_usage(input_suburb, input_industry, execution_time, "ERROR_VALIDATION")
             return error_response(400, 'INVALID_INPUT', str(ve))
         
+        # 建立数据库连接 | Establish database connection
         connection = pymysql.connect(**DB_CONFIG)
         cursor = connection.cursor()
         
-        # 查找匹配的郊区和行业
+        # 查找匹配的郊区和行业 | Find matching suburb and industry
         suburb_name = find_suburb_match(input_suburb, cursor)
         industry_name = INDUSTRY_MAPPING.get(normalize_string(input_industry))
         
         if not suburb_name:
             execution_time = time.time() - start_time
             log_api_usage(input_suburb, input_industry, execution_time, "ERROR_SUBURB_NOT_FOUND")
-            return error_response(404, 'SUBURB_NOT_FOUND', f'未找到地区: {input_suburb}')
+            return error_response(404, 'SUBURB_NOT_FOUND', f'Suburb not found: {input_suburb}')
         
         if not industry_name:
             available_industries = list(INDUSTRY_MAPPING.values())
             execution_time = time.time() - start_time
             log_api_usage(suburb_name, input_industry, execution_time, "ERROR_INDUSTRY_NOT_FOUND")
-            return error_response(404, 'INDUSTRY_NOT_FOUND', f'未找到行业: {input_industry}. 可用行业包括: {", ".join(available_industries[:5])}...')
+            return error_response(404, 'INDUSTRY_NOT_FOUND', f'Industry not found: {input_industry}. Available industries include: {", ".join(available_industries[:5])}...')
         
-        
-        # 1. 获取SAL_CODE21
+        # 获取郊区代码 | Get suburb code
         cursor.execute("SELECT SAL_CODE21 FROM epic3_mapping_suburb_postcode WHERE SAL_NAME21 = %s", (suburb_name,))
         mapping = cursor.fetchone()
         
         if not mapping:
             execution_time = time.time() - start_time
             log_api_usage(suburb_name, industry_name, execution_time, "ERROR_SAL_CODE")
-            return error_response(404, 'SUBURB_NOT_FOUND', f'未找到地区: {suburb_name}')
+            return error_response(404, 'SUBURB_NOT_FOUND', f'Suburb mapping not found: {suburb_name}')
         
         sal_code = mapping['SAL_CODE21']
         
-        # 2. 获取地区面积
+        # 查询基础数据：面积、房价、基础设施 | Query basic data: area, house price, infrastructure
         cursor.execute("SELECT AREASQKM21 FROM epic3_Victoria_suburb_2021 WHERE SAL_CODE21 = %s", (sal_code,))
         area_data = cursor.fetchone()
         area_sqkm = float(area_data['AREASQKM21']) if area_data and area_data['AREASQKM21'] else 50.0
         
-        # 3. 获取房价
         cursor.execute("SELECT `2024` as price FROM epic3_house_prices WHERE SAL_CODE21 = %s", (sal_code,))
         house_data = cursor.fetchone()
         house_price = float(house_data['price']) if house_data and house_data['price'] else 0
         
-        # 4. 获取交通站点数量
         cursor.execute("SELECT COUNT(*) as count FROM epic3_transport_stops WHERE SAL_CODE21 = %s", (sal_code,))
         transport_data = cursor.fetchone()
         transport_stops = int(transport_data['count']) if transport_data else 0
         
-        # 5. 获取学校数量
         cursor.execute("SELECT COUNT(*) as count FROM epic3_schools WHERE SAL_CODE21 = %s", (sal_code,))
         school_data = cursor.fetchone()
         school_count = int(school_data['count']) if school_data else 0
         
-        # 6. 获取儿童服务数量
         cursor.execute("SELECT COUNT(*) as count FROM epic3_early_childhood_services WHERE SAL_CODE21 = %s", (sal_code,))
         childcare_data = cursor.fetchone()
         childcare_count = int(childcare_data['count']) if childcare_data else 0
         
-        # 7. 获取行业就业数据
+        # 查询行业就业数据 | Query industry employment data
         cursor.execute("SELECT SA2_CODE21 FROM epic3_mapping_sa2_sal WHERE SAL_CODE21 = %s LIMIT 1", (sal_code,))
         sa2_mapping = cursor.fetchone()
         industry_employment = 0
@@ -243,6 +232,7 @@ def score_suburb(event, context):
             """, (sa2_code, industry_name))
             industry_data = cursor.fetchone()
             
+            # 按企业规模加权计算就业人数 | Calculate weighted employment by company size
             if industry_data:
                 industry_employment = (
                     int(industry_data['1_4 Employees'] or 0) * 2 +
@@ -251,7 +241,7 @@ def score_suburb(event, context):
                     int(industry_data['200 plus Employees'] or 0) * 300
                 )
         
-        # 8. 获取人口和犯罪数据（支持用户输入人口数据）
+        # 查询人口和犯罪数据 | Query population and crime data
         if input_population:
             population = int(input_population)
         else:
@@ -259,7 +249,6 @@ def score_suburb(event, context):
             pop_result = cursor.fetchone()
             population = int(pop_result['population']) if pop_result and pop_result['population'] else 0
         
-        # 获取2025年犯罪数据
         cursor.execute("""
             SELECT SUM(CAST(`Incidents Recorded` AS UNSIGNED)) as total_crimes
             FROM epic3_crime 
@@ -268,9 +257,9 @@ def score_suburb(event, context):
         crime_result = cursor.fetchone()
         total_crimes = int(crime_result['total_crimes']) if crime_result and crime_result['total_crimes'] else 0
         
-        # === 保持原有的评分算法 ===
+        # 计算各项评分 | Calculate scores
         
-        # 1. 生活成本评分 (房价，线性函数)
+        # 生活成本评分：基于房价的线性函数 | Cost of living score: linear function based on house price
         if house_price == 0:
             cost_score = 50
             cost_calculation = "No house price data = 50 points"
@@ -281,11 +270,10 @@ def score_suburb(event, context):
             cost_score = 10
             cost_calculation = f"House price ${house_price:,.0f} ≥ $2M = 10 points"
         else:
-            # 30万到200万之间，从100分线性下降到10分
             cost_score = 100 - ((house_price - 300000) / (2000000 - 300000)) * 90
             cost_calculation = f"House price ${house_price:,.0f}: 100 - (({house_price:,.0f} - 300k) / 1.7M) × 90 = {cost_score:.1f} points"
         
-        # 2. 交通便利评分
+        # 交通便利评分：基于交通站点密度 | Transport convenience score: based on transport stop density
         if transport_stops == 0:
             transport_score = 0
             transport_calculation = "No transport stops = 0 points"
@@ -297,7 +285,7 @@ def score_suburb(event, context):
             else:
                 transport_calculation = f"Transport density: {transport_density:.4f} stops/km² × 8 = {transport_score:.1f} points"
         
-        # 3. 儿童保障评分
+        # 儿童保障评分：学校和托儿所密度加权 | Child care score: weighted density of schools and childcare
         school_density = school_count / area_sqkm
         childcare_density = childcare_count / area_sqkm
         child_score = min(100, school_density * 58 + childcare_density * 18)
@@ -310,7 +298,7 @@ def score_suburb(event, context):
         else:
             child_calculation = f"Child care score: {school_density:.4f} schools/km² × 58 + {childcare_density:.4f} childcare/km² × 18 = {school_points:.1f} + {childcare_points:.1f} = {child_score:.1f} points"
         
-        # 4. 行业就业评分
+        # 行业就业评分：就业密度乘以行业系数 | Industry employment score: employment density × industry coefficient
         industry_coefficient = INDUSTRY_DENSITY_COEFFICIENTS.get(industry_name, 10.0)
         
         if industry_employment == 0:
@@ -326,7 +314,7 @@ def score_suburb(event, context):
             else:
                 industry_calculation = f"Industry score: {industry_density:.3f} employees/km² × {industry_coefficient} = {industry_score:.1f} points"
         
-        # 5. 犯罪安全评分（线性函数）
+        # 安全评分：基于犯罪率的线性函数 | Safety score: linear function based on crime rate
         if population < 50:
             safety_score = 60
             crime_rate = 0
@@ -345,22 +333,20 @@ def score_suburb(event, context):
                 safety_score = 5
                 safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people ≥ 200 = 5 points"
             else:
-                # 0到200犯罪率之间，从100分线性下降到5分
                 safety_score = 100 - (crime_rate / 200) * 95
                 safety_calculation = f"Crime rate {crime_rate:.2f}/1000 people: 100 - ({crime_rate:.2f} / 200) × 95 = {safety_score:.1f} points"
         
-        # 6. 综合评分
+        # 综合评分：五项指标平均值 | Overall score: average of five indicators
         overall_score = (cost_score + transport_score + child_score + industry_score + safety_score) / 5
         overall_calculation = f"({cost_score:.1f} + {transport_score:.1f} + {child_score:.1f} + {industry_score:.1f} + {safety_score:.1f}) ÷ 5 = {overall_score:.1f} points"
         
-        # 构建返回结果
+        # 构建返回结果 | Build response result
         result = {
             'suburb': suburb_name,
             'industry': industry_name,
             'sal_code': sal_code,
             'area_sqkm': area_sqkm,
             'population': population,
-
             'scores': {
                 'cost_of_living': round(cost_score, 1),
                 'transport': round(transport_score, 1),
@@ -402,7 +388,7 @@ def score_suburb(event, context):
             }
         }
         
-        # 记录成功的API使用
+        # 记录成功调用 | Log successful call
         execution_time = time.time() - start_time
         log_api_usage(suburb_name, industry_name, execution_time, "SUCCESS")
         
@@ -411,13 +397,14 @@ def score_suburb(event, context):
     except Exception as e:
         execution_time = time.time() - start_time
         log_api_usage(suburb_name, industry_name, execution_time, f"ERROR_{type(e).__name__}")
-        logger.error(f"评分计算错误: {str(e)}")
+        logger.error(f"Suburb scoring calculation error: {str(e)}")
         return error_response(500, 'CALCULATION_ERROR', str(e))
     finally:
         if connection:
             connection.close()
 
 def success_response(data):
+    """构建成功响应 | Build success response"""
     return {
         'statusCode': 200,
         'headers': {
@@ -428,6 +415,7 @@ def success_response(data):
     }
 
 def error_response(status_code, error_code, message):
+    """构建错误响应 | Build error response"""
     return {
         'statusCode': status_code,
         'headers': {
