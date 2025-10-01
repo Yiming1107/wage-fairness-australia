@@ -40,5 +40,3 @@ functions:
           method: post
           cors: true
     timeout: 30
-    environment:
-      ZHIPU_API_KEY: ${env:9405476aa25d42a580409da4546dba36.TStXLwwhiycqtLeP}

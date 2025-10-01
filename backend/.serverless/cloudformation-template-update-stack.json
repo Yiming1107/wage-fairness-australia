@@ -20,6 +20,12 @@
         "LogGroupName": "/aws/lambda/wage-fairness-api-dev-suburb-score"
       }
     },
+    "AiDashchatLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/wage-fairness-api-dev-ai-chat"
+      }
+    },
     "IamRoleLambdaExecution": {
       "Type": "AWS::IAM::Role",
       "Properties": {
@@ -103,7 +109,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-          "S3Key": "serverless/wage-fairness-api/dev/1758549315559-2025-09-22T13:55:15.559Z/wage-fairness-api.zip"
+          "S3Key": "serverless/wage-fairness-api/dev/1759308567697-2025-10-01T08:49:27.697Z/wage-fairness-api.zip"
         },
         "Handler": "handler.lambda_handler",
         "Runtime": "python3.9",
@@ -126,7 +132,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-          "S3Key": "serverless/wage-fairness-api/dev/1758549315559-2025-09-22T13:55:15.559Z/wage-fairness-api.zip"
+          "S3Key": "serverless/wage-fairness-api/dev/1759308567697-2025-10-01T08:49:27.697Z/wage-fairness-api.zip"
         },
         "Handler": "gender_gap_handler.calculate_gender_gap",
         "Runtime": "python3.9",
@@ -149,7 +155,7 @@
       "Properties": {
         "Code": {
           "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-          "S3Key": "serverless/wage-fairness-api/dev/1758549315559-2025-09-22T13:55:15.559Z/wage-fairness-api.zip"
+          "S3Key": "serverless/wage-fairness-api/dev/1759308567697-2025-10-01T08:49:27.697Z/wage-fairness-api.zip"
         },
         "Handler": "suburb_scoring_handler.score_suburb",
         "Runtime": "python3.9",
@@ -167,34 +173,67 @@
         "SuburbDashscoreLogGroup"
       ]
     },
-    "CalculateLambdaVersionr5oNlvp9yMMuXKojZsE8JASQGEyV4qG80fUOUdQaA8": {
+    "AiDashchatLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
+          "S3Key": "serverless/wage-fairness-api/dev/1759308567697-2025-10-01T08:49:27.697Z/wage-fairness-api.zip"
+        },
+        "Handler": "AI_chat.lambda_handler",
+        "Runtime": "python3.9",
+        "FunctionName": "wage-fairness-api-dev-ai-chat",
+        "MemorySize": 1024,
+        "Timeout": 30,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "AiDashchatLogGroup"
+      ]
+    },
+    "CalculateLambdaVersion2jmnT9Edu3yaBuAurN4n7IGBckM4erof8rNPNG7XI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CalculateLambdaFunction"
         },
-        "CodeSha256": "cB9/Yuj2xunNsBJX/KuEeSv5eFQo9PcQLo6Ll1bYMD0="
+        "CodeSha256": "EO0B/S9LeTjFf86Ui9XAfWCCBrvMK3K5Fs6B432AGao="
       }
     },
-    "GenderDashgapLambdaVersionzsRDVra3aNMB7kS63kmYasHN09mnXk6tT5BfLFr30": {
+    "GenderDashgapLambdaVersionDLUWcKqqYoZxr2UElEF9CPeA1XnPM75uYLhJmnAE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GenderDashgapLambdaFunction"
         },
-        "CodeSha256": "cB9/Yuj2xunNsBJX/KuEeSv5eFQo9PcQLo6Ll1bYMD0="
+        "CodeSha256": "EO0B/S9LeTjFf86Ui9XAfWCCBrvMK3K5Fs6B432AGao="
       }
     },
-    "SuburbDashscoreLambdaVersion6yMnQFCrkdq3TqXVFzclCqCMV3vzo82KN5ZrqtHk": {
+    "SuburbDashscoreLambdaVersioniy5gNSecm5zGY0pZEWLeeWQQ4OyUg8CthqAswrje1A": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SuburbDashscoreLambdaFunction"
         },
-        "CodeSha256": "cB9/Yuj2xunNsBJX/KuEeSv5eFQo9PcQLo6Ll1bYMD0="
+        "CodeSha256": "EO0B/S9LeTjFf86Ui9XAfWCCBrvMK3K5Fs6B432AGao="
+      }
+    },
+    "AiDashchatLambdaVersionb3mJ9tYz3s2sNZCuyoJp1Pjlzy6rGXbqHYq25GRsZYs": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "AiDashchatLambdaFunction"
+        },
+        "CodeSha256": "EO0B/S9LeTjFf86Ui9XAfWCCBrvMK3K5Fs6B432AGao="
       }
     },
     "ApiGatewayRestApi": {
@@ -285,6 +324,33 @@
           "Ref": "ApiGatewayResourceSuburb"
         },
         "PathPart": "score",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceAi": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Fn::GetAtt": [
+            "ApiGatewayRestApi",
+            "RootResourceId"
+          ]
+        },
+        "PathPart": "ai",
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayResourceAiChat": {
+      "Type": "AWS::ApiGateway::Resource",
+      "Properties": {
+        "ParentId": {
+          "Ref": "ApiGatewayResourceAi"
+        },
+        "PathPart": "chat",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -419,6 +485,51 @@
         },
         "ResourceId": {
           "Ref": "ApiGatewayResourceSuburbScore"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        }
+      }
+    },
+    "ApiGatewayMethodAiChatOptions": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "AuthorizationType": "NONE",
+        "HttpMethod": "OPTIONS",
+        "MethodResponses": [
+          {
+            "StatusCode": "200",
+            "ResponseParameters": {
+              "method.response.header.Access-Control-Allow-Origin": true,
+              "method.response.header.Access-Control-Allow-Headers": true,
+              "method.response.header.Access-Control-Allow-Methods": true
+            },
+            "ResponseModels": {}
+          }
+        ],
+        "RequestParameters": {},
+        "Integration": {
+          "Type": "MOCK",
+          "RequestTemplates": {
+            "application/json": "{statusCode:200}"
+          },
+          "ContentHandling": "CONVERT_TO_TEXT",
+          "IntegrationResponses": [
+            {
+              "StatusCode": "200",
+              "ResponseParameters": {
+                "method.response.header.Access-Control-Allow-Origin": "'*'",
+                "method.response.header.Access-Control-Allow-Headers": "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,X-Amz-User-Agent,X-Amzn-Trace-Id'",
+                "method.response.header.Access-Control-Allow-Methods": "'OPTIONS,POST'"
+              },
+              "ResponseTemplates": {
+                "application/json": ""
+              }
+            }
+          ]
+        },
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceAiChat"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -563,7 +674,53 @@
         "SuburbDashscoreLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1758549309398": {
+    "ApiGatewayMethodAiChatPost": {
+      "Type": "AWS::ApiGateway::Method",
+      "Properties": {
+        "HttpMethod": "POST",
+        "RequestParameters": {},
+        "ResourceId": {
+          "Ref": "ApiGatewayResourceAiChat"
+        },
+        "RestApiId": {
+          "Ref": "ApiGatewayRestApi"
+        },
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "Integration": {
+          "IntegrationHttpMethod": "POST",
+          "Type": "AWS_PROXY",
+          "Uri": {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":apigateway:",
+                {
+                  "Ref": "AWS::Region"
+                },
+                ":lambda:path/2015-03-31/functions/",
+                {
+                  "Fn::GetAtt": [
+                    "AiDashchatLambdaFunction",
+                    "Arn"
+                  ]
+                },
+                "/invocations"
+              ]
+            ]
+          }
+        },
+        "MethodResponses": []
+      },
+      "DependsOn": [
+        "AiDashchatLambdaPermissionApiGateway"
+      ]
+    },
+    "ApiGatewayDeployment1759308562139": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -575,9 +732,11 @@
         "ApiGatewayMethodFairnessCalculateOptions",
         "ApiGatewayMethodGenderDashgapCalculateOptions",
         "ApiGatewayMethodSuburbScoreOptions",
+        "ApiGatewayMethodAiChatOptions",
         "ApiGatewayMethodFairnessCalculatePost",
         "ApiGatewayMethodGenderDashgapCalculatePost",
-        "ApiGatewayMethodSuburbScorePost"
+        "ApiGatewayMethodSuburbScorePost",
+        "ApiGatewayMethodAiChatPost"
       ]
     },
     "CalculateLambdaPermissionApiGateway": {
@@ -690,6 +849,43 @@
           ]
         }
       }
+    },
+    "AiDashchatLambdaPermissionApiGateway": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "AiDashchatLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "apigateway.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            "",
+            [
+              "arn:",
+              {
+                "Ref": "AWS::Partition"
+              },
+              ":execute-api:",
+              {
+                "Ref": "AWS::Region"
+              },
+              ":",
+              {
+                "Ref": "AWS::AccountId"
+              },
+              ":",
+              {
+                "Ref": "ApiGatewayRestApi"
+              },
+              "/*/*"
+            ]
+          ]
+        }
+      }
     }
   },
   "Outputs": {
@@ -702,7 +898,7 @@
     "CalculateLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CalculateLambdaVersionr5oNlvp9yMMuXKojZsE8JASQGEyV4qG80fUOUdQaA8"
+        "Ref": "CalculateLambdaVersion2jmnT9Edu3yaBuAurN4n7IGBckM4erof8rNPNG7XI"
       },
       "Export": {
         "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -711,7 +907,7 @@
     "GenderDashgapLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GenderDashgapLambdaVersionzsRDVra3aNMB7kS63kmYasHN09mnXk6tT5BfLFr30"
+        "Ref": "GenderDashgapLambdaVersionDLUWcKqqYoZxr2UElEF9CPeA1XnPM75uYLhJmnAE"
       },
       "Export": {
         "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -720,10 +916,19 @@
     "SuburbDashscoreLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SuburbDashscoreLambdaVersion6yMnQFCrkdq3TqXVFzclCqCMV3vzo82KN5ZrqtHk"
+        "Ref": "SuburbDashscoreLambdaVersioniy5gNSecm5zGY0pZEWLeeWQQ4OyUg8CthqAswrje1A"
       },
       "Export": {
         "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
+      }
+    },
+    "AiDashchatLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "AiDashchatLambdaVersionb3mJ9tYz3s2sNZCuyoJp1Pjlzy6rGXbqHYq25GRsZYs"
+      },
+      "Export": {
+        "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
       }
     },
     "ServiceEndpoint": {
