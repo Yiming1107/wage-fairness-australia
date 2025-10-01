@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     """
     AWS Lambda handler for salary negotiation chat
     """
-    # 处理OPTIONS请求（CORS预检）
+    # 处理OPTIONS请求(CORS预检)
     if event.get('httpMethod') == 'OPTIONS':
         return {
             'statusCode': 200,
@@ -28,7 +28,7 @@ def lambda_handler(event, context):
         user_data = body.get('user_data', {})
         
         # API密钥
-        api_key = "9405476aa25d42a580409da4546dba36.TStXLwwhiycqtLeP"  # 替换成你的智谱AI密钥
+        api_key = "9405476aa25d42a580409da4546dba36.TStXLwwhiycqtLeP"
         
         # 处理对话
         ai_response = handle_chat(api_key, boss_type, message, conversation_history, user_data)
@@ -100,23 +100,25 @@ Style: Practical and cautious. Mention budget constraints and explore cheaper op
     current_salary = user_data.get('current_salary', 0)
     market_average = user_data.get('market_average', 0)
     experience = user_data.get('experience', 0)
-    position = user_data.get('position', '员工')
+    position = user_data.get('position', 'Employee')
+    industry = user_data.get('industry', 'Technology')  # 新增: 获取行业信息
     
     user_context = f"""
 Employee Background:
 - Position: {position}
+- Industry: {industry}
 - Current Salary: ${current_salary}
 - Experience: {experience} years"""
     
     if market_average > 0:
         user_context += f"\n- Market Average: ${market_average}"
     
-    return f"{base_prompt}\n\n{boss_profiles.get(boss_type, boss_profiles['supportive'])}\n\n{user_context}\n\nRemember: Keep responses SHORT (2-4 sentences). Speak naturally."
+    return f"{base_prompt}\n\n{boss_profiles.get(boss_type, boss_profiles['supportive'])}\n\n{user_context}\n\nRemember: Keep responses SHORT (2-4 sentences). Speak naturally. Consider the industry context in your negotiation."
 
 
 def call_zhipu_api(api_key, messages, temperature=0.7):
     """
-    调用智谱AI API（使用urllib，不依赖第三方库）
+    调用智谱AI API(使用urllib,不依赖第三方库)
     """
     url = "https://open.bigmodel.cn/api/paas/v4/chat/completions"
     
