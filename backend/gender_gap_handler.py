@@ -67,12 +67,36 @@ def load_industry_data():
         return
     
     try:
-        csv_path = os.path.join(os.path.dirname(__file__), 'data', 'gender1.csv')
+        # 尝试多个可能的路径
+        possible_paths = [
+            'gender1.csv',
+            'data/gender1.csv',
+            os.path.join(os.path.dirname(__file__), 'gender1.csv'),
+            os.path.join(os.path.dirname(__file__), 'data', 'gender1.csv')
+        ]
+        
+        csv_path = None
+        for path in possible_paths:
+            if os.path.exists(path):
+                csv_path = path
+                break
+        
+        if not csv_path:
+            logger.error("CSV file not found in any of the expected paths")
+            return
+            
+        logger.info(f"Loading CSV from: {csv_path}")
+        
         with open(csv_path, 'r', encoding='utf-8') as file:
             reader = csv.DictReader(file)
+            
             for row in reader:
                 industry_name = row['Industry'].strip()
-                INDUSTRY_DATA[industry_name] = {
+                # 用标准化的名称作为键，这样可以无视逗号空格大小写
+                normalized_key = normalize_text(industry_name)
+                
+                INDUSTRY_DATA[normalized_key] = {
+                    'original_name': industry_name,
                     'average_midpoint': float(row['Average GPG Mid-point (%)']) if row['Average GPG Mid-point (%)'] else 0,
                     'median_midpoint': float(row['Median GPG Mid-point (%)']) if row['Median GPG Mid-point (%)'] else 0,
                     'total_women_percentage': float(row['Total Women (%)']) if row['Total Women (%)'] else 0,
@@ -83,7 +107,11 @@ def load_industry_data():
                         'lower_quartile': float(row['Lower Quartile Women (%)']) if row['Lower Quartile Women (%)'] else 0
                     }
                 }
+                logger.info(f"Loaded: '{industry_name}' -> normalized key: '{normalized_key}'")
+        
+        logger.info(f"Successfully loaded {len(INDUSTRY_DATA)} industries from CSV")
         DATA_LOADED = True
+        
     except Exception as e:
         logger.error(f"Error loading industry data: {str(e)}")
 
@@ -153,6 +181,7 @@ def calculate_gender_gap(event, context):
         }
     
     try:
+        # 加载CSV数据
         load_industry_data()
         
         body = json.loads(event['body'])
@@ -162,14 +191,17 @@ def calculate_gender_gap(event, context):
         if not state or not industry_name:
             return error_response(400, 'MISSING_PARAMS', 'State and industry parameters are required')
         
+        # 1. 根据用户输入找到行业代码
         industry_code = find_industry_code_by_name(industry_name)
         if not industry_code:
             return error_response(400, 'INVALID_INDUSTRY', f'No matching industry found for: {industry_name}')
         
+        # 2. 用行业代码从数据库获取历史数据
         historical_data = get_historical_earnings_data(state, industry_code)
         if not historical_data:
             return error_response(404, 'NO_DATA', f'No data found for {state} - {industry_name}')
         
+        # 3. 构建基础结果
         result = {
             'state': state,
             'industry_name': INDUSTRY_MAPPING[industry_code],
@@ -177,18 +209,28 @@ def calculate_gender_gap(event, context):
             'historical_earnings': {
                 'yearly_data': historical_data,
                 'latest_year_data': historical_data[-1] if historical_data else None
-            }
+            },
+            'industry_statistics': None
         }
         
-        # 添加gender1数据
-        industry_full_name = INDUSTRY_MAPPING[industry_code]
-        if industry_full_name in INDUSTRY_DATA:
-            result['industry_statistics'] = INDUSTRY_DATA[industry_full_name]
+        # 4. 从CSV获取行业统计数据
+        # 使用INDUSTRY_MAPPING中的名称进行标准化匹配
+        mapping_industry_name = INDUSTRY_MAPPING[industry_code]
+        normalized_mapping_name = normalize_text(mapping_industry_name)
+        
+        logger.info(f"Looking for CSV data with normalized key: '{normalized_mapping_name}'")
+        logger.info(f"Available CSV keys: {list(INDUSTRY_DATA.keys())}")
+        
+        if normalized_mapping_name in INDUSTRY_DATA:
+            result['industry_statistics'] = INDUSTRY_DATA[normalized_mapping_name]
+            logger.info(f"Found CSV data for: {mapping_industry_name}")
+        else:
+            logger.warning(f"No CSV data found for: {mapping_industry_name} (normalized: {normalized_mapping_name})")
         
         return success_response(result)
         
     except Exception as e:
-        logger.error(f"Error: {str(e)}")
+        logger.error(f"Error in calculate_gender_gap: {str(e)}")
         return error_response(500, 'INTERNAL_ERROR', str(e))
 
 def success_response(data):

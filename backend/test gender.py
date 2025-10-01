@@ -4,10 +4,7 @@ from gender_gap_handler import calculate_gender_gap
 # 模拟API Gateway事件 - 测试新的参数格式
 event = {
     "httpMethod": "POST",
-    "body": json.dumps({
-  "state": "NSW",
-  "industry": "Financial and insurance services"
-})
+    "body": json.dumps({"state":"QLD","industry":"Agriculture forestry and fishing"})
 }
 
 # 运行测试

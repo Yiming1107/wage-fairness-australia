@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suburb Scoring System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 800px;
+            width: 90%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .form-container {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .search-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .search-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .spinner {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .score-card {
+            background: linear-gradient(135deg, #f7fafc, #edf2f7);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .suburb-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 5px;
+        }
+
+        .industry-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+
+        .overall-score {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .score-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-size: 2rem;
+            font-weight: 700;
+            color: white;
+            position: relative;
+        }
+
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .score-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+            border: 1px solid #e2e8f0;
+        }
+
+        .score-item h4 {
+            color: #2d3748;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .score-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .error {
+            background: #fed7d7;
+            color: #c53030;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: 1px solid #feb2b2;
+        }
+
+        .info-section {
+            margin-top: 30px;
+            background: #f7fafc;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item .label {
+            font-size: 0.8rem;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .info-item .value {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 30px 25px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .score-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏘️ Suburb Scoring System</h1>
+            <p>Discover the perfect suburb for your lifestyle and career</p>
+        </div>
+
+        <div class="form-container">
+            <div class="form-group">
+                <label for="suburb">Suburb Name</label>
+                <input type="text" id="suburb" placeholder="Enter suburb name (e.g., Melbourne)" value="Melbourne">
+            </div>
+
+            <div class="form-group">
+                <label for="industry">Industry</label>
+                <select id="industry">
+                    <option value="informationmediaandtelecommunications">Information Media & Telecommunications</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="retail">Retail</option>
+                    <option value="hospitality">Hospitality</option>
+                    <option value="construction">Construction</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="finance">Finance</option>
+                    <option value="technology">Technology</option>
+                    <option value="government">Government</option>
+                </select>
+            </div>
+
+            <button class="search-btn" onclick="searchSuburb()">
+                <span id="btn-text">🔍 Analyze Suburb</span>
+            </button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Analyzing suburb data...</p>
+        </div>
+
+        <div class="results" id="results"></div>
+    </div>
+
+    <script>
+        const API_URL = 'https://1qbm73da9b.execute-api.ap-southeast-2.amazonaws.com/dev/suburb/score';
+
+        function getScoreColor(score) {
+            if (score >= 80) return '#10b981'; // Green
+            if (score >= 60) return '#f59e0b'; // Orange
+            if (score >= 40) return '#ef4444'; // Red
+            return '#6b7280'; // Gray
+        }
+
+        function getScoreGrade(score) {
+            if (score >= 90) return 'A+';
+            if (score >= 80) return 'A';
+            if (score >= 70) return 'B+';
+            if (score >= 60) return 'B';
+            if (score >= 50) return 'C+';
+            if (score >= 40) return 'C';
+            return 'D';
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat().format(num);
+        }
+
+        async function searchSuburb() {
+            const suburb = document.getElementById('suburb').value.trim();
+            const industry = document.getElementById('industry').value;
+            const loadingDiv = document.getElementById('loading');
+            const resultsDiv = document.getElementById('results');
+            const searchBtn = document.querySelector('.search-btn');
+            const btnText = document.getElementById('btn-text');
+
+            if (!suburb) {
+                alert('Please enter a suburb name');
+                return;
+            }
+
+            // Show loading state
+            searchBtn.disabled = true;
+            btnText.textContent = 'Analyzing...';
+            loadingDiv.style.display = 'block';
+            resultsDiv.style.display = 'none';
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        sub: suburb,
+                        industry: industry
+                    })
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    displayResults(data.data);
+                } else {
+                    displayError('Failed to retrieve suburb data. Please try again.');
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                displayError('Network error. Please check your connection and try again.');
+            } finally {
+                // Hide loading state
+                searchBtn.disabled = false;
+                btnText.textContent = '🔍 Analyze Suburb';
+                loadingDiv.style.display = 'none';
+            }
+        }
+
+        function displayResults(data) {
+            const resultsDiv = document.getElementById('results');
+            const overallScore = data.scores.overall;
+            const scoreColor = getScoreColor(overallScore);
+            const scoreGrade = getScoreGrade(overallScore);
+
+            resultsDiv.innerHTML = `
+                <div class="score-card">
+                    <div class="suburb-title">${data.suburb}</div>
+                    <div class="industry-tag">${data.industry}</div>
+                    
+                    <div class="overall-score">
+                        <div class="score-circle" style="background: linear-gradient(135deg, ${scoreColor}, ${scoreColor}dd);">
+                            ${overallScore}<span style="font-size: 1rem;">/100</span>
+                        </div>
+                        <h3 style="margin-top: 10px; color: ${scoreColor};">Grade: ${scoreGrade}</h3>
+                    </div>
+
+                    <div class="score-grid">
+                        <div class="score-item">
+                            <h4>Cost of Living</h4>
+                            <div class="score-value" style="color: ${getScoreColor(data.scores.cost_of_living)};">
+                                ${data.scores.cost_of_living}
+                            </div>
+                            <small style="color: #718096;">${data.calculation.cost_of_living}</small>
+                        </div>
+                        <div class="score-item">
+                            <h4>Transport</h4>
+                            <div class="score-value" style="color: ${getScoreColor(data.scores.transport)};">
+                                ${data.scores.transport}
+                            </div>
+                        </div>
+                        <div class="score-item">
+                            <h4>Child Care</h4>
+                            <div class="score-value" style="color: ${getScoreColor(data.scores.child_care)};">
+                                ${data.scores.child_care}
+                            </div>
+                        </div>
+                        <div class="score-item">
+                            <h4>Industry Match</h4>
+                            <div class="score-value" style="color: ${getScoreColor(data.scores.industry)};">
+                                ${data.scores.industry}
+                            </div>
+                        </div>
+                        <div class="score-item">
+                            <h4>Safety</h4>
+                            <div class="score-value" style="color: ${getScoreColor(data.scores.safety)};">
+                                ${data.scores.safety}
+                            </div>
+                            <small style="color: #718096;">Crime rate: ${data.density_data.crime_rate_per_1000.toFixed(1)}/1000</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h3 style="margin-bottom: 20px; color: #2d3748; text-align: center;">Suburb Statistics</h3>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="label">Population</div>
+                            <div class="value">${formatNumber(data.population)}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Area</div>
+                            <div class="value">${data.area_sqkm} km²</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Transport Stops</div>
+                            <div class="value">${formatNumber(data.raw_data.transport_stops)}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Schools</div>
+                            <div class="value">${data.raw_data.schools}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Childcare Services</div>
+                            <div class="value">${data.raw_data.childcare_services}</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Industry Employment</div>
+                            <div class="value">${formatNumber(data.raw_data.industry_employment)}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            resultsDiv.style.display = 'block';
+        }
+
+        function displayError(message) {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = `<div class="error">${message}</div>`;
+            resultsDiv.style.display = 'block';
+        }
+
+        // Allow Enter key to trigger search
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('suburb').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    searchSuburb();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

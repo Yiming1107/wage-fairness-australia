@@ -319,12 +319,20 @@ def calculate_10_year_factors(industry_code, user_state, user_education, earning
     yearly_factors = []
     
     for year in sorted(earnings_data.keys()):
+        # 1. 首先尝试用户指定的州
         user_key = (user_state, industry_code, user_education)
         user_data = earnings_data[year].get(user_key)
         
+        # 2. 如果没有数据，降级到全澳洲数据
+        if not user_data or user_data['value'] <= 0:
+            fallback_key = ("Australia", industry_code, user_education)
+            user_data = earnings_data[year].get(fallback_key)
+            used_location = "Australia (fallback)"
+        else:
+            used_location = user_state
+        
         if user_data and user_data['value'] > 0:
             factor = user_data['value'] / baseline_salary
-            
             yearly_factors.append({
                 'year': year,
                 'factor': factor,
@@ -332,11 +340,9 @@ def calculate_10_year_factors(industry_code, user_state, user_education, earning
                 'baseline_salary': baseline_salary,
                 'rse': user_data['rse'],
                 'anchor_education': anchor_education,
-                'source': f"{year} {user_state} {user_education} vs {latest_year} Australia {anchor_education} ({earnings_type}) [Industry: {industry_code}]"
+                'used_location': used_location,  # 记录实际使用的地区
+                'source': f"{year} {used_location} {user_education} vs {latest_year} Australia {anchor_education} ({earnings_type}) [Industry: {industry_code}]"
             })
-        else:
-            # Skip years without data as requested
-            logger.info(f"Skipping year {year} - no data for {user_state} industry code {industry_code} {user_education}")
     
     return yearly_factors
 

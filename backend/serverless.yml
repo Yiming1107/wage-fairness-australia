@@ -1,15 +1,12 @@
 service: wage-fairness-api
-
 provider:
   name: aws
   runtime: python3.9
   region: ap-southeast-2
-
 package:
   exclude:
     - test.py
     - test2.py
-
 functions:
   calculate:
     handler: handler.lambda_handler
@@ -26,7 +23,7 @@ functions:
           path: gender-gap/calculate
           method: post
           cors: true
-
+          
   suburb-score:
     handler: suburb_scoring_handler.score_suburb
     events:
@@ -34,3 +31,14 @@ functions:
           path: suburb/score
           method: post
           cors: true
+          
+  ai-chat:
+    handler: AI_chat.lambda_handler
+    events:
+      - http:
+          path: ai/chat
+          method: post
+          cors: true
+    timeout: 30
+    environment:
+      ZHIPU_API_KEY: ${env:9405476aa25d42a580409da4546dba36.TStXLwwhiycqtLeP}
