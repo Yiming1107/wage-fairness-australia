@@ -346,22 +346,221 @@ def calculate_10_year_factors(industry_code, user_state, user_education, earning
     
     return yearly_factors
 
-def get_experience_factor(industry, years):
-    """Calculate experience factor"""
+def get_experience_factor(industry_code, years):
+    """
+    根据ANZSIC行业分类和工作年限计算经验因子
+    
+    参数:
+        industry_code: str - ANZSIC行业代码 (A-R)
+        years: float - 工作经验年限
+    
+    返回:
+        float - 经验加权因子 (0.75-1.5范围)
+    
+    设计基于:
+    - 标准Mincer方程的经验项系数通常为3-7%/年
+    - 不同行业的技能折旧率、学习曲线差异
+    - 国际劳动经济学文献的典型参数范围
+    """
+    
+    # 行业参数配置
+    # base: 新手基础因子 (0年经验)
+    # peak_years: 达到峰值的年限
+    # growth_rate: 早期增长速率
+    # max_factor: 峰值后保持的最大因子（避免年龄歧视）
+    
     industry_profiles = {
-        "Agriculture, forestry and fishing": {"base": 0.85, "growth_rate": 0.035, "plateau_years": 15},
-        "Information media and telecommunications": {"base": 0.90, "growth_rate": 0.08, "plateau_years": 10},
-        "Professional, scientific and technical services": {"base": 0.80, "growth_rate": 0.055, "plateau_years": 20},
-        "Health care and social assistance": {"base": 0.85, "growth_rate": 0.045, "plateau_years": 18}
+        # A: 农业、林业和渔业
+        # 特征: 经验积累慢但稳定，技能持久有效
+        'A': {
+            'base': 0.82,
+            'peak_years': 20,
+            'growth_rate': 0.028,
+            'max_factor': 1.35
+        },
+        
+        # B: 采矿业
+        # 特征: 高技能要求，早期快速增长，安全经验关键
+        'B': {
+            'base': 0.85,
+            'peak_years': 15,
+            'growth_rate': 0.045,
+            'max_factor': 1.48
+        },
+        
+        # C: 制造业
+        # 特征: 中等学习曲线，工艺经验持续有价值
+        'C': {
+            'base': 0.83,
+            'peak_years': 18,
+            'growth_rate': 0.032,
+            'max_factor': 1.38
+        },
+        
+        # D: 电力、燃气、水和废物处理服务
+        # 特征: 技术要求高，经验价值持久
+        'D': {
+            'base': 0.86,
+            'peak_years': 16,
+            'growth_rate': 0.038,
+            'max_factor': 1.42
+        },
+        
+        # E: 建筑业
+        # 特征: 实操经验关键，管理经验长期有效
+        'E': {
+            'base': 0.80,
+            'peak_years': 14,
+            'growth_rate': 0.042,
+            'max_factor': 1.40
+        },
+        
+        # F: 批发贸易
+        # 特征: 人际技能+产品知识，客户网络持久
+        'F': {
+            'base': 0.84,
+            'peak_years': 16,
+            'growth_rate': 0.034,
+            'max_factor': 1.36
+        },
+        
+        # G: 零售贸易
+        # 特征: 入门快但管理经验有价值
+        'G': {
+            'base': 0.88,
+            'peak_years': 10,
+            'growth_rate': 0.025,
+            'max_factor': 1.22
+        },
+        
+        # H: 住宿和餐饮服务
+        # 特征: 快速上手，服务经验持续有用
+        'H': {
+            'base': 0.89,
+            'peak_years': 9,
+            'growth_rate': 0.022,
+            'max_factor': 1.18
+        },
+        
+        # I: 运输、邮政和仓储
+        # 特征: 操作技能为主，安全记录重要
+        'I': {
+            'base': 0.83,
+            'peak_years': 15,
+            'growth_rate': 0.030,
+            'max_factor': 1.32
+        },
+        
+        # J: 信息媒体和电信
+        # 特征: 虽然技术迭代快，但架构思维和问题解决能力持久有效
+        'J': {
+            'base': 0.90,
+            'peak_years': 8,
+            'growth_rate': 0.055,
+            'max_factor': 1.38
+        },
+        
+        # K: 金融和保险服务
+        # 特征: 知识密集，经验价值高
+        'K': {
+            'base': 0.87,
+            'peak_years': 14,
+            'growth_rate': 0.040,
+            'max_factor': 1.42
+        },
+        
+        # L: 租赁、招聘和房地产服务
+        # 特征: 市场知识+关系网络长期有效
+        'L': {
+            'base': 0.85,
+            'peak_years': 13,
+            'growth_rate': 0.036,
+            'max_factor': 1.35
+        },
+        
+        # M: 专业、科学和技术服务
+        # 特征: 高技能行业，专业判断力持续增值
+        'M': {
+            'base': 0.82,
+            'peak_years': 18,
+            'growth_rate': 0.048,
+            'max_factor': 1.52
+        },
+        
+        # N: 行政和支持服务
+        # 特征: 组织经验和流程知识有价值
+        'N': {
+            'base': 0.86,
+            'peak_years': 12,
+            'growth_rate': 0.028,
+            'max_factor': 1.26
+        },
+        
+        # O: 公共管理和安全
+        # 特征: 制度知识重要，经验价值稳定持久
+        'O': {
+            'base': 0.84,
+            'peak_years': 20,
+            'growth_rate': 0.032,
+            'max_factor': 1.40
+        },
+        
+        # P: 教育和培训
+        # 特征: 教学经验持续积累，永不过时
+        'P': {
+            'base': 0.85,
+            'peak_years': 22,
+            'growth_rate': 0.030,
+            'max_factor': 1.42
+        },
+        
+        # Q: 医疗保健和社会援助
+        # 特征: 临床经验关键，判断力终身有效
+        'Q': {
+            'base': 0.84,
+            'peak_years': 20,
+            'growth_rate': 0.038,
+            'max_factor': 1.48
+        },
+        
+        # R: 艺术和娱乐服务
+        # 特征: 创意+技能结合，成熟度提升价值
+        'R': {
+            'base': 0.87,
+            'peak_years': 12,
+            'growth_rate': 0.033,
+            'max_factor': 1.30
+        }
     }
     
-    profile = industry_profiles.get(industry, {"base": 0.85, "growth_rate": 0.04, "plateau_years": 15})
+    # 默认配置（如果行业代码无效）
+    default_profile = {
+        'base': 0.85,
+        'peak_years': 15,
+        'growth_rate': 0.035,
+        'max_factor': 1.35
+    }
     
-    if years <= 1:
-        return profile["base"]
+    # 获取行业配置
+    profile = industry_profiles.get(industry_code, default_profile)
     
-    effective_years = min(years, profile["plateau_years"])
-    return profile["base"] + (math.log(effective_years) * profile["growth_rate"] * 2.5)
+    # 处理边界情况
+    if years <= 0:
+        return profile['base']
+    
+    # 计算经验因子
+    if years <= profile['peak_years']:
+        # 峰值前：对数增长模型（符合人力资本理论）
+        # 使用修正的对数函数：避免log(0)问题
+        factor = profile['base'] + (math.log(years + 1) * profile['growth_rate'] * 3.5)
+        # 确保不超过最大值
+        factor = min(factor, profile['max_factor'])
+    else:
+        # 峰值后：保持平台期（避免年龄歧视）
+        # 经验是资产而非负担，达到峰值后维持最高水平
+        factor = profile['max_factor']
+    
+    return round(factor, 3)
 
 def calculate_intensity_factor(work_intensity):
     """Calculate work intensity factor"""
