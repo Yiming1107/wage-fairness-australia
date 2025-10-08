@@ -112,14 +112,6 @@
             border-bottom-left-radius: 4px;
         }
 
-        .message.analysis .message-content {
-            background: #e8f5e9;
-            color: #2e7d32;
-            border-left: 4px solid #4caf50;
-            max-width: 90%;
-            white-space: pre-line;
-        }
-
         .avatar {
             width: 40px;
             height: 40px;
@@ -137,10 +129,6 @@
 
         .message.ai .avatar {
             background: #e0e0e0;
-        }
-
-        .message.analysis .avatar {
-            background: #4caf50;
         }
 
         .input-area {
@@ -169,8 +157,9 @@
             border-color: #667eea;
         }
 
-        #sendBtn, #helpBtn, #analyzeBtn, #restartBtn {
-            padding: 12px 24px;
+        #sendBtn {
+            padding: 12px 32px;
+            background: #667eea;
             color: white;
             border: none;
             border-radius: 24px;
@@ -180,10 +169,6 @@
             transition: background 0.3s;
         }
 
-        #sendBtn {
-            background: #667eea;
-        }
-
         #sendBtn:hover:not(:disabled) {
             background: #5568d3;
         }
@@ -191,37 +176,6 @@
         #sendBtn:disabled {
             background: #ccc;
             cursor: not-allowed;
-        }
-
-        #helpBtn {
-            background: #ff9800;
-        }
-
-        #helpBtn:hover:not(:disabled) {
-            background: #f57c00;
-        }
-
-        #helpBtn:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-        }
-
-        #analyzeBtn {
-            background: #4caf50;
-            display: none;
-        }
-
-        #analyzeBtn:hover {
-            background: #45a049;
-        }
-
-        #restartBtn {
-            background: #2196f3;
-            display: none;
-        }
-
-        #restartBtn:hover {
-            background: #0b7dda;
         }
 
         .loading {
@@ -274,40 +228,21 @@
             border-color: #ff9800;
         }
 
-        .starter-prompts {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-        }
-
-        .starter-title {
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 10px;
-            font-weight: 500;
-        }
-
-        .starter-btn {
-            padding: 16px 24px;
-            background: white;
-            border: 2px solid #667eea;
-            border-radius: 12px;
-            cursor: pointer;
-            font-size: 15px;
-            color: #667eea;
-            transition: all 0.3s;
-            min-width: 300px;
-            text-align: center;
-        }
-
-        .starter-btn:hover {
-            background: #667eea;
+        #restartBtn {
+            padding: 12px 32px;
+            background: #28a745;
             color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 0.3s;
+            display: none;
+        }
+
+        #restartBtn:hover {
+            background: #218838;
         }
     </style>
 </head>
@@ -338,12 +273,11 @@
         </div>
 
         <div class="chat-area" id="chatArea">
-            <div class="starter-prompts">
-                <p class="starter-title">💬 Choose how to start the conversation:</p>
-                <button class="starter-btn" onclick="startWithPrompt(this)">I'd like to discuss my compensation</button>
-                <button class="starter-btn" onclick="startWithPrompt(this)">Can we talk about a salary review?</button>
-                <button class="starter-btn" onclick="startWithPrompt(this)">I want to discuss a salary adjustment</button>
-                <button class="starter-btn" onclick="startWithPrompt(this)">Could we review my current salary?</button>
+            <div class="message ai">
+                <div class="avatar">👔</div>
+                <div class="message-content">
+                    Hello! I'm the HR Manager. How can I help you today?
+                </div>
             </div>
         </div>
 
@@ -355,10 +289,8 @@
                     placeholder="Type your message..."
                     onkeypress="handleKeyPress(event)"
                 >
-                <button id="helpBtn" onclick="getHint()">💡 Help</button>
                 <button id="sendBtn" onclick="sendMessage()">Send</button>
-                <button id="analyzeBtn" onclick="analyzeConversation()">📊 Analyze</button>
-                <button id="restartBtn" onclick="restartConversation()">🔄 Restart</button>
+                <button id="restartBtn" onclick="restartConversation()">Restart</button>
             </div>
         </div>
     </div>
@@ -401,15 +333,13 @@
         }
 
         // Add message to chat area
-        function addMessage(content, isUser, isAnalysis = false) {
+        function addMessage(content, isUser) {
             const chatArea = document.getElementById('chatArea');
             const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${isUser ? 'user' : (isAnalysis ? 'analysis' : 'ai')}`;
-            
-            const avatar = isUser ? '👤' : (isAnalysis ? '📊' : '👔');
+            messageDiv.className = `message ${isUser ? 'user' : 'ai'}`;
             
             messageDiv.innerHTML = `
-                <div class="avatar">${avatar}</div>
+                <div class="avatar">${isUser ? '👤' : '👔'}</div>
                 <div class="message-content">${content}</div>
             `;
             
@@ -450,143 +380,31 @@
             conversationHistory = [];
             const chatArea = document.getElementById('chatArea');
             chatArea.innerHTML = `
-                <div class="starter-prompts">
-                    <p class="starter-title">💬 Choose how to start the conversation:</p>
-                    <button class="starter-btn" onclick="startWithPrompt(this)">I'd like to discuss my compensation</button>
-                    <button class="starter-btn" onclick="startWithPrompt(this)">Can we talk about a salary review?</button>
-                    <button class="starter-btn" onclick="startWithPrompt(this)">I want to discuss a salary adjustment</button>
-                    <button class="starter-btn" onclick="startWithPrompt(this)">Could we review my current salary?</button>
+                <div class="message ai">
+                    <div class="avatar">👔</div>
+                    <div class="message-content">
+                        Hello! I'm the HR Manager. How can I help you today?
+                    </div>
                 </div>
             `;
             
-            // Show input and help/send buttons, hide analyze/restart buttons
+            // Show input, hide restart button
             document.getElementById('userInput').disabled = false;
             document.getElementById('sendBtn').style.display = 'block';
-            document.getElementById('helpBtn').style.display = 'block';
-            document.getElementById('analyzeBtn').style.display = 'none';
             document.getElementById('restartBtn').style.display = 'none';
-        }
-
-        // Start conversation with a prompt
-        function startWithPrompt(button) {
-            const message = button.textContent;
-            
-            // Remove starter prompts
-            const starterPrompts = document.querySelector('.starter-prompts');
-            if (starterPrompts) {
-                starterPrompts.remove();
-            }
-            
-            // Send the selected message
-            document.getElementById('userInput').value = message;
-            sendMessage();
-        }
-
-        // Get hint
-        async function getHint() {
-            if (conversationHistory.length === 0) {
-                alert('Start the conversation first before asking for help!');
-                return;
-            }
-
-            const helpBtn = document.getElementById('helpBtn');
-            const sendBtn = document.getElementById('sendBtn');
-            
-            // Disable buttons
-            helpBtn.disabled = true;
-            sendBtn.disabled = true;
-
-            showLoading();
-
-            try {
-                const response = await fetch(API_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        action_type: 'hint',
-                        conversation_history: conversationHistory
-                    })
-                });
-
-                const data = await response.json();
-                removeLoading();
-
-                if (data.success) {
-                    const suggestion = data.data.suggestion;
-                    // Fill the suggestion into the input box (don't send)
-                    document.getElementById('userInput').value = suggestion;
-                    document.getElementById('userInput').focus();
-                } else {
-                    alert('Failed to get hint: ' + (data.error || 'Unknown error'));
-                }
-            } catch (error) {
-                removeLoading();
-                alert('Network error. Please try again.');
-                console.error('Error:', error);
-            }
-
-            // Re-enable buttons
-            helpBtn.disabled = false;
-            sendBtn.disabled = false;
-        }
-
-        // Analyze conversation
-        async function analyzeConversation() {
-            if (conversationHistory.length === 0) {
-                alert('No conversation to analyze!');
-                return;
-            }
-
-            const analyzeBtn = document.getElementById('analyzeBtn');
-            analyzeBtn.disabled = true;
-
-            showLoading();
-
-            try {
-                const response = await fetch(API_URL, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        action_type: 'analyze',
-                        conversation_history: conversationHistory
-                    })
-                });
-
-                const data = await response.json();
-                removeLoading();
-
-                if (data.success) {
-                    const analysis = data.data.analysis;
-                    addMessage(analysis, false, true);
-                } else {
-                    alert('Failed to analyze: ' + (data.error || 'Unknown error'));
-                }
-            } catch (error) {
-                removeLoading();
-                alert('Network error. Please try again.');
-                console.error('Error:', error);
-            }
-
-            analyzeBtn.disabled = false;
         }
 
         // Send message
         async function sendMessage() {
             const input = document.getElementById('userInput');
             const sendBtn = document.getElementById('sendBtn');
-            const helpBtn = document.getElementById('helpBtn');
             const message = input.value.trim();
 
             if (!message) return;
 
-            // Disable input and buttons
+            // Disable input
             input.disabled = true;
             sendBtn.disabled = true;
-            helpBtn.disabled = true;
 
             // Show user message
             addMessage(message, true);
@@ -608,7 +426,6 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        action_type: 'chat',
                         boss_type: currentBossType,
                         message: message,
                         conversation_history: conversationHistory,
@@ -623,7 +440,7 @@
 
                 if (data.success) {
                     const aiMessage = data.data.ai_message;
-                    const conversationEnded = aiMessage.includes('[CONVERSATION_END]');
+                    const conversationEnded = data.data.conversation_ended;
                     
                     // Add to conversation history
                     conversationHistory.push({
@@ -631,16 +448,13 @@
                         content: aiMessage
                     });
 
-                    // Show AI response (remove only the [CONVERSATION_END] tag from display)
-                    const cleanMessage = aiMessage.replace(/\[CONVERSATION_END\]/g, '').trim();
-                    addMessage(cleanMessage, false);
+                    // Show AI response
+                    addMessage(aiMessage, false);
 
                     // Check if conversation ended
                     if (conversationEnded) {
                         input.disabled = true;
                         sendBtn.style.display = 'none';
-                        helpBtn.style.display = 'none';
-                        document.getElementById('analyzeBtn').style.display = 'block';
                         document.getElementById('restartBtn').style.display = 'block';
                         return;
                     }
@@ -653,12 +467,11 @@
                 console.error('Error:', error);
             }
 
-            // Re-enable input and buttons
+            // Re-enable input
             input.disabled = false;
             sendBtn.disabled = false;
-            helpBtn.disabled = false;
             input.focus();
         }
     </script>
 </body>
-</html> 
+</html>
