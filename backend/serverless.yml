@@ -1,12 +1,15 @@
 service: wage-fairness-api
+
 provider:
   name: aws
   runtime: python3.9
   region: ap-southeast-2
+
 package:
   exclude:
     - test.py
     - test2.py
+
 functions:
   calculate:
     handler: handler.lambda_handler
@@ -23,7 +26,7 @@ functions:
           path: gender-gap/calculate
           method: post
           cors: true
-          
+         
   suburb-score:
     handler: suburb_scoring_handler.score_suburb
     events:
@@ -31,7 +34,7 @@ functions:
           path: suburb/score
           method: post
           cors: true
-          
+         
   ai-chat:
     handler: AI_chat.lambda_handler
     events:
@@ -40,3 +43,24 @@ functions:
           method: post
           cors: true
     timeout: 30
+
+  # New forecast endpoints
+  forecast-predict:
+    handler: forecast.forecast_handler
+    events:
+      - http:
+          path: forecast/predict
+          method: post
+          cors: true
+    timeout: 30
+    description: Generate wage forecast for single demographic group
+
+  forecast-compare:
+    handler: forecast.compare_handler
+    events:
+      - http:
+          path: forecast/compare
+          method: post
+          cors: true
+    timeout: 30
+    description: Compare wage forecasts between two demographic groups  
