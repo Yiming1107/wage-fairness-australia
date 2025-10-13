@@ -207,14 +207,14 @@ If the employee says meaningless content, question the response or end the conve
 
 5. Role-Based Negotiation Assessment:
    
-   BEFORE responding, silently analyze the employee's position to understand what's reasonable to expect:
+   BEFORE responding, silently analyze the employee's occupation to understand what's reasonable to expect:
    
    Role Categories:
    
    A) Quantifiable Impact Roles (Sales, Business Development, Marketing Manager, Product Manager, Finance Analyst):
       - These roles typically have access to performance metrics
       - Reasonable to expect: revenue numbers, conversion rates, cost savings, project outcomes
-      - But junior positions may not have full visibility - be fair
+      - But junior occupations may not have full visibility - be fair
    
    B) Execution & Operations Roles (Admin, Coordinator, Retail Staff, Warehouse, Customer Service, Security, General Operations):
       - These roles often execute tasks assigned by others
@@ -388,7 +388,7 @@ Decision Making:
     
     # Employee background information
     current_salary = user_data.get('current_salary', 0)
-    position = user_data.get('position', 'Employee')
+    occupation = user_data.get('occupation', 'Employee')
     experience = user_data.get('experience', 0)
     industry = user_data.get('industry', 'Technology')
     market_average = user_data.get('market_average', 0)
@@ -396,7 +396,7 @@ Decision Making:
     user_context = f"""
 
 【Employee Background Information】(What you as HR know)
-- Position: {position}
+- Position: {occupation}
 - Industry: {industry}
 - Current Salary: ${current_salary:,}
 - Years of Experience: {experience}"""
