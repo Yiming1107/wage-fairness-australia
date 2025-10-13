@@ -11,12 +11,13 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # 数据库配置，支持环境变量覆盖 | Database configuration with environment variable override
+# Database configuration - using environment variables
 DB_CONFIG = {
-    'host': os.environ.get('DB_HOST', 'fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com'),
-    'user': os.environ.get('DB_USER', 'admin'),
-    'password': os.environ.get('DB_PASSWORD', 'fairwageaustralia'),
-    'port': int(os.environ.get('DB_PORT', 3306)),
-    'database': os.environ.get('DB_NAME', 'fairwageaustralia'),
+    'host': os.environ['DB_HOST'],
+    'user': os.environ['DB_USER'],
+    'password': os.environ['DB_PASSWORD'],
+    'port': int(os.environ.get('DB_PORT', '3306')),
+    'database': os.environ['DB_NAME'],
     'charset': 'utf8mb4',
     'cursorclass': pymysql.cursors.DictCursor,
     'connect_timeout': 10,

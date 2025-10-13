@@ -4,6 +4,16 @@ provider:
   name: aws
   runtime: python3.9
   region: ap-southeast-2
+  
+  environment:
+    DB_HOST: fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com
+    DB_PORT: 3306
+    DB_USER: admin
+    DB_NAME: fairwageaustralia
+    DB_PASSWORD: "fairwageaustralia"
+    
+    MAX_REQUEST_SIZE: 1048576  
+    MAX_CONVERSATION_LENGTH: 100  
 
 package:
   exclude:
@@ -37,14 +47,16 @@ functions:
          
   ai-chat:
     handler: AI_chat.lambda_handler
+    environment:
+      ZHIPU_API_KEY: "9405476aa25d42a580409da4546dba36.TStXLwwhiycqtLeP"
     events:
       - http:
           path: ai/chat
           method: post
           cors: true
-    timeout: 30
+    timeout: 29
 
-  # New forecast endpoints
+  # Forecast endpoints
   forecast-predict:
     handler: forecast.forecast_handler
     events:
@@ -52,7 +64,7 @@ functions:
           path: forecast/predict
           method: post
           cors: true
-    timeout: 30
+    timeout: 29
     description: Generate wage forecast for single demographic group
 
   forecast-compare:
@@ -62,5 +74,13 @@ functions:
           path: forecast/compare
           method: post
           cors: true
-    timeout: 30
-    description: Compare wage forecasts between two demographic groups  
+    timeout: 29
+    description: Compare wage forecasts between two demographic groups
+
+# ============================================
+# 部署说明
+# ============================================
+# 1. 将 YOUR_DB_PASSWORD_HERE 替换为真实的数据库密码
+# 2. 将 YOUR_ZHIPU_API_KEY_HERE 替换为真实的智谱 API Key
+# 3. 确保这个文件不要提交到 Git！添加到 .gitignore
+# 4. 部署命令：serverless deploy

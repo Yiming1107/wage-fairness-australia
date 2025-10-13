@@ -12,13 +12,13 @@ print("-" * 60)
 event_forecast = {
     "httpMethod": "POST",
     "body": json.dumps({
-        "industry": "Retail Trade",
-        "gender": "Female",
-        "parameter": "hourly",
-        "education": "Bachelor Degree",
-        "state": "NSW",
-        "years_ahead": 5
-    })
+  "industry": "Retail Trade",
+  "gender": "Female",
+  "parameter": "hourly",
+  "education": "Bachelor degree",
+  "state": "NSW",
+  "years_ahead": 5
+})
 }
 
 try:

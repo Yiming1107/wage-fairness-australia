@@ -4,6 +4,7 @@ import math
 from datetime import datetime
 import pymysql.cursors
 import re
+import os
 
 # Setup logging
 logger = logging.getLogger()
@@ -43,14 +44,18 @@ HOURLY_EARNINGS_DATA = {}
 DATA_LOADED = False
 
 # Database configuration
+# Database configuration - using environment variables
 DB_CONFIG = {
-    'host': 'fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com',
-    'port': 3306,
-    'user': 'admin',
-    'password': 'fairwageaustralia',
-    'database': 'fairwageaustralia',
+    'host': os.environ['DB_HOST'],
+    'port': int(os.environ.get('DB_PORT', '3306')),
+    'user': os.environ['DB_USER'],
+    'password': os.environ['DB_PASSWORD'],
+    'database': os.environ['DB_NAME'],
     'charset': 'utf8mb4',
-    'cursorclass': pymysql.cursors.DictCursor
+    'cursorclass': pymysql.cursors.DictCursor,
+    'connect_timeout': 10,
+    'read_timeout': 30,
+    'write_timeout': 30
 }
 
 def normalize_industry(user_input):

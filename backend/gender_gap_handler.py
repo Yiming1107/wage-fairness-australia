@@ -36,14 +36,18 @@ INDUSTRY_MAPPING = {
 }
 
 # Database configuration
+# Database configuration - using environment variables
 DB_CONFIG = {
-    'host': 'fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com',
-    'user': 'admin',
-    'password': 'fairwageaustralia',
-    'port': 3306,
-    'database': 'fairwageaustralia',
+    'host': os.environ['DB_HOST'],
+    'user': os.environ['DB_USER'],
+    'password': os.environ['DB_PASSWORD'],
+    'port': int(os.environ.get('DB_PORT', '3306')),
+    'database': os.environ['DB_NAME'],
     'charset': 'utf8mb4',
-    'cursorclass': pymysql.cursors.DictCursor
+    'cursorclass': pymysql.cursors.DictCursor,
+    'connect_timeout': 10,
+    'read_timeout': 30,
+    'write_timeout': 30
 }
 
 def normalize_text(text):

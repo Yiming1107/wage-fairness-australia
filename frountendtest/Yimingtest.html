@@ -112,14 +112,6 @@
             border-bottom-left-radius: 4px;
         }
 
-        .message.analysis .message-content {
-            background: #e8f5e9;
-            color: #2e7d32;
-            border-left: 4px solid #4caf50;
-            max-width: 90%;
-            white-space: pre-line;
-        }
-
         .avatar {
             width: 40px;
             height: 40px;
@@ -137,10 +129,6 @@
 
         .message.ai .avatar {
             background: #e0e0e0;
-        }
-
-        .message.analysis .avatar {
-            background: #4caf50;
         }
 
         .input-area {
@@ -309,6 +297,110 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
         }
+
+        /* Analysis Card Styles */
+        .analysis-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            animation: fadeIn 0.5s;
+            width: 100%;
+        }
+
+        .analysis-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .analysis-header h3 {
+            font-size: 20px;
+            color: #333;
+            margin: 0;
+        }
+
+        .overall-score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 20px;
+            border-radius: 12px;
+            color: white;
+            min-width: 80px;
+        }
+
+        .score-number {
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .score-label {
+            font-size: 12px;
+            margin-top: 4px;
+            opacity: 0.9;
+        }
+
+        .analysis-dimensions {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .dimension-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            transition: transform 0.2s;
+        }
+
+        .dimension-card:hover {
+            transform: translateX(4px);
+        }
+
+        .dimension-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .dimension-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 15px;
+        }
+
+        .dimension-score {
+            font-weight: bold;
+            color: #667eea;
+            font-size: 18px;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.8s ease-out;
+        }
+
+        .dimension-comment {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -401,12 +493,12 @@
         }
 
         // Add message to chat area
-        function addMessage(content, isUser, isAnalysis = false) {
+        function addMessage(content, isUser) {
             const chatArea = document.getElementById('chatArea');
             const messageDiv = document.createElement('div');
-            messageDiv.className = `message ${isUser ? 'user' : (isAnalysis ? 'analysis' : 'ai')}`;
+            messageDiv.className = `message ${isUser ? 'user' : 'ai'}`;
             
-            const avatar = isUser ? '👤' : (isAnalysis ? '📊' : '👔');
+            const avatar = isUser ? '👤' : '💼';
             
             messageDiv.innerHTML = `
                 <div class="avatar">${avatar}</div>
@@ -424,7 +516,7 @@
             loadingDiv.className = 'message ai';
             loadingDiv.id = 'loadingMessage';
             loadingDiv.innerHTML = `
-                <div class="avatar">👔</div>
+                <div class="avatar">💼</div>
                 <div class="message-content">
                     <div class="loading">
                         <span></span>
@@ -532,6 +624,76 @@
             sendBtn.disabled = false;
         }
 
+        // Display analysis results
+        function displayAnalysis(analysis) {
+            const chatArea = document.getElementById('chatArea');
+            const analysisDiv = document.createElement('div');
+            analysisDiv.className = 'analysis-card';
+            
+            // Calculate average score
+            const scores = [
+                analysis.evidence_preparation.score,
+                analysis.communication_skills.score,
+                analysis.strategy_application.score,
+                analysis.overall_performance.score
+            ];
+            const avgScore = (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(1);
+            
+            // Get rating
+            const getRating = (score) => {
+                if (score >= 8) return { text: 'Excellent', color: '#4caf50' };
+                if (score >= 6) return { text: 'Good', color: '#ff9800' };
+                if (score >= 4) return { text: 'Fair', color: '#ff5722' };
+                return { text: 'Needs Improvement', color: '#f44336' };
+            };
+            
+            const overallRating = getRating(avgScore);
+            
+            analysisDiv.innerHTML = `
+                <div class="analysis-header">
+                    <h3>📊 Negotiation Performance Analysis</h3>
+                    <div class="overall-score" style="background: ${overallRating.color}">
+                        <div class="score-number">${avgScore}</div>
+                        <div class="score-label">${overallRating.text}</div>
+                    </div>
+                </div>
+                
+                <div class="analysis-dimensions">
+                    ${createDimensionCard('Evidence Preparation', analysis.evidence_preparation)}
+                    ${createDimensionCard('Communication Skills', analysis.communication_skills)}
+                    ${createDimensionCard('Strategy Application', analysis.strategy_application)}
+                    ${createDimensionCard('Overall Performance', analysis.overall_performance)}
+                </div>
+            `;
+            
+            chatArea.appendChild(analysisDiv);
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        // Create dimension card
+        function createDimensionCard(title, data) {
+            const score = data.score;
+            const percentage = (score / 10) * 100;
+            
+            // Set color based on score
+            let barColor = '#4caf50'; // green
+            if (score < 6) barColor = '#ff9800'; // orange
+            if (score < 4) barColor = '#f44336'; // red
+            
+            return `
+                <div class="dimension-card">
+                    <div class="dimension-header">
+                        <span class="dimension-title">${title}</span>
+                        <span class="dimension-score">${score}/10</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: ${percentage}%; background: ${barColor}"></div>
+                    </div>
+                    <div class="dimension-comment">${data.comment}</div>
+                </div>
+            `;
+        }
+
         // Analyze conversation
         async function analyzeConversation() {
             if (conversationHistory.length === 0) {
@@ -561,7 +723,15 @@
 
                 if (data.success) {
                     const analysis = data.data.analysis;
-                    addMessage(analysis, false, true);
+                    
+                    // Check for errors
+                    if (analysis.error) {
+                        alert('Analysis failed: ' + analysis.message);
+                        return;
+                    }
+                    
+                    // Display formatted analysis
+                    displayAnalysis(analysis);
                 } else {
                     alert('Failed to analyze: ' + (data.error || 'Unknown error'));
                 }
@@ -631,8 +801,11 @@
                         content: aiMessage
                     });
 
-                    // Show AI response (remove only the [CONVERSATION_END] tag from display)
-                    const cleanMessage = aiMessage.replace(/\[CONVERSATION_END\]/g, '').trim();
+                    // Show AI response (remove tags from display)
+                    const cleanMessage = aiMessage
+                        .replace(/\[CONVERSATION_END\]/g, '')
+                        .replace(/\[RESULT:(SUCCESS|PARTIAL_SUCCESS|FAILURE)\]/g, '')
+                        .trim();
                     addMessage(cleanMessage, false);
 
                     // Check if conversation ended
@@ -661,4 +834,4 @@
         }
     </script>
 </body>
-</html> 
+</html>

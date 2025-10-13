@@ -9,6 +9,15 @@
         "name": "aws",
         "runtime": "python3.9",
         "region": "ap-southeast-2",
+        "environment": {
+          "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+          "DB_PORT": "3306",
+          "DB_USER": "admin",
+          "DB_NAME": "fairwageaustralia",
+          "DB_PASSWORD": "<REDACTED>",
+          "MAX_REQUEST_SIZE": "1048576",
+          "MAX_CONVERSATION_LENGTH": "100"
+        },
         "stage": "dev",
         "versionFunctions": true,
         "compiledCloudFormationTemplate": {
@@ -134,13 +143,24 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
                 },
                 "Handler": "handler.lambda_handler",
                 "Runtime": "python3.9",
                 "FunctionName": "wage-fairness-api-dev-calculate",
                 "MemorySize": 1024,
                 "Timeout": 6,
+                "Environment": {
+                  "Variables": {
+                    "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                    "DB_PORT": "3306",
+                    "DB_USER": "admin",
+                    "DB_NAME": "fairwageaustralia",
+                    "DB_PASSWORD": "<REDACTED>",
+                    "MAX_REQUEST_SIZE": "1048576",
+                    "MAX_CONVERSATION_LENGTH": "100"
+                  }
+                },
                 "Role": {
                   "Fn::GetAtt": [
                     "IamRoleLambdaExecution",
@@ -157,13 +177,24 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
                 },
                 "Handler": "gender_gap_handler.calculate_gender_gap",
                 "Runtime": "python3.9",
                 "FunctionName": "wage-fairness-api-dev-gender-gap",
                 "MemorySize": 1024,
                 "Timeout": 6,
+                "Environment": {
+                  "Variables": {
+                    "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                    "DB_PORT": "3306",
+                    "DB_USER": "admin",
+                    "DB_NAME": "fairwageaustralia",
+                    "DB_PASSWORD": "<REDACTED>",
+                    "MAX_REQUEST_SIZE": "1048576",
+                    "MAX_CONVERSATION_LENGTH": "100"
+                  }
+                },
                 "Role": {
                   "Fn::GetAtt": [
                     "IamRoleLambdaExecution",
@@ -180,13 +211,24 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
                 },
                 "Handler": "suburb_scoring_handler.score_suburb",
                 "Runtime": "python3.9",
                 "FunctionName": "wage-fairness-api-dev-suburb-score",
                 "MemorySize": 1024,
                 "Timeout": 6,
+                "Environment": {
+                  "Variables": {
+                    "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                    "DB_PORT": "3306",
+                    "DB_USER": "admin",
+                    "DB_NAME": "fairwageaustralia",
+                    "DB_PASSWORD": "<REDACTED>",
+                    "MAX_REQUEST_SIZE": "1048576",
+                    "MAX_CONVERSATION_LENGTH": "100"
+                  }
+                },
                 "Role": {
                   "Fn::GetAtt": [
                     "IamRoleLambdaExecution",
@@ -203,13 +245,25 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
                 },
                 "Handler": "AI_chat.lambda_handler",
                 "Runtime": "python3.9",
                 "FunctionName": "wage-fairness-api-dev-ai-chat",
                 "MemorySize": 1024,
-                "Timeout": 30,
+                "Timeout": 29,
+                "Environment": {
+                  "Variables": {
+                    "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                    "DB_PORT": "3306",
+                    "DB_USER": "admin",
+                    "DB_NAME": "fairwageaustralia",
+                    "DB_PASSWORD": "<REDACTED>",
+                    "MAX_REQUEST_SIZE": "1048576",
+                    "MAX_CONVERSATION_LENGTH": "100",
+                    "ZHIPU_API_KEY": "<REDACTED>"
+                  }
+                },
                 "Role": {
                   "Fn::GetAtt": [
                     "IamRoleLambdaExecution",
@@ -226,14 +280,25 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
                 },
                 "Handler": "forecast.forecast_handler",
                 "Runtime": "python3.9",
                 "FunctionName": "wage-fairness-api-dev-forecast-predict",
                 "MemorySize": 1024,
-                "Timeout": 30,
+                "Timeout": 29,
                 "Description": "Generate wage forecast for single demographic group",
+                "Environment": {
+                  "Variables": {
+                    "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                    "DB_PORT": "3306",
+                    "DB_USER": "admin",
+                    "DB_NAME": "fairwageaustralia",
+                    "DB_PASSWORD": "<REDACTED>",
+                    "MAX_REQUEST_SIZE": "1048576",
+                    "MAX_CONVERSATION_LENGTH": "100"
+                  }
+                },
                 "Role": {
                   "Fn::GetAtt": [
                     "IamRoleLambdaExecution",
@@ -250,14 +315,25 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
                 },
                 "Handler": "forecast.compare_handler",
                 "Runtime": "python3.9",
                 "FunctionName": "wage-fairness-api-dev-forecast-compare",
                 "MemorySize": 1024,
-                "Timeout": 30,
+                "Timeout": 29,
                 "Description": "Compare wage forecasts between two demographic groups",
+                "Environment": {
+                  "Variables": {
+                    "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                    "DB_PORT": "3306",
+                    "DB_USER": "admin",
+                    "DB_NAME": "fairwageaustralia",
+                    "DB_PASSWORD": "<REDACTED>",
+                    "MAX_REQUEST_SIZE": "1048576",
+                    "MAX_CONVERSATION_LENGTH": "100"
+                  }
+                },
                 "Role": {
                   "Fn::GetAtt": [
                     "IamRoleLambdaExecution",
@@ -269,65 +345,65 @@
                 "ForecastDashcompareLogGroup"
               ]
             },
-            "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4": {
+            "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "CalculateLambdaFunction"
                 },
-                "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+                "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
               }
             },
-            "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc": {
+            "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GenderDashgapLambdaFunction"
                 },
-                "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+                "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
               }
             },
-            "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s": {
+            "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "SuburbDashscoreLambdaFunction"
                 },
-                "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+                "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
               }
             },
-            "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs": {
+            "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "AiDashchatLambdaFunction"
                 },
-                "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+                "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
               }
             },
-            "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs": {
+            "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ForecastDashpredictLambdaFunction"
                 },
-                "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI=",
+                "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A=",
                 "Description": "Generate wage forecast for single demographic group"
               }
             },
-            "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA": {
+            "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ForecastDashcompareLambdaFunction"
                 },
-                "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI=",
+                "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A=",
                 "Description": "Compare wage forecasts between two demographic groups"
               }
             },
@@ -1036,7 +1112,7 @@
                 "ForecastDashcompareLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1760124051510": {
+            "ApiGatewayDeployment1760306646070": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -1292,7 +1368,7 @@
             "CalculateLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4"
+                "Ref": "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -1301,7 +1377,7 @@
             "GenderDashgapLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc"
+                "Ref": "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -1310,7 +1386,7 @@
             "SuburbDashscoreLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s"
+                "Ref": "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
@@ -1319,7 +1395,7 @@
             "AiDashchatLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs"
+                "Ref": "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
@@ -1328,7 +1404,7 @@
             "ForecastDashpredictLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs"
+                "Ref": "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
@@ -1337,7 +1413,7 @@
             "ForecastDashcompareLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA"
+                "Ref": "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
@@ -1381,7 +1457,7 @@
         "artifactsS3KeyDirname": "serverless/wage-fairness-api/dev/code-artifacts",
         "deploymentBucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
         "artifact": "C:\\Users\\ROG\\Documents\\5120\\Final\\wage-fairness-australia\\backend\\.serverless\\wage-fairness-api.zip",
-        "artifactDirectoryName": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z"
+        "artifactDirectoryName": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z"
       },
       "functions": {
         "calculate": {
@@ -1418,7 +1494,7 @@
           "timeout": 6,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4"
+          "versionLogicalId": "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ"
         },
         "gender-gap": {
           "handler": "gender_gap_handler.calculate_gender_gap",
@@ -1454,7 +1530,7 @@
           "timeout": 6,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc"
+          "versionLogicalId": "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM"
         },
         "suburb-score": {
           "handler": "suburb_scoring_handler.score_suburb",
@@ -1490,10 +1566,13 @@
           "timeout": 6,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s"
+          "versionLogicalId": "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM"
         },
         "ai-chat": {
           "handler": "AI_chat.lambda_handler",
+          "environment": {
+            "ZHIPU_API_KEY": "<REDACTED>"
+          },
           "events": [
             {
               "http": {
@@ -1520,13 +1599,13 @@
               }
             }
           ],
-          "timeout": 30,
+          "timeout": 29,
           "name": "wage-fairness-api-dev-ai-chat",
           "package": {},
           "memory": 1024,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs"
+          "versionLogicalId": "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE"
         },
         "forecast-predict": {
           "handler": "forecast.forecast_handler",
@@ -1556,14 +1635,14 @@
               }
             }
           ],
-          "timeout": 30,
+          "timeout": 29,
           "description": "Generate wage forecast for single demographic group",
           "name": "wage-fairness-api-dev-forecast-predict",
           "package": {},
           "memory": 1024,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs"
+          "versionLogicalId": "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs"
         },
         "forecast-compare": {
           "handler": "forecast.compare_handler",
@@ -1593,14 +1672,14 @@
               }
             }
           ],
-          "timeout": 30,
+          "timeout": 29,
           "description": "Compare wage forecasts between two demographic groups",
           "name": "wage-fairness-api-dev-forecast-compare",
           "package": {},
           "memory": 1024,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA"
+          "versionLogicalId": "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I"
         }
       }
     },
@@ -1608,6 +1687,15 @@
       "name": "aws",
       "runtime": "python3.9",
       "region": "ap-southeast-2",
+      "environment": {
+        "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+        "DB_PORT": "3306",
+        "DB_USER": "admin",
+        "DB_NAME": "fairwageaustralia",
+        "DB_PASSWORD": "<REDACTED>",
+        "MAX_REQUEST_SIZE": "1048576",
+        "MAX_CONVERSATION_LENGTH": "100"
+      },
       "stage": "dev",
       "versionFunctions": true,
       "compiledCloudFormationTemplate": {
@@ -1733,13 +1821,24 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
               },
               "Handler": "handler.lambda_handler",
               "Runtime": "python3.9",
               "FunctionName": "wage-fairness-api-dev-calculate",
               "MemorySize": 1024,
               "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                  "DB_PORT": "3306",
+                  "DB_USER": "admin",
+                  "DB_NAME": "fairwageaustralia",
+                  "DB_PASSWORD": "<REDACTED>",
+                  "MAX_REQUEST_SIZE": "1048576",
+                  "MAX_CONVERSATION_LENGTH": "100"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -1756,13 +1855,24 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
               },
               "Handler": "gender_gap_handler.calculate_gender_gap",
               "Runtime": "python3.9",
               "FunctionName": "wage-fairness-api-dev-gender-gap",
               "MemorySize": 1024,
               "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                  "DB_PORT": "3306",
+                  "DB_USER": "admin",
+                  "DB_NAME": "fairwageaustralia",
+                  "DB_PASSWORD": "<REDACTED>",
+                  "MAX_REQUEST_SIZE": "1048576",
+                  "MAX_CONVERSATION_LENGTH": "100"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -1779,13 +1889,24 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
               },
               "Handler": "suburb_scoring_handler.score_suburb",
               "Runtime": "python3.9",
               "FunctionName": "wage-fairness-api-dev-suburb-score",
               "MemorySize": 1024,
               "Timeout": 6,
+              "Environment": {
+                "Variables": {
+                  "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                  "DB_PORT": "3306",
+                  "DB_USER": "admin",
+                  "DB_NAME": "fairwageaustralia",
+                  "DB_PASSWORD": "<REDACTED>",
+                  "MAX_REQUEST_SIZE": "1048576",
+                  "MAX_CONVERSATION_LENGTH": "100"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -1802,13 +1923,25 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
               },
               "Handler": "AI_chat.lambda_handler",
               "Runtime": "python3.9",
               "FunctionName": "wage-fairness-api-dev-ai-chat",
               "MemorySize": 1024,
-              "Timeout": 30,
+              "Timeout": 29,
+              "Environment": {
+                "Variables": {
+                  "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                  "DB_PORT": "3306",
+                  "DB_USER": "admin",
+                  "DB_NAME": "fairwageaustralia",
+                  "DB_PASSWORD": "<REDACTED>",
+                  "MAX_REQUEST_SIZE": "1048576",
+                  "MAX_CONVERSATION_LENGTH": "100",
+                  "ZHIPU_API_KEY": "<REDACTED>"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -1825,14 +1958,25 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
               },
               "Handler": "forecast.forecast_handler",
               "Runtime": "python3.9",
               "FunctionName": "wage-fairness-api-dev-forecast-predict",
               "MemorySize": 1024,
-              "Timeout": 30,
+              "Timeout": 29,
               "Description": "Generate wage forecast for single demographic group",
+              "Environment": {
+                "Variables": {
+                  "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                  "DB_PORT": "3306",
+                  "DB_USER": "admin",
+                  "DB_NAME": "fairwageaustralia",
+                  "DB_PASSWORD": "<REDACTED>",
+                  "MAX_REQUEST_SIZE": "1048576",
+                  "MAX_CONVERSATION_LENGTH": "100"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -1849,14 +1993,25 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
               },
               "Handler": "forecast.compare_handler",
               "Runtime": "python3.9",
               "FunctionName": "wage-fairness-api-dev-forecast-compare",
               "MemorySize": 1024,
-              "Timeout": 30,
+              "Timeout": 29,
               "Description": "Compare wage forecasts between two demographic groups",
+              "Environment": {
+                "Variables": {
+                  "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                  "DB_PORT": "3306",
+                  "DB_USER": "admin",
+                  "DB_NAME": "fairwageaustralia",
+                  "DB_PASSWORD": "<REDACTED>",
+                  "MAX_REQUEST_SIZE": "1048576",
+                  "MAX_CONVERSATION_LENGTH": "100"
+                }
+              },
               "Role": {
                 "Fn::GetAtt": [
                   "IamRoleLambdaExecution",
@@ -1868,65 +2023,65 @@
               "ForecastDashcompareLogGroup"
             ]
           },
-          "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4": {
+          "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CalculateLambdaFunction"
               },
-              "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+              "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
             }
           },
-          "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc": {
+          "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GenderDashgapLambdaFunction"
               },
-              "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+              "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
             }
           },
-          "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s": {
+          "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SuburbDashscoreLambdaFunction"
               },
-              "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+              "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
             }
           },
-          "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs": {
+          "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AiDashchatLambdaFunction"
               },
-              "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+              "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
             }
           },
-          "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs": {
+          "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ForecastDashpredictLambdaFunction"
               },
-              "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI=",
+              "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A=",
               "Description": "Generate wage forecast for single demographic group"
             }
           },
-          "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA": {
+          "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ForecastDashcompareLambdaFunction"
               },
-              "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI=",
+              "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A=",
               "Description": "Compare wage forecasts between two demographic groups"
             }
           },
@@ -2635,7 +2790,7 @@
               "ForecastDashcompareLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1760124051510": {
+          "ApiGatewayDeployment1760306646070": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -2891,7 +3046,7 @@
           "CalculateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4"
+              "Ref": "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -2900,7 +3055,7 @@
           "GenderDashgapLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc"
+              "Ref": "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -2909,7 +3064,7 @@
           "SuburbDashscoreLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s"
+              "Ref": "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
@@ -2918,7 +3073,7 @@
           "AiDashchatLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs"
+              "Ref": "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
@@ -2927,7 +3082,7 @@
           "ForecastDashpredictLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs"
+              "Ref": "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
@@ -2936,7 +3091,7 @@
           "ForecastDashcompareLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA"
+              "Ref": "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
@@ -2981,7 +3136,7 @@
       "serviceProvider": null,
       "instanceParameters": null
     },
-    "serviceRawFile": "service: wage-fairness-api\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: python3.9\r\n  region: ap-southeast-2\r\n\r\npackage:\r\n  exclude:\r\n    - test.py\r\n    - test2.py\r\n\r\nfunctions:\r\n  calculate:\r\n    handler: handler.lambda_handler\r\n    events:\r\n      - http:\r\n          path: fairness/calculate\r\n          method: post\r\n          cors: true\r\n \r\n  gender-gap:\r\n    handler: gender_gap_handler.calculate_gender_gap\r\n    events:\r\n      - http:\r\n          path: gender-gap/calculate\r\n          method: post\r\n          cors: true\r\n         \r\n  suburb-score:\r\n    handler: suburb_scoring_handler.score_suburb\r\n    events:\r\n      - http:\r\n          path: suburb/score\r\n          method: post\r\n          cors: true\r\n         \r\n  ai-chat:\r\n    handler: AI_chat.lambda_handler\r\n    events:\r\n      - http:\r\n          path: ai/chat\r\n          method: post\r\n          cors: true\r\n    timeout: 30\r\n\r\n  # New forecast endpoints\r\n  forecast-predict:\r\n    handler: forecast.forecast_handler\r\n    events:\r\n      - http:\r\n          path: forecast/predict\r\n          method: post\r\n          cors: true\r\n    timeout: 30\r\n    description: Generate wage forecast for single demographic group\r\n\r\n  forecast-compare:\r\n    handler: forecast.compare_handler\r\n    events:\r\n      - http:\r\n          path: forecast/compare\r\n          method: post\r\n          cors: true\r\n    timeout: 30\r\n    description: Compare wage forecasts between two demographic groups",
+    "serviceRawFile": "service: wage-fairness-api\r\n\r\nprovider:\r\n  name: aws\r\n  runtime: python3.9\r\n  region: ap-southeast-2\r\n  \r\n  # 全局环境变量 - 所有 Lambda 函数共享\r\n  environment:\r\n    # 数据库配置（所有需要数据库的 API 共享）\r\n    DB_HOST: fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com\r\n    DB_PORT: 3306\r\n    DB_USER: admin\r\n    DB_NAME: fairwageaustralia\r\n    # ⚠️ 重要：请将下面的密码替换为真实密码\r\n    DB_PASSWORD: \"fairwageaustralia\"\r\n    \r\n    # 安全配置\r\n    MAX_REQUEST_SIZE: 1048576  # 1MB 请求体大小限制\r\n    MAX_CONVERSATION_LENGTH: 100  # 对话历史最大条数\r\n\r\npackage:\r\n  exclude:\r\n    - test.py\r\n    - test2.py\r\n\r\nfunctions:\r\n  calculate:\r\n    handler: handler.lambda_handler\r\n    events:\r\n      - http:\r\n          path: fairness/calculate\r\n          method: post\r\n          cors: true\r\n \r\n  gender-gap:\r\n    handler: gender_gap_handler.calculate_gender_gap\r\n    events:\r\n      - http:\r\n          path: gender-gap/calculate\r\n          method: post\r\n          cors: true\r\n         \r\n  suburb-score:\r\n    handler: suburb_scoring_handler.score_suburb\r\n    events:\r\n      - http:\r\n          path: suburb/score\r\n          method: post\r\n          cors: true\r\n         \r\n  ai-chat:\r\n    handler: AI_chat.lambda_handler\r\n    environment:\r\n      # AI Chat 专用的 API Key\r\n      # ⚠️ 重要：请将下面的 key 替换为真实的智谱 API Key\r\n      ZHIPU_API_KEY: \"9405476aa25d42a580409da4546dba36.TStXLwwhiycqtLeP\"\r\n    events:\r\n      - http:\r\n          path: ai/chat\r\n          method: post\r\n          cors: true\r\n    timeout: 29\r\n\r\n  # Forecast endpoints\r\n  forecast-predict:\r\n    handler: forecast.forecast_handler\r\n    events:\r\n      - http:\r\n          path: forecast/predict\r\n          method: post\r\n          cors: true\r\n    timeout: 29\r\n    description: Generate wage forecast for single demographic group\r\n\r\n  forecast-compare:\r\n    handler: forecast.compare_handler\r\n    events:\r\n      - http:\r\n          path: forecast/compare\r\n          method: post\r\n          cors: true\r\n    timeout: 29\r\n    description: Compare wage forecasts between two demographic groups\r\n\r\n# ============================================\r\n# 部署说明\r\n# ============================================\r\n# 1. 将 YOUR_DB_PASSWORD_HERE 替换为真实的数据库密码\r\n# 2. 将 YOUR_ZHIPU_API_KEY_HERE 替换为真实的智谱 API Key\r\n# 3. 确保这个文件不要提交到 Git！添加到 .gitignore\r\n# 4. 部署命令：serverless deploy",
     "command": [
       "deploy"
     ],
@@ -2994,30 +3149,36 @@
     "serviceProviderAwsCfStackName": "wage-fairness-api-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:ap-southeast-2:050295693408:stack/wage-fairness-api-dev/447e1d60-8183-11f0-8c37-068d17e1e04f",
     "serviceProviderAwsCfStackCreated": "2025-08-25T07:15:24.553Z",
-    "serviceProviderAwsCfStackUpdated": "2025-10-08T14:35:53.729Z",
+    "serviceProviderAwsCfStackUpdated": "2025-10-12T22:02:02.464Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "AiDashchatLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-ai-chat:51",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-ai-chat:62",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
       },
       {
+        "OutputKey": "ForecastDashcompareLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-forecast-compare:11",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
+      },
+      {
         "OutputKey": "GenderDashgapLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-gender-gap:90",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-gender-gap:101",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "SuburbDashscoreLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-suburb-score:64",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-suburb-score:75",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "CalculateLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-calculate:117",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-calculate:128",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
       },
@@ -3031,6 +3192,12 @@
         "OutputKey": "ServerlessDeploymentBucketName",
         "OutputValue": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
         "ExportName": "sls-wage-fairness-api-dev-ServerlessDeploymentBucketName"
+      },
+      {
+        "OutputKey": "ForecastDashpredictLambdaFunctionQualifiedArn",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-forecast-predict:11",
+        "Description": "Current Lambda function version",
+        "ExportName": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
       }
     ],
     "compiledCloudFormationTemplate": {
@@ -3156,13 +3323,24 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
             },
             "Handler": "handler.lambda_handler",
             "Runtime": "python3.9",
             "FunctionName": "wage-fairness-api-dev-calculate",
             "MemorySize": 1024,
             "Timeout": 6,
+            "Environment": {
+              "Variables": {
+                "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                "DB_PORT": "3306",
+                "DB_USER": "admin",
+                "DB_NAME": "fairwageaustralia",
+                "DB_PASSWORD": "<REDACTED>",
+                "MAX_REQUEST_SIZE": "1048576",
+                "MAX_CONVERSATION_LENGTH": "100"
+              }
+            },
             "Role": {
               "Fn::GetAtt": [
                 "IamRoleLambdaExecution",
@@ -3179,13 +3357,24 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
             },
             "Handler": "gender_gap_handler.calculate_gender_gap",
             "Runtime": "python3.9",
             "FunctionName": "wage-fairness-api-dev-gender-gap",
             "MemorySize": 1024,
             "Timeout": 6,
+            "Environment": {
+              "Variables": {
+                "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                "DB_PORT": "3306",
+                "DB_USER": "admin",
+                "DB_NAME": "fairwageaustralia",
+                "DB_PASSWORD": "<REDACTED>",
+                "MAX_REQUEST_SIZE": "1048576",
+                "MAX_CONVERSATION_LENGTH": "100"
+              }
+            },
             "Role": {
               "Fn::GetAtt": [
                 "IamRoleLambdaExecution",
@@ -3202,13 +3391,24 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
             },
             "Handler": "suburb_scoring_handler.score_suburb",
             "Runtime": "python3.9",
             "FunctionName": "wage-fairness-api-dev-suburb-score",
             "MemorySize": 1024,
             "Timeout": 6,
+            "Environment": {
+              "Variables": {
+                "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                "DB_PORT": "3306",
+                "DB_USER": "admin",
+                "DB_NAME": "fairwageaustralia",
+                "DB_PASSWORD": "<REDACTED>",
+                "MAX_REQUEST_SIZE": "1048576",
+                "MAX_CONVERSATION_LENGTH": "100"
+              }
+            },
             "Role": {
               "Fn::GetAtt": [
                 "IamRoleLambdaExecution",
@@ -3225,13 +3425,25 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
             },
             "Handler": "AI_chat.lambda_handler",
             "Runtime": "python3.9",
             "FunctionName": "wage-fairness-api-dev-ai-chat",
             "MemorySize": 1024,
-            "Timeout": 30,
+            "Timeout": 29,
+            "Environment": {
+              "Variables": {
+                "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                "DB_PORT": "3306",
+                "DB_USER": "admin",
+                "DB_NAME": "fairwageaustralia",
+                "DB_PASSWORD": "<REDACTED>",
+                "MAX_REQUEST_SIZE": "1048576",
+                "MAX_CONVERSATION_LENGTH": "100",
+                "ZHIPU_API_KEY": "<REDACTED>"
+              }
+            },
             "Role": {
               "Fn::GetAtt": [
                 "IamRoleLambdaExecution",
@@ -3248,14 +3460,25 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
             },
             "Handler": "forecast.forecast_handler",
             "Runtime": "python3.9",
             "FunctionName": "wage-fairness-api-dev-forecast-predict",
             "MemorySize": 1024,
-            "Timeout": 30,
+            "Timeout": 29,
             "Description": "Generate wage forecast for single demographic group",
+            "Environment": {
+              "Variables": {
+                "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                "DB_PORT": "3306",
+                "DB_USER": "admin",
+                "DB_NAME": "fairwageaustralia",
+                "DB_PASSWORD": "<REDACTED>",
+                "MAX_REQUEST_SIZE": "1048576",
+                "MAX_CONVERSATION_LENGTH": "100"
+              }
+            },
             "Role": {
               "Fn::GetAtt": [
                 "IamRoleLambdaExecution",
@@ -3272,14 +3495,25 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760124058358-2025-10-10T19:20:58.358Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760306651823-2025-10-12T22:04:11.823Z/wage-fairness-api.zip"
             },
             "Handler": "forecast.compare_handler",
             "Runtime": "python3.9",
             "FunctionName": "wage-fairness-api-dev-forecast-compare",
             "MemorySize": 1024,
-            "Timeout": 30,
+            "Timeout": 29,
             "Description": "Compare wage forecasts between two demographic groups",
+            "Environment": {
+              "Variables": {
+                "DB_HOST": "fairwageaustralia.ct08osmucf2b.ap-southeast-2.rds.amazonaws.com",
+                "DB_PORT": "3306",
+                "DB_USER": "admin",
+                "DB_NAME": "fairwageaustralia",
+                "DB_PASSWORD": "<REDACTED>",
+                "MAX_REQUEST_SIZE": "1048576",
+                "MAX_CONVERSATION_LENGTH": "100"
+              }
+            },
             "Role": {
               "Fn::GetAtt": [
                 "IamRoleLambdaExecution",
@@ -3291,65 +3525,65 @@
             "ForecastDashcompareLogGroup"
           ]
         },
-        "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4": {
+        "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "CalculateLambdaFunction"
             },
-            "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+            "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
           }
         },
-        "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc": {
+        "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GenderDashgapLambdaFunction"
             },
-            "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+            "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
           }
         },
-        "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s": {
+        "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "SuburbDashscoreLambdaFunction"
             },
-            "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+            "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
           }
         },
-        "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs": {
+        "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "AiDashchatLambdaFunction"
             },
-            "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI="
+            "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A="
           }
         },
-        "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs": {
+        "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "ForecastDashpredictLambdaFunction"
             },
-            "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI=",
+            "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A=",
             "Description": "Generate wage forecast for single demographic group"
           }
         },
-        "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA": {
+        "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "ForecastDashcompareLambdaFunction"
             },
-            "CodeSha256": "eko0GywBx3VNzOlA/yIabzWQegHX2aY0iLdp69+baeI=",
+            "CodeSha256": "eZrSBZcx1QMANPKGl3YIwTimWQkvxxkvq8ynTpV7k1A=",
             "Description": "Compare wage forecasts between two demographic groups"
           }
         },
@@ -4058,7 +4292,7 @@
             "ForecastDashcompareLambdaPermissionApiGateway"
           ]
         },
-        "ApiGatewayDeployment1760124051510": {
+        "ApiGatewayDeployment1760306646070": {
           "Type": "AWS::ApiGateway::Deployment",
           "Properties": {
             "RestApiId": {
@@ -4314,7 +4548,7 @@
         "CalculateLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "CalculateLambdaVersionwQMJSpYaRjXKLcnKuKC8Q9eAtJnQpxoVk0y0YjZr4"
+            "Ref": "CalculateLambdaVersionmU8VOSrQHj55f1gyPdxqghrhGbe2b4QjjAB5oH2eSsQ"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -4323,7 +4557,7 @@
         "GenderDashgapLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GenderDashgapLambdaVersionCFR9OvPNViutZ3zDUbxy6BqOEaUYRT8cqy53Qlo1pc"
+            "Ref": "GenderDashgapLambdaVersiondDhS8gMpQ4jqRJO0Yg8uKV7dfyfzvciDMZkWe1nYkhM"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -4332,7 +4566,7 @@
         "SuburbDashscoreLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "SuburbDashscoreLambdaVersionAl2a8EyP0KLzMaux0FcQzJidUNewJ6ua3iMcnTwu6s"
+            "Ref": "SuburbDashscoreLambdaVersionHIWmMoqZfdOhPn8pCdtsNY9VKxxMR6OpvL6Jx2eCM"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
@@ -4341,7 +4575,7 @@
         "AiDashchatLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "AiDashchatLambdaVersionkjFmklJI6XARxhR75CLiwZCilFNf1PX4tFhJ8cmLEs"
+            "Ref": "AiDashchatLambdaVersionKQVyUIpNlkkzwlZQ0LIIaPVPZRbkz1ePbeadlIyiWE"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
@@ -4350,7 +4584,7 @@
         "ForecastDashpredictLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "ForecastDashpredictLambdaVersionDnqqvU1xCOq8SHXsItCVLdEgnsMoEuhc6T9yZdikKs"
+            "Ref": "ForecastDashpredictLambdaVersion4XhmpvczZfIBKxHcKFzuUgpeOwKme9xL5gfz0nXALs"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
@@ -4359,7 +4593,7 @@
         "ForecastDashcompareLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "ForecastDashcompareLambdaVersionJDwQcfBr5446o0WrlWlvxtLYr1wk8p9yLxX6gG1lA"
+            "Ref": "ForecastDashcompareLambdaVersionk9DY1ayW46eOq6q6U8NlWn3dfuknfuelMJOVnfq2I"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
