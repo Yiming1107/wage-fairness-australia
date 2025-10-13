@@ -143,7 +143,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
                 },
                 "Handler": "handler.lambda_handler",
                 "Runtime": "python3.9",
@@ -177,7 +177,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
                 },
                 "Handler": "gender_gap_handler.calculate_gender_gap",
                 "Runtime": "python3.9",
@@ -211,7 +211,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
                 },
                 "Handler": "suburb_scoring_handler.score_suburb",
                 "Runtime": "python3.9",
@@ -245,7 +245,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
                 },
                 "Handler": "AI_chat.lambda_handler",
                 "Runtime": "python3.9",
@@ -280,7 +280,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
                 },
                 "Handler": "forecast.forecast_handler",
                 "Runtime": "python3.9",
@@ -315,7 +315,7 @@
               "Properties": {
                 "Code": {
                   "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                  "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                  "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
                 },
                 "Handler": "forecast.compare_handler",
                 "Runtime": "python3.9",
@@ -345,65 +345,65 @@
                 "ForecastDashcompareLogGroup"
               ]
             },
-            "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo": {
+            "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "CalculateLambdaFunction"
                 },
-                "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+                "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
               }
             },
-            "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k": {
+            "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "GenderDashgapLambdaFunction"
                 },
-                "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+                "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
               }
             },
-            "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0": {
+            "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "SuburbDashscoreLambdaFunction"
                 },
-                "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+                "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
               }
             },
-            "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y": {
+            "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "AiDashchatLambdaFunction"
                 },
-                "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+                "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
               }
             },
-            "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A": {
+            "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ForecastDashpredictLambdaFunction"
                 },
-                "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I=",
+                "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU=",
                 "Description": "Generate wage forecast for single demographic group"
               }
             },
-            "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg": {
+            "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg": {
               "Type": "AWS::Lambda::Version",
               "DeletionPolicy": "Retain",
               "Properties": {
                 "FunctionName": {
                   "Ref": "ForecastDashcompareLambdaFunction"
                 },
-                "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I=",
+                "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU=",
                 "Description": "Compare wage forecasts between two demographic groups"
               }
             },
@@ -1112,7 +1112,7 @@
                 "ForecastDashcompareLambdaPermissionApiGateway"
               ]
             },
-            "ApiGatewayDeployment1760364394687": {
+            "ApiGatewayDeployment1760365125628": {
               "Type": "AWS::ApiGateway::Deployment",
               "Properties": {
                 "RestApiId": {
@@ -1368,7 +1368,7 @@
             "CalculateLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo"
+                "Ref": "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -1377,7 +1377,7 @@
             "GenderDashgapLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k"
+                "Ref": "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -1386,7 +1386,7 @@
             "SuburbDashscoreLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0"
+                "Ref": "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
@@ -1395,7 +1395,7 @@
             "AiDashchatLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y"
+                "Ref": "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
@@ -1404,7 +1404,7 @@
             "ForecastDashpredictLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A"
+                "Ref": "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
@@ -1413,7 +1413,7 @@
             "ForecastDashcompareLambdaFunctionQualifiedArn": {
               "Description": "Current Lambda function version",
               "Value": {
-                "Ref": "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg"
+                "Ref": "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg"
               },
               "Export": {
                 "Name": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
@@ -1457,7 +1457,7 @@
         "artifactsS3KeyDirname": "serverless/wage-fairness-api/dev/code-artifacts",
         "deploymentBucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
         "artifact": "C:\\Users\\ROG\\Documents\\5120\\Final\\wage-fairness-australia\\backend\\.serverless\\wage-fairness-api.zip",
-        "artifactDirectoryName": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z"
+        "artifactDirectoryName": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z"
       },
       "functions": {
         "calculate": {
@@ -1494,7 +1494,7 @@
           "timeout": 6,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo"
+          "versionLogicalId": "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc"
         },
         "gender-gap": {
           "handler": "gender_gap_handler.calculate_gender_gap",
@@ -1530,7 +1530,7 @@
           "timeout": 6,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k"
+          "versionLogicalId": "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg"
         },
         "suburb-score": {
           "handler": "suburb_scoring_handler.score_suburb",
@@ -1566,7 +1566,7 @@
           "timeout": 6,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0"
+          "versionLogicalId": "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo"
         },
         "ai-chat": {
           "handler": "AI_chat.lambda_handler",
@@ -1605,7 +1605,7 @@
           "memory": 1024,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y"
+          "versionLogicalId": "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ"
         },
         "forecast-predict": {
           "handler": "forecast.forecast_handler",
@@ -1642,7 +1642,7 @@
           "memory": 1024,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A"
+          "versionLogicalId": "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0"
         },
         "forecast-compare": {
           "handler": "forecast.compare_handler",
@@ -1679,7 +1679,7 @@
           "memory": 1024,
           "runtime": "python3.9",
           "vpc": {},
-          "versionLogicalId": "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg"
+          "versionLogicalId": "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg"
         }
       }
     },
@@ -1821,7 +1821,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
               },
               "Handler": "handler.lambda_handler",
               "Runtime": "python3.9",
@@ -1855,7 +1855,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
               },
               "Handler": "gender_gap_handler.calculate_gender_gap",
               "Runtime": "python3.9",
@@ -1889,7 +1889,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
               },
               "Handler": "suburb_scoring_handler.score_suburb",
               "Runtime": "python3.9",
@@ -1923,7 +1923,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
               },
               "Handler": "AI_chat.lambda_handler",
               "Runtime": "python3.9",
@@ -1958,7 +1958,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
               },
               "Handler": "forecast.forecast_handler",
               "Runtime": "python3.9",
@@ -1993,7 +1993,7 @@
             "Properties": {
               "Code": {
                 "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-                "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+                "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
               },
               "Handler": "forecast.compare_handler",
               "Runtime": "python3.9",
@@ -2023,65 +2023,65 @@
               "ForecastDashcompareLogGroup"
             ]
           },
-          "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo": {
+          "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CalculateLambdaFunction"
               },
-              "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+              "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
             }
           },
-          "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k": {
+          "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GenderDashgapLambdaFunction"
               },
-              "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+              "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
             }
           },
-          "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0": {
+          "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SuburbDashscoreLambdaFunction"
               },
-              "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+              "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
             }
           },
-          "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y": {
+          "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AiDashchatLambdaFunction"
               },
-              "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+              "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
             }
           },
-          "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A": {
+          "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ForecastDashpredictLambdaFunction"
               },
-              "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I=",
+              "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU=",
               "Description": "Generate wage forecast for single demographic group"
             }
           },
-          "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg": {
+          "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ForecastDashcompareLambdaFunction"
               },
-              "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I=",
+              "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU=",
               "Description": "Compare wage forecasts between two demographic groups"
             }
           },
@@ -2790,7 +2790,7 @@
               "ForecastDashcompareLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1760364394687": {
+          "ApiGatewayDeployment1760365125628": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -3046,7 +3046,7 @@
           "CalculateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo"
+              "Ref": "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -3055,7 +3055,7 @@
           "GenderDashgapLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k"
+              "Ref": "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -3064,7 +3064,7 @@
           "SuburbDashscoreLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0"
+              "Ref": "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
@@ -3073,7 +3073,7 @@
           "AiDashchatLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y"
+              "Ref": "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
@@ -3082,7 +3082,7 @@
           "ForecastDashpredictLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A"
+              "Ref": "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
@@ -3091,7 +3091,7 @@
           "ForecastDashcompareLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg"
+              "Ref": "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg"
             },
             "Export": {
               "Name": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
@@ -3149,36 +3149,36 @@
     "serviceProviderAwsCfStackName": "wage-fairness-api-dev",
     "serviceProviderAwsCfStackId": "arn:aws:cloudformation:ap-southeast-2:050295693408:stack/wage-fairness-api-dev/447e1d60-8183-11f0-8c37-068d17e1e04f",
     "serviceProviderAwsCfStackCreated": "2025-08-25T07:15:24.553Z",
-    "serviceProviderAwsCfStackUpdated": "2025-10-13T14:05:23.317Z",
+    "serviceProviderAwsCfStackUpdated": "2025-10-13T14:16:29.830Z",
     "serviceProviderAwsCfStackStatus": "UPDATE_COMPLETE",
     "serviceProviderAwsCfStackOutputs": [
       {
         "OutputKey": "AiDashchatLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-ai-chat:74",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-ai-chat:78",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "ForecastDashcompareLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-forecast-compare:23",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-forecast-compare:27",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "GenderDashgapLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-gender-gap:113",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-gender-gap:117",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "SuburbDashscoreLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-suburb-score:87",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-suburb-score:91",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
       },
       {
         "OutputKey": "CalculateLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-calculate:140",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-calculate:144",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
       },
@@ -3195,7 +3195,7 @@
       },
       {
         "OutputKey": "ForecastDashpredictLambdaFunctionQualifiedArn",
-        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-forecast-predict:23",
+        "OutputValue": "arn:aws:lambda:ap-southeast-2:050295693408:function:wage-fairness-api-dev-forecast-predict:27",
         "Description": "Current Lambda function version",
         "ExportName": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
       }
@@ -3323,7 +3323,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
             },
             "Handler": "handler.lambda_handler",
             "Runtime": "python3.9",
@@ -3357,7 +3357,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
             },
             "Handler": "gender_gap_handler.calculate_gender_gap",
             "Runtime": "python3.9",
@@ -3391,7 +3391,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
             },
             "Handler": "suburb_scoring_handler.score_suburb",
             "Runtime": "python3.9",
@@ -3425,7 +3425,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
             },
             "Handler": "AI_chat.lambda_handler",
             "Runtime": "python3.9",
@@ -3460,7 +3460,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
             },
             "Handler": "forecast.forecast_handler",
             "Runtime": "python3.9",
@@ -3495,7 +3495,7 @@
           "Properties": {
             "Code": {
               "S3Bucket": "serverless-framework-deployments-ap-southeast-2-3b5bd316-a149",
-              "S3Key": "serverless/wage-fairness-api/dev/1760364400283-2025-10-13T14:06:40.283Z/wage-fairness-api.zip"
+              "S3Key": "serverless/wage-fairness-api/dev/1760365131537-2025-10-13T14:18:51.537Z/wage-fairness-api.zip"
             },
             "Handler": "forecast.compare_handler",
             "Runtime": "python3.9",
@@ -3525,65 +3525,65 @@
             "ForecastDashcompareLogGroup"
           ]
         },
-        "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo": {
+        "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "CalculateLambdaFunction"
             },
-            "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+            "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
           }
         },
-        "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k": {
+        "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "GenderDashgapLambdaFunction"
             },
-            "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+            "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
           }
         },
-        "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0": {
+        "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "SuburbDashscoreLambdaFunction"
             },
-            "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+            "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
           }
         },
-        "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y": {
+        "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "AiDashchatLambdaFunction"
             },
-            "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I="
+            "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU="
           }
         },
-        "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A": {
+        "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "ForecastDashpredictLambdaFunction"
             },
-            "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I=",
+            "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU=",
             "Description": "Generate wage forecast for single demographic group"
           }
         },
-        "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg": {
+        "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg": {
           "Type": "AWS::Lambda::Version",
           "DeletionPolicy": "Retain",
           "Properties": {
             "FunctionName": {
               "Ref": "ForecastDashcompareLambdaFunction"
             },
-            "CodeSha256": "mZszIMFwVOiIq7cLgBUy5t0dzFC/dL673aio1NRFI/I=",
+            "CodeSha256": "3AouHd/rHgLE8fIAE/lojBaIj9Gw1pqh2eXxMhZTOlU=",
             "Description": "Compare wage forecasts between two demographic groups"
           }
         },
@@ -4292,7 +4292,7 @@
             "ForecastDashcompareLambdaPermissionApiGateway"
           ]
         },
-        "ApiGatewayDeployment1760364394687": {
+        "ApiGatewayDeployment1760365125628": {
           "Type": "AWS::ApiGateway::Deployment",
           "Properties": {
             "RestApiId": {
@@ -4548,7 +4548,7 @@
         "CalculateLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "CalculateLambdaVersionODfLsxtMwt453tKd23nnmu3qvxhSOo4l6mGUxTHXUdo"
+            "Ref": "CalculateLambdaVersionM3tiMLnRZA5FWOCJgXVgxpsrKmPdyS6QpAEf7sYGbAc"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-CalculateLambdaFunctionQualifiedArn"
@@ -4557,7 +4557,7 @@
         "GenderDashgapLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "GenderDashgapLambdaVersionYIyDWKfzpdoWmXSHV43zh3PwvicHHi4x5alcpr4wf2k"
+            "Ref": "GenderDashgapLambdaVersionYVMAt8YedQo9eFHbrnUiHCmSczCxNih1JpVxsSRg"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-GenderDashgapLambdaFunctionQualifiedArn"
@@ -4566,7 +4566,7 @@
         "SuburbDashscoreLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "SuburbDashscoreLambdaVersionsOQrehAhmiPGL4140uM5PUNaJpXJn0NVhJQ5WEeRP0"
+            "Ref": "SuburbDashscoreLambdaVersionUjz0cXwtHWK6kz5FXS5HYWhjGfOuRXBjwGMJureHCo"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-SuburbDashscoreLambdaFunctionQualifiedArn"
@@ -4575,7 +4575,7 @@
         "AiDashchatLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "AiDashchatLambdaVersionQ6tdagdkS8AWFGkShooEtLPHRXzLU2EfI5gdTKEt6Y"
+            "Ref": "AiDashchatLambdaVersionsK9xrQiZP0kicyKb5lwfAtpSOW4fWNq1MhCtCFUoqDQ"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-AiDashchatLambdaFunctionQualifiedArn"
@@ -4584,7 +4584,7 @@
         "ForecastDashpredictLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "ForecastDashpredictLambdaVersion0iNAHWekflUhYfPbuqYRpl5VqhqsuDBlTdndR561X2A"
+            "Ref": "ForecastDashpredictLambdaVersion2ZI1XAslFHgAdTpmjCbzXYOfPc1RrAcoOaNg59eMK0"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-ForecastDashpredictLambdaFunctionQualifiedArn"
@@ -4593,7 +4593,7 @@
         "ForecastDashcompareLambdaFunctionQualifiedArn": {
           "Description": "Current Lambda function version",
           "Value": {
-            "Ref": "ForecastDashcompareLambdaVersionJPg7Sm9ETgYkyfGzP2eYwItHU78lE7vshalIb3IDqg"
+            "Ref": "ForecastDashcompareLambdaVersionaqbBpIBUgjyWBqPZ3EQWEQfNLqrRb3bEe55CfjFtg"
           },
           "Export": {
             "Name": "sls-wage-fairness-api-dev-ForecastDashcompareLambdaFunctionQualifiedArn"

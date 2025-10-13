@@ -329,19 +329,31 @@ def loglinear_forecast(series, years_ahead=5):
     # Fit linear model to log values
     slope, intercept = linear_regression(years, log_values)
     
-    # Generate forecast
+    # Define forecast starting year
+    FORECAST_START_YEAR = 2025
     last_year = max(years)
-    first_year = min(years)
-    all_years = list(range(first_year, last_year + years_ahead + 1))
     
     result = []
-    for year in all_years:
+    
+    # Add all historical data (actual values from database)
+    for item in series:
+        result.append({
+            'year': item['year'],
+            'median_forecast': round(item['value'], 2),
+            'is_future': False
+        })
+    
+    # Generate forecasts starting from FORECAST_START_YEAR
+    forecast_start = max(FORECAST_START_YEAR, last_year + 1)
+    forecast_years = list(range(forecast_start, forecast_start + years_ahead))
+    
+    for year in forecast_years:
         log_pred = intercept + slope * year
         pred = math.exp(log_pred)
         result.append({
             'year': year,
             'median_forecast': round(pred, 2),
-            'is_future': year > last_year
+            'is_future': True
         })
     
     # Calculate annual growth rate
