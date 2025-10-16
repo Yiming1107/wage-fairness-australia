@@ -64,7 +64,7 @@ functions:
           path: forecast/predict
           method: post
           cors: true
-    timeout: 29
+    timeout: 6
     description: Generate wage forecast for single demographic group
 
   forecast-compare:
@@ -74,7 +74,7 @@ functions:
           path: forecast/compare
           method: post
           cors: true
-    timeout: 29
+    timeout: 6
     description: Compare wage forecasts between two demographic groups
 
 # ============================================
